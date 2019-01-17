@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E7CF50D50D0599DD8B2A7B1 /* Pods_magic_the_gathering.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C73BD1011B0E6B65D6E0C9E1 /* Pods_magic_the_gathering.framework */; };
 		8F1C144F21F10A450077279C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1C144E21F10A450077279C /* AppDelegate.swift */; };
 		8F1C145121F10A450077279C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1C145021F10A450077279C /* ViewController.swift */; };
 		8F1C145421F10A450077279C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F1C145221F10A450077279C /* Main.storyboard */; };
 		8F1C145621F10A470077279C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F1C145521F10A470077279C /* Assets.xcassets */; };
 		8F1C145921F10A470077279C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F1C145721F10A470077279C /* LaunchScreen.storyboard */; };
 		8F1C146421F10A470077279C /* magic_the_gatheringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1C146321F10A470077279C /* magic_the_gatheringTests.swift */; };
+		FDB04A0826B683BD5D5CD95D /* Pods_magic_the_gatheringTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E500CB7AFD10B11E601D63B /* Pods_magic_the_gatheringTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +28,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		17B4C79DFB871A010BCC1031 /* Pods-magic-the-gatheringTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-magic-the-gatheringTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-magic-the-gatheringTests/Pods-magic-the-gatheringTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5ED928E2BF48A7967253DDFB /* Pods-magic-the-gathering.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-magic-the-gathering.release.xcconfig"; path = "Pods/Target Support Files/Pods-magic-the-gathering/Pods-magic-the-gathering.release.xcconfig"; sourceTree = "<group>"; };
+		6E500CB7AFD10B11E601D63B /* Pods_magic_the_gatheringTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_magic_the_gatheringTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F1C144B21F10A450077279C /* magic-the-gathering.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "magic-the-gathering.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F1C144E21F10A450077279C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8F1C145021F10A450077279C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +41,9 @@
 		8F1C145F21F10A470077279C /* magic-the-gatheringTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "magic-the-gatheringTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F1C146321F10A470077279C /* magic_the_gatheringTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = magic_the_gatheringTests.swift; sourceTree = "<group>"; };
 		8F1C146521F10A470077279C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AEA1ED764D237AC9D3D0DBCE /* Pods-magic-the-gathering.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-magic-the-gathering.debug.xcconfig"; path = "Pods/Target Support Files/Pods-magic-the-gathering/Pods-magic-the-gathering.debug.xcconfig"; sourceTree = "<group>"; };
+		C73BD1011B0E6B65D6E0C9E1 /* Pods_magic_the_gathering.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_magic_the_gathering.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB14EFA640FA67CF17951232 /* Pods-magic-the-gatheringTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-magic-the-gatheringTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-magic-the-gatheringTests/Pods-magic-the-gatheringTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E7CF50D50D0599DD8B2A7B1 /* Pods_magic_the_gathering.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,18 +59,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDB04A0826B683BD5D5CD95D /* Pods_magic_the_gatheringTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		439DF7621F89A294E407897B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AEA1ED764D237AC9D3D0DBCE /* Pods-magic-the-gathering.debug.xcconfig */,
+				5ED928E2BF48A7967253DDFB /* Pods-magic-the-gathering.release.xcconfig */,
+				17B4C79DFB871A010BCC1031 /* Pods-magic-the-gatheringTests.debug.xcconfig */,
+				FB14EFA640FA67CF17951232 /* Pods-magic-the-gatheringTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		680A5F76A3C8214B58F2654E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C73BD1011B0E6B65D6E0C9E1 /* Pods_magic_the_gathering.framework */,
+				6E500CB7AFD10B11E601D63B /* Pods_magic_the_gatheringTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8F1C144221F10A450077279C = {
 			isa = PBXGroup;
 			children = (
 				8F1C144D21F10A450077279C /* magic-the-gathering */,
 				8F1C146221F10A470077279C /* magic-the-gatheringTests */,
 				8F1C144C21F10A450077279C /* Products */,
+				439DF7621F89A294E407897B /* Pods */,
+				680A5F76A3C8214B58F2654E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +135,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8F1C146821F10A470077279C /* Build configuration list for PBXNativeTarget "magic-the-gathering" */;
 			buildPhases = (
+				223304D9C7A225AEA7288DCC /* [CP] Check Pods Manifest.lock */,
 				8F1C144721F10A450077279C /* Sources */,
 				8F1C144821F10A450077279C /* Frameworks */,
 				8F1C144921F10A450077279C /* Resources */,
@@ -120,6 +153,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8F1C146B21F10A470077279C /* Build configuration list for PBXNativeTarget "magic-the-gatheringTests" */;
 			buildPhases = (
+				A83F9E44F46C8590F5E1DCE7 /* [CP] Check Pods Manifest.lock */,
 				8F1C145B21F10A470077279C /* Sources */,
 				8F1C145C21F10A470077279C /* Frameworks */,
 				8F1C145D21F10A470077279C /* Resources */,
@@ -191,6 +225,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		223304D9C7A225AEA7288DCC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-magic-the-gathering-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A83F9E44F46C8590F5E1DCE7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-magic-the-gatheringTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8F1C144721F10A450077279C /* Sources */ = {
@@ -358,6 +439,7 @@
 		};
 		8F1C146921F10A470077279C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AEA1ED764D237AC9D3D0DBCE /* Pods-magic-the-gathering.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -376,6 +458,7 @@
 		};
 		8F1C146A21F10A470077279C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5ED928E2BF48A7967253DDFB /* Pods-magic-the-gathering.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -394,6 +477,7 @@
 		};
 		8F1C146C21F10A470077279C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17B4C79DFB871A010BCC1031 /* Pods-magic-the-gatheringTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -415,6 +499,7 @@
 		};
 		8F1C146D21F10A470077279C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB14EFA640FA67CF17951232 /* Pods-magic-the-gatheringTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

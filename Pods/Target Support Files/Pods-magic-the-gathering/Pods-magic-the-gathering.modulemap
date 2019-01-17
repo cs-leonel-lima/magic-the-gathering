@@ -1,0 +1,6 @@
+framework module Pods_magic_the_gathering {
+  umbrella header "Pods-magic-the-gathering-umbrella.h"
+
+  export *
+  module * { export * }
+}

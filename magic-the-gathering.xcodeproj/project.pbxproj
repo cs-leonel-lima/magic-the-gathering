@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B87E22721F2023600A33E6D /* Resources in Resources */ = {isa = PBXBuildFile; fileRef = 2B87E22621F2023600A33E6D /* Resources */; };
 		3E7CF50D50D0599DD8B2A7B1 /* Pods_magic_the_gathering.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C73BD1011B0E6B65D6E0C9E1 /* Pods_magic_the_gathering.framework */; };
 		8F1C144F21F10A450077279C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1C144E21F10A450077279C /* AppDelegate.swift */; };
 		8F1C145121F10A450077279C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1C145021F10A450077279C /* ViewController.swift */; };
@@ -29,6 +30,7 @@
 
 /* Begin PBXFileReference section */
 		17B4C79DFB871A010BCC1031 /* Pods-magic-the-gatheringTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-magic-the-gatheringTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-magic-the-gatheringTests/Pods-magic-the-gatheringTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2B87E22621F2023600A33E6D /* Resources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Resources; sourceTree = "<group>"; };
 		5ED928E2BF48A7967253DDFB /* Pods-magic-the-gathering.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-magic-the-gathering.release.xcconfig"; path = "Pods/Target Support Files/Pods-magic-the-gathering/Pods-magic-the-gathering.release.xcconfig"; sourceTree = "<group>"; };
 		6E500CB7AFD10B11E601D63B /* Pods_magic_the_gatheringTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_magic_the_gatheringTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F1C144B21F10A450077279C /* magic-the-gathering.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "magic-the-gathering.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -109,6 +111,7 @@
 		8F1C144D21F10A450077279C /* magic-the-gathering */ = {
 			isa = PBXGroup;
 			children = (
+				2B87E22621F2023600A33E6D /* Resources */,
 				8F1C144E21F10A450077279C /* AppDelegate.swift */,
 				8F1C145021F10A450077279C /* ViewController.swift */,
 				8F1C145221F10A450077279C /* Main.storyboard */,
@@ -211,6 +214,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B87E22721F2023600A33E6D /* Resources in Resources */,
 				8F1C145921F10A470077279C /* LaunchScreen.storyboard in Resources */,
 				8F1C145621F10A470077279C /* Assets.xcassets in Resources */,
 				8F1C145421F10A450077279C /* Main.storyboard in Resources */,

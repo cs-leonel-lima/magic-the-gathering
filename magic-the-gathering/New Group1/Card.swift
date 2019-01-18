@@ -37,8 +37,22 @@ extension Card: Decodable {
     }
 }
 
+extension Card {
+    static func initializeCardsArray(from data: Data) -> [Card]? {
+        do {
+            let cardsDictionary = try JSONDecoder().decode([String: [Card]].self, from: data)
+            if let cards = cardsDictionary["cards"] {
+                return cards
+            }
+        } catch {
+            print(error.localizedDescription)
+        }
+        return nil
+    }
+}
+
 extension Card: Equatable {
-    static func ==(lhs: Card, rhs: Card) -> Bool {
+    static func == (lhs: Card, rhs: Card) -> Bool {
         return lhs.name == rhs.name
     }
 }

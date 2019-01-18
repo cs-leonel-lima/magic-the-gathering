@@ -284,7 +284,6 @@
 				8F1C144821F10A450077279C /* Frameworks */,
 				8F1C144921F10A450077279C /* Resources */,
 				2B81EB7D21F2340C007D582B /* ShellScript */,
-				15B3CEFD8B8AC032211D4653 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -415,28 +414,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		15B3CEFD8B8AC032211D4653 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-magic-the-gathering/Pods-magic-the-gathering-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-magic-the-gathering/Pods-magic-the-gathering-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		223304D9C7A225AEA7288DCC /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

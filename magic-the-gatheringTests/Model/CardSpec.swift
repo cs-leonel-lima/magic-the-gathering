@@ -15,7 +15,7 @@ import Nimble
 class CardSpec: QuickSpec {
     
     override func spec() {
-        describe("Testing Card decodable initialization with a JSON file") {
+        describe("Testing Card model with a JSON file") {
             
             var cardsDataMock: Data?
             var falseDataMock: Data?
@@ -25,7 +25,7 @@ class CardSpec: QuickSpec {
                 falseDataMock = JSONHelper.getDataFrom(resource: "sets")
             }
             
-            it("should get an array of Cards from data") {
+            it("Should get an array of Cards from data") {
                 if let data = cardsDataMock, let cards = Card.initializeCardsArray(from: data) {
                     expect(cards).toNot(beNil())
                     expect(cards.count).to(beGreaterThan(0))

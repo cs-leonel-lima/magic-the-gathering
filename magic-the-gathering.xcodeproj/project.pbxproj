@@ -17,6 +17,9 @@
 		8F1C146421F10A470077279C /* magic_the_gatheringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1C146321F10A470077279C /* magic_the_gatheringTests.swift */; };
 		8F9A2C2221F211B700D6A2B6 /* magic_the_gatheringKIFTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9A2C2121F211B700D6A2B6 /* magic_the_gatheringKIFTests.swift */; };
 		8FCECF4621F2129C005C654B /* Tester+System.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9A2C2D21F2123B00D6A2B6 /* Tester+System.swift */; };
+		EF2DE91D21F2278600A0D25D /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2DE91C21F2278600A0D25D /* Card.swift */; };
+		EF2DE91F21F2278D00A0D25D /* Set.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2DE91E21F2278D00A0D25D /* Set.swift */; };
+		EF2DE92221F22ADE00A0D25D /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2DE92121F22ADE00A0D25D /* DateFormatter.swift */; };
 		FDB04A0826B683BD5D5CD95D /* Pods_magic_the_gatheringTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E500CB7AFD10B11E601D63B /* Pods_magic_the_gatheringTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +64,9 @@
 		8F9A2C2E21F2123C00D6A2B6 /* KIF+BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KIF+BridgingHeader.h"; sourceTree = "<group>"; };
 		AEA1ED764D237AC9D3D0DBCE /* Pods-magic-the-gathering.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-magic-the-gathering.debug.xcconfig"; path = "Pods/Target Support Files/Pods-magic-the-gathering/Pods-magic-the-gathering.debug.xcconfig"; sourceTree = "<group>"; };
 		C73BD1011B0E6B65D6E0C9E1 /* Pods_magic_the_gathering.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_magic_the_gathering.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF2DE91C21F2278600A0D25D /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		EF2DE91E21F2278D00A0D25D /* Set.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Set.swift; sourceTree = "<group>"; };
+		EF2DE92121F22ADE00A0D25D /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
 		FB14EFA640FA67CF17951232 /* Pods-magic-the-gatheringTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-magic-the-gatheringTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-magic-the-gatheringTests/Pods-magic-the-gatheringTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -142,6 +148,8 @@
 			children = (
 				8F1C144E21F10A450077279C /* AppDelegate.swift */,
 				8F1C145021F10A450077279C /* ViewController.swift */,
+				EF2DE91B21F2275200A0D25D /* Model */,
+				EF2DE92021F22ABF00A0D25D /* Utils */,
 				8F1C145221F10A450077279C /* Main.storyboard */,
 				8F1C145521F10A470077279C /* Assets.xcassets */,
 				8F1C145721F10A470077279C /* LaunchScreen.storyboard */,
@@ -176,6 +184,24 @@
 				8F9A2C2E21F2123C00D6A2B6 /* KIF+BridgingHeader.h */,
 			);
 			path = Config;
+			sourceTree = "<group>";
+		};
+		EF2DE91B21F2275200A0D25D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EF2DE91C21F2278600A0D25D /* Card.swift */,
+				EF2DE91E21F2278D00A0D25D /* Set.swift */,
+			);
+			name = Model;
+			path = "New Group1";
+			sourceTree = "<group>";
+		};
+		EF2DE92021F22ABF00A0D25D /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				EF2DE92121F22ADE00A0D25D /* DateFormatter.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -433,8 +459,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF2DE91F21F2278D00A0D25D /* Set.swift in Sources */,
 				8F1C145121F10A450077279C /* ViewController.swift in Sources */,
+				EF2DE91D21F2278600A0D25D /* Card.swift in Sources */,
 				8F1C144F21F10A450077279C /* AppDelegate.swift in Sources */,
+				EF2DE92221F22ADE00A0D25D /* DateFormatter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

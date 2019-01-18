@@ -211,6 +211,7 @@
 				8F1C144721F10A450077279C /* Sources */,
 				8F1C144821F10A450077279C /* Frameworks */,
 				8F1C144921F10A450077279C /* Resources */,
+				2B81EB7D21F2340C007D582B /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -375,6 +376,23 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-magic-the-gatheringKIFTests/Pods-magic-the-gatheringKIFTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		2B81EB7D21F2340C007D582B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
 		4993677CA76FBB5CEF775DEA /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;

@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol ReusableCodeView: AnyObject, CodeView  {
+protocol ReusableCodeView: AnyObject, CodeView {
     var needsSetup: Bool {get set}
 }
 

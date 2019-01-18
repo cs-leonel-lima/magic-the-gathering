@@ -10,6 +10,16 @@ target 'magic-the-gathering' do
   target 'magic-the-gatheringTests' do
     inherit! :search_paths
     # Pods for testing
+    pod 'Quick'
+    pod 'Nimble'
+    pod 'Nimble-Snapshots'
+
+    target 'magic-the-gatheringKIFTests' do
+      inherit! :search_paths
+      # Pods for testing
+      pod 'KIF', :configurations => ['Debug']
+    end
+ 
   end
 
 end

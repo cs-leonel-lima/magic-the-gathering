@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3AA0BFE9190134895A6E78EE /* Pods_magic_the_gatheringKIFTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ED610329B0D5699F191C1F9 /* Pods_magic_the_gatheringKIFTests.framework */; };
 		3E7CF50D50D0599DD8B2A7B1 /* Pods_magic_the_gathering.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C73BD1011B0E6B65D6E0C9E1 /* Pods_magic_the_gathering.framework */; };
 		8F1C144F21F10A450077279C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1C144E21F10A450077279C /* AppDelegate.swift */; };
 		8F1C145121F10A450077279C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1C145021F10A450077279C /* ViewController.swift */; };
@@ -14,6 +15,8 @@
 		8F1C145621F10A470077279C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F1C145521F10A470077279C /* Assets.xcassets */; };
 		8F1C145921F10A470077279C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F1C145721F10A470077279C /* LaunchScreen.storyboard */; };
 		8F1C146421F10A470077279C /* magic_the_gatheringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1C146321F10A470077279C /* magic_the_gatheringTests.swift */; };
+		8F9A2C2221F211B700D6A2B6 /* magic_the_gatheringKIFTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9A2C2121F211B700D6A2B6 /* magic_the_gatheringKIFTests.swift */; };
+		8FCECF4621F2129C005C654B /* Tester+System.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9A2C2D21F2123B00D6A2B6 /* Tester+System.swift */; };
 		FDB04A0826B683BD5D5CD95D /* Pods_magic_the_gatheringTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E500CB7AFD10B11E601D63B /* Pods_magic_the_gatheringTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,10 +28,20 @@
 			remoteGlobalIDString = 8F1C144A21F10A450077279C;
 			remoteInfo = "magic-the-gathering";
 		};
+		8F9A2C2421F211B700D6A2B6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8F1C144321F10A450077279C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8F1C144A21F10A450077279C;
+			remoteInfo = "magic-the-gathering";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0ED610329B0D5699F191C1F9 /* Pods_magic_the_gatheringKIFTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_magic_the_gatheringKIFTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		17B4C79DFB871A010BCC1031 /* Pods-magic-the-gatheringTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-magic-the-gatheringTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-magic-the-gatheringTests/Pods-magic-the-gatheringTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3866305A5ABCBA3168D826FB /* Pods-magic-the-gatheringKIFTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-magic-the-gatheringKIFTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-magic-the-gatheringKIFTests/Pods-magic-the-gatheringKIFTests.release.xcconfig"; sourceTree = "<group>"; };
+		5B893359ABA28B1EC432E364 /* Pods-magic-the-gatheringKIFTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-magic-the-gatheringKIFTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-magic-the-gatheringKIFTests/Pods-magic-the-gatheringKIFTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5ED928E2BF48A7967253DDFB /* Pods-magic-the-gathering.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-magic-the-gathering.release.xcconfig"; path = "Pods/Target Support Files/Pods-magic-the-gathering/Pods-magic-the-gathering.release.xcconfig"; sourceTree = "<group>"; };
 		6E500CB7AFD10B11E601D63B /* Pods_magic_the_gatheringTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_magic_the_gatheringTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F1C144B21F10A450077279C /* magic-the-gathering.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "magic-the-gathering.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -41,6 +54,11 @@
 		8F1C145F21F10A470077279C /* magic-the-gatheringTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "magic-the-gatheringTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F1C146321F10A470077279C /* magic_the_gatheringTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = magic_the_gatheringTests.swift; sourceTree = "<group>"; };
 		8F1C146521F10A470077279C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F9A2C1F21F211B600D6A2B6 /* magic-the-gatheringKIFTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "magic-the-gatheringKIFTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F9A2C2121F211B700D6A2B6 /* magic_the_gatheringKIFTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = magic_the_gatheringKIFTests.swift; sourceTree = "<group>"; };
+		8F9A2C2321F211B700D6A2B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F9A2C2D21F2123B00D6A2B6 /* Tester+System.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tester+System.swift"; sourceTree = "<group>"; };
+		8F9A2C2E21F2123C00D6A2B6 /* KIF+BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KIF+BridgingHeader.h"; sourceTree = "<group>"; };
 		AEA1ED764D237AC9D3D0DBCE /* Pods-magic-the-gathering.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-magic-the-gathering.debug.xcconfig"; path = "Pods/Target Support Files/Pods-magic-the-gathering/Pods-magic-the-gathering.debug.xcconfig"; sourceTree = "<group>"; };
 		C73BD1011B0E6B65D6E0C9E1 /* Pods_magic_the_gathering.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_magic_the_gathering.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB14EFA640FA67CF17951232 /* Pods-magic-the-gatheringTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-magic-the-gatheringTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-magic-the-gatheringTests/Pods-magic-the-gatheringTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -63,6 +81,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8F9A2C1C21F211B600D6A2B6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AA0BFE9190134895A6E78EE /* Pods_magic_the_gatheringKIFTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -73,6 +99,8 @@
 				5ED928E2BF48A7967253DDFB /* Pods-magic-the-gathering.release.xcconfig */,
 				17B4C79DFB871A010BCC1031 /* Pods-magic-the-gatheringTests.debug.xcconfig */,
 				FB14EFA640FA67CF17951232 /* Pods-magic-the-gatheringTests.release.xcconfig */,
+				5B893359ABA28B1EC432E364 /* Pods-magic-the-gatheringKIFTests.debug.xcconfig */,
+				3866305A5ABCBA3168D826FB /* Pods-magic-the-gatheringKIFTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -82,6 +110,7 @@
 			children = (
 				C73BD1011B0E6B65D6E0C9E1 /* Pods_magic_the_gathering.framework */,
 				6E500CB7AFD10B11E601D63B /* Pods_magic_the_gatheringTests.framework */,
+				0ED610329B0D5699F191C1F9 /* Pods_magic_the_gatheringKIFTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -91,6 +120,7 @@
 			children = (
 				8F1C144D21F10A450077279C /* magic-the-gathering */,
 				8F1C146221F10A470077279C /* magic-the-gatheringTests */,
+				8F9A2C2021F211B700D6A2B6 /* magic-the-gatheringKIFTests */,
 				8F1C144C21F10A450077279C /* Products */,
 				439DF7621F89A294E407897B /* Pods */,
 				680A5F76A3C8214B58F2654E /* Frameworks */,
@@ -102,6 +132,7 @@
 			children = (
 				8F1C144B21F10A450077279C /* magic-the-gathering.app */,
 				8F1C145F21F10A470077279C /* magic-the-gatheringTests.xctest */,
+				8F9A2C1F21F211B600D6A2B6 /* magic-the-gatheringKIFTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -126,6 +157,25 @@
 				8F1C146521F10A470077279C /* Info.plist */,
 			);
 			path = "magic-the-gatheringTests";
+			sourceTree = "<group>";
+		};
+		8F9A2C2021F211B700D6A2B6 /* magic-the-gatheringKIFTests */ = {
+			isa = PBXGroup;
+			children = (
+				8F9A2C2C21F2123400D6A2B6 /* Config */,
+				8F9A2C2121F211B700D6A2B6 /* magic_the_gatheringKIFTests.swift */,
+				8F9A2C2321F211B700D6A2B6 /* Info.plist */,
+			);
+			path = "magic-the-gatheringKIFTests";
+			sourceTree = "<group>";
+		};
+		8F9A2C2C21F2123400D6A2B6 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				8F9A2C2D21F2123B00D6A2B6 /* Tester+System.swift */,
+				8F9A2C2E21F2123C00D6A2B6 /* KIF+BridgingHeader.h */,
+			);
+			path = Config;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,6 +207,7 @@
 				8F1C145B21F10A470077279C /* Sources */,
 				8F1C145C21F10A470077279C /* Frameworks */,
 				8F1C145D21F10A470077279C /* Resources */,
+				4993677CA76FBB5CEF775DEA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -166,6 +217,26 @@
 			name = "magic-the-gatheringTests";
 			productName = "magic-the-gatheringTests";
 			productReference = 8F1C145F21F10A470077279C /* magic-the-gatheringTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8F9A2C1E21F211B600D6A2B6 /* magic-the-gatheringKIFTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F9A2C2821F211B700D6A2B6 /* Build configuration list for PBXNativeTarget "magic-the-gatheringKIFTests" */;
+			buildPhases = (
+				ADC9EC15E5814EEB3646CC5A /* [CP] Check Pods Manifest.lock */,
+				8F9A2C1B21F211B600D6A2B6 /* Sources */,
+				8F9A2C1C21F211B600D6A2B6 /* Frameworks */,
+				8F9A2C1D21F211B600D6A2B6 /* Resources */,
+				255399C45BF266ACF1E71561 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8F9A2C2521F211B700D6A2B6 /* PBXTargetDependency */,
+			);
+			name = "magic-the-gatheringKIFTests";
+			productName = "magic-the-gatheringKIFTests";
+			productReference = 8F9A2C1F21F211B600D6A2B6 /* magic-the-gatheringKIFTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -182,6 +253,10 @@
 						CreatedOnToolsVersion = 10.1;
 					};
 					8F1C145E21F10A470077279C = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 8F1C144A21F10A450077279C;
+					};
+					8F9A2C1E21F211B600D6A2B6 = {
 						CreatedOnToolsVersion = 10.1;
 						TestTargetID = 8F1C144A21F10A450077279C;
 					};
@@ -202,6 +277,7 @@
 			targets = (
 				8F1C144A21F10A450077279C /* magic-the-gathering */,
 				8F1C145E21F10A470077279C /* magic-the-gatheringTests */,
+				8F9A2C1E21F211B600D6A2B6 /* magic-the-gatheringKIFTests */,
 			);
 		};
 /* End PBXProject section */
@@ -218,6 +294,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		8F1C145D21F10A470077279C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F9A2C1D21F211B600D6A2B6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -249,6 +332,56 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		255399C45BF266ACF1E71561 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-magic-the-gatheringKIFTests/Pods-magic-the-gatheringKIFTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/KIF/KIF.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KIF.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-magic-the-gatheringKIFTests/Pods-magic-the-gatheringKIFTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4993677CA76FBB5CEF775DEA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-magic-the-gatheringTests/Pods-magic-the-gatheringTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Nimble-Snapshots/Nimble_Snapshots.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+				"${BUILT_PRODUCTS_DIR}/iOSSnapshotTestCase/FBSnapshotTestCase.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble_Snapshots.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSnapshotTestCase.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-magic-the-gatheringTests/Pods-magic-the-gatheringTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		A83F9E44F46C8590F5E1DCE7 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -265,6 +398,28 @@
 			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-magic-the-gatheringTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ADC9EC15E5814EEB3646CC5A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-magic-the-gatheringKIFTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -291,6 +446,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8F9A2C1B21F211B600D6A2B6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F9A2C2221F211B700D6A2B6 /* magic_the_gatheringKIFTests.swift in Sources */,
+				8FCECF4621F2129C005C654B /* Tester+System.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -298,6 +462,11 @@
 			isa = PBXTargetDependency;
 			target = 8F1C144A21F10A450077279C /* magic-the-gathering */;
 			targetProxy = 8F1C146021F10A470077279C /* PBXContainerItemProxy */;
+		};
+		8F9A2C2521F211B700D6A2B6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8F1C144A21F10A450077279C /* magic-the-gathering */;
+			targetProxy = 8F9A2C2421F211B700D6A2B6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -519,6 +688,48 @@
 			};
 			name = Release;
 		};
+		8F9A2C2621F211B700D6A2B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B893359ABA28B1EC432E364 /* Pods-magic-the-gatheringKIFTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 83C3V38WSB;
+				INFOPLIST_FILE = "magic-the-gatheringKIFTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bootcamp.concrete.magic-the-gatheringKIFTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/magic-the-gathering.app/magic-the-gathering";
+			};
+			name = Debug;
+		};
+		8F9A2C2721F211B700D6A2B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3866305A5ABCBA3168D826FB /* Pods-magic-the-gatheringKIFTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 83C3V38WSB;
+				INFOPLIST_FILE = "magic-the-gatheringKIFTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bootcamp.concrete.magic-the-gatheringKIFTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/magic-the-gathering.app/magic-the-gathering";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -545,6 +756,15 @@
 			buildConfigurations = (
 				8F1C146C21F10A470077279C /* Debug */,
 				8F1C146D21F10A470077279C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8F9A2C2821F211B700D6A2B6 /* Build configuration list for PBXNativeTarget "magic-the-gatheringKIFTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F9A2C2621F211B700D6A2B6 /* Debug */,
+				8F9A2C2721F211B700D6A2B6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

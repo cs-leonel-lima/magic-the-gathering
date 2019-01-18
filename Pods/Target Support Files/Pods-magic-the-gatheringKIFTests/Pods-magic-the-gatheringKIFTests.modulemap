@@ -1,0 +1,6 @@
+framework module Pods_magic_the_gatheringKIFTests {
+  umbrella header "Pods-magic-the-gatheringKIFTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

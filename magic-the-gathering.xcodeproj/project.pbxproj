@@ -20,6 +20,15 @@
 		EF2DE91D21F2278600A0D25D /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2DE91C21F2278600A0D25D /* Card.swift */; };
 		EF2DE91F21F2278D00A0D25D /* Set.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2DE91E21F2278D00A0D25D /* Set.swift */; };
 		EF2DE92221F22ADE00A0D25D /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2DE92121F22ADE00A0D25D /* DateFormatter.swift */; };
+		EF2DE92621F240C700A0D25D /* sets.json in Resources */ = {isa = PBXBuildFile; fileRef = EF2DE92321F240C600A0D25D /* sets.json */; };
+		EF2DE92721F240C700A0D25D /* sets.json in Resources */ = {isa = PBXBuildFile; fileRef = EF2DE92321F240C600A0D25D /* sets.json */; };
+		EF2DE92821F240C700A0D25D /* sets.json in Resources */ = {isa = PBXBuildFile; fileRef = EF2DE92321F240C600A0D25D /* sets.json */; };
+		EF2DE92921F240C700A0D25D /* cards.json in Resources */ = {isa = PBXBuildFile; fileRef = EF2DE92421F240C700A0D25D /* cards.json */; };
+		EF2DE92A21F240C700A0D25D /* cards.json in Resources */ = {isa = PBXBuildFile; fileRef = EF2DE92421F240C700A0D25D /* cards.json */; };
+		EF2DE92B21F240C700A0D25D /* cards.json in Resources */ = {isa = PBXBuildFile; fileRef = EF2DE92421F240C700A0D25D /* cards.json */; };
+		EF2DE92C21F240C700A0D25D /* set-cards-OVNT.json in Resources */ = {isa = PBXBuildFile; fileRef = EF2DE92521F240C700A0D25D /* set-cards-OVNT.json */; };
+		EF2DE92D21F240C700A0D25D /* set-cards-OVNT.json in Resources */ = {isa = PBXBuildFile; fileRef = EF2DE92521F240C700A0D25D /* set-cards-OVNT.json */; };
+		EF2DE92E21F240C700A0D25D /* set-cards-OVNT.json in Resources */ = {isa = PBXBuildFile; fileRef = EF2DE92521F240C700A0D25D /* set-cards-OVNT.json */; };
 		FDB04A0826B683BD5D5CD95D /* Pods_magic_the_gatheringTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E500CB7AFD10B11E601D63B /* Pods_magic_the_gatheringTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -67,6 +76,9 @@
 		EF2DE91C21F2278600A0D25D /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		EF2DE91E21F2278D00A0D25D /* Set.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Set.swift; sourceTree = "<group>"; };
 		EF2DE92121F22ADE00A0D25D /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
+		EF2DE92321F240C600A0D25D /* sets.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sets.json; sourceTree = "<group>"; };
+		EF2DE92421F240C700A0D25D /* cards.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cards.json; sourceTree = "<group>"; };
+		EF2DE92521F240C700A0D25D /* set-cards-OVNT.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "set-cards-OVNT.json"; sourceTree = "<group>"; };
 		FB14EFA640FA67CF17951232 /* Pods-magic-the-gatheringTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-magic-the-gatheringTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-magic-the-gatheringTests/Pods-magic-the-gatheringTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -149,6 +161,7 @@
 				8F1C144E21F10A450077279C /* AppDelegate.swift */,
 				8F1C145021F10A450077279C /* ViewController.swift */,
 				EF2DE91B21F2275200A0D25D /* Model */,
+				EF2DE92F21F240DA00A0D25D /* Resources */,
 				EF2DE92021F22ABF00A0D25D /* Utils */,
 				8F1C145221F10A450077279C /* Main.storyboard */,
 				8F1C145521F10A470077279C /* Assets.xcassets */,
@@ -202,6 +215,17 @@
 				EF2DE92121F22ADE00A0D25D /* DateFormatter.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		EF2DE92F21F240DA00A0D25D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EF2DE92421F240C700A0D25D /* cards.json */,
+				EF2DE92521F240C700A0D25D /* set-cards-OVNT.json */,
+				EF2DE92321F240C600A0D25D /* sets.json */,
+			);
+			name = Resources;
+			path = Utils/Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -313,8 +337,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF2DE92621F240C700A0D25D /* sets.json in Resources */,
 				8F1C145921F10A470077279C /* LaunchScreen.storyboard in Resources */,
 				8F1C145621F10A470077279C /* Assets.xcassets in Resources */,
+				EF2DE92C21F240C700A0D25D /* set-cards-OVNT.json in Resources */,
+				EF2DE92921F240C700A0D25D /* cards.json in Resources */,
 				8F1C145421F10A450077279C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -323,6 +350,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF2DE92D21F240C700A0D25D /* set-cards-OVNT.json in Resources */,
+				EF2DE92721F240C700A0D25D /* sets.json in Resources */,
+				EF2DE92A21F240C700A0D25D /* cards.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,6 +360,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF2DE92E21F240C700A0D25D /* set-cards-OVNT.json in Resources */,
+				EF2DE92821F240C700A0D25D /* sets.json in Resources */,
+				EF2DE92B21F240C700A0D25D /* cards.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

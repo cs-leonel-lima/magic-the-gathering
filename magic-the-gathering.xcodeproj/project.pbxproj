@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B09CADA21F22A72006F52FF /* CodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B09CAD921F22A72006F52FF /* CodeView.swift */; };
+		2B09CADC21F22BE1006F52FF /* ReusableCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B09CADB21F22BE1006F52FF /* ReusableCodeView.swift */; };
 		3AA0BFE9190134895A6E78EE /* Pods_magic_the_gatheringKIFTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ED610329B0D5699F191C1F9 /* Pods_magic_the_gatheringKIFTests.framework */; };
 		3E7CF50D50D0599DD8B2A7B1 /* Pods_magic_the_gathering.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C73BD1011B0E6B65D6E0C9E1 /* Pods_magic_the_gathering.framework */; };
 		8F1C144F21F10A450077279C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1C144E21F10A450077279C /* AppDelegate.swift */; };
@@ -40,6 +42,8 @@
 /* Begin PBXFileReference section */
 		0ED610329B0D5699F191C1F9 /* Pods_magic_the_gatheringKIFTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_magic_the_gatheringKIFTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		17B4C79DFB871A010BCC1031 /* Pods-magic-the-gatheringTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-magic-the-gatheringTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-magic-the-gatheringTests/Pods-magic-the-gatheringTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2B09CAD921F22A72006F52FF /* CodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeView.swift; sourceTree = "<group>"; };
+		2B09CADB21F22BE1006F52FF /* ReusableCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableCodeView.swift; sourceTree = "<group>"; };
 		3866305A5ABCBA3168D826FB /* Pods-magic-the-gatheringKIFTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-magic-the-gatheringKIFTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-magic-the-gatheringKIFTests/Pods-magic-the-gatheringKIFTests.release.xcconfig"; sourceTree = "<group>"; };
 		5B893359ABA28B1EC432E364 /* Pods-magic-the-gatheringKIFTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-magic-the-gatheringKIFTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-magic-the-gatheringKIFTests/Pods-magic-the-gatheringKIFTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5ED928E2BF48A7967253DDFB /* Pods-magic-the-gathering.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-magic-the-gathering.release.xcconfig"; path = "Pods/Target Support Files/Pods-magic-the-gathering/Pods-magic-the-gathering.release.xcconfig"; sourceTree = "<group>"; };
@@ -92,6 +96,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B09CAD721F22A4F006F52FF /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				2B09CAD821F22A66006F52FF /* View */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		2B09CAD821F22A66006F52FF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2B09CAD921F22A72006F52FF /* CodeView.swift */,
+				2B09CADB21F22BE1006F52FF /* ReusableCodeView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		439DF7621F89A294E407897B /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -140,6 +161,7 @@
 		8F1C144D21F10A450077279C /* magic-the-gathering */ = {
 			isa = PBXGroup;
 			children = (
+				2B09CAD721F22A4F006F52FF /* Presentation */,
 				8F1C144E21F10A450077279C /* AppDelegate.swift */,
 				8F1C145021F10A450077279C /* ViewController.swift */,
 				8F1C145221F10A450077279C /* Main.storyboard */,
@@ -433,7 +455,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B09CADA21F22A72006F52FF /* CodeView.swift in Sources */,
 				8F1C145121F10A450077279C /* ViewController.swift in Sources */,
+				2B09CADC21F22BE1006F52FF /* ReusableCodeView.swift in Sources */,
 				8F1C144F21F10A450077279C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

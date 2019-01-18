@@ -9,13 +9,18 @@
 import Foundation
 
 struct Card {
-    let name: String
+    let id: String
+    var name: String
     let types: [String]
-    let imageUrl: String
-    let set: String
+    var imageURL: String?
+    let mtgCodeSet: String
     
-    private enum CodingKeys: CodingKey {
-        case name, types, imageUrl, set
+    private enum CodingKeys: String, CodingKey {
+        case id
+        case name
+        case types
+        case mtgCodeSet = "set"
+        case imageURL = "imageUrl"
     }
 }
 
@@ -23,10 +28,11 @@ extension Card: Decodable {
     init(from decoder: Decoder) throws {
         let cardContainer = try decoder.container(keyedBy: CodingKeys.self)
         
+        id = try cardContainer.decode(String.self, forKey: .id)
         name = try cardContainer.decode(String.self, forKey: .name)
         types = try cardContainer.decode([String].self, forKey: .types)
-        imageUrl = try cardContainer.decode(String.self, forKey: .imageUrl)
-        set = try cardContainer.decode(String.self, forKey: .set)
+        imageURL = try cardContainer.decodeIfPresent(String.self, forKey: .imageURL)
+        mtgCodeSet = try cardContainer.decode(String.self, forKey: .mtgCodeSet)
         
     }
 }

@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Set: Decodable {
+struct MTGSet: Decodable {
     let name: String
     let code: String
     var releaseDate: Date?
@@ -18,7 +18,7 @@ struct Set: Decodable {
     }
 }
 
-extension Set {
+extension MTGSet {
     init(from decoder: Decoder) throws {
         let setsContainer = try decoder.container(keyedBy: CodingKeys.self)
         let name = try setsContainer.decode(String.self, forKey: .name)
@@ -34,14 +34,14 @@ extension Set {
     }
 }
 
-extension Set: Equatable {
-    static func ==(lhs: Set, rhs: Set) -> Bool {
+extension MTGSet: Equatable {
+    static func ==(lhs: MTGSet, rhs: MTGSet) -> Bool {
         return lhs.code == rhs.code
     }
 }
 
-extension Set: Comparable {
-    static func < (lhs: Set, rhs: Set) -> Bool {
+extension MTGSet: Comparable {
+    static func < (lhs: MTGSet, rhs: MTGSet) -> Bool {
         guard let date1 = lhs.releaseDate, let date2 = rhs.releaseDate else {
             return false
         }

@@ -13,10 +13,10 @@ class ViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView.delegate = self
-        self.tableView.estimatedRowHeight = CGFloat(200)
+        self.tableView.estimatedRowHeight = CGFloat(50)
         self.tableView.rowHeight = UITableView.automaticDimension
         
-        self.tableView.register(SetCell.self, forCellReuseIdentifier: SetCell.identifier)
+        self.tableView.register(SetTableViewCell.self, forCellReuseIdentifier: SetTableViewCell.identifier)
     }
     
     override init(style: UITableView.Style) {
@@ -30,8 +30,8 @@ class ViewController: UITableViewController {
 
 extension ViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: SetCell.identifier) as? SetCell else {
-            return SetCell(frame: .zero)
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: SetTableViewCell.identifier) as? SetTableViewCell else {
+            return SetTableViewCell(frame: .zero)
         }
         
         return cell

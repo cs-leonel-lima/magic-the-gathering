@@ -56,3 +56,9 @@ extension Card: Equatable {
         return lhs.name == rhs.name
     }
 }
+
+extension Card {
+    static func mock() -> [Card] {
+        return [Card(id: "123", name: "Legolas", types: ["Elf"], imageURL: "ww.asdf.com", mtgCodeSet: "123121"), Card(id: "2342", name: "Aragorn", types: ["Human"], imageURL: "ww.asodifja.ocm", mtgCodeSet: "3243")]
+    }
+}

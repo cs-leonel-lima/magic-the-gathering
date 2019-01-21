@@ -1,5 +1,5 @@
 //
-//  SetCell.swift
+//  CardCollectionViewCell.swift
 //  magic-the-gathering
 //
 //  Created by adann.sergio.simoes on 21/01/2019.
@@ -8,8 +8,8 @@
 
 import UIKit
 
-class SetCell: UITableViewCell {
-    static let identifier = "SetTableCell"
+class CardCollectionViewCell: UICollectionViewCell {
+    static let identifier = "CardCollectionViewCell"
     
     let view1: UIView = {
         let view = UIView()
@@ -18,31 +18,29 @@ class SetCell: UITableViewCell {
         return view
     }()
     
-    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
-        super.init(style: style, reuseIdentifier: reuseIdentifier)
-        setupView()
-    }
-    
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
     
+    override init(frame: CGRect) {
+        super.init(frame: .zero)
+        setupView()
+    }
 }
 
-extension SetCell: CodeView {
+extension CardCollectionViewCell: CodeView {
     func buildViewHierarchy() {
-        addSubview(self.view1)
-        
+        addSubview(view1)
     }
     
     func setupConstraints() {
         view1.snp.makeConstraints { (make) in
             make.edges.equalTo(self.snp.edges)
-            make.height.equalTo(300)
+            make.height.equalTo(150)
+            make.width.equalTo(100)
         }
     }
     
-    func setupAdditionalConfigurations() {
-        
-    }
+    func setupAdditionalConfigurations() {}
+    
 }

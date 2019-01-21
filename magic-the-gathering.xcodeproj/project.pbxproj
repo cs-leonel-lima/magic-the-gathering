@@ -33,6 +33,8 @@
 		EF2DE92E21F240C700A0D25D /* cards-set-OVNT.json in Resources */ = {isa = PBXBuildFile; fileRef = EF2DE92521F240C700A0D25D /* cards-set-OVNT.json */; };
 		EF2DE93321F2422100A0D25D /* CardSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2DE93021F241CF00A0D25D /* CardSpec.swift */; };
 		EF2DE93521F2423100A0D25D /* MTGSetSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2DE93421F2423100A0D25D /* MTGSetSpec.swift */; };
+		EF4BCBA821F5FC1C007280F2 /* CardsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4BCBA721F5FC1C007280F2 /* CardsManager.swift */; };
+		EF4BCBAB21F601B0007280F2 /* CardsManagerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4BCBAA21F601B0007280F2 /* CardsManagerSpec.swift */; };
 		FDB04A0826B683BD5D5CD95D /* Pods_magic_the_gatheringTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E500CB7AFD10B11E601D63B /* Pods_magic_the_gatheringTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -87,6 +89,8 @@
 		EF2DE92521F240C700A0D25D /* cards-set-OVNT.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "cards-set-OVNT.json"; sourceTree = "<group>"; };
 		EF2DE93021F241CF00A0D25D /* CardSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSpec.swift; sourceTree = "<group>"; };
 		EF2DE93421F2423100A0D25D /* MTGSetSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTGSetSpec.swift; sourceTree = "<group>"; };
+		EF4BCBA721F5FC1C007280F2 /* CardsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsManager.swift; sourceTree = "<group>"; };
+		EF4BCBAA21F601B0007280F2 /* CardsManagerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsManagerSpec.swift; sourceTree = "<group>"; };
 		FB14EFA640FA67CF17951232 /* Pods-magic-the-gatheringTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-magic-the-gatheringTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-magic-the-gatheringTests/Pods-magic-the-gatheringTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -183,6 +187,7 @@
 		8F1C144D21F10A450077279C /* magic-the-gathering */ = {
 			isa = PBXGroup;
 			children = (
+				EF4BCBA621F5FC09007280F2 /* Managers */,
 				2B09CAD721F22A4F006F52FF /* Presentation */,
 				8F1C144E21F10A450077279C /* AppDelegate.swift */,
 				8F1C145021F10A450077279C /* ViewController.swift */,
@@ -200,6 +205,7 @@
 		8F1C146221F10A470077279C /* magic-the-gatheringTests */ = {
 			isa = PBXGroup;
 			children = (
+				EF4BCBA921F6019A007280F2 /* Managers */,
 				EF0DDA6A21F2560300664E61 /* Utils */,
 				8F1C146521F10A470077279C /* Info.plist */,
 				EF2DE93221F241D600A0D25D /* Model */,
@@ -270,6 +276,22 @@
 				EF2DE93421F2423100A0D25D /* MTGSetSpec.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		EF4BCBA621F5FC09007280F2 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				EF4BCBA721F5FC1C007280F2 /* CardsManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		EF4BCBA921F6019A007280F2 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				EF4BCBAA21F601B0007280F2 /* CardsManagerSpec.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -555,6 +577,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B09CADA21F22A72006F52FF /* CodeView.swift in Sources */,
+				EF4BCBA821F5FC1C007280F2 /* CardsManager.swift in Sources */,
 				EF2DE91F21F2278D00A0D25D /* MTGSet.swift in Sources */,
 				8F1C145121F10A450077279C /* ViewController.swift in Sources */,
 				2B09CADC21F22BE1006F52FF /* ReusableCodeView.swift in Sources */,
@@ -568,6 +591,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF4BCBAB21F601B0007280F2 /* CardsManagerSpec.swift in Sources */,
 				EF0DDA6C21F2562D00664E61 /* JSONHelper.swift in Sources */,
 				EF2DE93521F2423100A0D25D /* MTGSetSpec.swift in Sources */,
 				EF2DE93321F2422100A0D25D /* CardSpec.swift in Sources */,

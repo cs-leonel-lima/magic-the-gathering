@@ -36,7 +36,15 @@ class CardsManagerSpec: QuickSpec {
                     let cardsByCategory = manager.categorize(cards)
                     expect(cardsByCategory).toNot(beNil())
                 }
-                
+            }
+            
+            it("Should match cards with the search text") {
+                if let data = cardsDataMock, let cards = Card.initializeCardsArray(from: data) {
+                    let manager = CardsManager(cards: cards)
+                    let searchExample = manager.searchCards(with: "angel")
+                    print(searchExample)
+                    expect(searchExample).toNot(beNil())
+                }
             }
         }
     }

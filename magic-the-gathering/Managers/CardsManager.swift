@@ -35,4 +35,11 @@ class CardsManager {
         return cardsCategorized
     }
     
+    func searchCards(with text: String) -> [Card] {
+        let filteredCards = cards.filter { card in
+            return card.name.lowercased().contains(text.lowercased())
+        }
+        return filteredCards
+    }
+    
 }

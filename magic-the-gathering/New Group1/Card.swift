@@ -10,7 +10,7 @@ import Foundation
 
 struct Card {
     let id: String
-    var name: String
+    let name: String
     let types: [String]
     var imageURL: String?
     let mtgCodeSet: String

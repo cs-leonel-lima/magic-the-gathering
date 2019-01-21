@@ -1,0 +1,1287 @@
+{
+    "cards": [
+        {
+            "name": "Black Lotus",
+            "manaCost": "{0}",
+            "cmc": 0,
+            "colors": [],
+            "colorIdentity": [],
+            "type": "Artifact",
+            "supertypes": [],
+            "types": [
+                "Artifact"
+            ],
+            "subtypes": [],
+            "rarity": "Rare",
+            "set": "OVNT",
+            "setName": "Vintage Championship",
+            "text": "{T}, Sacrifice Black Lotus: Add three mana of any one color.",
+            "flavor": "2003 Vintage Championship Winner",
+            "artist": "Christopher Rush",
+            "number": "2003",
+            "layout": "normal",
+            "variations": [
+                "d26bb582-093b-5202-b01f-c25cfb3898c5"
+            ],
+            "starter": true,
+            "rulings": [],
+            "foreignNames": [],
+            "printings": [
+                "2ED",
+                "CED",
+                "CEI",
+                "LEA",
+                "LEB",
+                "OVNT",
+                "PRM",
+                "VMA"
+            ],
+            "legalities": [
+                {
+                    "format": "1v1",
+                    "legality": "Banned"
+                },
+                {
+                    "format": "Commander",
+                    "legality": "Banned"
+                },
+                {
+                    "format": "Duel",
+                    "legality": "Banned"
+                },
+                {
+                    "format": "Legacy",
+                    "legality": "Banned"
+                },
+                {
+                    "format": "Vintage",
+                    "legality": "Restricted"
+                }
+            ],
+            "id": "d53178a9-05d5-5798-b702-4a9654f0aa15"
+        },
+        {
+            "name": "Timetwister",
+            "manaCost": "{2}{U}",
+            "cmc": 3,
+            "colors": [
+                "Blue"
+            ],
+            "colorIdentity": [
+                "U"
+            ],
+            "type": "Sorcery",
+            "supertypes": [],
+            "types": [
+                "Sorcery"
+            ],
+            "subtypes": [],
+            "rarity": "Rare",
+            "set": "OVNT",
+            "setName": "Vintage Championship",
+            "text": "Each player shuffles their hand and graveyard into their library, then draws seven cards. (Then put Timetwister into its owner's graveyard.)",
+            "flavor": "2004 Vintage Championship Winner",
+            "artist": "Mark Tedin",
+            "number": "2004",
+            "layout": "normal",
+            "variations": [
+                "45f7522f-7f0b-5808-accf-0bc9c6ef65ea",
+                "42e8551d-28b2-5cf3-b9f7-455b3ca3fe8f"
+            ],
+            "starter": true,
+            "rulings": [
+                {
+                    "date": "2013-07-01",
+                    "text": "This card won’t be put into your graveyard until after it’s finished resolving, which means it won’t be shuffled into your library as part of its own effect."
+                }
+            ],
+            "foreignNames": [],
+            "printings": [
+                "2ED",
+                "CED",
+                "CEI",
+                "LEA",
+                "LEB",
+                "OVNT",
+                "PRM",
+                "VMA"
+            ],
+            "legalities": [
+                {
+                    "format": "1v1",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Commander",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Duel",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Legacy",
+                    "legality": "Banned"
+                },
+                {
+                    "format": "Vintage",
+                    "legality": "Restricted"
+                }
+            ],
+            "id": "abcbaac7-144e-5a0b-ad62-85953c1bb070"
+        },
+        {
+            "name": "Ancestral Recall",
+            "manaCost": "{U}",
+            "cmc": 1,
+            "colors": [
+                "Blue"
+            ],
+            "colorIdentity": [
+                "U"
+            ],
+            "type": "Instant",
+            "supertypes": [],
+            "types": [
+                "Instant"
+            ],
+            "subtypes": [],
+            "rarity": "Rare",
+            "set": "OVNT",
+            "setName": "Vintage Championship",
+            "text": "Target player draws three cards.",
+            "flavor": "2005 Vintage Championship Winner",
+            "artist": "Mark Poole",
+            "number": "2005",
+            "layout": "normal",
+            "variations": [
+                "796371b6-215d-5f70-8c83-24f5e23e2abe",
+                "3b93f4b3-8ede-53f2-88ce-721c5ffd0234"
+            ],
+            "starter": true,
+            "rulings": [],
+            "foreignNames": [],
+            "printings": [
+                "2ED",
+                "CED",
+                "CEI",
+                "LEA",
+                "LEB",
+                "OVNT",
+                "PRM",
+                "VMA"
+            ],
+            "legalities": [
+                {
+                    "format": "1v1",
+                    "legality": "Banned"
+                },
+                {
+                    "format": "Commander",
+                    "legality": "Banned"
+                },
+                {
+                    "format": "Duel",
+                    "legality": "Banned"
+                },
+                {
+                    "format": "Legacy",
+                    "legality": "Banned"
+                },
+                {
+                    "format": "Vintage",
+                    "legality": "Restricted"
+                }
+            ],
+            "id": "3fed36e4-3363-5c81-8ead-abcacd14a4ad"
+        },
+        {
+            "name": "Mox Pearl",
+            "manaCost": "{0}",
+            "cmc": 0,
+            "colors": [],
+            "colorIdentity": [
+                "W"
+            ],
+            "type": "Artifact",
+            "supertypes": [],
+            "types": [
+                "Artifact"
+            ],
+            "subtypes": [],
+            "rarity": "Rare",
+            "set": "OVNT",
+            "setName": "Vintage Championship",
+            "text": "{T}: Add {W}.",
+            "flavor": "2006 Vintage Championship Winner",
+            "artist": "Volkan Baga",
+            "number": "2006",
+            "layout": "normal",
+            "variations": [
+                "af2be987-0f87-503f-b025-f2c375d2d170"
+            ],
+            "starter": true,
+            "rulings": [],
+            "foreignNames": [],
+            "printings": [
+                "2ED",
+                "CED",
+                "CEI",
+                "LEA",
+                "LEB",
+                "OVNT",
+                "PRM",
+                "VMA"
+            ],
+            "legalities": [
+                {
+                    "format": "1v1",
+                    "legality": "Banned"
+                },
+                {
+                    "format": "Commander",
+                    "legality": "Banned"
+                },
+                {
+                    "format": "Duel",
+                    "legality": "Banned"
+                },
+                {
+                    "format": "Legacy",
+                    "legality": "Banned"
+                },
+                {
+                    "format": "Vintage",
+                    "legality": "Restricted"
+                }
+            ],
+            "id": "93ebd25a-ec56-5f63-8f7b-c8d02c5b9c73"
+        },
+        {
+            "name": "Mox Jet",
+            "manaCost": "{0}",
+            "cmc": 0,
+            "colors": [],
+            "colorIdentity": [
+                "B"
+            ],
+            "type": "Artifact",
+            "supertypes": [],
+            "types": [
+                "Artifact"
+            ],
+            "subtypes": [],
+            "rarity": "Rare",
+            "set": "OVNT",
+            "setName": "Vintage Championship",
+            "text": "{T}: Add {B}.",
+            "flavor": "2007 Vintage Championship Winner",
+            "artist": "Volkan Baga",
+            "number": "2007",
+            "layout": "normal",
+            "variations": [
+                "7e772963-9b04-5660-9803-0e9f54d1eece"
+            ],
+            "starter": true,
+            "rulings": [],
+            "foreignNames": [],
+            "printings": [
+                "2ED",
+                "CED",
+                "CEI",
+                "LEA",
+                "LEB",
+                "OVNT",
+                "PRM",
+                "VMA"
+            ],
+            "legalities": [
+                {
+                    "format": "1v1",
+                    "legality": "Banned"
+                },
+                {
+                    "format": "Commander",
+                    "legality": "Banned"
+                },
+                {
+                    "format": "Duel",
+                    "legality": "Banned"
+                },
+                {
+                    "format": "Legacy",
+                    "legality": "Banned"
+                },
+                {
+                    "format": "Vintage",
+                    "legality": "Restricted"
+                }
+            ],
+            "id": "27c485f7-056c-5c7f-9f72-f28346e02149"
+        },
+        {
+            "name": "Mox Ruby",
+            "manaCost": "{0}",
+            "cmc": 0,
+            "colors": [],
+            "colorIdentity": [
+                "R"
+            ],
+            "type": "Artifact",
+            "supertypes": [],
+            "types": [
+                "Artifact"
+            ],
+            "subtypes": [],
+            "rarity": "Rare",
+            "set": "OVNT",
+            "setName": "Vintage Championship",
+            "text": "{T}: Add {R}.",
+            "flavor": "2008 Vintage Championship Winner",
+            "artist": "Volkan Baga",
+            "number": "2008",
+            "layout": "normal",
+            "variations": [
+                "6857f0d3-7221-5596-aa00-cdfcd72dd5f0"
+            ],
+            "starter": true,
+            "rulings": [],
+            "foreignNames": [],
+            "printings": [
+                "2ED",
+                "CED",
+                "CEI",
+                "LEA",
+                "LEB",
+                "OVNT",
+                "PRM",
+                "VMA"
+            ],
+            "legalities": [
+                {
+                    "format": "1v1",
+                    "legality": "Banned"
+                },
+                {
+                    "format": "Commander",
+                    "legality": "Banned"
+                },
+                {
+                    "format": "Duel",
+                    "legality": "Banned"
+                },
+                {
+                    "format": "Legacy",
+                    "legality": "Banned"
+                },
+                {
+                    "format": "Vintage",
+                    "legality": "Restricted"
+                }
+            ],
+            "id": "f3bec04b-1ec0-5ae3-aead-6dda1a4a0c03"
+        },
+        {
+            "name": "Mox Emerald",
+            "manaCost": "{0}",
+            "cmc": 0,
+            "colors": [],
+            "colorIdentity": [
+                "G"
+            ],
+            "type": "Artifact",
+            "supertypes": [],
+            "types": [
+                "Artifact"
+            ],
+            "subtypes": [],
+            "rarity": "Rare",
+            "set": "OVNT",
+            "setName": "Vintage Championship",
+            "text": "{T}: Add {G}.",
+            "flavor": "2009 Vintage Championship Winner",
+            "artist": "Volkan Baga",
+            "number": "2009",
+            "layout": "normal",
+            "variations": [
+                "5927701d-34b6-5f77-9970-6f03e1b69b36"
+            ],
+            "starter": true,
+            "rulings": [],
+            "foreignNames": [],
+            "printings": [
+                "2ED",
+                "CED",
+                "CEI",
+                "LEA",
+                "LEB",
+                "OVNT",
+                "PRM",
+                "VMA"
+            ],
+            "legalities": [
+                {
+                    "format": "1v1",
+                    "legality": "Banned"
+                },
+                {
+                    "format": "Commander",
+                    "legality": "Banned"
+                },
+                {
+                    "format": "Duel",
+                    "legality": "Banned"
+                },
+                {
+                    "format": "Legacy",
+                    "legality": "Banned"
+                },
+                {
+                    "format": "Vintage",
+                    "legality": "Restricted"
+                }
+            ],
+            "id": "1782fd09-80c9-5835-bec2-01a27c8587b6"
+        },
+        {
+            "name": "Mox Sapphire",
+            "manaCost": "{0}",
+            "cmc": 0,
+            "colors": [],
+            "colorIdentity": [
+                "U"
+            ],
+            "type": "Artifact",
+            "supertypes": [],
+            "types": [
+                "Artifact"
+            ],
+            "subtypes": [],
+            "rarity": "Rare",
+            "set": "OVNT",
+            "setName": "Vintage Championship",
+            "text": "{T}: Add {U}.",
+            "flavor": "2010 Vintage Championship Winner",
+            "artist": "Volkan Baga",
+            "number": "2010",
+            "layout": "normal",
+            "variations": [
+                "ffd08388-1fd8-53a9-8076-11a8909b5efd"
+            ],
+            "starter": true,
+            "rulings": [],
+            "foreignNames": [],
+            "printings": [
+                "2ED",
+                "CED",
+                "CEI",
+                "LEA",
+                "LEB",
+                "OVNT",
+                "PRM",
+                "VMA"
+            ],
+            "legalities": [
+                {
+                    "format": "1v1",
+                    "legality": "Banned"
+                },
+                {
+                    "format": "Commander",
+                    "legality": "Banned"
+                },
+                {
+                    "format": "Duel",
+                    "legality": "Banned"
+                },
+                {
+                    "format": "Legacy",
+                    "legality": "Banned"
+                },
+                {
+                    "format": "Vintage",
+                    "legality": "Restricted"
+                }
+            ],
+            "id": "ac524ad5-b709-57d5-a159-26fcb1f841f6"
+        },
+        {
+            "name": "Time Walk",
+            "manaCost": "{1}{U}",
+            "cmc": 2,
+            "colors": [
+                "Blue"
+            ],
+            "colorIdentity": [
+                "U"
+            ],
+            "type": "Sorcery",
+            "supertypes": [],
+            "types": [
+                "Sorcery"
+            ],
+            "subtypes": [],
+            "rarity": "Rare",
+            "set": "OVNT",
+            "setName": "Vintage Championship",
+            "text": "Take an extra turn after this one.",
+            "flavor": "2011 Vintage Championship Winner",
+            "artist": "Chris Rahn",
+            "number": "2011",
+            "layout": "normal",
+            "variations": [
+                "eaa48444-b869-5776-b75a-50b084d17714"
+            ],
+            "starter": true,
+            "rulings": [
+                {
+                    "date": "2004-10-04",
+                    "text": "If multiple “extra turn” effects resolve in the same turn, take them in the reverse of the order that the effects resolved."
+                }
+            ],
+            "foreignNames": [],
+            "printings": [
+                "2ED",
+                "CED",
+                "CEI",
+                "LEA",
+                "LEB",
+                "OVNT",
+                "PRM",
+                "VMA"
+            ],
+            "legalities": [
+                {
+                    "format": "1v1",
+                    "legality": "Banned"
+                },
+                {
+                    "format": "Commander",
+                    "legality": "Banned"
+                },
+                {
+                    "format": "Duel",
+                    "legality": "Banned"
+                },
+                {
+                    "format": "Legacy",
+                    "legality": "Banned"
+                },
+                {
+                    "format": "Vintage",
+                    "legality": "Restricted"
+                }
+            ],
+            "id": "7ca7d47f-2670-5229-950b-9480a1cd00cb"
+        },
+        {
+            "name": "Timetwister",
+            "manaCost": "{2}{U}",
+            "cmc": 3,
+            "colors": [
+                "Blue"
+            ],
+            "colorIdentity": [
+                "U"
+            ],
+            "type": "Sorcery",
+            "supertypes": [],
+            "types": [
+                "Sorcery"
+            ],
+            "subtypes": [],
+            "rarity": "Rare",
+            "set": "OVNT",
+            "setName": "Vintage Championship",
+            "text": "Each player shuffles their hand and graveyard into their library, then draws seven cards. (Then put Timetwister into its owner's graveyard.)",
+            "flavor": "2012 Vintage Championship Winner",
+            "artist": "Matt Stewart",
+            "number": "2012",
+            "layout": "normal",
+            "variations": [
+                "abcbaac7-144e-5a0b-ad62-85953c1bb070",
+                "42e8551d-28b2-5cf3-b9f7-455b3ca3fe8f"
+            ],
+            "starter": true,
+            "rulings": [
+                {
+                    "date": "2013-07-01",
+                    "text": "This card won’t be put into your graveyard until after it’s finished resolving, which means it won’t be shuffled into your library as part of its own effect."
+                }
+            ],
+            "foreignNames": [],
+            "printings": [
+                "2ED",
+                "CED",
+                "CEI",
+                "LEA",
+                "LEB",
+                "OVNT",
+                "PRM",
+                "VMA"
+            ],
+            "legalities": [
+                {
+                    "format": "1v1",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Commander",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Duel",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Legacy",
+                    "legality": "Banned"
+                },
+                {
+                    "format": "Vintage",
+                    "legality": "Restricted"
+                }
+            ],
+            "id": "45f7522f-7f0b-5808-accf-0bc9c6ef65ea"
+        },
+        {
+            "name": "Ancestral Recall",
+            "manaCost": "{U}",
+            "cmc": 1,
+            "colors": [
+                "Blue"
+            ],
+            "colorIdentity": [
+                "U"
+            ],
+            "type": "Instant",
+            "supertypes": [],
+            "types": [
+                "Instant"
+            ],
+            "subtypes": [],
+            "rarity": "Rare",
+            "set": "OVNT",
+            "setName": "Vintage Championship",
+            "text": "Target player draws three cards.",
+            "flavor": "2013 Vintage Championship Winner",
+            "artist": "Ryan Pancoast",
+            "number": "2013",
+            "layout": "normal",
+            "variations": [
+                "3fed36e4-3363-5c81-8ead-abcacd14a4ad",
+                "3b93f4b3-8ede-53f2-88ce-721c5ffd0234"
+            ],
+            "starter": true,
+            "rulings": [],
+            "foreignNames": [],
+            "printings": [
+                "2ED",
+                "CED",
+                "CEI",
+                "LEA",
+                "LEB",
+                "OVNT",
+                "PRM",
+                "VMA"
+            ],
+            "legalities": [
+                {
+                    "format": "1v1",
+                    "legality": "Banned"
+                },
+                {
+                    "format": "Commander",
+                    "legality": "Banned"
+                },
+                {
+                    "format": "Duel",
+                    "legality": "Banned"
+                },
+                {
+                    "format": "Legacy",
+                    "legality": "Banned"
+                },
+                {
+                    "format": "Vintage",
+                    "legality": "Restricted"
+                }
+            ],
+            "id": "796371b6-215d-5f70-8c83-24f5e23e2abe"
+        },
+        {
+            "name": "Mox Pearl",
+            "manaCost": "{0}",
+            "cmc": 0,
+            "colors": [],
+            "colorIdentity": [
+                "W"
+            ],
+            "type": "Artifact",
+            "supertypes": [],
+            "types": [
+                "Artifact"
+            ],
+            "subtypes": [],
+            "rarity": "Mythic",
+            "set": "OVNT",
+            "setName": "Vintage Championship",
+            "text": "{T}: Add {W}.",
+            "flavor": "2014 Vintage Championship Winner",
+            "artist": "Raoul Vitale",
+            "number": "2014",
+            "layout": "normal",
+            "variations": [
+                "93ebd25a-ec56-5f63-8f7b-c8d02c5b9c73"
+            ],
+            "starter": true,
+            "rulings": [],
+            "foreignNames": [],
+            "printings": [
+                "2ED",
+                "CED",
+                "CEI",
+                "LEA",
+                "LEB",
+                "OVNT",
+                "PRM",
+                "VMA"
+            ],
+            "legalities": [
+                {
+                    "format": "1v1",
+                    "legality": "Banned"
+                },
+                {
+                    "format": "Commander",
+                    "legality": "Banned"
+                },
+                {
+                    "format": "Duel",
+                    "legality": "Banned"
+                },
+                {
+                    "format": "Legacy",
+                    "legality": "Banned"
+                },
+                {
+                    "format": "Vintage",
+                    "legality": "Restricted"
+                }
+            ],
+            "id": "af2be987-0f87-503f-b025-f2c375d2d170"
+        },
+        {
+            "name": "Mox Emerald",
+            "manaCost": "{0}",
+            "cmc": 0,
+            "colors": [],
+            "colorIdentity": [
+                "G"
+            ],
+            "type": "Artifact",
+            "supertypes": [],
+            "types": [
+                "Artifact"
+            ],
+            "subtypes": [],
+            "rarity": "Mythic",
+            "set": "OVNT",
+            "setName": "Vintage Championship",
+            "text": "{T}: Add {G}.",
+            "flavor": "2015 Vintage Championship Winner",
+            "artist": "Raoul Vitale",
+            "number": "2015",
+            "layout": "normal",
+            "variations": [
+                "1782fd09-80c9-5835-bec2-01a27c8587b6"
+            ],
+            "starter": true,
+            "rulings": [],
+            "foreignNames": [],
+            "printings": [
+                "2ED",
+                "CED",
+                "CEI",
+                "LEA",
+                "LEB",
+                "OVNT",
+                "PRM",
+                "VMA"
+            ],
+            "legalities": [
+                {
+                    "format": "1v1",
+                    "legality": "Banned"
+                },
+                {
+                    "format": "Commander",
+                    "legality": "Banned"
+                },
+                {
+                    "format": "Duel",
+                    "legality": "Banned"
+                },
+                {
+                    "format": "Legacy",
+                    "legality": "Banned"
+                },
+                {
+                    "format": "Vintage",
+                    "legality": "Restricted"
+                }
+            ],
+            "id": "5927701d-34b6-5f77-9970-6f03e1b69b36"
+        },
+        {
+            "name": "Mox Jet",
+            "manaCost": "{0}",
+            "cmc": 0,
+            "colors": [],
+            "colorIdentity": [
+                "B"
+            ],
+            "type": "Artifact",
+            "supertypes": [],
+            "types": [
+                "Artifact"
+            ],
+            "subtypes": [],
+            "rarity": "Mythic",
+            "set": "OVNT",
+            "setName": "Vintage Championship",
+            "text": "{T}: Add {B}.",
+            "flavor": "2016 European Vintage Champion",
+            "artist": "Raoul Vitale",
+            "number": "2016EU",
+            "layout": "normal",
+            "variations": [
+                "27c485f7-056c-5c7f-9f72-f28346e02149"
+            ],
+            "starter": true,
+            "rulings": [],
+            "foreignNames": [],
+            "printings": [
+                "2ED",
+                "CED",
+                "CEI",
+                "LEA",
+                "LEB",
+                "OVNT",
+                "PRM",
+                "VMA"
+            ],
+            "legalities": [
+                {
+                    "format": "1v1",
+                    "legality": "Banned"
+                },
+                {
+                    "format": "Commander",
+                    "legality": "Banned"
+                },
+                {
+                    "format": "Duel",
+                    "legality": "Banned"
+                },
+                {
+                    "format": "Legacy",
+                    "legality": "Banned"
+                },
+                {
+                    "format": "Vintage",
+                    "legality": "Restricted"
+                }
+            ],
+            "id": "7e772963-9b04-5660-9803-0e9f54d1eece"
+        },
+        {
+            "name": "Mox Sapphire",
+            "manaCost": "{0}",
+            "cmc": 0,
+            "colors": [],
+            "colorIdentity": [
+                "U"
+            ],
+            "type": "Artifact",
+            "supertypes": [],
+            "types": [
+                "Artifact"
+            ],
+            "subtypes": [],
+            "rarity": "Mythic",
+            "set": "OVNT",
+            "setName": "Vintage Championship",
+            "text": "{T}: Add {U}.",
+            "flavor": "2016 North American Vintage Champion",
+            "artist": "Raoul Vitale",
+            "number": "2016NA",
+            "layout": "normal",
+            "variations": [
+                "ac524ad5-b709-57d5-a159-26fcb1f841f6"
+            ],
+            "starter": true,
+            "rulings": [],
+            "foreignNames": [],
+            "printings": [
+                "2ED",
+                "CED",
+                "CEI",
+                "LEA",
+                "LEB",
+                "OVNT",
+                "PRM",
+                "VMA"
+            ],
+            "legalities": [
+                {
+                    "format": "1v1",
+                    "legality": "Banned"
+                },
+                {
+                    "format": "Commander",
+                    "legality": "Banned"
+                },
+                {
+                    "format": "Duel",
+                    "legality": "Banned"
+                },
+                {
+                    "format": "Legacy",
+                    "legality": "Banned"
+                },
+                {
+                    "format": "Vintage",
+                    "legality": "Restricted"
+                }
+            ],
+            "id": "ffd08388-1fd8-53a9-8076-11a8909b5efd"
+        },
+        {
+            "name": "Mox Ruby",
+            "manaCost": "{0}",
+            "cmc": 0,
+            "colors": [],
+            "colorIdentity": [
+                "R"
+            ],
+            "type": "Artifact",
+            "supertypes": [],
+            "types": [
+                "Artifact"
+            ],
+            "subtypes": [],
+            "rarity": "Mythic",
+            "set": "OVNT",
+            "setName": "Vintage Championship",
+            "text": "{T}: Add {R}.",
+            "flavor": "2017 European Vintage Champion",
+            "artist": "Raoul Vitale",
+            "number": "2017EU",
+            "layout": "normal",
+            "variations": [
+                "f3bec04b-1ec0-5ae3-aead-6dda1a4a0c03"
+            ],
+            "starter": true,
+            "rulings": [],
+            "foreignNames": [],
+            "printings": [
+                "2ED",
+                "CED",
+                "CEI",
+                "LEA",
+                "LEB",
+                "OVNT",
+                "PRM",
+                "VMA"
+            ],
+            "legalities": [
+                {
+                    "format": "1v1",
+                    "legality": "Banned"
+                },
+                {
+                    "format": "Commander",
+                    "legality": "Banned"
+                },
+                {
+                    "format": "Duel",
+                    "legality": "Banned"
+                },
+                {
+                    "format": "Legacy",
+                    "legality": "Banned"
+                },
+                {
+                    "format": "Vintage",
+                    "legality": "Restricted"
+                }
+            ],
+            "id": "6857f0d3-7221-5596-aa00-cdfcd72dd5f0"
+        },
+        {
+            "name": "Black Lotus",
+            "manaCost": "{0}",
+            "cmc": 0,
+            "colors": [],
+            "colorIdentity": [],
+            "type": "Artifact",
+            "supertypes": [],
+            "types": [
+                "Artifact"
+            ],
+            "subtypes": [],
+            "rarity": "Mythic",
+            "set": "OVNT",
+            "setName": "Vintage Championship",
+            "text": "{T}, Sacrifice Black Lotus: Add three mana of any one color.",
+            "flavor": "2017 North American Vintage Champion",
+            "artist": "Steven Belledin",
+            "number": "2017NA",
+            "layout": "normal",
+            "variations": [
+                "d53178a9-05d5-5798-b702-4a9654f0aa15"
+            ],
+            "starter": true,
+            "rulings": [],
+            "foreignNames": [],
+            "printings": [
+                "2ED",
+                "CED",
+                "CEI",
+                "LEA",
+                "LEB",
+                "OVNT",
+                "PRM",
+                "VMA"
+            ],
+            "legalities": [
+                {
+                    "format": "1v1",
+                    "legality": "Banned"
+                },
+                {
+                    "format": "Commander",
+                    "legality": "Banned"
+                },
+                {
+                    "format": "Duel",
+                    "legality": "Banned"
+                },
+                {
+                    "format": "Legacy",
+                    "legality": "Banned"
+                },
+                {
+                    "format": "Vintage",
+                    "legality": "Restricted"
+                }
+            ],
+            "id": "d26bb582-093b-5202-b01f-c25cfb3898c5"
+        },
+        {
+            "name": "Ancestral Recall",
+            "manaCost": "{U}",
+            "cmc": 1,
+            "colors": [
+                "Blue"
+            ],
+            "colorIdentity": [
+                "U"
+            ],
+            "type": "Instant",
+            "supertypes": [],
+            "types": [
+                "Instant"
+            ],
+            "subtypes": [],
+            "rarity": "Mythic",
+            "set": "OVNT",
+            "setName": "Vintage Championship",
+            "text": "Target player draws three cards.",
+            "flavor": "2018 Europe Vintage Champion",
+            "artist": "Raoul Vitale",
+            "number": "2018",
+            "layout": "normal",
+            "variations": [
+                "3fed36e4-3363-5c81-8ead-abcacd14a4ad",
+                "796371b6-215d-5f70-8c83-24f5e23e2abe"
+            ],
+            "starter": true,
+            "rulings": [],
+            "foreignNames": [],
+            "printings": [
+                "2ED",
+                "CED",
+                "CEI",
+                "LEA",
+                "LEB",
+                "OVNT",
+                "PRM",
+                "VMA"
+            ],
+            "legalities": [
+                {
+                    "format": "1v1",
+                    "legality": "Banned"
+                },
+                {
+                    "format": "Commander",
+                    "legality": "Banned"
+                },
+                {
+                    "format": "Duel",
+                    "legality": "Banned"
+                },
+                {
+                    "format": "Legacy",
+                    "legality": "Banned"
+                },
+                {
+                    "format": "Vintage",
+                    "legality": "Restricted"
+                }
+            ],
+            "id": "3b93f4b3-8ede-53f2-88ce-721c5ffd0234"
+        },
+        {
+            "name": "Timetwister",
+            "manaCost": "{2}{U}",
+            "cmc": 3,
+            "colors": [
+                "Blue"
+            ],
+            "colorIdentity": [
+                "U"
+            ],
+            "type": "Sorcery",
+            "supertypes": [],
+            "types": [
+                "Sorcery"
+            ],
+            "subtypes": [],
+            "rarity": "Mythic",
+            "set": "OVNT",
+            "setName": "Vintage Championship",
+            "text": "Each player shuffles their hand and graveyard into their library, then draws seven cards. (Then put Timetwister into its owner's graveyard.)",
+            "flavor": "2018 Asia Vintage Champion",
+            "artist": "Ralph Horsley",
+            "number": "2018A",
+            "layout": "normal",
+            "variations": [
+                "abcbaac7-144e-5a0b-ad62-85953c1bb070",
+                "45f7522f-7f0b-5808-accf-0bc9c6ef65ea"
+            ],
+            "starter": true,
+            "rulings": [
+                {
+                    "date": "2013-07-01",
+                    "text": "This card won’t be put into your graveyard until after it’s finished resolving, which means it won’t be shuffled into your library as part of its own effect."
+                }
+            ],
+            "foreignNames": [],
+            "printings": [
+                "2ED",
+                "CED",
+                "CEI",
+                "LEA",
+                "LEB",
+                "OVNT",
+                "PRM",
+                "VMA"
+            ],
+            "legalities": [
+                {
+                    "format": "1v1",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Commander",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Duel",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Legacy",
+                    "legality": "Banned"
+                },
+                {
+                    "format": "Vintage",
+                    "legality": "Restricted"
+                }
+            ],
+            "id": "42e8551d-28b2-5cf3-b9f7-455b3ca3fe8f"
+        },
+        {
+            "name": "Time Walk",
+            "manaCost": "{1}{U}",
+            "cmc": 2,
+            "colors": [
+                "Blue"
+            ],
+            "colorIdentity": [
+                "U"
+            ],
+            "type": "Sorcery",
+            "supertypes": [],
+            "types": [
+                "Sorcery"
+            ],
+            "subtypes": [],
+            "rarity": "Mythic",
+            "set": "OVNT",
+            "setName": "Vintage Championship",
+            "text": "Take an extra turn after this one.",
+            "flavor": "2018 North America Vintage Championship",
+            "artist": "Chris Seaman",
+            "number": "2018NA",
+            "layout": "normal",
+            "variations": [
+                "7ca7d47f-2670-5229-950b-9480a1cd00cb"
+            ],
+            "starter": true,
+            "rulings": [
+                {
+                    "date": "2004-10-04",
+                    "text": "If multiple “extra turn” effects resolve in the same turn, take them in the reverse of the order that the effects resolved."
+                }
+            ],
+            "foreignNames": [],
+            "printings": [
+                "2ED",
+                "CED",
+                "CEI",
+                "LEA",
+                "LEB",
+                "OVNT",
+                "PRM",
+                "VMA"
+            ],
+            "legalities": [
+                {
+                    "format": "1v1",
+                    "legality": "Banned"
+                },
+                {
+                    "format": "Commander",
+                    "legality": "Banned"
+                },
+                {
+                    "format": "Duel",
+                    "legality": "Banned"
+                },
+                {
+                    "format": "Legacy",
+                    "legality": "Banned"
+                },
+                {
+                    "format": "Vintage",
+                    "legality": "Restricted"
+                }
+            ],
+            "id": "eaa48444-b869-5776-b75a-50b084d17714"
+        }
+    ]
+}

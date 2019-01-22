@@ -17,9 +17,9 @@ class SetTableViewDatasource: NSObject, ItemTableViewDataSource {
     
     required init(items: [MTGSet], tableView: UITableView, delegate: UITableViewDelegate) {
         self.items = items
+        super.init()
         self.tableView = tableView
         self.delegate = delegate
-        super.init()
         setupTableView()
         self.tableView?.register(SetTableViewCell.self, forCellReuseIdentifier: SetTableViewCell.identifier)
     }

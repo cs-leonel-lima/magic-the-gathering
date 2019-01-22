@@ -32,14 +32,13 @@ class CardCollectionView: UICollectionView {
     
     override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey: Any]?, context: UnsafeMutableRawPointer?) {
         self.layer.removeAllAnimations()
+        
         collectionHeightContraint = self.heightAnchor.constraint(equalToConstant: self.collectionViewLayout.collectionViewContentSize.height)
         self.collectionHeightContraint?.priority = UILayoutPriority(rawValue: 999)
         self.collectionHeightContraint?.isActive = true
 
-        UIView.animate(withDuration: 0.5) {
-            self.updateConstraints()
-            self.layoutIfNeeded()
-        }
+        self.updateConstraints()
+        self.layoutIfNeeded()
     }
     
 }

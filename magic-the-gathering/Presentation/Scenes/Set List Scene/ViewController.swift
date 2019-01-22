@@ -37,6 +37,11 @@ extension ViewController {
         return cell
     }
     
+    override func updateViewConstraints() {
+        super.updateViewConstraints()
+        
+    }
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 5
     }

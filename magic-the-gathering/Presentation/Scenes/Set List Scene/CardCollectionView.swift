@@ -9,16 +9,18 @@
 import UIKit
 
 class CardCollectionView: UICollectionView {
-    
     var didSelectCard: ((Int) -> Void)?
-    
+    var collectionHeightContraint: NSLayoutConstraint?
     var customDataSource: CardsCollectionViewDataSource?
     //swiftlint:disable weak_delegate
     lazy var customDelegate: CardsCollectionViewDelegate = CardsCollectionViewDelegate(delegate: self)
     //swiftlint:enable weak_delegate
+    
     override init(frame: CGRect, collectionViewLayout layout: UICollectionViewLayout) {
         super.init(frame: .zero, collectionViewLayout: layout)
         self.customDataSource = CardsCollectionViewDataSource(items: [], collectionView: self, delegate: self.customDelegate)
+        
+        self.addObserver(self, forKeyPath: "contentSize", options: NSKeyValueObservingOptions.new, context: nil)
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -27,6 +29,21 @@ class CardCollectionView: UICollectionView {
     
     func updateItems(cards: [Card]) {
         self.customDataSource?.updateItems(items: cards)
+    }
+    
+    override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey: Any]?, context: UnsafeMutableRawPointer?) {
+        self.layer.removeAllAnimations()
+//        self.collectionHeightContraint?.constant = self.contentSize.height
+        collectionHeightContraint = self.heightAnchor.constraint(equalToConstant: self.collectionViewLayout.collectionViewContentSize.height)
+        self.collectionHeightContraint?.priority = UILayoutPriority(rawValue: 999)
+        //self.collectionHeightContraint?.isActive = true
+        guard let heightConstraint = collectionHeightContraint else { return }
+        NSLayoutConstraint.activate([heightConstraint])
+        
+        UIView.animate(withDuration: 0.5) {
+            self.updateConstraints()
+            self.layoutIfNeeded()
+        }
     }
     
 }

@@ -19,7 +19,6 @@ class CardCollectionView: UICollectionView {
     override init(frame: CGRect, collectionViewLayout layout: UICollectionViewLayout) {
         super.init(frame: .zero, collectionViewLayout: layout)
         self.customDataSource = CardsCollectionViewDataSource(items: [], collectionView: self, delegate: self.customDelegate)
-        
         self.addObserver(self, forKeyPath: "contentSize", options: NSKeyValueObservingOptions.new, context: nil)
     }
     
@@ -33,7 +32,6 @@ class CardCollectionView: UICollectionView {
     
     override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey: Any]?, context: UnsafeMutableRawPointer?) {
         self.layer.removeAllAnimations()
-        self.collectionHeightContraint?.constant = self.contentSize.height
         collectionHeightContraint = self.heightAnchor.constraint(equalToConstant: self.collectionViewLayout.collectionViewContentSize.height)
         self.collectionHeightContraint?.priority = UILayoutPriority(rawValue: 999)
         self.collectionHeightContraint?.isActive = true

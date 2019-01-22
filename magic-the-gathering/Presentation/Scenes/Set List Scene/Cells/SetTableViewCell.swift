@@ -23,6 +23,7 @@ class SetTableViewCell: UITableViewCell {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         setupView()
         self.MTGSetCollectionView.updateItems(cards: Card.mock())
+        setupLayout()
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -40,11 +41,15 @@ extension SetTableViewCell: CodeView {
     func setupConstraints() {
         MTGSetCollectionView.snp.makeConstraints { (make) in
             make.edges.equalTo(self.snp.edges)
-            make.height.equalTo(MTGSetCollectionView.snp.height)
+           // make.height.equalTo(MTGSetCollectionView.snp.height)
         }
     }
     
-    func setupAdditionalConfigurations() {
-        
+    func setupAdditionalConfigurations() {}
+    
+    func setupLayout() {
+        self.contentView.frame.size.height = self.MTGSetCollectionView.contentSize.height
+        self.layoutIfNeeded()
+        self.MTGSetCollectionView.collectionViewLayout.invalidateLayout()
     }
 }

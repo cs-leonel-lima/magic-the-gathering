@@ -36,9 +36,6 @@ class SetTableViewDatasource: NSObject, ItemTableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: SetTableViewCell.identifier) as? SetTableViewCell else {
             return SetTableViewCell()
         }
-        cell.contentView.frame.size.height = cell.MTGSetCollectionView.contentSize.height
-        cell.layoutIfNeeded()
-        cell.MTGSetCollectionView.collectionViewLayout.invalidateLayout()
         return cell
     }
     

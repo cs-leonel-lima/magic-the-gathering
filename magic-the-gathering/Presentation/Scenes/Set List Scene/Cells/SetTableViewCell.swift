@@ -40,7 +40,7 @@ extension SetTableViewCell: CodeView {
     func setupConstraints() {
         MTGSetCollectionView.snp.makeConstraints { (make) in
             make.edges.equalTo(self.snp.edges)
-            make.height.equalTo(400)
+            make.height.equalTo(MTGSetCollectionView.snp.height)
         }
     }
     

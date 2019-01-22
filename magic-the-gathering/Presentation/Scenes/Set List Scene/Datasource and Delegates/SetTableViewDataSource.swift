@@ -38,6 +38,7 @@ class SetTableViewDatasource: NSObject, ItemTableViewDataSource {
         }
         cell.contentView.frame.size.height = cell.MTGSetCollectionView.contentSize.height
         cell.layoutIfNeeded()
+        cell.MTGSetCollectionView.collectionViewLayout.invalidateLayout()
         return cell
     }
     

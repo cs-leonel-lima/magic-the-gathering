@@ -36,8 +36,6 @@ extension CardCollectionViewCell: CodeView {
     func setupConstraints() {
         view1.snp.makeConstraints { (make) in
             make.edges.equalTo(self.snp.edges)
-            make.height.equalTo(150)
-            make.width.equalTo(100)
         }
     }
     

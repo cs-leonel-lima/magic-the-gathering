@@ -16,6 +16,9 @@ class CardCollectionViewCell: UICollectionViewCell {
         let view = UIImageView()
         view.translatesAutoresizingMaskIntoConstraints = false
         view.contentMode = .scaleAspectFit
+        view.layer.masksToBounds = true
+        //TODO: Implementar uma lista de corner radius pra cada device
+        view.layer.cornerRadius = UIScreen.main.bounds.height / 25
         return view
     }()
     

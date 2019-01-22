@@ -24,7 +24,7 @@ class CardsCollectionViewDataSource: NSObject, ItemCollectionViewDataSource {
         setupCollectionView()
         collectionView.register(CardCollectionViewCell.self,
                                 forCellWithReuseIdentifier: CardCollectionViewCell.identifier)
-        
+        collectionView.register(SetCustomHeader.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: SetCustomHeader.identifier)
     }
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
@@ -44,6 +44,25 @@ class CardsCollectionViewDataSource: NSObject, ItemCollectionViewDataSource {
             cell.setupContent(imageURL: url)
         }
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        switch kind {
+        case UICollectionView.elementKindSectionHeader:
+            guard let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier:
+                SetCustomHeader.identifier, for: indexPath) as? SetCustomHeader else {
+                    break
+            }
+            //TODO: get the correct type/category name
+            if let typeName = items[indexPath.section].types.first {
+                header.setupContent(categoryTitle: typeName)
+            }
+            return header
+        default:
+            break
+        }
+        
+        return UICollectionReusableView()
     }
     
     func updateItems(items: [Card]) {

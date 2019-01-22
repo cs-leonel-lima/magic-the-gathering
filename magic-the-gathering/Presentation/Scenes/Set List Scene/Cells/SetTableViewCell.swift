@@ -15,7 +15,7 @@ class SetTableViewCell: UITableViewCell {
         let collectionView = CardCollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout())
         collectionView.translatesAutoresizingMaskIntoConstraints = false
         collectionView.isScrollEnabled = false
-        collectionView.backgroundColor = .blue
+        collectionView.backgroundColor = .black
         return collectionView
     }()
     

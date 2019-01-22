@@ -37,7 +37,7 @@ class CardCollectionView: UICollectionView {
         collectionHeightContraint = self.heightAnchor.constraint(equalToConstant: self.collectionViewLayout.collectionViewContentSize.height)
         self.collectionHeightContraint?.priority = UILayoutPriority(rawValue: 999)
         self.collectionHeightContraint?.isActive = true
-        
+
         UIView.animate(withDuration: 0.5) {
             self.updateConstraints()
             self.layoutIfNeeded()

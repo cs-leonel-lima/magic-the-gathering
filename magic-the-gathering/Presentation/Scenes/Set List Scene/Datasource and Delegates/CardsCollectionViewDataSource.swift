@@ -32,7 +32,7 @@ class CardsCollectionViewDataSource: NSObject, ItemCollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 50
+        return items.count
     }
     
     func collectionView(_ collectionView: UICollectionView,

@@ -21,7 +21,7 @@ class SetTableViewController: UITableViewController {
     
     override init(style: UITableView.Style) {
         super.init(style: style)
-        self.customDataSource = SetTableViewDatasource(items: [], tableView: self.tableView, delegate: self.customDelegate)
+        self.customDataSource = SetTableViewDatasource(items: MTGSet.mock(), tableView: self.tableView, delegate: self.customDelegate)
     }
     
     required init?(coder aDecoder: NSCoder) {

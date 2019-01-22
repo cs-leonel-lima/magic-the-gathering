@@ -26,6 +26,5 @@ extension AppDelegate {
         self.window?.makeKeyAndVisible()
         let mainView = SetTableViewController(style: .grouped)
         self.window?.rootViewController = mainView
-        
     }
 }

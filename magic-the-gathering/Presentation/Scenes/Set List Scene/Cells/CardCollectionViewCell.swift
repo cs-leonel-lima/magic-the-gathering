@@ -11,8 +11,8 @@ import UIKit
 class CardCollectionViewCell: UICollectionViewCell {
     static let identifier = "CardCollectionViewCell"
     
-    let view1: UIView = {
-        let view = UIView()
+    let cardImage: UIImageView = {
+        let view = UIImageView()
         view.translatesAutoresizingMaskIntoConstraints = false
         view.backgroundColor = .red
         return view
@@ -30,11 +30,11 @@ class CardCollectionViewCell: UICollectionViewCell {
 
 extension CardCollectionViewCell: CodeView {
     func buildViewHierarchy() {
-        addSubview(view1)
+        addSubview(cardImage)
     }
     
     func setupConstraints() {
-        view1.snp.makeConstraints { (make) in
+        cardImage.snp.makeConstraints { (make) in
             make.edges.equalTo(self.snp.edges)
         }
     }

@@ -32,8 +32,7 @@ class CardsManagerSpec: QuickSpec {
             
             it("Should divide cards by categories") {
                 if let data = cardsDataMock, let cards = Card.initializeCardsArray(from: data) {
-                    let manager = CardsManager(cards: cards)
-                    let cardsByCategory = manager.categorize(cards)
+                    let cardsByCategory = CardsManager.categorize(cards)
                     expect(cardsByCategory).toNot(beNil())
                 }
             }
@@ -42,7 +41,6 @@ class CardsManagerSpec: QuickSpec {
                 if let data = cardsDataMock, let cards = Card.initializeCardsArray(from: data) {
                     let manager = CardsManager(cards: cards)
                     let searchExample = manager.searchCards(with: "angel")
-                    print(searchExample)
                     expect(searchExample).toNot(beNil())
                 }
             }

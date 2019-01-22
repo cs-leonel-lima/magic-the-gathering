@@ -16,7 +16,7 @@ class CardsManager {
         self.cards = cards
     }
     
-    func categorize(_ cards: [Card]) -> [String: [Card]] {
+    static func categorize(_ cards: [Card]) -> [String: [Card]] {
         var cardsCategorized: [String: [Card]] = [:]
         
         cards.forEach { card in

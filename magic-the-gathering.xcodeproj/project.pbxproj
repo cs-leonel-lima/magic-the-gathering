@@ -20,11 +20,13 @@
 		3AA0BFE9190134895A6E78EE /* Pods_magic_the_gatheringKIFTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ED610329B0D5699F191C1F9 /* Pods_magic_the_gatheringKIFTests.framework */; };
 		3E7CF50D50D0599DD8B2A7B1 /* Pods_magic_the_gathering.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C73BD1011B0E6B65D6E0C9E1 /* Pods_magic_the_gathering.framework */; };
 		8F1C144F21F10A450077279C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1C144E21F10A450077279C /* AppDelegate.swift */; };
-		8F1C145121F10A450077279C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1C145021F10A450077279C /* ViewController.swift */; };
 		8F1C145621F10A470077279C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F1C145521F10A470077279C /* Assets.xcassets */; };
 		8F1C145921F10A470077279C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F1C145721F10A470077279C /* LaunchScreen.storyboard */; };
 		8F9A2C2221F211B700D6A2B6 /* magic_the_gatheringKIFTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9A2C2121F211B700D6A2B6 /* magic_the_gatheringKIFTests.swift */; };
 		8FCECF4621F2129C005C654B /* Tester+System.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9A2C2D21F2123B00D6A2B6 /* Tester+System.swift */; };
+		8FCECF4821F72D7D005C654B /* SetTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCECF4721F72D7D005C654B /* SetTableViewDataSource.swift */; };
+		8FCECF4A21F72D8D005C654B /* SetTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCECF4921F72D8D005C654B /* SetTableViewDelegate.swift */; };
+		8FCECF4C21F73118005C654B /* SetTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCECF4B21F73118005C654B /* SetTableViewController.swift */; };
 		EF0DDA6C21F2562D00664E61 /* JSONHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0DDA6B21F2562D00664E61 /* JSONHelper.swift */; };
 		EF2DE91D21F2278600A0D25D /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2DE91C21F2278600A0D25D /* Card.swift */; };
 		EF2DE91F21F2278D00A0D25D /* MTGSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2DE91E21F2278D00A0D25D /* MTGSet.swift */; };
@@ -79,7 +81,6 @@
 		6E500CB7AFD10B11E601D63B /* Pods_magic_the_gatheringTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_magic_the_gatheringTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F1C144B21F10A450077279C /* magic-the-gathering.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "magic-the-gathering.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F1C144E21F10A450077279C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8F1C145021F10A450077279C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8F1C145521F10A470077279C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8F1C145821F10A470077279C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8F1C145A21F10A470077279C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -90,6 +91,9 @@
 		8F9A2C2321F211B700D6A2B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8F9A2C2D21F2123B00D6A2B6 /* Tester+System.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tester+System.swift"; sourceTree = "<group>"; };
 		8F9A2C2E21F2123C00D6A2B6 /* KIF+BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KIF+BridgingHeader.h"; sourceTree = "<group>"; };
+		8FCECF4721F72D7D005C654B /* SetTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetTableViewDataSource.swift; sourceTree = "<group>"; };
+		8FCECF4921F72D8D005C654B /* SetTableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetTableViewDelegate.swift; sourceTree = "<group>"; };
+		8FCECF4B21F73118005C654B /* SetTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetTableViewController.swift; sourceTree = "<group>"; };
 		AEA1ED764D237AC9D3D0DBCE /* Pods-magic-the-gathering.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-magic-the-gathering.debug.xcconfig"; path = "Pods/Target Support Files/Pods-magic-the-gathering/Pods-magic-the-gathering.debug.xcconfig"; sourceTree = "<group>"; };
 		C73BD1011B0E6B65D6E0C9E1 /* Pods_magic_the_gathering.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_magic_the_gathering.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF0DDA6B21F2562D00664E61 /* JSONHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONHelper.swift; sourceTree = "<group>"; };
@@ -156,6 +160,8 @@
 				2B2643EA21F61942005192E2 /* CardsSelectionDelegate.swift */,
 				2B2643EC21F61A3B005192E2 /* CardsCollectionViewDelegate.swift */,
 				2B2643EE21F61C87005192E2 /* CardsCollectionViewDataSource.swift */,
+				8FCECF4721F72D7D005C654B /* SetTableViewDataSource.swift */,
+				8FCECF4921F72D8D005C654B /* SetTableViewDelegate.swift */,
 			);
 			path = "Datasource and Delegates";
 			sourceTree = "<group>";
@@ -182,8 +188,8 @@
 			children = (
 				2B2643E921F61907005192E2 /* Datasource and Delegates */,
 				2B7876C221F5FB4E0014B180 /* Cells */,
-				8F1C145021F10A450077279C /* ViewController.swift */,
 				2B2643F921F62B06005192E2 /* CardCollectionView.swift */,
+				8FCECF4B21F73118005C654B /* SetTableViewController.swift */,
 			);
 			path = "Set List Scene";
 			sourceTree = "<group>";
@@ -638,15 +644,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B2643EB21F61942005192E2 /* CardsSelectionDelegate.swift in Sources */,
+				8FCECF4821F72D7D005C654B /* SetTableViewDataSource.swift in Sources */,
 				2B2643FA21F62B06005192E2 /* CardCollectionView.swift in Sources */,
 				2B09CADA21F22A72006F52FF /* CodeView.swift in Sources */,
 				EF2DE91F21F2278D00A0D25D /* MTGSet.swift in Sources */,
-				8F1C145121F10A450077279C /* ViewController.swift in Sources */,
+				8FCECF4A21F72D8D005C654B /* SetTableViewDelegate.swift in Sources */,
 				2B09CADC21F22BE1006F52FF /* ReusableCodeView.swift in Sources */,
 				2B7876C421F5FB6E0014B180 /* SetTableViewCell.swift in Sources */,
 				EF2DE91D21F2278600A0D25D /* Card.swift in Sources */,
 				2B2643F421F61EB1005192E2 /* ItemCollectionViewDataSource.swift in Sources */,
 				8F1C144F21F10A450077279C /* AppDelegate.swift in Sources */,
+				8FCECF4C21F73118005C654B /* SetTableViewController.swift in Sources */,
 				2B2643EF21F61C87005192E2 /* CardsCollectionViewDataSource.swift in Sources */,
 				2B2643ED21F61A3B005192E2 /* CardsCollectionViewDelegate.swift in Sources */,
 				2B2643F221F61D41005192E2 /* ItemTableViewDataSource.swift in Sources */,

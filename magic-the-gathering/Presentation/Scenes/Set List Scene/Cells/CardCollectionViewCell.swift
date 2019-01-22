@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Nuke
 
 class CardCollectionViewCell: UICollectionViewCell {
     static let identifier = "CardCollectionViewCell"
@@ -14,7 +15,7 @@ class CardCollectionViewCell: UICollectionViewCell {
     let cardImage: UIImageView = {
         let view = UIImageView()
         view.translatesAutoresizingMaskIntoConstraints = false
-        view.backgroundColor = .red
+        view.contentMode = .scaleAspectFit
         return view
     }()
     
@@ -26,6 +27,10 @@ class CardCollectionViewCell: UICollectionViewCell {
         super.init(frame: .zero)
         setupView()
     }
+    
+    func setupContent(imageURL: String) {
+        self.cardImage.download(image: imageURL)
+    }
 }
 
 extension CardCollectionViewCell: CodeView {
@@ -36,6 +41,7 @@ extension CardCollectionViewCell: CodeView {
     func setupConstraints() {
         cardImage.snp.makeConstraints { (make) in
             make.edges.equalTo(self.snp.edges)
+            make.center.equalToSuperview()
         }
     }
     

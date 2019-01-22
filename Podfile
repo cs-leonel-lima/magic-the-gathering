@@ -6,6 +6,7 @@ target 'magic-the-gathering' do
   use_frameworks!
   pod 'SwiftLint'
   pod 'SnapKit'
+  pod 'Nuke'
   
   # Pods for magic-the-gathering
 

@@ -40,7 +40,9 @@ class CardsCollectionViewDataSource: NSObject, ItemCollectionViewDataSource {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CardCollectionViewCell.identifier, for: indexPath) as? CardCollectionViewCell else {
             return CardCollectionViewCell.init(frame: .zero)
         }
-        
+        if let url = items[indexPath.row].imageURL {
+            cell.setupContent(imageURL: url)
+        }
         return cell
     }
     

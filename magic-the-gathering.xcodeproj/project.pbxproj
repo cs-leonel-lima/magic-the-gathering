@@ -16,6 +16,7 @@
 		2B2643F421F61EB1005192E2 /* ItemCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2643F321F61EB1005192E2 /* ItemCollectionViewDataSource.swift */; };
 		2B2643F621F62393005192E2 /* CardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2643F521F62393005192E2 /* CardCollectionViewCell.swift */; };
 		2B2643FA21F62B06005192E2 /* CardCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2643F921F62B06005192E2 /* CardCollectionView.swift */; };
+		2B2643FD21F76F18005192E2 /* UIImageView+Nuke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2643FC21F76F18005192E2 /* UIImageView+Nuke.swift */; };
 		2B7876C421F5FB6E0014B180 /* SetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7876C321F5FB6E0014B180 /* SetTableViewCell.swift */; };
 		3AA0BFE9190134895A6E78EE /* Pods_magic_the_gatheringKIFTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ED610329B0D5699F191C1F9 /* Pods_magic_the_gatheringKIFTests.framework */; };
 		3E7CF50D50D0599DD8B2A7B1 /* Pods_magic_the_gathering.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C73BD1011B0E6B65D6E0C9E1 /* Pods_magic_the_gathering.framework */; };
@@ -74,6 +75,7 @@
 		2B2643F321F61EB1005192E2 /* ItemCollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionViewDataSource.swift; sourceTree = "<group>"; };
 		2B2643F521F62393005192E2 /* CardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCollectionViewCell.swift; sourceTree = "<group>"; };
 		2B2643F921F62B06005192E2 /* CardCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardCollectionView.swift; sourceTree = "<group>"; };
+		2B2643FC21F76F18005192E2 /* UIImageView+Nuke.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Nuke.swift"; sourceTree = "<group>"; };
 		2B7876C321F5FB6E0014B180 /* SetTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetTableViewCell.swift; sourceTree = "<group>"; };
 		3866305A5ABCBA3168D826FB /* Pods-magic-the-gatheringKIFTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-magic-the-gatheringKIFTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-magic-the-gatheringKIFTests/Pods-magic-the-gatheringKIFTests.release.xcconfig"; sourceTree = "<group>"; };
 		5B893359ABA28B1EC432E364 /* Pods-magic-the-gatheringKIFTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-magic-the-gatheringKIFTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-magic-the-gatheringKIFTests/Pods-magic-the-gatheringKIFTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -175,6 +177,14 @@
 			path = Generics;
 			sourceTree = "<group>";
 		};
+		2B2643FB21F76F04005192E2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2B2643FC21F76F18005192E2 /* UIImageView+Nuke.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		2B7876C021F5FAFF0014B180 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
@@ -251,6 +261,7 @@
 		8F1C144D21F10A450077279C /* magic-the-gathering */ = {
 			isa = PBXGroup;
 			children = (
+				2B2643FB21F76F04005192E2 /* Extensions */,
 				2B2643F021F61CB9005192E2 /* Generics */,
 				2B09CAD721F22A4F006F52FF /* Presentation */,
 				8F1C144E21F10A450077279C /* AppDelegate.swift */,
@@ -551,12 +562,14 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-magic-the-gathering/Pods-magic-the-gathering-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Nuke/Nuke.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nuke.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -660,6 +673,7 @@
 				2B2643F221F61D41005192E2 /* ItemTableViewDataSource.swift in Sources */,
 				2B2643F621F62393005192E2 /* CardCollectionViewCell.swift in Sources */,
 				EF2DE92221F22ADE00A0D25D /* DateFormatter.swift in Sources */,
+				2B2643FD21F76F18005192E2 /* UIImageView+Nuke.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

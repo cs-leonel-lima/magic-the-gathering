@@ -25,7 +25,7 @@ class CardsCollectionViewDelegate: NSObject, UICollectionViewDelegate {
 extension CardsCollectionViewDelegate: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: collectionView.frame.width / 3, height: UIScreen.main.bounds.height * 0.3)
+        return CGSize(width: collectionView.frame.width / 3, height: UIScreen.main.bounds.height * 0.2)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {

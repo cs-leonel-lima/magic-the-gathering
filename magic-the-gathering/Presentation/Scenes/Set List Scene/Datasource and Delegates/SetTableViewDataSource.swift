@@ -36,6 +36,7 @@ class SetTableViewDatasource: NSObject, ItemTableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: SetTableViewCell.identifier) as? SetTableViewCell else {
             return SetTableViewCell()
         }
+        
         return cell
     }
     

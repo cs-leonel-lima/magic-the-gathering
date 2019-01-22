@@ -17,7 +17,11 @@
 		2B2643F621F62393005192E2 /* CardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2643F521F62393005192E2 /* CardCollectionViewCell.swift */; };
 		2B2643FA21F62B06005192E2 /* CardCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2643F921F62B06005192E2 /* CardCollectionView.swift */; };
 		2B2643FD21F76F18005192E2 /* UIImageView+Nuke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2643FC21F76F18005192E2 /* UIImageView+Nuke.swift */; };
-		2B26440521F7864E005192E2 /* SetCustomHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B26440421F7864E005192E2 /* SetCustomHeader.swift */; };
+		2B4B52E021F7A5BF00204039 /* CardsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4B52DF21F7A5BF00204039 /* CardsManager.swift */; };
+		2B4B52E321F7A64E00204039 /* CardsManagerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4B52E221F7A64E00204039 /* CardsManagerSpec.swift */; };
+		2B4B52EE21F7A86E00204039 /* CardsCollectionViewDatasourceScpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4B52EC21F7A86D00204039 /* CardsCollectionViewDatasourceScpec.swift */; };
+		2B4B52EF21F7A86E00204039 /* SetTableViewDataSourceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4B52ED21F7A86D00204039 /* SetTableViewDataSourceSpec.swift */; };
+		2B4B52F121F7A8FC00204039 /* SetCustomHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4B52F021F7A8FC00204039 /* SetCustomHeader.swift */; };
 		2B7876C421F5FB6E0014B180 /* SetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7876C321F5FB6E0014B180 /* SetTableViewCell.swift */; };
 		3AA0BFE9190134895A6E78EE /* Pods_magic_the_gatheringKIFTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ED610329B0D5699F191C1F9 /* Pods_magic_the_gatheringKIFTests.framework */; };
 		3E7CF50D50D0599DD8B2A7B1 /* Pods_magic_the_gathering.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C73BD1011B0E6B65D6E0C9E1 /* Pods_magic_the_gathering.framework */; };
@@ -77,7 +81,11 @@
 		2B2643F521F62393005192E2 /* CardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCollectionViewCell.swift; sourceTree = "<group>"; };
 		2B2643F921F62B06005192E2 /* CardCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardCollectionView.swift; sourceTree = "<group>"; };
 		2B2643FC21F76F18005192E2 /* UIImageView+Nuke.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Nuke.swift"; sourceTree = "<group>"; };
-		2B26440421F7864E005192E2 /* SetCustomHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SetCustomHeader.swift; path = "magic-the-gathering/Presentation/Scenes/Set List Scene/Supplementary Views/SetCustomHeader.swift"; sourceTree = SOURCE_ROOT; };
+		2B4B52DF21F7A5BF00204039 /* CardsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsManager.swift; sourceTree = "<group>"; };
+		2B4B52E221F7A64E00204039 /* CardsManagerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsManagerSpec.swift; sourceTree = "<group>"; };
+		2B4B52EC21F7A86D00204039 /* CardsCollectionViewDatasourceScpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsCollectionViewDatasourceScpec.swift; sourceTree = "<group>"; };
+		2B4B52ED21F7A86D00204039 /* SetTableViewDataSourceSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetTableViewDataSourceSpec.swift; sourceTree = "<group>"; };
+		2B4B52F021F7A8FC00204039 /* SetCustomHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetCustomHeader.swift; sourceTree = "<group>"; };
 		2B7876C321F5FB6E0014B180 /* SetTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetTableViewCell.swift; sourceTree = "<group>"; };
 		3866305A5ABCBA3168D826FB /* Pods-magic-the-gatheringKIFTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-magic-the-gatheringKIFTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-magic-the-gatheringKIFTests/Pods-magic-the-gatheringKIFTests.release.xcconfig"; sourceTree = "<group>"; };
 		5B893359ABA28B1EC432E364 /* Pods-magic-the-gatheringKIFTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-magic-the-gatheringKIFTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-magic-the-gatheringKIFTests/Pods-magic-the-gatheringKIFTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -187,13 +195,61 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		2B26440121F784E7005192E2 /* Supplementary Views */ = {
+		2B4B52DE21F7A5A900204039 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
-				2B26440421F7864E005192E2 /* SetCustomHeader.swift */,
+				2B4B52DF21F7A5BF00204039 /* CardsManager.swift */,
 			);
-			name = "Supplementary Views";
-			path = "New Group";
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		2B4B52E121F7A63100204039 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				2B4B52E221F7A64E00204039 /* CardsManagerSpec.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		2B4B52E621F7A7EF00204039 /* Supplementary */ = {
+			isa = PBXGroup;
+			children = (
+				2B4B52F021F7A8FC00204039 /* SetCustomHeader.swift */,
+			);
+			path = Supplementary;
+			sourceTree = "<group>";
+		};
+		2B4B52E721F7A82000204039 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				2B4B52E821F7A82800204039 /* Scenes */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		2B4B52E821F7A82800204039 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				2B4B52EA21F7A84400204039 /* Set List Scene */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		2B4B52EA21F7A84400204039 /* Set List Scene */ = {
+			isa = PBXGroup;
+			children = (
+				2B4B52EB21F7A85200204039 /* Datasource and Delegates */,
+			);
+			path = "Set List Scene";
+			sourceTree = "<group>";
+		};
+		2B4B52EB21F7A85200204039 /* Datasource and Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				2B4B52EC21F7A86D00204039 /* CardsCollectionViewDatasourceScpec.swift */,
+				2B4B52ED21F7A86D00204039 /* SetTableViewDataSourceSpec.swift */,
+			);
+			path = "Datasource and Delegates";
 			sourceTree = "<group>";
 		};
 		2B7876C021F5FAFF0014B180 /* Scenes */ = {
@@ -207,7 +263,7 @@
 		2B7876C121F5FB290014B180 /* Set List Scene */ = {
 			isa = PBXGroup;
 			children = (
-				2B26440121F784E7005192E2 /* Supplementary Views */,
+				2B4B52E621F7A7EF00204039 /* Supplementary */,
 				2B2643E921F61907005192E2 /* Datasource and Delegates */,
 				2B7876C221F5FB4E0014B180 /* Cells */,
 				2B2643F921F62B06005192E2 /* CardCollectionView.swift */,
@@ -273,6 +329,7 @@
 		8F1C144D21F10A450077279C /* magic-the-gathering */ = {
 			isa = PBXGroup;
 			children = (
+				2B4B52DE21F7A5A900204039 /* Managers */,
 				2B2643FB21F76F04005192E2 /* Extensions */,
 				2B2643F021F61CB9005192E2 /* Generics */,
 				2B09CAD721F22A4F006F52FF /* Presentation */,
@@ -290,6 +347,8 @@
 		8F1C146221F10A470077279C /* magic-the-gatheringTests */ = {
 			isa = PBXGroup;
 			children = (
+				2B4B52E721F7A82000204039 /* Presentation */,
+				2B4B52E121F7A63100204039 /* Managers */,
 				EF0DDA6A21F2560300664E61 /* Utils */,
 				8F1C146521F10A470077279C /* Info.plist */,
 				EF2DE93221F241D600A0D25D /* Model */,
@@ -669,9 +728,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B2643EB21F61942005192E2 /* CardsSelectionDelegate.swift in Sources */,
+				2B4B52E021F7A5BF00204039 /* CardsManager.swift in Sources */,
+				2B4B52F121F7A8FC00204039 /* SetCustomHeader.swift in Sources */,
 				8FCECF4821F72D7D005C654B /* SetTableViewDataSource.swift in Sources */,
 				2B2643FA21F62B06005192E2 /* CardCollectionView.swift in Sources */,
-				2B26440521F7864E005192E2 /* SetCustomHeader.swift in Sources */,
 				2B09CADA21F22A72006F52FF /* CodeView.swift in Sources */,
 				EF2DE91F21F2278D00A0D25D /* MTGSet.swift in Sources */,
 				8FCECF4A21F72D8D005C654B /* SetTableViewDelegate.swift in Sources */,
@@ -694,8 +754,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B4B52EE21F7A86E00204039 /* CardsCollectionViewDatasourceScpec.swift in Sources */,
+				2B4B52E321F7A64E00204039 /* CardsManagerSpec.swift in Sources */,
 				EF0DDA6C21F2562D00664E61 /* JSONHelper.swift in Sources */,
 				EF2DE93521F2423100A0D25D /* MTGSetSpec.swift in Sources */,
+				2B4B52EF21F7A86E00204039 /* SetTableViewDataSourceSpec.swift in Sources */,
 				EF2DE93321F2422100A0D25D /* CardSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

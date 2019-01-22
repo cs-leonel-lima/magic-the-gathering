@@ -62,3 +62,17 @@ extension MTGSet: Comparable {
         return date1 < date2
     }
 }
+
+extension MTGSet {
+    static func mock() -> [MTGSet] {
+        return [MTGSet(name: "Tenth Edition", code: "10E", releaseDate: nil),
+            MTGSet(name: "Unlimited Edition", code: "2ED", releaseDate: nil),
+            MTGSet(name: "Revised Edition", code: "3ED", releaseDate: nil),
+            MTGSet(name: "Fourth Edition", code: "4ED", releaseDate: nil),
+            MTGSet(name: "Fifth Dawn", code: "5DN", releaseDate: nil),
+            MTGSet(name: "Fifth Edition", code: "5ED", releaseDate: nil),
+            MTGSet(name: "Classic Sixth Edition", code: "6ED", releaseDate: nil),
+            MTGSet(name: "Seventh Edition", code: "7ED", releaseDate: nil),
+            MTGSet(name: "Eighth Edition", code: "8ED", releaseDate: nil)]
+    }
+}

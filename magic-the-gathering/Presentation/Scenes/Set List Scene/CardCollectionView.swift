@@ -17,7 +17,7 @@ class CardCollectionView: UICollectionView {
     //swiftlint:enable weak_delegate
     
     override init(frame: CGRect, collectionViewLayout layout: UICollectionViewLayout) {
-        super.init(frame: .zero, collectionViewLayout: layout)
+        super.init(frame: frame, collectionViewLayout: layout)
         self.customDataSource = CardsCollectionViewDataSource(items: [], collectionView: self, delegate: self.customDelegate)
         self.addObserver(self, forKeyPath: "contentSize", options: NSKeyValueObservingOptions.new, context: nil)
     }

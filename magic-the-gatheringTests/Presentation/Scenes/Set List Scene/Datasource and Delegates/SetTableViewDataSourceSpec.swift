@@ -24,7 +24,7 @@ class SetTableViewDataSourceSpec: QuickSpec {
             beforeEach {
                 set = MTGSet.mock()[0]
                 tableView = UITableView(frame: CGRect(origin: .zero, size: CGSize(width: 300, height: 500)), style: .grouped)
-                dataSource = SetTableViewDatasource(items: [set], tableView: tableView, delegate: MTGSetTableViewDelegateMock())
+                dataSource = SetTableViewDatasource(items: [set], tableView: tableView)
             }
             
             it("does have a valid datasource", closure: {

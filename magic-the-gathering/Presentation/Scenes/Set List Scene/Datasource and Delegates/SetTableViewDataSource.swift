@@ -10,16 +10,12 @@ import UIKit
 
 class SetTableViewDatasource: NSObject, ItemTableViewDataSource {
     var items: [MTGSet]
-    
     var tableView: UITableView?
     
-    weak var delegate: UITableViewDelegate?
-    
-    required init(items: [MTGSet], tableView: UITableView, delegate: UITableViewDelegate) {
+    required init(items: [MTGSet], tableView: UITableView) {
         self.items = items
         super.init()
         self.tableView = tableView
-        self.delegate = delegate
         setupTableView()
         self.tableView?.register(SetTableViewCell.self, forCellReuseIdentifier: SetTableViewCell.identifier)
     }

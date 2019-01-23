@@ -16,16 +16,19 @@ class CollectionViewDelegateMock: NSObject, UICollectionViewDelegate {
 
 class CardsCollectionViewDatasourceScpec: QuickSpec {
     override func spec() {
-        describe("the behaviour of the datasource of a card collection view") {
             
             var dataSource: CardsCollectionViewDataSource!
-            var card: Card!
+            
             var collectionView: UICollectionView!
             
             beforeEach {
-                card = Card.mock()[0]
                 collectionView = UICollectionView(frame: CGRect(origin: .zero, size: CGSize(width: 300, height: 500)), collectionViewLayout: UICollectionViewLayout())
-                dataSource = CardsCollectionViewDataSource(items: [card], collectionView: collectionView, delegate: CollectionViewDelegateMock())
+                guard let cardData = JSONHelper.getDataFrom(resource: "cards"),
+                    let cards = Card.initializeCardsArray(from: cardData) else {
+                        fail("could not initialize cards from mock")
+                        return
+                }
+                dataSource = CardsCollectionViewDataSource(items: cards, collectionView: collectionView, delegate: CollectionViewDelegateMock())
             }
             
             it("does have a valid datasource", closure: {
@@ -33,8 +36,8 @@ class CardsCollectionViewDatasourceScpec: QuickSpec {
             })
             
             it("does have the expected amount of sections and items", closure: {
-                expect(collectionView.numberOfSections).to(equal(1))
-                expect(collectionView.numberOfItems(inSection: 0)).to(equal(1))      
+                expect(collectionView.numberOfSections).to(equal(4))
+                expect(collectionView.numberOfItems(inSection: 0)).to(equal(41))      
             })
             
             it("does return the expected kind of cell", closure: {
@@ -44,6 +47,5 @@ class CardsCollectionViewDatasourceScpec: QuickSpec {
             })
             
         }
-    }
 }
 

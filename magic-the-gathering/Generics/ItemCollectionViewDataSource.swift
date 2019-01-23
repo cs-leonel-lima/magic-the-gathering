@@ -12,7 +12,7 @@ protocol ItemCollectionViewDataSource: UICollectionViewDataSource {
     //swiftlint:disable type_name
     associatedtype T
     //swiftlint:enable type_name
-    var items: [T] { get }
+    var itemsDictionary: [String: [T]] { get }
     var collectionView: UICollectionView? { get }
     var delegate: UICollectionViewDelegate? { get }
     

@@ -10,15 +10,14 @@ import UIKit
 
 class CardsCollectionViewDataSource: NSObject, ItemCollectionViewDataSource {
     
+    var itemsDictionary: [String: [Card]]
+    
     var collectionView: UICollectionView?
     
     weak var delegate: UICollectionViewDelegate?
     
-    var items: [Card] = []
-    var cardsByCategory: [String: [Card]] = [:]
-    
     required init(items: [Card], collectionView: UICollectionView, delegate: UICollectionViewDelegate) {
-        self.items = items
+        self.itemsDictionary = CardsManager.categorize(items)
         self.collectionView = collectionView
         self.delegate = delegate
         super.init()
@@ -29,22 +28,25 @@ class CardsCollectionViewDataSource: NSObject, ItemCollectionViewDataSource {
     }
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return cardsByCategory.count
+        return itemsDictionary.count
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return cardsByCategory[Array(cardsByCategory.keys)[section]]?.count ?? 0
+        return itemsDictionary[Array(itemsDictionary.keys).sorted()[section]]?.count ?? 0
     }
     
     func collectionView(_ collectionView: UICollectionView,
                         cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CardCollectionViewCell.identifier, for: indexPath) as? CardCollectionViewCell,
-            let card = cardsByCategory[Array(cardsByCategory.keys)[indexPath.section]]?[indexPath.item]
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CardCollectionViewCell.identifier, for: indexPath) as? CardCollectionViewCell
         else {
-            return CardCollectionViewCell.init(frame: .zero)
+            fatalError("Could not dequeue cell")
         }
-        if let url = card.imageURL {
-            cell.setupContent(imageURL: url)
+        if let cardsContainer = itemsDictionary[Array(itemsDictionary.keys).sorted()[indexPath.section]] {
+            let card = cardsContainer[indexPath.item]
+            
+            if let url = card.imageURL {
+                cell.setupContent(imageURL: url)
+            }
         }
         return cell
     }
@@ -58,7 +60,7 @@ class CardsCollectionViewDataSource: NSObject, ItemCollectionViewDataSource {
             }
             //TODO: get the correct type/category name
             
-            let typeName = Array(cardsByCategory.keys)[indexPath.section].description
+            let typeName = Array(itemsDictionary.keys).sorted()[indexPath.section].description
             header.setupContent(categoryTitle: typeName)
             return header
         default:
@@ -69,8 +71,7 @@ class CardsCollectionViewDataSource: NSObject, ItemCollectionViewDataSource {
     }
     
     func updateItems(items: [Card]) {
-        self.items = items
-        self.cardsByCategory = CardsManager.categorize(items)
+        self.itemsDictionary = CardsManager.categorize(items)
         self.collectionView?.reloadData()
     }
 }

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SetCustomHeader: UICollectionViewCell {
+class SetHeaderCollectionReusableView: UICollectionReusableView {
     static let identifier = "SetCustomHeader"
     
     let categoryTitleLabel: UILabel = {
@@ -33,7 +33,7 @@ class SetCustomHeader: UICollectionViewCell {
     }
 }
 
-extension SetCustomHeader: CodeView {
+extension SetHeaderCollectionReusableView: CodeView {
     func buildViewHierarchy() {
         addSubview(categoryTitleLabel)
     }

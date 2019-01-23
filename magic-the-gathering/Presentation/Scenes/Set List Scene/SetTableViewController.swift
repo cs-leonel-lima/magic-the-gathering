@@ -9,10 +9,6 @@
 import UIKit
 
 class SetTableViewController: UITableViewController {
-    
-    //swiftlint:disable weak_delegate
-    var customDelegate = SetTableViewDelegate()
-    //swiftlint:enable weak_delegate
     var customDataSource: SetTableViewDatasource?
 
     override func viewDidLoad() {
@@ -21,7 +17,7 @@ class SetTableViewController: UITableViewController {
     
     override init(style: UITableView.Style) {
         super.init(style: style)
-        self.customDataSource = SetTableViewDatasource(items: MTGSet.mock(), tableView: self.tableView, delegate: self.customDelegate)
+        self.customDataSource = SetTableViewDatasource(items: MTGSet.mock(), tableView: self.tableView)
     }
     
     required init?(coder aDecoder: NSCoder) {

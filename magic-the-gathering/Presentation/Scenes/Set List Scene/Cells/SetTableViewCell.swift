@@ -45,7 +45,6 @@ extension SetTableViewCell: CodeView {
     func setupConstraints() {
         mtgSetCollectionView.snp.makeConstraints { (make) in
             make.edges.equalTo(self.snp.edges)
-           // make.height.equalTo(mtgSetCollectionView.snp.height)
         }
     }
     

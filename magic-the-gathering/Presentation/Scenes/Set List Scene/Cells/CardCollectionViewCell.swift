@@ -26,8 +26,8 @@ class CardCollectionViewCell: UICollectionViewCell {
         super.init(coder: aDecoder)
     }
     
-    override init(frame: CGRect) {
-        super.init(frame: .zero)
+    override init(frame: CGRect = .zero) {
+        super.init(frame: frame)
         setupView()
     }
     

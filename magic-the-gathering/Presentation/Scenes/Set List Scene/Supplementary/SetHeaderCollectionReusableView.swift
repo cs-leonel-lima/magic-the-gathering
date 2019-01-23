@@ -40,8 +40,8 @@ extension SetHeaderCollectionReusableView: CodeView {
     
     func setupConstraints() {
         categoryTitleLabel.snp.makeConstraints { (make) in
-            make.left.equalToSuperview().inset(10)
-            make.top.right.bottom.equalToSuperview()
+            make.leading.equalToSuperview().inset(10)
+            make.top.trailing.bottom.equalToSuperview()
         }
     }
     

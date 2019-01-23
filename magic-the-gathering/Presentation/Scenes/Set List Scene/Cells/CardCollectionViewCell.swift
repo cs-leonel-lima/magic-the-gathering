@@ -23,7 +23,7 @@ class CardCollectionViewCell: UICollectionViewCell {
     }()
     
     required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
+        fatalError("Init do not apllied")
     }
     
     override init(frame: CGRect = .zero) {

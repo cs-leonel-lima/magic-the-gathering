@@ -9,21 +9,19 @@
 import UIKit
 
 protocol ItemCollectionViewDataSource: UICollectionViewDataSource {
-    //swiftlint:disable type_name
-    associatedtype T
-    //swiftlint:enable type_name
-    var itemsDictionary: [String: [T]] { get }
-    var collectionView: UICollectionView? { get }
+    associatedtype CardType
+    var itemsDictionary: [String: [CardType]] { get }
+    var collectionView: UICollectionView { get }
     var delegate: UICollectionViewDelegate? { get }
     
-    init(items: [T], collectionView: UICollectionView,
+    init(items: [CardType], collectionView: UICollectionView,
          delegate: UICollectionViewDelegate)
 }
 
 extension ItemCollectionViewDataSource {
     func setupCollectionView() {
-        self.collectionView?.dataSource = self
-        self.collectionView?.delegate = self.delegate
-        self.collectionView?.reloadData()
+        self.collectionView.dataSource = self
+        self.collectionView.delegate = self.delegate
+        self.collectionView.reloadData()
     }
 }

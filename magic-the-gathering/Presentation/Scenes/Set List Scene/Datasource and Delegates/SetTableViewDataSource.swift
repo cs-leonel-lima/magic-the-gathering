@@ -10,14 +10,14 @@ import UIKit
 
 class SetTableViewDatasource: NSObject, ItemTableViewDataSource {
     var items: [MTGSet]
-    var tableView: UITableView?
+    var tableView: UITableView
     
     required init(items: [MTGSet], tableView: UITableView) {
         self.items = items
-        super.init()
         self.tableView = tableView
+        super.init()
         setupTableView()
-        self.tableView?.register(SetTableViewCell.self, forCellReuseIdentifier: SetTableViewCell.identifier)
+        self.tableView.register(SetTableViewCell.self, forCellReuseIdentifier: SetTableViewCell.identifier)
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {

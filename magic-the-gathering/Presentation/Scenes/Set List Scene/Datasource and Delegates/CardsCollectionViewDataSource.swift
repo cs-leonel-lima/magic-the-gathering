@@ -10,9 +10,13 @@ import UIKit
 
 class CardsCollectionViewDataSource: NSObject, ItemCollectionViewDataSource {
     
-    var itemsDictionary: [String: [Card]]
+    var itemsDictionary: [String: [Card]] {
+        didSet {
+            self.collectionView.reloadData()
+        }
+    }
     
-    var collectionView: UICollectionView?
+    var collectionView: UICollectionView
     
     weak var delegate: UICollectionViewDelegate?
     
@@ -24,7 +28,7 @@ class CardsCollectionViewDataSource: NSObject, ItemCollectionViewDataSource {
         setupCollectionView()
         collectionView.register(CardCollectionViewCell.self,
                                 forCellWithReuseIdentifier: CardCollectionViewCell.identifier)
-        collectionView.register(SetCustomHeader.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: SetCustomHeader.identifier)
+        collectionView.register(supplementaryViewType: SetHeaderCollectionReusableView.self, ofKind: UICollectionView.elementKindSectionHeader)
     }
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
@@ -54,12 +58,7 @@ class CardsCollectionViewDataSource: NSObject, ItemCollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         switch kind {
         case UICollectionView.elementKindSectionHeader:
-            guard let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier:
-                SetCustomHeader.identifier, for: indexPath) as? SetCustomHeader else {
-                    break
-            }
-            //TODO: get the correct type/category name
-            
+            let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, for: indexPath, viewType: SetHeaderCollectionReusableView.self)
             let typeName = Array(itemsDictionary.keys).sorted()[indexPath.section].description
             header.setupContent(categoryTitle: typeName)
             return header
@@ -72,6 +71,5 @@ class CardsCollectionViewDataSource: NSObject, ItemCollectionViewDataSource {
     
     func updateItems(items: [Card]) {
         self.itemsDictionary = CardsManager.categorize(items)
-        self.collectionView?.reloadData()
     }
 }

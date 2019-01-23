@@ -7,10 +7,9 @@
 //
 
 import UIKit
+import Reusable
 
-class SetCustomHeader: UICollectionViewCell {
-    static let identifier = "SetCustomHeader"
-    
+class SetHeaderCollectionReusableView: UICollectionReusableView, Reusable {
     let categoryTitleLabel: UILabel = {
         let label = UILabel()
         label.textAlignment = .left
@@ -20,7 +19,7 @@ class SetCustomHeader: UICollectionViewCell {
     }()
     
     required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
+        fatalError("Init do not apllied")
     }
     
     override init(frame: CGRect) {
@@ -33,15 +32,15 @@ class SetCustomHeader: UICollectionViewCell {
     }
 }
 
-extension SetCustomHeader: CodeView {
+extension SetHeaderCollectionReusableView: CodeView {
     func buildViewHierarchy() {
         addSubview(categoryTitleLabel)
     }
     
     func setupConstraints() {
         categoryTitleLabel.snp.makeConstraints { (make) in
-            make.left.equalToSuperview().inset(10)
-            make.top.right.bottom.equalToSuperview()
+            make.leading.equalToSuperview().inset(10)
+            make.top.trailing.bottom.equalToSuperview()
         }
     }
     

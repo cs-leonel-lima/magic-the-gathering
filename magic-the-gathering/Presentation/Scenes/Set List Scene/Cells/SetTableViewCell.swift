@@ -11,7 +11,7 @@ import UIKit
 class SetTableViewCell: UITableViewCell {
     static let identifier = "SetTableViewCell"
     
-    let MTGSetCollectionView: CardCollectionView = {
+    let mtgSetCollectionView: CardCollectionView = {
         let collectionView = CardCollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout())
         collectionView.translatesAutoresizingMaskIntoConstraints = false
         collectionView.isScrollEnabled = false
@@ -26,34 +26,33 @@ class SetTableViewCell: UITableViewCell {
         guard let cardsData = JSONHelper.getDataFrom(resource: "cards"), let cards = Card.initializeCardsArray(from: cardsData) else {
             return
         }
-        self.MTGSetCollectionView.updateItems(cards: cards)
+        self.mtgSetCollectionView.updateItems(cards: cards)
         setupLayout()
     }
     
     required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
+        fatalError("Init do not apllied")
     }
     
 }
 
 extension SetTableViewCell: CodeView {
     func buildViewHierarchy() {
-        addSubview(self.MTGSetCollectionView)
+        addSubview(self.mtgSetCollectionView)
         
     }
     
     func setupConstraints() {
-        MTGSetCollectionView.snp.makeConstraints { (make) in
+        mtgSetCollectionView.snp.makeConstraints { (make) in
             make.edges.equalTo(self.snp.edges)
-           // make.height.equalTo(MTGSetCollectionView.snp.height)
         }
     }
     
     func setupAdditionalConfigurations() {}
     
     func setupLayout() {
-        self.contentView.frame.size.height = self.MTGSetCollectionView.contentSize.height
+        self.contentView.frame.size.height = self.mtgSetCollectionView.contentSize.height
         self.layoutIfNeeded()
-        self.MTGSetCollectionView.collectionViewLayout.invalidateLayout()
+        self.mtgSetCollectionView.collectionViewLayout.invalidateLayout()
     }
 }

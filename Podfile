@@ -7,6 +7,7 @@ target 'magic-the-gathering' do
   pod 'SwiftLint'
   pod 'SnapKit'
   pod 'Nuke'
+  pod 'Reusable'
   
   # Pods for magic-the-gathering
 

@@ -13,14 +13,14 @@ protocol ItemTableViewDataSource: UITableViewDataSource {
     associatedtype T
     //swiftlint:enable type_name
     var items: [T] { get }
-    var tableView: UITableView? { get }
+    var tableView: UITableView { get }
     
     init(items: [T], tableView: UITableView)
 }
 
 extension ItemTableViewDataSource {
     func setupTableView() {
-        self.tableView?.dataSource = self
-        self.tableView?.reloadData()
+        self.tableView.dataSource = self
+        self.tableView.reloadData()
     }
 }

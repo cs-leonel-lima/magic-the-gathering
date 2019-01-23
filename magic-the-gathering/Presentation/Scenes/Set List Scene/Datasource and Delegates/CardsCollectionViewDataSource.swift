@@ -12,11 +12,11 @@ class CardsCollectionViewDataSource: NSObject, ItemCollectionViewDataSource {
     
     var itemsDictionary: [String: [Card]] {
         didSet {
-            self.collectionView?.reloadData()
+            self.collectionView.reloadData()
         }
     }
     
-    var collectionView: UICollectionView?
+    var collectionView: UICollectionView
     
     weak var delegate: UICollectionViewDelegate?
     

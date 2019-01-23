@@ -7,10 +7,9 @@
 //
 
 import UIKit
+import Reusable
 
-class SetHeaderCollectionReusableView: UICollectionReusableView {
-    static let identifier = "SetCustomHeader"
-    
+class SetHeaderCollectionReusableView: UICollectionReusableView, Reusable {
     let categoryTitleLabel: UILabel = {
         let label = UILabel()
         label.textAlignment = .left

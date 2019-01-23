@@ -33,6 +33,9 @@
 		8FCECF4821F72D7D005C654B /* SetTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCECF4721F72D7D005C654B /* SetTableViewDataSource.swift */; };
 		8FCECF4A21F72D8D005C654B /* SetTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCECF4921F72D8D005C654B /* SetTableViewDelegate.swift */; };
 		8FCECF4C21F73118005C654B /* SetTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCECF4B21F73118005C654B /* SetTableViewController.swift */; };
+		8FE35AF021F8949500B727B8 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8F1C145A21F10A470077279C /* Info.plist */; };
+		8FE35AF121F8958B00B727B8 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8F1C146521F10A470077279C /* Info.plist */; };
+		8FE35AF221F8959300B727B8 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8F9A2C2321F211B700D6A2B6 /* Info.plist */; };
 		EF0DDA6C21F2562D00664E61 /* JSONHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0DDA6B21F2562D00664E61 /* JSONHelper.swift */; };
 		EF2DE91D21F2278600A0D25D /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2DE91C21F2278600A0D25D /* Card.swift */; };
 		EF2DE91F21F2278D00A0D25D /* MTGSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2DE91E21F2278D00A0D25D /* MTGSet.swift */; };
@@ -544,6 +547,7 @@
 			files = (
 				EF2DE92621F240C700A0D25D /* sets.json in Resources */,
 				8F1C145921F10A470077279C /* LaunchScreen.storyboard in Resources */,
+				8FE35AF021F8949500B727B8 /* Info.plist in Resources */,
 				8F1C145621F10A470077279C /* Assets.xcassets in Resources */,
 				EF2DE92C21F240C700A0D25D /* cards-set-OVNT.json in Resources */,
 				EF2DE92921F240C700A0D25D /* cards.json in Resources */,
@@ -554,6 +558,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FE35AF121F8958B00B727B8 /* Info.plist in Resources */,
 				EF2DE92D21F240C700A0D25D /* cards-set-OVNT.json in Resources */,
 				EF2DE92721F240C700A0D25D /* sets.json in Resources */,
 				EF2DE92A21F240C700A0D25D /* cards.json in Resources */,
@@ -564,6 +569,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FE35AF221F8959300B727B8 /* Info.plist in Resources */,
 				EF2DE92E21F240C700A0D25D /* cards-set-OVNT.json in Resources */,
 				EF2DE92821F240C700A0D25D /* sets.json in Resources */,
 				EF2DE92B21F240C700A0D25D /* cards.json in Resources */,

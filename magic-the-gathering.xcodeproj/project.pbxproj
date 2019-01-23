@@ -21,7 +21,7 @@
 		2B4B52E321F7A64E00204039 /* CardsManagerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4B52E221F7A64E00204039 /* CardsManagerSpec.swift */; };
 		2B4B52EE21F7A86E00204039 /* CardsCollectionViewDatasourceScpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4B52EC21F7A86D00204039 /* CardsCollectionViewDatasourceScpec.swift */; };
 		2B4B52EF21F7A86E00204039 /* SetTableViewDataSourceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4B52ED21F7A86D00204039 /* SetTableViewDataSourceSpec.swift */; };
-		2B4B52F121F7A8FC00204039 /* SetCustomHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4B52F021F7A8FC00204039 /* SetCustomHeader.swift */; };
+		2B4B52F121F7A8FC00204039 /* SetHeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4B52F021F7A8FC00204039 /* SetHeaderCollectionReusableView.swift */; };
 		2B7876C421F5FB6E0014B180 /* SetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7876C321F5FB6E0014B180 /* SetTableViewCell.swift */; };
 		2BE94EB421F8B0AC00E42F38 /* SetTableViewCellQS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE94EB321F8B0AC00E42F38 /* SetTableViewCellQS.swift */; };
 		3AA0BFE9190134895A6E78EE /* Pods_magic_the_gatheringKIFTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ED610329B0D5699F191C1F9 /* Pods_magic_the_gatheringKIFTests.framework */; };
@@ -85,7 +85,7 @@
 		2B4B52E221F7A64E00204039 /* CardsManagerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsManagerSpec.swift; sourceTree = "<group>"; };
 		2B4B52EC21F7A86D00204039 /* CardsCollectionViewDatasourceScpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsCollectionViewDatasourceScpec.swift; sourceTree = "<group>"; };
 		2B4B52ED21F7A86D00204039 /* SetTableViewDataSourceSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetTableViewDataSourceSpec.swift; sourceTree = "<group>"; };
-		2B4B52F021F7A8FC00204039 /* SetCustomHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetCustomHeader.swift; sourceTree = "<group>"; };
+		2B4B52F021F7A8FC00204039 /* SetHeaderCollectionReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetHeaderCollectionReusableView.swift; sourceTree = "<group>"; };
 		2B7876C321F5FB6E0014B180 /* SetTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetTableViewCell.swift; sourceTree = "<group>"; };
 		2BE94EB321F8B0AC00E42F38 /* SetTableViewCellQS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetTableViewCellQS.swift; sourceTree = "<group>"; };
 		3866305A5ABCBA3168D826FB /* Pods-magic-the-gatheringKIFTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-magic-the-gatheringKIFTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-magic-the-gatheringKIFTests/Pods-magic-the-gatheringKIFTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -230,7 +230,7 @@
 		2B4B52E621F7A7EF00204039 /* Supplementary */ = {
 			isa = PBXGroup;
 			children = (
-				2B4B52F021F7A8FC00204039 /* SetCustomHeader.swift */,
+				2B4B52F021F7A8FC00204039 /* SetHeaderCollectionReusableView.swift */,
 			);
 			path = Supplementary;
 			sourceTree = "<group>";
@@ -748,7 +748,7 @@
 				8FE35AF321F8A22700B727B8 /* JSONHelper.swift in Sources */,
 				2B2643EB21F61942005192E2 /* CardsSelectionDelegate.swift in Sources */,
 				2B4B52E021F7A5BF00204039 /* CardsManager.swift in Sources */,
-				2B4B52F121F7A8FC00204039 /* SetCustomHeader.swift in Sources */,
+				2B4B52F121F7A8FC00204039 /* SetHeaderCollectionReusableView.swift in Sources */,
 				8FCECF4821F72D7D005C654B /* SetTableViewDataSource.swift in Sources */,
 				2B2643FA21F62B06005192E2 /* CardCollectionView.swift in Sources */,
 				2B09CADA21F22A72006F52FF /* CodeView.swift in Sources */,

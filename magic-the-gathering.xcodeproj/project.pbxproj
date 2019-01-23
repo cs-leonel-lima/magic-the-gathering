@@ -33,7 +33,7 @@
 		8FCECF4821F72D7D005C654B /* SetTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCECF4721F72D7D005C654B /* SetTableViewDataSource.swift */; };
 		8FCECF4A21F72D8D005C654B /* SetTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCECF4921F72D8D005C654B /* SetTableViewDelegate.swift */; };
 		8FCECF4C21F73118005C654B /* SetTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCECF4B21F73118005C654B /* SetTableViewController.swift */; };
-		EF0DDA6C21F2562D00664E61 /* JSONHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0DDA6B21F2562D00664E61 /* JSONHelper.swift */; };
+		8FE35AF321F8A22700B727B8 /* JSONHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0DDA6B21F2562D00664E61 /* JSONHelper.swift */; };
 		EF2DE91D21F2278600A0D25D /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2DE91C21F2278600A0D25D /* Card.swift */; };
 		EF2DE91F21F2278D00A0D25D /* MTGSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2DE91E21F2278D00A0D25D /* MTGSet.swift */; };
 		EF2DE92221F22ADE00A0D25D /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2DE92121F22ADE00A0D25D /* DateFormatter.swift */; };
@@ -388,7 +388,6 @@
 		EF0DDA6A21F2560300664E61 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				EF0DDA6B21F2562D00664E61 /* JSONHelper.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -406,6 +405,7 @@
 		EF2DE92021F22ABF00A0D25D /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				EF0DDA6B21F2562D00664E61 /* JSONHelper.swift */,
 				EF2DE92121F22ADE00A0D25D /* DateFormatter.swift */,
 			);
 			path = Utils;
@@ -737,6 +737,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FE35AF321F8A22700B727B8 /* JSONHelper.swift in Sources */,
 				2B2643EB21F61942005192E2 /* CardsSelectionDelegate.swift in Sources */,
 				2B4B52E021F7A5BF00204039 /* CardsManager.swift in Sources */,
 				2B4B52F121F7A8FC00204039 /* SetCustomHeader.swift in Sources */,
@@ -766,7 +767,6 @@
 			files = (
 				2B4B52EE21F7A86E00204039 /* CardsCollectionViewDatasourceScpec.swift in Sources */,
 				2B4B52E321F7A64E00204039 /* CardsManagerSpec.swift in Sources */,
-				EF0DDA6C21F2562D00664E61 /* JSONHelper.swift in Sources */,
 				EF2DE93521F2423100A0D25D /* MTGSetSpec.swift in Sources */,
 				2B4B52EF21F7A86E00204039 /* SetTableViewDataSourceSpec.swift in Sources */,
 				EF2DE93321F2422100A0D25D /* CardSpec.swift in Sources */,

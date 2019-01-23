@@ -44,6 +44,7 @@ class CardsManagerSpec: QuickSpec {
                     expect(searchExample).toNot(beNil())
                 }
             }
+            
         }
     }
 

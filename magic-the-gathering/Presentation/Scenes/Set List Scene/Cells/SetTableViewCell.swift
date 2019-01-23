@@ -22,7 +22,11 @@ class SetTableViewCell: UITableViewCell {
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         setupView()
-        self.MTGSetCollectionView.updateItems(cards: Card.mock())
+        
+        guard let cardsData = JSONHelper.getDataFrom(resource: "cards"), let cards = Card.initializeCardsArray(from: cardsData) else {
+            return
+        }
+        self.MTGSetCollectionView.updateItems(cards: cards)
         setupLayout()
     }
     

@@ -9,13 +9,11 @@
 import UIKit
 
 protocol ItemTableViewDataSource: UITableViewDataSource {
-    //swiftlint:disable type_name
-    associatedtype T
-    //swiftlint:enable type_name
-    var items: [T] { get }
+    associatedtype SetType
+    var items: [SetType] { get }
     var tableView: UITableView { get }
     
-    init(items: [T], tableView: UITableView)
+    init(items: [SetType], tableView: UITableView)
 }
 
 extension ItemTableViewDataSource {

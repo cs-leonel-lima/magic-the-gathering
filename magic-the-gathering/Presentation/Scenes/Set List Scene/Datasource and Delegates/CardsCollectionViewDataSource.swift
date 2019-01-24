@@ -10,15 +10,11 @@ import UIKit
 
 class CardsCollectionViewDataSource: NSObject, ItemCollectionViewDataSource {
     
-    var itemsTuples: Array<(String, [Card])> {
-        didSet {
-            self.collectionView.reloadData()
-        }
-    }
+    internal var itemsTuples: Array<(String, [Card])>
     
-    var collectionView: UICollectionView
+    internal var collectionView: UICollectionView
     
-    weak var delegate: UICollectionViewDelegate?
+    internal weak var delegate: UICollectionViewDelegate?
     
     required init(items: [Card], collectionView: UICollectionView, delegate: UICollectionViewDelegate) {
         self.itemsTuples = CardsManager.categorize(items)
@@ -26,8 +22,7 @@ class CardsCollectionViewDataSource: NSObject, ItemCollectionViewDataSource {
         self.delegate = delegate
         super.init()
         setupCollectionView()
-        collectionView.register(CardCollectionViewCell.self,
-                                forCellWithReuseIdentifier: CardCollectionViewCell.identifier)
+        collectionView.register(cellType: CardCollectionViewCell.self)
         collectionView.register(supplementaryViewType: SetHeaderCollectionReusableView.self, ofKind: UICollectionView.elementKindSectionHeader)
     }
     
@@ -41,10 +36,8 @@ class CardsCollectionViewDataSource: NSObject, ItemCollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView,
                         cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CardCollectionViewCell.identifier, for: indexPath) as? CardCollectionViewCell
-        else {
-            fatalError("Could not dequeue cell")
-        }
+        
+        let cell = collectionView.dequeueReusableCell(for: indexPath, cellType: CardCollectionViewCell.self)
         let card = itemsTuples[indexPath.section].1[indexPath.item]
         cell.setupContent(card: card)
         
@@ -67,5 +60,6 @@ class CardsCollectionViewDataSource: NSObject, ItemCollectionViewDataSource {
     
     func updateItems(items: [Card]) {
         self.itemsTuples = CardsManager.categorize(items)
+        self.collectionView.reloadData()
     }
 }

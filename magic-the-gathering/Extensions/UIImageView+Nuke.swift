@@ -20,6 +20,8 @@ extension UIImageView {
                 ),
                 into: self
             )
+        } else {
+            fatalError("url parse error")
         }
     }
 }

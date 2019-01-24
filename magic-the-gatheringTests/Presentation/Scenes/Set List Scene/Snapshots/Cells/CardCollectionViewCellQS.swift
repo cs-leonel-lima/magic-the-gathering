@@ -19,7 +19,8 @@ class CardCollectionViewCellQS: QuickSpec {
             it("should have the expected look and feel") {
                 let frame = CGRect(origin: .zero, size: CGSize(width: 300, height: 500))
                 let cardCell = CardCollectionViewCell(frame: frame)
-                cardCell.cardImage.image = UIImage(named: "padrequevedo.jpg")
+                let card = Card(id: "001AB", name: "Padre Quevedo", types: ["Priest"], imageURL: nil, mtgCodeSet: "PRE")
+                cardCell.setupContent(card: card)
                 expect(cardCell) == snapshot("CardCollectionViewCell")
             }
         }

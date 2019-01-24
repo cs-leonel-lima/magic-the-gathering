@@ -8,11 +8,11 @@
 
 import UIKit
 import Nuke
+import Reusable
 
-class CardCollectionViewCell: UICollectionViewCell {
-    static let identifier = "CardCollectionViewCell"
+class CardCollectionViewCell: UICollectionViewCell, Reusable {
     
-    let cardImage: UIImageView = {
+    private let cardImage: UIImageView = {
         let view = UIImageView()
         view.translatesAutoresizingMaskIntoConstraints = false
         view.contentMode = .scaleAspectFit
@@ -33,6 +33,8 @@ class CardCollectionViewCell: UICollectionViewCell {
     func setupContent(card: Card) {
         if let url = card.imageURL {
             self.cardImage.download(image: url)
+        } else {
+            self.cardImage.image = UIImage(named: "padrequevedo")
         }
     }
 }

@@ -10,7 +10,7 @@ import UIKit
 
 protocol ItemCollectionViewDataSource: UICollectionViewDataSource {
     associatedtype CardType
-    var itemsTuples: Array<(String, [Card])> { get }
+    var itemsTuples: [(String, [Card])] { get }
     var collectionView: UICollectionView { get }
     var delegate: UICollectionViewDelegate? { get }
     

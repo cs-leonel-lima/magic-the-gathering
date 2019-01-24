@@ -21,6 +21,7 @@ PODS:
   - Reusable/Storyboard (4.0.5)
   - Reusable/View (4.0.5)
   - SnapKit (4.2.0)
+  - SwiftGen (6.0.2)
   - SwiftLint (0.30.0)
 
 DEPENDENCIES:
@@ -31,6 +32,7 @@ DEPENDENCIES:
   - Quick
   - Reusable
   - SnapKit
+  - SwiftGen
   - SwiftLint
 
 SPEC REPOS:
@@ -43,6 +45,7 @@ SPEC REPOS:
     - Quick
     - Reusable
     - SnapKit
+    - SwiftGen
     - SwiftLint
 
 SPEC CHECKSUMS:
@@ -54,8 +57,9 @@ SPEC CHECKSUMS:
   Quick: 2623cb30d7a7f41ca62f684f679586558f483d46
   Reusable: 188be1a54ac0691bc66e5bb24ec6eb91971b315b
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+  SwiftGen: e5b047067aa84082826a0c4f1c4c2ddc95bcf74c
   SwiftLint: 4e37cb5cd33435170dfd09fba089f41fdbf64d53
 
-PODFILE CHECKSUM: ea07892206371beeb63ceeba4a642280681db416
+PODFILE CHECKSUM: 36d1b91d537ada2ed4fe09f545c9c5718ff44095
 
 COCOAPODS: 1.5.3

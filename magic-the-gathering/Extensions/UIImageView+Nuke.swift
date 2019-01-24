@@ -15,7 +15,7 @@ extension UIImageView {
             Nuke.loadImage(
                 with: imageURL,
                 options: ImageLoadingOptions(
-                    placeholder: UIImage(named: "padrequevedo"),
+                    placeholder: R.image.padrequevedo(),
                     transition: .fadeIn(duration: 0.33)
                 ),
                 into: self

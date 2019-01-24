@@ -8,7 +8,7 @@ target 'magic-the-gathering' do
   pod 'SnapKit', '~> 4.2.0'
   pod 'Nuke', '~> 7.5.2'
   pod 'Reusable', '~> 4.0.5'
-  pod 'SwiftGen', '~> 6.0.2'
+  pod 'R.swift', '~> 5.0.2'
   
   # Pods for magic-the-gathering
 

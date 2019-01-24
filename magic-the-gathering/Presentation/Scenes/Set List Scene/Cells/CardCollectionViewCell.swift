@@ -34,7 +34,7 @@ class CardCollectionViewCell: UICollectionViewCell, Reusable {
         if let url = card.imageURL {
             self.cardImage.download(image: url)
         } else {
-            self.cardImage.image = UIImage(named: "padrequevedo")
+            self.cardImage.image = R.image.padrequevedo()
         }
     }
 }

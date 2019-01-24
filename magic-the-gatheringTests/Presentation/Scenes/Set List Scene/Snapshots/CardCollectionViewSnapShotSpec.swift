@@ -10,7 +10,6 @@ class CardCollectionViewSnapShotSpec: QuickSpec {
         
         beforeEach {
             cardCollectionView = CardCollectionView(frame: CGRect(origin: .zero, size: CGSize(width: 300, height: 500)), collectionViewLayout: UICollectionViewFlowLayout())
-            
         }
         
         it("has the expected look and feel") {

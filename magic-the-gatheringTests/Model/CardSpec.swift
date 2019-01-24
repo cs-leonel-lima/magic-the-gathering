@@ -27,11 +27,8 @@ class CardSpec: QuickSpec {
             }
             
             it("Should return nil") {
-                if let cards = CardsManager.initializeCardsArray(from: falseDataMock) {
-                    expect(cards).to(beNil())
-                } else {
-                    fail("failed to decode data")
-                }
+                let cards = CardsManager.initializeCardsArray(from: falseDataMock)
+                expect(cards).to(beNil())
             }
             
             

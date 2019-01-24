@@ -10,11 +10,9 @@ class MTGSetSpec: QuickSpec {
         describe("Testing MTGSet model with a JSON file") {
             
             var setsDataMock: Data!
-            var falseDataMock: Data!
             
             beforeEach {
                 setsDataMock = JSONHelper.getDataFrom(resource: "sets")
-                falseDataMock = JSONHelper.getDataFrom(resource: "cards")
             }
             
             it("Should get an array of MTGSets from data") {
@@ -26,8 +24,8 @@ class MTGSetSpec: QuickSpec {
                 }
             }
             
-            it("Should't return nil") {
-                if let sets = MTGSet.initializeSetsArray(from: falseDataMock) {
+            it("Shouldn't return nil") {
+                if let sets = MTGSet.initializeSetsArray(from: setsDataMock) {
                     expect(sets).toNot(beNil())
                     expect(sets.count).to(beGreaterThan(0))
                 } else {

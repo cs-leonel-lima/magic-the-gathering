@@ -1,7 +1,7 @@
 import UIKit
 
 class SetTableViewController: UITableViewController {
-    private var customDataSource: SetTableViewDatasource?
+    private var setTableViewDatasource: SetTableViewDatasource?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -9,10 +9,10 @@ class SetTableViewController: UITableViewController {
     
     override init(style: UITableView.Style) {
         super.init(style: style)
-        self.customDataSource = SetTableViewDatasource(items: MTGSet.mock(), tableView: self.tableView)
+        self.setTableViewDatasource = SetTableViewDatasource(items: MTGSet.mock(), tableView: self.tableView)
     }
     
     required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
+        fatalError("init(coder:) has not been implemented")
     }
 }

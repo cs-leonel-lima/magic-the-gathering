@@ -3,12 +3,12 @@ import UIKit
 class CardCollectionView: UICollectionView {
     internal var didSelectCard: ((Int) -> Void)?
     private var collectionHeightContraint: NSLayoutConstraint?
-    internal var customDataSource: CardsCollectionViewDataSource?
+    internal var cardsCollectionViewDataSource: CardsCollectionViewDataSource?
     internal lazy var cardsCollectionViewDelegate: CardsCollectionViewDelegate = CardsCollectionViewDelegate(delegate: self)
     
     override init(frame: CGRect, collectionViewLayout layout: UICollectionViewLayout) {
         super.init(frame: frame, collectionViewLayout: layout)
-        self.customDataSource = CardsCollectionViewDataSource(items: [], collectionView: self, delegate: self.cardsCollectionViewDelegate)
+        self.cardsCollectionViewDataSource = CardsCollectionViewDataSource(items: [], collectionView: self, delegate: self.cardsCollectionViewDelegate)
         self.addObserver(self, forKeyPath: "contentSize", options: NSKeyValueObservingOptions.new, context: nil)
     }
     
@@ -17,7 +17,7 @@ class CardCollectionView: UICollectionView {
     }
     
     func updateItems(cards: [Card]) {
-        self.customDataSource?.updateItems(items: cards)
+        self.cardsCollectionViewDataSource?.updateItems(items: cards)
     }
     
     override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey: Any]?, context: UnsafeMutableRawPointer?) {

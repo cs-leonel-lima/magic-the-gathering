@@ -19,7 +19,6 @@ class SetTableViewCellQS: QuickSpec {
             it("should have the expected look and feel") {
                 let frame = CGRect(origin: .zero, size: CGSize(width: 300, height: 500))
                 let view = SetTableViewCell(frame: frame)
-                // code goes here...
                 expect(view) == snapshot("SetTableViewCell")
             }
         }

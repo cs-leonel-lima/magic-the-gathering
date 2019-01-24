@@ -17,8 +17,8 @@ class CardSpec: QuickSpec {
     override func spec() {
         describe("Testing Card model with a JSON file") {
             
-            var cardsDataMock: Data?
-            var falseDataMock: Data?
+            var cardsDataMock: Data!
+            var falseDataMock: Data!
             
             beforeEach {
                 cardsDataMock = JSONHelper.getDataFrom(resource: "cards")
@@ -26,15 +26,19 @@ class CardSpec: QuickSpec {
             }
             
             it("Should get an array of Cards from data") {
-                if let data = cardsDataMock, let cards = CardsManager.initializeCardsArray(from: data) {
+                if let cards = CardsManager.initializeCardsArray(from: cardsDataMock) {
                     expect(cards).toNot(beNil())
                     expect(cards.count).to(beGreaterThan(0))
+                } else {
+                    fail("failed to decode data")
                 }
             }
             
             it("Should return nil") {
-                if let data = falseDataMock, let cards = CardsManager.initializeCardsArray(from: data) {
+                if let cards = CardsManager.initializeCardsArray(from: falseDataMock) {
                     expect(cards).to(beNil())
+                } else {
+                    fail("failed to decode data")
                 }
             }
             

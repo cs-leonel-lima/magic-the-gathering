@@ -16,7 +16,7 @@ class CardsManager {
         self.cards = cards
     }
     
-    static func categorize(_ cards: [Card]) -> [String: [Card]] {
+    static func categorize(_ cards: [Card]) -> Array<(String, [Card])> {
         var cardsCategorized: [String: [Card]] = [:]
         
         cards.forEach { card in
@@ -32,7 +32,7 @@ class CardsManager {
             }
         }
         
-        return cardsCategorized
+        return cardsCategorized.sorted(by: { return $0.0 < $1.0 })
     }
     
     func searchCards(with text: String) -> [Card] {

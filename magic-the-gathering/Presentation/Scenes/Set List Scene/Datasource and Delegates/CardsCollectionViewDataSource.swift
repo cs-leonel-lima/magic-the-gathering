@@ -10,7 +10,7 @@ import UIKit
 
 class CardsCollectionViewDataSource: NSObject, ItemCollectionViewDataSource {
     
-    var itemsDictionary: [String: [Card]] {
+    var itemsTuples: Array<(String, [Card])> {
         didSet {
             self.collectionView.reloadData()
         }
@@ -21,7 +21,7 @@ class CardsCollectionViewDataSource: NSObject, ItemCollectionViewDataSource {
     weak var delegate: UICollectionViewDelegate?
     
     required init(items: [Card], collectionView: UICollectionView, delegate: UICollectionViewDelegate) {
-        self.itemsDictionary = CardsManager.categorize(items)
+        self.itemsTuples = CardsManager.categorize(items)
         self.collectionView = collectionView
         self.delegate = delegate
         super.init()
@@ -32,11 +32,11 @@ class CardsCollectionViewDataSource: NSObject, ItemCollectionViewDataSource {
     }
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return itemsDictionary.count
+        return itemsTuples.count
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return itemsDictionary[Array(itemsDictionary.keys).sorted()[section]]?.count ?? 0
+        return itemsTuples[section].1.count
     }
     
     func collectionView(_ collectionView: UICollectionView,
@@ -45,13 +45,8 @@ class CardsCollectionViewDataSource: NSObject, ItemCollectionViewDataSource {
         else {
             fatalError("Could not dequeue cell")
         }
-        if let cardsContainer = itemsDictionary[Array(itemsDictionary.keys).sorted()[indexPath.section]] {
-            let card = cardsContainer[indexPath.item]
-            
-            if let url = card.imageURL {
-                cell.setupContent(imageURL: url)
-            }
-        }
+//        let card = itemsTuples[indexPath.section].1[indexPath.item]
+        
         return cell
     }
     
@@ -59,7 +54,7 @@ class CardsCollectionViewDataSource: NSObject, ItemCollectionViewDataSource {
         switch kind {
         case UICollectionView.elementKindSectionHeader:
             let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, for: indexPath, viewType: SetHeaderCollectionReusableView.self)
-            let typeName = Array(itemsDictionary.keys).sorted()[indexPath.section].description
+            let typeName = itemsTuples[indexPath.section].0
             header.setupContent(categoryTitle: typeName)
             return header
         default:
@@ -70,6 +65,6 @@ class CardsCollectionViewDataSource: NSObject, ItemCollectionViewDataSource {
     }
     
     func updateItems(items: [Card]) {
-        self.itemsDictionary = CardsManager.categorize(items)
+        self.itemsTuples = CardsManager.categorize(items)
     }
 }

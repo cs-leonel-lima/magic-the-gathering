@@ -32,7 +32,7 @@ DEPENDENCIES:
   - Nimble-Snapshots (~> 6.9.0)
   - Nuke (~> 7.5.2)
   - Quick (~> 1.3.2)
-  - R.swift
+  - R.swift (~> 5.0.2)
   - Reusable (~> 4.0.5)
   - SnapKit (~> 4.2.0)
   - SwiftLint (~> 0.30.1)
@@ -64,6 +64,6 @@ SPEC CHECKSUMS:
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
   SwiftLint: a54bf1fe12b55c68560eb2a7689dfc81458508f7
 
-PODFILE CHECKSUM: ba4d50684e20c575aa3718475b4a48cfc8eae633
+PODFILE CHECKSUM: 6c6f04f9ebc78e16f17029286346f24962f74ff1
 
 COCOAPODS: 1.5.3

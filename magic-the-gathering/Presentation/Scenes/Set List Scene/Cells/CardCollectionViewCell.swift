@@ -30,8 +30,10 @@ class CardCollectionViewCell: UICollectionViewCell {
         setupView()
     }
     
-    func setupContent(imageURL: String) {
-        self.cardImage.download(image: imageURL)
+    func setupContent(card: Card) {
+        if let url = card.imageURL {
+            self.cardImage.download(image: url)
+        }
     }
 }
 

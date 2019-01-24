@@ -45,7 +45,8 @@ class CardsCollectionViewDataSource: NSObject, ItemCollectionViewDataSource {
         else {
             fatalError("Could not dequeue cell")
         }
-//        let card = itemsTuples[indexPath.section].1[indexPath.item]
+        let card = itemsTuples[indexPath.section].1[indexPath.item]
+        cell.setupContent(card: card)
         
         return cell
     }

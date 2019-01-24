@@ -4,7 +4,7 @@
 target 'magic-the-gathering' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
-  pod 'SwiftLint', '~> 0.30.0'
+  pod 'SwiftLint', '~> 0.30.1'
   pod 'SnapKit', '~> 4.2.0'
   pod 'Nuke', '~> 7.5.2'
   pod 'Reusable', '~> 4.0.5'

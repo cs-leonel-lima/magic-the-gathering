@@ -19,7 +19,7 @@ class SetHeaderCollectionReusableView: UICollectionReusableView, Reusable {
     }()
     
     required init?(coder aDecoder: NSCoder) {
-        fatalError("Init do not apllied")
+        fatalError("init(coder:) has not been implemented")
     }
     
     override init(frame: CGRect) {

@@ -31,7 +31,7 @@ class SetTableViewCell: UITableViewCell {
     }
     
     required init?(coder aDecoder: NSCoder) {
-        fatalError("Init do not apllied")
+        fatalError("init(coder:) has not been implemented")
     }
     
 }
@@ -44,7 +44,7 @@ extension SetTableViewCell: CodeView {
     
     func setupConstraints() {
         mtgSetCollectionView.snp.makeConstraints { (make) in
-            make.edges.equalTo(self.snp.edges)
+            make.edges.equalToSuperview()
         }
     }
     

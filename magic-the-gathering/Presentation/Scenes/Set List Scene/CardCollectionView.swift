@@ -12,18 +12,16 @@ class CardCollectionView: UICollectionView {
     var didSelectCard: ((Int) -> Void)?
     var collectionHeightContraint: NSLayoutConstraint?
     var customDataSource: CardsCollectionViewDataSource?
-    //swiftlint:disable weak_delegate
-    lazy var customDelegate: CardsCollectionViewDelegate = CardsCollectionViewDelegate(delegate: self)
-    //swiftlint:enable weak_delegate
+    lazy var cardsCollectionViewDelegate: CardsCollectionViewDelegate = CardsCollectionViewDelegate(delegate: self)
     
     override init(frame: CGRect, collectionViewLayout layout: UICollectionViewLayout) {
         super.init(frame: frame, collectionViewLayout: layout)
-        self.customDataSource = CardsCollectionViewDataSource(items: [], collectionView: self, delegate: self.customDelegate)
+        self.customDataSource = CardsCollectionViewDataSource(items: [], collectionView: self, delegate: self.cardsCollectionViewDelegate)
         self.addObserver(self, forKeyPath: "contentSize", options: NSKeyValueObservingOptions.new, context: nil)
     }
     
     required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
+        fatalError("init(coder:) has not been implemented")
     }
     
     func updateItems(cards: [Card]) {

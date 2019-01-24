@@ -17,13 +17,12 @@ class CardCollectionViewCell: UICollectionViewCell {
         view.translatesAutoresizingMaskIntoConstraints = false
         view.contentMode = .scaleAspectFit
         view.layer.masksToBounds = true
-        //TODO: Implementar uma lista de corner radius pra cada device
         view.layer.cornerRadius = UIScreen.main.bounds.height / 25
         return view
     }()
     
     required init?(coder aDecoder: NSCoder) {
-        fatalError("Init do not apllied")
+        fatalError("init(coder:) has not been implemented")
     }
     
     override init(frame: CGRect = .zero) {

@@ -9,6 +9,7 @@ target 'magic-the-gathering' do
   pod 'Nuke', '~> 7.5.2'
   pod 'Reusable', '~> 4.0.5'
   pod 'R.swift', '~> 5.0.2'
+  pod 'SwiftFormat/CLI', '~> 0.37.4'
   
   # Pods for magic-the-gathering
 

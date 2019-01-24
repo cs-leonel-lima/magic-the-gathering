@@ -1,11 +1,3 @@
-//
-//  SetTableViewDataSource.swift
-//  magic-the-gathering
-//
-//  Created by leonel.menezes.lima on 22/01/19.
-//  Copyright © 2019 leonel.menezes.lima. All rights reserved.
-//
-
 import UIKit
 
 class SetTableViewDatasource: NSObject, ItemTableViewDataSource {

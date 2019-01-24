@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  magic-the-gathering
-//
-//  Created by leonel.menezes.lima on 17/01/19.
-//  Copyright © 2019 leonel.menezes.lima. All rights reserved.
-//
-
 import UIKit
 
 @UIApplicationMain

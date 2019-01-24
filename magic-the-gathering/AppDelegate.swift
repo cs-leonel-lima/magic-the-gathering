@@ -21,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 }
 
 extension AppDelegate {
-    func setupWindow() {
+    private func setupWindow() {
         self.window = UIWindow()
         self.window?.makeKeyAndVisible()
         let mainView = SetTableViewController(style: .grouped)

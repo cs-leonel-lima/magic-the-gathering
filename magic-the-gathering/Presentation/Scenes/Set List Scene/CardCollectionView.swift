@@ -9,10 +9,10 @@
 import UIKit
 
 class CardCollectionView: UICollectionView {
-    var didSelectCard: ((Int) -> Void)?
-    var collectionHeightContraint: NSLayoutConstraint?
-    var customDataSource: CardsCollectionViewDataSource?
-    lazy var cardsCollectionViewDelegate: CardsCollectionViewDelegate = CardsCollectionViewDelegate(delegate: self)
+    internal var didSelectCard: ((Int) -> Void)?
+    private var collectionHeightContraint: NSLayoutConstraint?
+    internal var customDataSource: CardsCollectionViewDataSource?
+    internal lazy var cardsCollectionViewDelegate: CardsCollectionViewDelegate = CardsCollectionViewDelegate(delegate: self)
     
     override init(frame: CGRect, collectionViewLayout layout: UICollectionViewLayout) {
         super.init(frame: frame, collectionViewLayout: layout)

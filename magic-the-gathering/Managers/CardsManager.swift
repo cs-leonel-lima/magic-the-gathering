@@ -42,4 +42,16 @@ class CardsManager {
         return filteredCards
     }
     
+    static func initializeCardsArray(from data: Data) -> [Card]? {
+        do {
+            let cardsDictionary = try JSONDecoder().decode([String: [Card]].self, from: data)
+            if let cards = cardsDictionary["cards"] {
+                return cards
+            }
+        } catch {
+            print(error.localizedDescription)
+        }
+        return nil
+    }
+    
 }

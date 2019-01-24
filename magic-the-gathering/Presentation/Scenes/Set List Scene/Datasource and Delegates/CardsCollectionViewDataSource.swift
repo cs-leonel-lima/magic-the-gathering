@@ -10,7 +10,7 @@ import UIKit
 
 class CardsCollectionViewDataSource: NSObject, ItemCollectionViewDataSource {
     
-    internal var itemsTuples: Array<(String, [Card])>
+    internal var itemsTuples: [(String, [Card])]
     
     internal var collectionView: UICollectionView
     

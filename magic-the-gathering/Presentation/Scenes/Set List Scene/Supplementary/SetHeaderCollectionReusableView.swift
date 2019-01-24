@@ -10,7 +10,7 @@ import UIKit
 import Reusable
 
 class SetHeaderCollectionReusableView: UICollectionReusableView, Reusable {
-    let categoryTitleLabel: UILabel = {
+    private let categoryTitleLabel: UILabel = {
         let label = UILabel()
         label.textAlignment = .left
         label.textColor = .darkGray

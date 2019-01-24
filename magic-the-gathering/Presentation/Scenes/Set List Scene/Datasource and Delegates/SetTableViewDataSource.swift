@@ -9,15 +9,15 @@
 import UIKit
 
 class SetTableViewDatasource: NSObject, ItemTableViewDataSource {
-    var items: [MTGSet]
-    var tableView: UITableView
+    internal var items: [MTGSet]
+    internal var tableView: UITableView
     
     required init(items: [MTGSet], tableView: UITableView) {
         self.items = items
         self.tableView = tableView
         super.init()
         setupTableView()
-        self.tableView.register(SetTableViewCell.self, forCellReuseIdentifier: SetTableViewCell.identifier)
+        self.tableView.register(cellType: SetTableViewCell.self)
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -29,10 +29,7 @@ class SetTableViewDatasource: NSObject, ItemTableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: SetTableViewCell.identifier) as? SetTableViewCell else {
-            return SetTableViewCell()
-        }
-        
+        let cell = tableView.dequeueReusableCell(for: indexPath, cellType: SetTableViewCell.self)
         return cell
     }
     

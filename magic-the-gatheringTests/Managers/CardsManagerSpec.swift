@@ -24,21 +24,21 @@ class CardsManagerSpec: QuickSpec {
             }
             
             it("Should initialize a manager given an array of cards") {
-                if let data = cardsDataMock, let cards = Card.initializeCardsArray(from: data) {
+                if let data = cardsDataMock, let cards = CardsManager.initializeCardsArray(from: data) {
                     let manager = CardsManager(cards: cards)
                     expect(manager).toNot(beNil())
                 }
             }
             
             it("Should divide cards by categories") {
-                if let data = cardsDataMock, let cards = Card.initializeCardsArray(from: data) {
+                if let data = cardsDataMock, let cards = CardsManager.initializeCardsArray(from: data) {
                     let cardsByCategory = CardsManager.categorize(cards)
                     expect(cardsByCategory).toNot(beNil())
                 }
             }
             
             it("Should match cards with the search text") {
-                if let data = cardsDataMock, let cards = Card.initializeCardsArray(from: data) {
+                if let data = cardsDataMock, let cards = CardsManager.initializeCardsArray(from: data) {
                     let manager = CardsManager(cards: cards)
                     let searchExample = manager.searchCards(with: "angel")
                     expect(searchExample).toNot(beNil())

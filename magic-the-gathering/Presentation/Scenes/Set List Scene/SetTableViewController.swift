@@ -9,7 +9,7 @@
 import UIKit
 
 class SetTableViewController: UITableViewController {
-    var customDataSource: SetTableViewDatasource?
+    private var customDataSource: SetTableViewDatasource?
 
     override func viewDidLoad() {
         super.viewDidLoad()

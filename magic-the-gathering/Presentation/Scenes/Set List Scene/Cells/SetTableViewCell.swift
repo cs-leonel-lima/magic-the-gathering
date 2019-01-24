@@ -7,11 +7,11 @@
 //
 
 import UIKit
+import Reusable
 
-class SetTableViewCell: UITableViewCell {
-    static let identifier = "SetTableViewCell"
+class SetTableViewCell: UITableViewCell, Reusable {
     
-    let mtgSetCollectionView: CardCollectionView = {
+    private let mtgSetCollectionView: CardCollectionView = {
         let collectionView = CardCollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout())
         collectionView.translatesAutoresizingMaskIntoConstraints = false
         collectionView.isScrollEnabled = false
@@ -23,7 +23,7 @@ class SetTableViewCell: UITableViewCell {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         setupView()
         
-        guard let cardsData = JSONHelper.getDataFrom(resource: "cards"), let cards = Card.initializeCardsArray(from: cardsData) else {
+        guard let cardsData = JSONHelper.getDataFrom(resource: "cards"), let cards = CardsManager.initializeCardsArray(from: cardsData) else {
             return
         }
         self.mtgSetCollectionView.updateItems(cards: cards)

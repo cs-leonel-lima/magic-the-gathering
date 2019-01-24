@@ -26,14 +26,14 @@ class CardSpec: QuickSpec {
             }
             
             it("Should get an array of Cards from data") {
-                if let data = cardsDataMock, let cards = Card.initializeCardsArray(from: data) {
+                if let data = cardsDataMock, let cards = CardsManager.initializeCardsArray(from: data) {
                     expect(cards).toNot(beNil())
                     expect(cards.count).to(beGreaterThan(0))
                 }
             }
             
             it("Should return nil") {
-                if let data = falseDataMock, let cards = Card.initializeCardsArray(from: data) {
+                if let data = falseDataMock, let cards = CardsManager.initializeCardsArray(from: data) {
                     expect(cards).to(beNil())
                 }
             }

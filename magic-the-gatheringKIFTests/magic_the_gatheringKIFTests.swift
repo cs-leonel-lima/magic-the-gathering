@@ -1,11 +1,3 @@
-//
-//  magic_the_gatheringKIFTests.swift
-//  magic-the-gatheringKIFTests
-//
-//  Created by leonel.menezes.lima on 18/01/19.
-//  Copyright © 2019 leonel.menezes.lima. All rights reserved.
-//
-
 import XCTest
 
 class magic_the_gatheringKIFTests: XCTestCase {

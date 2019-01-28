@@ -1,0 +1,12 @@
+strings:
+  inputs: Resources/Base.lproj/Localizable.strings
+  outputs:
+    - templateName: structured-swift4
+      output: Generated/strings.swift
+xcassets:
+  inputs:
+    - Resources/Images.xcassets
+    - Resources/MoreImages.xcassets
+  outputs:
+    - templateName: swift4
+      output: Generated/assets-images.swift

@@ -8,17 +8,35 @@
 
 /* Begin PBXBuildFile section */
 		2B09CADA21F22A72006F52FF /* CodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B09CAD921F22A72006F52FF /* CodeView.swift */; };
-		2B09CADC21F22BE1006F52FF /* ReusableCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B09CADB21F22BE1006F52FF /* ReusableCodeView.swift */; };
+		2B2643EB21F61942005192E2 /* CardsSelectionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2643EA21F61942005192E2 /* CardsSelectionDelegate.swift */; };
+		2B2643ED21F61A3B005192E2 /* CardsCollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2643EC21F61A3B005192E2 /* CardsCollectionViewDelegate.swift */; };
+		2B2643EF21F61C87005192E2 /* CardsCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2643EE21F61C87005192E2 /* CardsCollectionViewDataSource.swift */; };
+		2B2643F221F61D41005192E2 /* ItemTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2643F121F61D41005192E2 /* ItemTableViewDataSource.swift */; };
+		2B2643F421F61EB1005192E2 /* ItemCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2643F321F61EB1005192E2 /* ItemCollectionViewDataSource.swift */; };
+		2B2643F621F62393005192E2 /* CardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2643F521F62393005192E2 /* CardCollectionViewCell.swift */; };
+		2B2643FA21F62B06005192E2 /* CardsCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2643F921F62B06005192E2 /* CardsCollectionView.swift */; };
+		2B2643FD21F76F18005192E2 /* UIImageView+Nuke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2643FC21F76F18005192E2 /* UIImageView+Nuke.swift */; };
+		2B36B2AE21F89D1B004DD6CD /* CardCollectionViewCellQS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B36B2AD21F89D1B004DD6CD /* CardCollectionViewCellQS.swift */; };
+		2B4B52E021F7A5BF00204039 /* CardsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4B52DF21F7A5BF00204039 /* CardsManager.swift */; };
+		2B4B52E321F7A64E00204039 /* CardsManagerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4B52E221F7A64E00204039 /* CardsManagerSpec.swift */; };
+		2B4B52EE21F7A86E00204039 /* CardsCollectionViewDatasourceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4B52EC21F7A86D00204039 /* CardsCollectionViewDatasourceSpec.swift */; };
+		2B4B52EF21F7A86E00204039 /* SetTableViewDataSourceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4B52ED21F7A86D00204039 /* SetTableViewDataSourceSpec.swift */; };
+		2B4B52F121F7A8FC00204039 /* SetHeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4B52F021F7A8FC00204039 /* SetHeaderCollectionReusableView.swift */; };
+		2B7876C421F5FB6E0014B180 /* SetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7876C321F5FB6E0014B180 /* SetTableViewCell.swift */; };
+		2BE94EB421F8B0AC00E42F38 /* SetTableViewCellQS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE94EB321F8B0AC00E42F38 /* SetTableViewCellQS.swift */; };
 		3AA0BFE9190134895A6E78EE /* Pods_magic_the_gatheringKIFTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ED610329B0D5699F191C1F9 /* Pods_magic_the_gatheringKIFTests.framework */; };
 		3E7CF50D50D0599DD8B2A7B1 /* Pods_magic_the_gathering.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C73BD1011B0E6B65D6E0C9E1 /* Pods_magic_the_gathering.framework */; };
 		8F1C144F21F10A450077279C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1C144E21F10A450077279C /* AppDelegate.swift */; };
-		8F1C145121F10A450077279C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1C145021F10A450077279C /* ViewController.swift */; };
-		8F1C145421F10A450077279C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F1C145221F10A450077279C /* Main.storyboard */; };
 		8F1C145621F10A470077279C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F1C145521F10A470077279C /* Assets.xcassets */; };
 		8F1C145921F10A470077279C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F1C145721F10A470077279C /* LaunchScreen.storyboard */; };
+		8F77209B21F8EA9B0098C104 /* CardsCollectionViewSnapShotSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F77209A21F8EA9B0098C104 /* CardsCollectionViewSnapShotSpec.swift */; };
+		8F77209E21F8EC7C0098C104 /* CollectionViewDelegateMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F77209D21F8EC7C0098C104 /* CollectionViewDelegateMock.swift */; };
 		8F9A2C2221F211B700D6A2B6 /* magic_the_gatheringKIFTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9A2C2121F211B700D6A2B6 /* magic_the_gatheringKIFTests.swift */; };
+		8FA62F3921F9FC8900661DAB /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA62F3821F9FC8900661DAB /* R.generated.swift */; };
 		8FCECF4621F2129C005C654B /* Tester+System.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9A2C2D21F2123B00D6A2B6 /* Tester+System.swift */; };
-		EF0DDA6C21F2562D00664E61 /* JSONHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0DDA6B21F2562D00664E61 /* JSONHelper.swift */; };
+		8FCECF4821F72D7D005C654B /* SetTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCECF4721F72D7D005C654B /* SetTableViewDataSource.swift */; };
+		8FCECF4C21F73118005C654B /* SetTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCECF4B21F73118005C654B /* SetTableViewController.swift */; };
+		8FE35AF321F8A22700B727B8 /* JSONHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0DDA6B21F2562D00664E61 /* JSONHelper.swift */; };
 		EF2DE91D21F2278600A0D25D /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2DE91C21F2278600A0D25D /* Card.swift */; };
 		EF2DE91F21F2278D00A0D25D /* MTGSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2DE91E21F2278D00A0D25D /* MTGSet.swift */; };
 		EF2DE92221F22ADE00A0D25D /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2DE92121F22ADE00A0D25D /* DateFormatter.swift */; };
@@ -33,8 +51,6 @@
 		EF2DE92E21F240C700A0D25D /* cards-set-OVNT.json in Resources */ = {isa = PBXBuildFile; fileRef = EF2DE92521F240C700A0D25D /* cards-set-OVNT.json */; };
 		EF2DE93321F2422100A0D25D /* CardSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2DE93021F241CF00A0D25D /* CardSpec.swift */; };
 		EF2DE93521F2423100A0D25D /* MTGSetSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2DE93421F2423100A0D25D /* MTGSetSpec.swift */; };
-		EF4BCBA821F5FC1C007280F2 /* CardsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4BCBA721F5FC1C007280F2 /* CardsManager.swift */; };
-		EF4BCBAB21F601B0007280F2 /* CardsManagerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4BCBAA21F601B0007280F2 /* CardsManagerSpec.swift */; };
 		FDB04A0826B683BD5D5CD95D /* Pods_magic_the_gatheringTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E500CB7AFD10B11E601D63B /* Pods_magic_the_gatheringTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -59,25 +75,43 @@
 		0ED610329B0D5699F191C1F9 /* Pods_magic_the_gatheringKIFTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_magic_the_gatheringKIFTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		17B4C79DFB871A010BCC1031 /* Pods-magic-the-gatheringTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-magic-the-gatheringTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-magic-the-gatheringTests/Pods-magic-the-gatheringTests.debug.xcconfig"; sourceTree = "<group>"; };
 		2B09CAD921F22A72006F52FF /* CodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeView.swift; sourceTree = "<group>"; };
-		2B09CADB21F22BE1006F52FF /* ReusableCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableCodeView.swift; sourceTree = "<group>"; };
+		2B2643EA21F61942005192E2 /* CardsSelectionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsSelectionDelegate.swift; sourceTree = "<group>"; };
+		2B2643EC21F61A3B005192E2 /* CardsCollectionViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsCollectionViewDelegate.swift; sourceTree = "<group>"; };
+		2B2643EE21F61C87005192E2 /* CardsCollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsCollectionViewDataSource.swift; sourceTree = "<group>"; };
+		2B2643F121F61D41005192E2 /* ItemTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewDataSource.swift; sourceTree = "<group>"; };
+		2B2643F321F61EB1005192E2 /* ItemCollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionViewDataSource.swift; sourceTree = "<group>"; };
+		2B2643F521F62393005192E2 /* CardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCollectionViewCell.swift; sourceTree = "<group>"; };
+		2B2643F921F62B06005192E2 /* CardsCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsCollectionView.swift; sourceTree = "<group>"; };
+		2B2643FC21F76F18005192E2 /* UIImageView+Nuke.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Nuke.swift"; sourceTree = "<group>"; };
+		2B36B2AD21F89D1B004DD6CD /* CardCollectionViewCellQS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCollectionViewCellQS.swift; sourceTree = "<group>"; };
+		2B4B52DF21F7A5BF00204039 /* CardsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsManager.swift; sourceTree = "<group>"; };
+		2B4B52E221F7A64E00204039 /* CardsManagerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsManagerSpec.swift; sourceTree = "<group>"; };
+		2B4B52EC21F7A86D00204039 /* CardsCollectionViewDatasourceSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsCollectionViewDatasourceSpec.swift; sourceTree = "<group>"; };
+		2B4B52ED21F7A86D00204039 /* SetTableViewDataSourceSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetTableViewDataSourceSpec.swift; sourceTree = "<group>"; };
+		2B4B52F021F7A8FC00204039 /* SetHeaderCollectionReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetHeaderCollectionReusableView.swift; sourceTree = "<group>"; };
+		2B7876C321F5FB6E0014B180 /* SetTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetTableViewCell.swift; sourceTree = "<group>"; };
+		2BE94EB321F8B0AC00E42F38 /* SetTableViewCellQS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetTableViewCellQS.swift; sourceTree = "<group>"; };
 		3866305A5ABCBA3168D826FB /* Pods-magic-the-gatheringKIFTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-magic-the-gatheringKIFTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-magic-the-gatheringKIFTests/Pods-magic-the-gatheringKIFTests.release.xcconfig"; sourceTree = "<group>"; };
 		5B893359ABA28B1EC432E364 /* Pods-magic-the-gatheringKIFTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-magic-the-gatheringKIFTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-magic-the-gatheringKIFTests/Pods-magic-the-gatheringKIFTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5ED928E2BF48A7967253DDFB /* Pods-magic-the-gathering.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-magic-the-gathering.release.xcconfig"; path = "Pods/Target Support Files/Pods-magic-the-gathering/Pods-magic-the-gathering.release.xcconfig"; sourceTree = "<group>"; };
 		6E500CB7AFD10B11E601D63B /* Pods_magic_the_gatheringTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_magic_the_gatheringTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F1C144B21F10A450077279C /* magic-the-gathering.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "magic-the-gathering.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F1C144E21F10A450077279C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8F1C145021F10A450077279C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8F1C145321F10A450077279C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8F1C145521F10A470077279C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8F1C145821F10A470077279C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8F1C145A21F10A470077279C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8F1C145F21F10A470077279C /* magic-the-gatheringTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "magic-the-gatheringTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F1C146521F10A470077279C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F77209A21F8EA9B0098C104 /* CardsCollectionViewSnapShotSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsCollectionViewSnapShotSpec.swift; sourceTree = "<group>"; };
+		8F77209D21F8EC7C0098C104 /* CollectionViewDelegateMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewDelegateMock.swift; sourceTree = "<group>"; };
 		8F9A2C1F21F211B600D6A2B6 /* magic-the-gatheringKIFTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "magic-the-gatheringKIFTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F9A2C2121F211B700D6A2B6 /* magic_the_gatheringKIFTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = magic_the_gatheringKIFTests.swift; sourceTree = "<group>"; };
 		8F9A2C2321F211B700D6A2B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8F9A2C2D21F2123B00D6A2B6 /* Tester+System.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tester+System.swift"; sourceTree = "<group>"; };
 		8F9A2C2E21F2123C00D6A2B6 /* KIF+BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KIF+BridgingHeader.h"; sourceTree = "<group>"; };
+		8FA62F3821F9FC8900661DAB /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
+		8FCECF4721F72D7D005C654B /* SetTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetTableViewDataSource.swift; sourceTree = "<group>"; };
+		8FCECF4B21F73118005C654B /* SetTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetTableViewController.swift; sourceTree = "<group>"; };
 		AEA1ED764D237AC9D3D0DBCE /* Pods-magic-the-gathering.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-magic-the-gathering.debug.xcconfig"; path = "Pods/Target Support Files/Pods-magic-the-gathering/Pods-magic-the-gathering.debug.xcconfig"; sourceTree = "<group>"; };
 		C73BD1011B0E6B65D6E0C9E1 /* Pods_magic_the_gathering.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_magic_the_gathering.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF0DDA6B21F2562D00664E61 /* JSONHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONHelper.swift; sourceTree = "<group>"; };
@@ -90,7 +124,6 @@
 		EF2DE93021F241CF00A0D25D /* CardSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSpec.swift; sourceTree = "<group>"; };
 		EF2DE93421F2423100A0D25D /* MTGSetSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTGSetSpec.swift; sourceTree = "<group>"; };
 		EF4BCBA721F5FC1C007280F2 /* CardsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsManager.swift; sourceTree = "<group>"; };
-		EF4BCBAA21F601B0007280F2 /* CardsManagerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsManagerSpec.swift; sourceTree = "<group>"; };
 		FB14EFA640FA67CF17951232 /* Pods-magic-the-gatheringTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-magic-the-gatheringTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-magic-the-gatheringTests/Pods-magic-the-gatheringTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -125,6 +158,7 @@
 		2B09CAD721F22A4F006F52FF /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				2B7876C021F5FAFF0014B180 /* Scenes */,
 				2B09CAD821F22A66006F52FF /* View */,
 			);
 			path = Presentation;
@@ -134,9 +168,140 @@
 			isa = PBXGroup;
 			children = (
 				2B09CAD921F22A72006F52FF /* CodeView.swift */,
-				2B09CADB21F22BE1006F52FF /* ReusableCodeView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		2B2643E921F61907005192E2 /* Datasource and Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				2B2643EA21F61942005192E2 /* CardsSelectionDelegate.swift */,
+				2B2643EC21F61A3B005192E2 /* CardsCollectionViewDelegate.swift */,
+				2B2643EE21F61C87005192E2 /* CardsCollectionViewDataSource.swift */,
+				8FCECF4721F72D7D005C654B /* SetTableViewDataSource.swift */,
+			);
+			path = "Datasource and Delegates";
+			sourceTree = "<group>";
+		};
+		2B2643F021F61CB9005192E2 /* Generics */ = {
+			isa = PBXGroup;
+			children = (
+				2B2643F121F61D41005192E2 /* ItemTableViewDataSource.swift */,
+				2B2643F321F61EB1005192E2 /* ItemCollectionViewDataSource.swift */,
+			);
+			path = Generics;
+			sourceTree = "<group>";
+		};
+		2B2643FB21F76F04005192E2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2B2643FC21F76F18005192E2 /* UIImageView+Nuke.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2B3676F521F7B2D600022977 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				EF4BCBA721F5FC1C007280F2 /* CardsManager.swift */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		2B36B2AC21F89CAF004DD6CD /* Snapshots */ = {
+			isa = PBXGroup;
+			children = (
+				8F77209921F8E9EE0098C104 /* Cells */,
+				8F77209A21F8EA9B0098C104 /* CardsCollectionViewSnapShotSpec.swift */,
+			);
+			path = Snapshots;
+			sourceTree = "<group>";
+		};
+		2B4B52DE21F7A5A900204039 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				2B4B52DF21F7A5BF00204039 /* CardsManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		2B4B52E121F7A63100204039 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				2B4B52E221F7A64E00204039 /* CardsManagerSpec.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		2B4B52E621F7A7EF00204039 /* Supplementary */ = {
+			isa = PBXGroup;
+			children = (
+				2B4B52F021F7A8FC00204039 /* SetHeaderCollectionReusableView.swift */,
+			);
+			path = Supplementary;
+			sourceTree = "<group>";
+		};
+		2B4B52E721F7A82000204039 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				2B4B52E821F7A82800204039 /* Scenes */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		2B4B52E821F7A82800204039 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				2B4B52EA21F7A84400204039 /* Set List Scene */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		2B4B52EA21F7A84400204039 /* Set List Scene */ = {
+			isa = PBXGroup;
+			children = (
+				2B36B2AC21F89CAF004DD6CD /* Snapshots */,
+				2B4B52EB21F7A85200204039 /* Datasource and Delegates */,
+			);
+			path = "Set List Scene";
+			sourceTree = "<group>";
+		};
+		2B4B52EB21F7A85200204039 /* Datasource and Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				2B4B52EC21F7A86D00204039 /* CardsCollectionViewDatasourceSpec.swift */,
+				2B4B52ED21F7A86D00204039 /* SetTableViewDataSourceSpec.swift */,
+			);
+			path = "Datasource and Delegates";
+			sourceTree = "<group>";
+		};
+		2B7876C021F5FAFF0014B180 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				2B7876C121F5FB290014B180 /* Set List Scene */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		2B7876C121F5FB290014B180 /* Set List Scene */ = {
+			isa = PBXGroup;
+			children = (
+				2B4B52E621F7A7EF00204039 /* Supplementary */,
+				2B2643E921F61907005192E2 /* Datasource and Delegates */,
+				2B7876C221F5FB4E0014B180 /* Cells */,
+				2B2643F921F62B06005192E2 /* CardsCollectionView.swift */,
+				8FCECF4B21F73118005C654B /* SetTableViewController.swift */,
+			);
+			path = "Set List Scene";
+			sourceTree = "<group>";
+		};
+		2B7876C221F5FB4E0014B180 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				2B7876C321F5FB6E0014B180 /* SetTableViewCell.swift */,
+				2B2643F521F62393005192E2 /* CardCollectionViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		439DF7621F89A294E407897B /* Pods */ = {
@@ -171,6 +336,7 @@
 				8F1C144C21F10A450077279C /* Products */,
 				439DF7621F89A294E407897B /* Pods */,
 				680A5F76A3C8214B58F2654E /* Frameworks */,
+				2B3676F521F7B2D600022977 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -187,15 +353,15 @@
 		8F1C144D21F10A450077279C /* magic-the-gathering */ = {
 			isa = PBXGroup;
 			children = (
-				EF4BCBA621F5FC09007280F2 /* Managers */,
+				8FA62F3821F9FC8900661DAB /* R.generated.swift */,
+				2B4B52DE21F7A5A900204039 /* Managers */,
+				2B2643FB21F76F04005192E2 /* Extensions */,
+				2B2643F021F61CB9005192E2 /* Generics */,
 				2B09CAD721F22A4F006F52FF /* Presentation */,
 				8F1C144E21F10A450077279C /* AppDelegate.swift */,
-				8F1C145021F10A450077279C /* ViewController.swift */,
 				EF2DE91B21F2275200A0D25D /* Model */,
 				EF2DE92F21F240DA00A0D25D /* Resources */,
 				EF2DE92021F22ABF00A0D25D /* Utils */,
-				8F1C145221F10A450077279C /* Main.storyboard */,
-				8F1C145521F10A470077279C /* Assets.xcassets */,
 				8F1C145721F10A470077279C /* LaunchScreen.storyboard */,
 				8F1C145A21F10A470077279C /* Info.plist */,
 			);
@@ -205,12 +371,30 @@
 		8F1C146221F10A470077279C /* magic-the-gatheringTests */ = {
 			isa = PBXGroup;
 			children = (
-				EF4BCBA921F6019A007280F2 /* Managers */,
-				EF0DDA6A21F2560300664E61 /* Utils */,
+				8F77209C21F8EC5E0098C104 /* Mock & Stubbing */,
+				2B4B52E721F7A82000204039 /* Presentation */,
+				2B4B52E121F7A63100204039 /* Managers */,
 				8F1C146521F10A470077279C /* Info.plist */,
 				EF2DE93221F241D600A0D25D /* Model */,
 			);
 			path = "magic-the-gatheringTests";
+			sourceTree = "<group>";
+		};
+		8F77209921F8E9EE0098C104 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				2B36B2AD21F89D1B004DD6CD /* CardCollectionViewCellQS.swift */,
+				2BE94EB321F8B0AC00E42F38 /* SetTableViewCellQS.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		8F77209C21F8EC5E0098C104 /* Mock & Stubbing */ = {
+			isa = PBXGroup;
+			children = (
+				8F77209D21F8EC7C0098C104 /* CollectionViewDelegateMock.swift */,
+			);
+			path = "Mock & Stubbing";
 			sourceTree = "<group>";
 		};
 		8F9A2C2021F211B700D6A2B6 /* magic-the-gatheringKIFTests */ = {
@@ -232,14 +416,6 @@
 			path = Config;
 			sourceTree = "<group>";
 		};
-		EF0DDA6A21F2560300664E61 /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-				EF0DDA6B21F2562D00664E61 /* JSONHelper.swift */,
-			);
-			path = Utils;
-			sourceTree = "<group>";
-		};
 		EF2DE91B21F2275200A0D25D /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -253,6 +429,7 @@
 		EF2DE92021F22ABF00A0D25D /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				EF0DDA6B21F2562D00664E61 /* JSONHelper.swift */,
 				EF2DE92121F22ADE00A0D25D /* DateFormatter.swift */,
 			);
 			path = Utils;
@@ -261,6 +438,7 @@
 		EF2DE92F21F240DA00A0D25D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				8F1C145521F10A470077279C /* Assets.xcassets */,
 				EF2DE92421F240C700A0D25D /* cards.json */,
 				EF2DE92521F240C700A0D25D /* cards-set-OVNT.json */,
 				EF2DE92321F240C600A0D25D /* sets.json */,
@@ -278,22 +456,6 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		EF4BCBA621F5FC09007280F2 /* Managers */ = {
-			isa = PBXGroup;
-			children = (
-				EF4BCBA721F5FC1C007280F2 /* CardsManager.swift */,
-			);
-			path = Managers;
-			sourceTree = "<group>";
-		};
-		EF4BCBA921F6019A007280F2 /* Managers */ = {
-			isa = PBXGroup;
-			children = (
-				EF4BCBAA21F601B0007280F2 /* CardsManagerSpec.swift */,
-			);
-			path = Managers;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -302,10 +464,12 @@
 			buildConfigurationList = 8F1C146821F10A470077279C /* Build configuration list for PBXNativeTarget "magic-the-gathering" */;
 			buildPhases = (
 				223304D9C7A225AEA7288DCC /* [CP] Check Pods Manifest.lock */,
+				2B0925F121F9F87400C3F0B7 /* ShellScript */,
+				2B81EB7D21F2340C007D582B /* ShellScript */,
 				8F1C144721F10A450077279C /* Sources */,
 				8F1C144821F10A450077279C /* Frameworks */,
 				8F1C144921F10A450077279C /* Resources */,
-				2B81EB7D21F2340C007D582B /* ShellScript */,
+				34A4558A50C576B29376128C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -409,7 +573,6 @@
 				8F1C145621F10A470077279C /* Assets.xcassets in Resources */,
 				EF2DE92C21F240C700A0D25D /* cards-set-OVNT.json in Resources */,
 				EF2DE92921F240C700A0D25D /* cards.json in Resources */,
-				8F1C145421F10A450077279C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -480,6 +643,25 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-magic-the-gatheringKIFTests/Pods-magic-the-gatheringKIFTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		2B0925F121F9F87400C3F0B7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
+		};
 		2B81EB7D21F2340C007D582B /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -496,6 +678,34 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		34A4558A50C576B29376128C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-magic-the-gathering/Pods-magic-the-gathering-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Nuke/Nuke.framework",
+				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
+				"${BUILT_PRODUCTS_DIR}/Reusable/Reusable.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nuke.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reusable.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-magic-the-gathering/Pods-magic-the-gathering-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 		4993677CA76FBB5CEF775DEA /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -576,14 +786,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FE35AF321F8A22700B727B8 /* JSONHelper.swift in Sources */,
+				2B2643EB21F61942005192E2 /* CardsSelectionDelegate.swift in Sources */,
+				2B4B52E021F7A5BF00204039 /* CardsManager.swift in Sources */,
+				2B4B52F121F7A8FC00204039 /* SetHeaderCollectionReusableView.swift in Sources */,
+				8FCECF4821F72D7D005C654B /* SetTableViewDataSource.swift in Sources */,
+				2B2643FA21F62B06005192E2 /* CardsCollectionView.swift in Sources */,
 				2B09CADA21F22A72006F52FF /* CodeView.swift in Sources */,
-				EF4BCBA821F5FC1C007280F2 /* CardsManager.swift in Sources */,
+				8FA62F3921F9FC8900661DAB /* R.generated.swift in Sources */,
 				EF2DE91F21F2278D00A0D25D /* MTGSet.swift in Sources */,
-				8F1C145121F10A450077279C /* ViewController.swift in Sources */,
-				2B09CADC21F22BE1006F52FF /* ReusableCodeView.swift in Sources */,
+				2B7876C421F5FB6E0014B180 /* SetTableViewCell.swift in Sources */,
 				EF2DE91D21F2278600A0D25D /* Card.swift in Sources */,
+				2B2643F421F61EB1005192E2 /* ItemCollectionViewDataSource.swift in Sources */,
 				8F1C144F21F10A450077279C /* AppDelegate.swift in Sources */,
+				8FCECF4C21F73118005C654B /* SetTableViewController.swift in Sources */,
+				2B2643EF21F61C87005192E2 /* CardsCollectionViewDataSource.swift in Sources */,
+				2B2643ED21F61A3B005192E2 /* CardsCollectionViewDelegate.swift in Sources */,
+				2B2643F221F61D41005192E2 /* ItemTableViewDataSource.swift in Sources */,
+				2B2643F621F62393005192E2 /* CardCollectionViewCell.swift in Sources */,
 				EF2DE92221F22ADE00A0D25D /* DateFormatter.swift in Sources */,
+				2B2643FD21F76F18005192E2 /* UIImageView+Nuke.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -591,9 +813,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF4BCBAB21F601B0007280F2 /* CardsManagerSpec.swift in Sources */,
-				EF0DDA6C21F2562D00664E61 /* JSONHelper.swift in Sources */,
+				2BE94EB421F8B0AC00E42F38 /* SetTableViewCellQS.swift in Sources */,
+				2B4B52EE21F7A86E00204039 /* CardsCollectionViewDatasourceSpec.swift in Sources */,
+				2B4B52E321F7A64E00204039 /* CardsManagerSpec.swift in Sources */,
+				8F77209B21F8EA9B0098C104 /* CardsCollectionViewSnapShotSpec.swift in Sources */,
 				EF2DE93521F2423100A0D25D /* MTGSetSpec.swift in Sources */,
+				2B36B2AE21F89D1B004DD6CD /* CardCollectionViewCellQS.swift in Sources */,
+				8F77209E21F8EC7C0098C104 /* CollectionViewDelegateMock.swift in Sources */,
+				2B4B52EF21F7A86E00204039 /* SetTableViewDataSourceSpec.swift in Sources */,
 				EF2DE93321F2422100A0D25D /* CardSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -623,14 +850,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		8F1C145221F10A450077279C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8F1C145321F10A450077279C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		8F1C145721F10A470077279C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

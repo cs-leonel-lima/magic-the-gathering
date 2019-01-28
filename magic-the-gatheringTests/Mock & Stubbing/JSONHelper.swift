@@ -17,7 +17,6 @@ class JSONHelper {
                 let object = try JSONDecoder().decode([String: [T]].self, from: data)
                 return object[name]
             } catch {
-//                print(error)
                 return nil
             }
         }

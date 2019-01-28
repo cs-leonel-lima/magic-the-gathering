@@ -12,6 +12,11 @@ class SetTableViewDatasource: NSObject, ItemTableViewDataSource {
         self.tableView.register(cellType: SetTableViewCell.self)
     }
     
+    func updateItems(sets: [MTGSet]) {
+        self.items = sets
+        self.tableView.reloadData()
+    }
+    
     func numberOfSections(in tableView: UITableView) -> Int {
         return items.count
     }

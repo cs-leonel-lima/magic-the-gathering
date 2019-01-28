@@ -1,5 +1,5 @@
 //
-//  MTGSetService.swift
+//  MTGSetsService.swift
 //  magic-the-gathering
 //
 //  Created by isabel.isaura.l.lima on 28/01/2019.

@@ -51,6 +51,8 @@
 		EF2DE92E21F240C700A0D25D /* cards-set-OVNT.json in Resources */ = {isa = PBXBuildFile; fileRef = EF2DE92521F240C700A0D25D /* cards-set-OVNT.json */; };
 		EF2DE93321F2422100A0D25D /* CardSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2DE93021F241CF00A0D25D /* CardSpec.swift */; };
 		EF2DE93521F2423100A0D25D /* MTGSetSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2DE93421F2423100A0D25D /* MTGSetSpec.swift */; };
+		EFD0290321FF97400089FDDB /* CardService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD0290221FF97400089FDDB /* CardService.swift */; };
+		EFD0290521FF9F9C0089FDDB /* MTGSetService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD0290421FF9F9C0089FDDB /* MTGSetService.swift */; };
 		FDB04A0826B683BD5D5CD95D /* Pods_magic_the_gatheringTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E500CB7AFD10B11E601D63B /* Pods_magic_the_gatheringTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -124,6 +126,8 @@
 		EF2DE93021F241CF00A0D25D /* CardSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSpec.swift; sourceTree = "<group>"; };
 		EF2DE93421F2423100A0D25D /* MTGSetSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTGSetSpec.swift; sourceTree = "<group>"; };
 		EF4BCBA721F5FC1C007280F2 /* CardsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsManager.swift; sourceTree = "<group>"; };
+		EFD0290221FF97400089FDDB /* CardService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardService.swift; sourceTree = "<group>"; };
+		EFD0290421FF9F9C0089FDDB /* MTGSetService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTGSetService.swift; sourceTree = "<group>"; };
 		FB14EFA640FA67CF17951232 /* Pods-magic-the-gatheringTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-magic-the-gatheringTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-magic-the-gatheringTests/Pods-magic-the-gatheringTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -233,12 +237,12 @@
 			path = Managers;
 			sourceTree = "<group>";
 		};
-		2B4B52E621F7A7EF00204039 /* Supplementary */ = {
+		2B4B52E621F7A7EF00204039 /* Supplementary Views */ = {
 			isa = PBXGroup;
 			children = (
 				2B4B52F021F7A8FC00204039 /* SetHeaderCollectionReusableView.swift */,
 			);
-			path = Supplementary;
+			path = "Supplementary Views";
 			sourceTree = "<group>";
 		};
 		2B4B52E721F7A82000204039 /* Presentation */ = {
@@ -286,7 +290,8 @@
 		2B7876C121F5FB290014B180 /* Set List Scene */ = {
 			isa = PBXGroup;
 			children = (
-				2B4B52E621F7A7EF00204039 /* Supplementary */,
+				EFD0290121FF97240089FDDB /* Dependencies */,
+				2B4B52E621F7A7EF00204039 /* Supplementary Views */,
 				2B2643E921F61907005192E2 /* Datasource and Delegates */,
 				2B7876C221F5FB4E0014B180 /* Cells */,
 				2B2643F921F62B06005192E2 /* CardsCollectionView.swift */,
@@ -453,6 +458,15 @@
 				EF2DE93421F2423100A0D25D /* MTGSetSpec.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		EFD0290121FF97240089FDDB /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				EFD0290221FF97400089FDDB /* CardService.swift */,
+				EFD0290421FF9F9C0089FDDB /* MTGSetService.swift */,
+			);
+			path = Dependencies;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -786,6 +800,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8FE35AF321F8A22700B727B8 /* JSONHelper.swift in Sources */,
+				EFD0290321FF97400089FDDB /* CardService.swift in Sources */,
 				2B2643EB21F61942005192E2 /* CardsSelectionDelegate.swift in Sources */,
 				2B4B52E021F7A5BF00204039 /* CardsManager.swift in Sources */,
 				2B4B52F121F7A8FC00204039 /* SetHeaderCollectionReusableView.swift in Sources */,
@@ -798,6 +813,7 @@
 				EF2DE91D21F2278600A0D25D /* Card.swift in Sources */,
 				2B2643F421F61EB1005192E2 /* ItemCollectionViewDataSource.swift in Sources */,
 				8F1C144F21F10A450077279C /* AppDelegate.swift in Sources */,
+				EFD0290521FF9F9C0089FDDB /* MTGSetService.swift in Sources */,
 				8FCECF4C21F73118005C654B /* SetTableViewController.swift in Sources */,
 				2B2643EF21F61C87005192E2 /* CardsCollectionViewDataSource.swift in Sources */,
 				2B2643ED21F61A3B005192E2 /* CardsCollectionViewDelegate.swift in Sources */,

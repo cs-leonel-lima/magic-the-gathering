@@ -15,7 +15,7 @@ class SetTableViewCell: UITableViewCell, Reusable {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         setupView()
         
-        guard let cardsData = JSONHelper.getDataFrom(resource: "cards"), let cards = CardsManager.initializeCardsArray(from: cardsData) else {
+        guard let cards: [Card] = JSONHelper.objectFrom(resource: "cards") else {
             return
         }
         self.mtgSetCollectionView.updateItems(cards: cards)

@@ -16,17 +16,18 @@ class CategoryViewSpec: QuickSpec {
     
     override func spec() {
         
-        var cardMock: [Card]!
-        var collectionView: CategoryCollectionView!
-        let view = CategoryView(frame: .zero)
-        
-        beforeEach {
-            cardMock = JSONHelper.objectFrom(resource: "cards")!
-            collectionView = CategoryCollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout())
-            view.addSubview(collectionView)
-        }
-        
         describe("CategoryView") {
+            
+            var cardMock: [Card]!
+            var collectionView: CategoryCollectionView!
+            let view = CategoryView(frame: .zero)
+            
+            beforeEach {
+                cardMock = JSONHelper.objectFrom(resource: "cards")!
+                collectionView = CategoryCollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout())
+                view.addSubview(collectionView)
+            }
+            
             context("Category CollectionView DataSource update") {
                 
                 beforeEach {

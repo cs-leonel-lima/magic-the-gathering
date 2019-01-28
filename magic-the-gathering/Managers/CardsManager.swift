@@ -26,7 +26,7 @@ class CardsManager {
         
         return cardsCategorized.sorted(by: { return $0.0 < $1.0 })
     }
-    
+
     func searchCards(with text: String) -> [Card] {
         let filteredCards = cards.filter { card in
             return card.name.lowercased().contains(text.lowercased())

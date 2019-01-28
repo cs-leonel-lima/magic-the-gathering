@@ -2,7 +2,7 @@ import Quick
 import Nimble
 @testable import magic_the_gathering
 
-class CardsCollectionViewDatasourceScpec: QuickSpec {
+class CardsCollectionViewDatasourceSpec: QuickSpec {
     override func spec() {
             
             var dataSource: CardsCollectionViewDataSource!

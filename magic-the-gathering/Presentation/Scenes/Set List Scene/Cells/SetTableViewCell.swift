@@ -3,8 +3,8 @@ import Reusable
 
 class SetTableViewCell: UITableViewCell, Reusable {
     
-    private let mtgSetCollectionView: CardCollectionView = {
-        let collectionView = CardCollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout())
+    private let mtgSetCollectionView: CardsCollectionView = {
+        let collectionView = CardsCollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout())
         collectionView.translatesAutoresizingMaskIntoConstraints = false
         collectionView.isScrollEnabled = false
         collectionView.backgroundColor = .black

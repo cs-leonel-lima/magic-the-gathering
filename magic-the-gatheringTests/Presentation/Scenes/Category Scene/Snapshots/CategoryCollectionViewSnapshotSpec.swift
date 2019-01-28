@@ -14,7 +14,7 @@ import Nimble_Snapshots
 class CategoryCollectionViewSnapshot: QuickSpec {
     
     override func spec() {
-        let cardMock = Card.mock()
+        let cardMock: [Card] = JSONHelper.objectFrom(resource: "cards")!
         var collectionView: CategoryCollectionView!
         let dataSource = CategoryCollectionViewDataSource(cards: cardMock)
         let rootViewController = UIViewController(nibName: nil, bundle: nil)

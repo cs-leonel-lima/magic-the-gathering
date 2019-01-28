@@ -10,7 +10,7 @@ import UIKit
 
 class CategoryCollectionViewDataSource: NSObject, UICollectionViewDataSource {
     
-    var cards: [Card] = []
+    let cards: [Card]
     
     init(cards: [Card]) {
         self.cards = cards

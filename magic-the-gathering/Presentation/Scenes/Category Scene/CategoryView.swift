@@ -14,6 +14,7 @@ class CategoryView: UIView {
     private var categoryCollectionViewDataSource: CategoryCollectionViewDataSource?
     
     func setupCategoryCollection(with cards: [Card]) {
+        setupView()
         categoryCollectionViewDataSource = CategoryCollectionViewDataSource(cards: cards)
         categoryCollectionView.dataSource = categoryCollectionViewDataSource
     }

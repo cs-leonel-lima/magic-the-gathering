@@ -19,7 +19,6 @@ class CategoryViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        categoryView.setupView()
         categoryView.setupCategoryCollection(with: categoryCards)
     }
 }

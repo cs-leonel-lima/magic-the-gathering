@@ -20,7 +20,7 @@ class CategoryCollectionViewDataSourceSpec: QuickSpec {
         var collectionView: CategoryCollectionView!
         
         beforeEach {
-            dataSource = CategoryCollectionViewDataSource(cards: Card.mock())
+            dataSource = CategoryCollectionViewDataSource(cards: JSONHelper.objectFrom(resource: "cards")!)
             collectionView = CategoryCollectionView(frame: .zero, collectionViewLayout: CarouselCollectionViewLayout())
             collectionView.dataSource = dataSource
         }

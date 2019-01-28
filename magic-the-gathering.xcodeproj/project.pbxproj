@@ -327,6 +327,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		8F187CC821FF656200537852 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EF2DE91C21F2278600A0D25D /* Card.swift */,
+				EF2DE91E21F2278D00A0D25D /* MTGSet.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		8F1C144221F10A450077279C = {
 			isa = PBXGroup;
 			children = (
@@ -353,13 +362,13 @@
 		8F1C144D21F10A450077279C /* magic-the-gathering */ = {
 			isa = PBXGroup;
 			children = (
+				8F187CC821FF656200537852 /* Model */,
 				8FA62F3821F9FC8900661DAB /* R.generated.swift */,
 				2B4B52DE21F7A5A900204039 /* Managers */,
 				2B2643FB21F76F04005192E2 /* Extensions */,
 				2B2643F021F61CB9005192E2 /* Generics */,
 				2B09CAD721F22A4F006F52FF /* Presentation */,
 				8F1C144E21F10A450077279C /* AppDelegate.swift */,
-				EF2DE91B21F2275200A0D25D /* Model */,
 				EF2DE92F21F240DA00A0D25D /* Resources */,
 				EF2DE92021F22ABF00A0D25D /* Utils */,
 				8F1C145721F10A470077279C /* LaunchScreen.storyboard */,
@@ -414,16 +423,6 @@
 				8F9A2C2E21F2123C00D6A2B6 /* KIF+BridgingHeader.h */,
 			);
 			path = Config;
-			sourceTree = "<group>";
-		};
-		EF2DE91B21F2275200A0D25D /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				EF2DE91C21F2278600A0D25D /* Card.swift */,
-				EF2DE91E21F2278D00A0D25D /* MTGSet.swift */,
-			);
-			name = Model;
-			path = "New Group1";
 			sourceTree = "<group>";
 		};
 		EF2DE92021F22ABF00A0D25D /* Utils */ = {

@@ -14,18 +14,23 @@ class SetTableViewCell: UITableViewCell, Reusable {
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         setupView()
-        
-        guard let cards: [Card] = JSONHelper.objectFrom(resource: "cards") else {
-            return
-        }
-        self.mtgSetCollectionView.updateItems(cards: cards)
-        setupLayout()
     }
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
+    func setupData(service: CardService?) {
+        service?.getCards { result in
+            switch result {
+            case .success(let cards):
+                self.mtgSetCollectionView.updateItems(cards: cards)
+                self.setupLayout()
+            case .error(let error):
+                print(error.localizedDescription)
+            }
+        }
+    }
 }
 
 extension SetTableViewCell: CodeView {
@@ -40,11 +45,16 @@ extension SetTableViewCell: CodeView {
         }
     }
     
-    func setupAdditionalConfigurations() {}
+    func setupAdditionalConfigurations() {
+        self.contentView.frame.size.height = self.mtgSetCollectionView.contentSize.height
+        self.layoutIfNeeded()
+        self.mtgSetCollectionView.collectionViewLayout.invalidateLayout()
+    }
     
     func setupLayout() {
         self.contentView.frame.size.height = self.mtgSetCollectionView.contentSize.height
         self.layoutIfNeeded()
         self.mtgSetCollectionView.collectionViewLayout.invalidateLayout()
     }
+    
 }

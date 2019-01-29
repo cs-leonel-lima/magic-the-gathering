@@ -7,7 +7,6 @@
 //
 
 import Foundation
-@testable import magic_the_gathering
 
 class JSONHelper {
     static func objectFrom<T: Decodable>(resource name: String) -> [T]? {
@@ -19,17 +18,6 @@ class JSONHelper {
             } catch {
                 return nil
             }
-        }
-        return nil
-    }
-    static func initializeCardsArray(from data: Data) -> [Card]? {
-        do {
-            let cardsDictionary = try JSONDecoder().decode([String: [Card]].self, from: data)
-            if let cards = cardsDictionary["cards"] {
-                return cards
-            }
-        } catch {
-            print(error.localizedDescription)
         }
         return nil
     }

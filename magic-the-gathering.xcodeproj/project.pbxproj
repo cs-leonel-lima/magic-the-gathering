@@ -63,6 +63,8 @@
 		EFD0290321FF97400089FDDB /* MagicService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD0290221FF97400089FDDB /* MagicService.swift */; };
 		EFD9ACB022007EE500314189 /* JSONHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC0C1B321FF6A980003F004 /* JSONHelper.swift */; };
 		EFD9ACB32200934800314189 /* MTGEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD9ACB22200934800314189 /* MTGEnums.swift */; };
+		EFD9ACB72200BC9700314189 /* MagicServiceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD9ACB62200BC9700314189 /* MagicServiceSpec.swift */; };
+		EFD9ACB92200BDB300314189 /* MagicServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD9ACB82200BDB300314189 /* MagicServiceMock.swift */; };
 		FDB04A0826B683BD5D5CD95D /* Pods_magic_the_gatheringTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E500CB7AFD10B11E601D63B /* Pods_magic_the_gatheringTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -147,6 +149,8 @@
 		EFC0C1B521FF6C690003F004 /* CategoryViewSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewSpec.swift; sourceTree = "<group>"; };
 		EFD0290221FF97400089FDDB /* MagicService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicService.swift; sourceTree = "<group>"; };
 		EFD9ACB22200934800314189 /* MTGEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTGEnums.swift; sourceTree = "<group>"; };
+		EFD9ACB62200BC9700314189 /* MagicServiceSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicServiceSpec.swift; sourceTree = "<group>"; };
+		EFD9ACB82200BDB300314189 /* MagicServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicServiceMock.swift; sourceTree = "<group>"; };
 		FB14EFA640FA67CF17951232 /* Pods-magic-the-gatheringTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-magic-the-gatheringTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-magic-the-gatheringTests/Pods-magic-the-gatheringTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -284,6 +288,7 @@
 		2B4B52EA21F7A84400204039 /* Set List Scene */ = {
 			isa = PBXGroup;
 			children = (
+				EFD9ACB52200BC8300314189 /* Dependencies */,
 				2B36B2AC21F89CAF004DD6CD /* Snapshots */,
 				2B4B52EB21F7A85200204039 /* Datasource and Delegates */,
 			);
@@ -430,6 +435,7 @@
 			children = (
 				EFC0C1B321FF6A980003F004 /* JSONHelper.swift */,
 				8F77209D21F8EC7C0098C104 /* CollectionViewDelegateMock.swift */,
+				EFD9ACB82200BDB300314189 /* MagicServiceMock.swift */,
 			);
 			path = "Mock & Stubbing";
 			sourceTree = "<group>";
@@ -543,6 +549,14 @@
 				EFD9ACB22200934800314189 /* MTGEnums.swift */,
 			);
 			path = Enums;
+			sourceTree = "<group>";
+		};
+		EFD9ACB52200BC8300314189 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				EFD9ACB62200BC9700314189 /* MagicServiceSpec.swift */,
+			);
+			path = Dependencies;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -913,6 +927,7 @@
 				EFC0C1AF21FF6A180003F004 /* CarouselCollectionViewLayoutSpec.swift in Sources */,
 				2B4B52EE21F7A86E00204039 /* CardsCollectionViewDatasourceSpec.swift in Sources */,
 				2B4B52E321F7A64E00204039 /* CardsManagerSpec.swift in Sources */,
+				EFD9ACB72200BC9700314189 /* MagicServiceSpec.swift in Sources */,
 				8F77209B21F8EA9B0098C104 /* CardsCollectionViewSnapShotSpec.swift in Sources */,
 				EF2DE93521F2423100A0D25D /* MTGSetSpec.swift in Sources */,
 				2B36B2AE21F89D1B004DD6CD /* CardCollectionViewCellQS.swift in Sources */,
@@ -921,6 +936,7 @@
 				EFC0C1B421FF6A980003F004 /* JSONHelper.swift in Sources */,
 				8F77209E21F8EC7C0098C104 /* CollectionViewDelegateMock.swift in Sources */,
 				2B4B52EF21F7A86E00204039 /* SetTableViewDataSourceSpec.swift in Sources */,
+				EFD9ACB92200BDB300314189 /* MagicServiceMock.swift in Sources */,
 				EF2DE93321F2422100A0D25D /* CardSpec.swift in Sources */,
 				EFC0C1B221FF6A2D0003F004 /* CategoryCollectionViewSnapshotSpec.swift in Sources */,
 			);

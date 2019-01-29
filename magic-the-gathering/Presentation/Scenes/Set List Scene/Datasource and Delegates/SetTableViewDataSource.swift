@@ -3,10 +3,12 @@ import UIKit
 class SetTableViewDatasource: NSObject, ItemTableViewDataSource {
     internal var items: [MTGSet]
     internal var tableView: UITableView
+    internal weak var delegate: UITableViewDelegate?
     
-    required init(items: [MTGSet], tableView: UITableView) {
+    required init(items: [MTGSet], tableView: UITableView, delegate: UITableViewDelegate) {
         self.items = items
         self.tableView = tableView
+        self.delegate = delegate
         super.init()
         setupTableView()
         self.tableView.register(cellType: SetTableViewCell.self)
@@ -24,5 +26,10 @@ class SetTableViewDatasource: NSObject, ItemTableViewDataSource {
         let cell = tableView.dequeueReusableCell(for: indexPath, cellType: SetTableViewCell.self)
         return cell
     }
-    
+}
+
+extension SetTableViewDatasource: SetViewForHeaderDelegate {
+    func titleForHeader(in section: Int) -> String {
+        return self.items[section].name
+    }
 }

@@ -1,11 +1,3 @@
-//
-//  OpenChallengesCollectionViewLayout.swift
-//  Clicks!
-//
-//  Created by Leonel Menezes on 13/06/2018.
-//  Copyright © 2018 Leonel Menezes. All rights reserved.
-//
-
 import Foundation
 import UIKit
 

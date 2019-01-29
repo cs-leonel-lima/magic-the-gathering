@@ -587,8 +587,9 @@
 			buildConfigurationList = 8F1C146821F10A470077279C /* Build configuration list for PBXNativeTarget "magic-the-gathering" */;
 			buildPhases = (
 				223304D9C7A225AEA7288DCC /* [CP] Check Pods Manifest.lock */,
-				2B0925F121F9F87400C3F0B7 /* ShellScript */,
+				2B0925F121F9F87400C3F0B7 /* Run Script */,
 				2B81EB7D21F2340C007D582B /* ShellScript */,
+				8F187CCE2200D4DE00537852 /* ShellScript */,
 				8F1C144721F10A450077279C /* Sources */,
 				8F1C144821F10A450077279C /* Frameworks */,
 				8F1C144921F10A450077279C /* Resources */,
@@ -766,7 +767,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-magic-the-gatheringKIFTests/Pods-magic-the-gatheringKIFTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		2B0925F121F9F87400C3F0B7 /* ShellScript */ = {
+		2B0925F121F9F87400C3F0B7 /* Run Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -776,6 +777,7 @@
 			inputPaths = (
 				"$TEMP_DIR/rswift-lastrun",
 			);
+			name = "Run Script";
 			outputFileListPaths = (
 			);
 			outputPaths = (
@@ -857,6 +859,23 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-magic-the-gatheringTests/Pods-magic-the-gatheringTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		8F187CCE2200D4DE00537852 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${PODS_ROOT}/SwiftFormat/CommandLineTool/swiftformat\"\n";
 		};
 		A83F9E44F46C8590F5E1DCE7 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;

@@ -31,6 +31,6 @@ extension Card: Decodable {
 
 extension Card: Equatable {
     static func == (lhs: Card, rhs: Card) -> Bool {
-        return lhs.name == rhs.name
+        return lhs.id == rhs.id
     }
 }

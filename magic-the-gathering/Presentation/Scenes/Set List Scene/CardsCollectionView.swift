@@ -1,11 +1,14 @@
 import UIKit
 
 class CardsCollectionView: UICollectionView {
+    
     internal var didSelectCard: ((Int) -> Void)?
+    
     private var collectionHeightContraint: NSLayoutConstraint?
+    
     internal var cardsCollectionViewDataSource: CardsCollectionViewDataSource?
     internal lazy var cardsCollectionViewDelegate: CardsCollectionViewDelegate = CardsCollectionViewDelegate(delegate: self)
-    
+
     override init(frame: CGRect, collectionViewLayout layout: UICollectionViewLayout) {
         super.init(frame: frame, collectionViewLayout: layout)
         self.cardsCollectionViewDataSource = CardsCollectionViewDataSource(items: [], collectionView: self, delegate: self.cardsCollectionViewDelegate)

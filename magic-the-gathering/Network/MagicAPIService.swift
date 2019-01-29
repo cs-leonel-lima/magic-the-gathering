@@ -10,10 +10,11 @@ import Foundation
 
 class MagicAPIService {
     
-    private static let setsPageSize: Int = 5
-    
-    private var setsCurrentPage: Int = 1
-    private var setsCache: [MTGSet] = []
+    private var setsCache: [MTGSet] = [] {
+        didSet {
+            setsCache = setsCache.sorted().reversed()
+        }
+    }
     
     private var needsSetRequest: Bool {
         return setsCache.count == 0
@@ -31,7 +32,7 @@ extension MagicAPIService: MagicService {
             requestCardSets() { result in
                 switch result {
                 case .success(let sets):
-                    self.cache(sets)
+                    self.setsCache.append(contentsOf: sets)
                     completion(.success(self.nextSet))
                     
                 case .error(let error):
@@ -66,14 +67,9 @@ extension MagicAPIService: MagicService {
 
 extension MagicAPIService {
     
-    private func cache(_ sets: [MTGSet]) {
-        setsCache.append(contentsOf: sets)
-        setsCurrentPage += 1
-    }
-    
     private func requestCardSets(_ completion: @escaping (MagicAPIResult<[MTGSet]>) -> Void) {
         
-        let route = MagicAPI.setsDomain(withParams: "page=\(setsCurrentPage)&pageSize=\(MagicAPIService.setsPageSize)")
+        let route = MagicAPI.setsDomain()
         
         let operation = URLSessionGetOperation<[String: [MTGSet]]>(route: route)
         operation.execute { result in

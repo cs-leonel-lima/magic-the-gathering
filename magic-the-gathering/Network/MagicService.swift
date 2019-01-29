@@ -7,3 +7,13 @@
 //
 
 import Foundation
+
+typealias MagicService = MTGSetService & CardService
+
+protocol MTGSetService {
+    func getSet(_ completion: @escaping (MagicAPIResult<MTGSet>) -> Void)
+}
+
+protocol CardService {
+    func getCards(_ completion: @escaping (MagicAPIResult<[Card]>) -> Void)
+}

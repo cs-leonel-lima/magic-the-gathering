@@ -27,3 +27,9 @@ class SetTableViewDatasource: NSObject, ItemTableViewDataSource {
         return cell
     }
 }
+
+extension SetTableViewDatasource: SetViewForHeaderDelegate {
+    func titleForHeader(in section: Int) -> String {
+        return self.items[section].name
+    }
+}

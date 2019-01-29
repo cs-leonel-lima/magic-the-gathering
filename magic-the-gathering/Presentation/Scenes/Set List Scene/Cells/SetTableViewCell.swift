@@ -10,6 +10,8 @@ class SetTableViewCell: UITableViewCell, Reusable {
         return collectionView
     }()
     
+    private var cardsManager: CardsManager?
+    
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         setupView()
@@ -24,11 +26,22 @@ class SetTableViewCell: UITableViewCell, Reusable {
             switch result {
             case .success(let cards):
                 self.mtgSetCollectionView.updateItems(cards: cards)
+                self.cardsManager = CardsManager(cards: cards)
                 self.setupLayout()
             case .error(let error):
                 print(error.localizedDescription)
             }
         }
+    }
+    
+    func searchWithText(_ searchText: String) {
+        /* Search Step #3
+           1. search on card manager,
+           2. get searchResult and use it to update the CollectionView
+         
+         I think it needs a enum with 2 cases, searching or notSearching */
+        guard let searchResult = cardsManager?.searchCards(with: searchText) else { return }
+        self.mtgSetCollectionView.updateItems(cards: searchResult)
     }
 }
 

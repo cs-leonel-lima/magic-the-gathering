@@ -1,6 +1,13 @@
 import UIKit
 
 class SetTableViewController: UITableViewController {
+    
+    let searchController: UISearchController = {
+        let controller = UISearchController(searchResultsController: nil)
+        controller.definesPresentationContext = false
+        return controller
+    }()
+    
     private var setTableViewDatasource: SetTableViewDatasource?
     private let context: EnviromentContext
     
@@ -28,4 +35,16 @@ class SetTableViewController: UITableViewController {
         self.tableView.backgroundView = BackgroundView()
         self.tableView.separatorStyle = .none
     }
+
+}
+
+extension SetTableViewController: UISearchResultsUpdating {
+    
+    // Search Step #1
+    /* 1. chamar o método do dataSource da tableView com o searchText */
+    func updateSearchResults(for searchController: UISearchController) {
+        guard let searchText = searchController.searchBar.text else { return }
+        setTableViewDatasource?.search(with: searchText)
+    }
+    
 }

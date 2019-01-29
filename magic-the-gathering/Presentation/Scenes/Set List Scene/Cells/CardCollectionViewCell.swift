@@ -9,7 +9,8 @@ class CardCollectionViewCell: UICollectionViewCell, Reusable {
         view.translatesAutoresizingMaskIntoConstraints = false
         view.contentMode = .scaleAspectFit
         view.layer.masksToBounds = true
-        view.layer.cornerRadius = UIScreen.main.bounds.height / 25
+        view.backgroundColor = .clear
+        view.layer.cornerRadius = 15.0
         return view
     }()
     
@@ -43,6 +44,8 @@ extension CardCollectionViewCell: CodeView {
         }
     }
     
-    func setupAdditionalConfigurations() {}
+    func setupAdditionalConfigurations() {
+        self.backgroundColor = .clear
+    }
     
 }

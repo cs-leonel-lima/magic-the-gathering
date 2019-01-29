@@ -14,11 +14,11 @@ protocol MTGSetService {
     func getSet(_ completion: @escaping (MagicAPIResult<MTGSet>) -> Void)
 }
 
-protocol CardService: class {
+protocol CardService {
     func getCards(_ completion: @escaping (_ result: MagicAPIResult<[Card]>) -> Void)
 }
 
-class LocalMagicService: CardService, MTGSetService {
+class LocalMagicService: MagicService {
     func getSet(_ completion: @escaping (MagicAPIResult<MTGSet>) -> Void) {
         let setsMock: MTGSet = JSONHelper.objectFrom(resource: "sets")!.first!
         let result = MagicAPIResult.success(setsMock)
@@ -32,7 +32,7 @@ class LocalMagicService: CardService, MTGSetService {
     }
 }
 
-class RemoteMagicService: CardService, MTGSetService {
+class RemoteMagicService: MagicService {
     func getSet(_ completion: @escaping (MagicAPIResult<MTGSet>) -> Void) {
         let setsMock: MTGSet = JSONHelper.objectFrom(resource: "sets")!.first!
         let result = MagicAPIResult.success(setsMock)

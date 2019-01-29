@@ -46,9 +46,6 @@ extension SetTableViewCell: CodeView {
     }
     
     func setupAdditionalConfigurations() {
-        self.contentView.frame.size.height = self.mtgSetCollectionView.contentSize.height
-        self.layoutIfNeeded()
-        self.mtgSetCollectionView.collectionViewLayout.invalidateLayout()
     }
     
     func setupLayout() {

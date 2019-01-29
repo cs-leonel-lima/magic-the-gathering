@@ -3,11 +3,7 @@ import UIKit
 class SetTableViewDatasource: NSObject, ItemTableViewDataSource {
     internal var items: [MTGSet]
     internal var tableView: UITableView
-    private var service: MagicService? {
-        didSet {
-            setupData()
-        }
-    }
+    private var service: MagicService?
     
     required init(items: [MTGSet], tableView: UITableView) {
         self.items = items

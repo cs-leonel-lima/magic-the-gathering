@@ -6,6 +6,7 @@ class SetHeaderSectionTableView: UIView {
         label.textColor = .white
         label.font = UIFont.systemFont(ofSize: 36, weight: .bold)
         label.numberOfLines = 0
+        label.clipsToBounds = true
         return label
     }()
     
@@ -27,9 +28,10 @@ extension SetHeaderSectionTableView: CodeView {
     
     func setupConstraints() {
         titleLabel.snp.makeConstraints { (maker) in
-            maker.center.width.height.equalToSuperview()
+            maker.centerY.equalToSuperview()
             maker.leading.equalToSuperview().inset(10)
-            maker.trailing.equalToSuperview().offset(10)
+            maker.trailing.equalToSuperview().inset(10)
+            maker.height.equalToSuperview()
         }
     }
     

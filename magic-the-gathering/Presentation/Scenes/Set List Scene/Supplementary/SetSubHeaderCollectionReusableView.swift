@@ -1,7 +1,7 @@
 import UIKit
 import Reusable
 
-class SetHeaderCollectionReusableView: UICollectionReusableView, Reusable {
+class SetSubHeaderCollectionReusableView: UICollectionReusableView, Reusable {
     private let categoryTitleLabel: UILabel = {
         let label = UILabel()
         label.textAlignment = .left
@@ -24,7 +24,7 @@ class SetHeaderCollectionReusableView: UICollectionReusableView, Reusable {
     }
 }
 
-extension SetHeaderCollectionReusableView: CodeView {
+extension SetSubHeaderCollectionReusableView: CodeView {
     func buildViewHierarchy() {
         addSubview(categoryTitleLabel)
     }

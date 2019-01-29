@@ -14,8 +14,9 @@ class CardsCollectionViewDataSource: NSObject, ItemCollectionViewDataSource {
         self.delegate = delegate
         super.init()
         setupCollectionView()
+        collectionView.backgroundColor = .clear
         collectionView.register(cellType: CardCollectionViewCell.self)
-        collectionView.register(supplementaryViewType: SetHeaderCollectionReusableView.self, ofKind: UICollectionView.elementKindSectionHeader)
+        collectionView.register(supplementaryViewType: SetSubHeaderCollectionReusableView.self, ofKind: UICollectionView.elementKindSectionHeader)
     }
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
@@ -39,7 +40,7 @@ class CardsCollectionViewDataSource: NSObject, ItemCollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         switch kind {
         case UICollectionView.elementKindSectionHeader:
-            let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, for: indexPath, viewType: SetHeaderCollectionReusableView.self)
+            let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, for: indexPath, viewType: SetSubHeaderCollectionReusableView.self)
             let typeName = itemsTuples[indexPath.section].0
             header.setupContent(categoryTitle: typeName)
             return header

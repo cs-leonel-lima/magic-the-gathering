@@ -7,14 +7,12 @@ class SetTableViewCell: UITableViewCell, Reusable {
         let collectionView = CardsCollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout())
         collectionView.translatesAutoresizingMaskIntoConstraints = false
         collectionView.isScrollEnabled = false
-        collectionView.backgroundColor = .black
         return collectionView
     }()
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         setupView()
-        
         guard let cardsData = JSONHelper.getDataFrom(resource: "cards"), let cards = CardsManager.initializeCardsArray(from: cardsData) else {
             return
         }
@@ -40,7 +38,9 @@ extension SetTableViewCell: CodeView {
         }
     }
     
-    func setupAdditionalConfigurations() {}
+    func setupAdditionalConfigurations() {
+        self.backgroundColor = .clear
+    }
     
     func setupLayout() {
         self.contentView.frame.size.height = self.mtgSetCollectionView.contentSize.height

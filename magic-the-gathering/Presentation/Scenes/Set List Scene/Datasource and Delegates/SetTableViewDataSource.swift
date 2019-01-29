@@ -9,6 +9,7 @@ class SetTableViewDatasource: NSObject, ItemTableViewDataSource {
         self.tableView = tableView
         super.init()
         setupTableView()
+        self.tableView.backgroundView = BackgroundView()
         self.tableView.register(cellType: SetTableViewCell.self)
     }
     

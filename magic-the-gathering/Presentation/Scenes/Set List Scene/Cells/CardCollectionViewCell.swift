@@ -43,6 +43,8 @@ extension CardCollectionViewCell: CodeView {
         }
     }
     
-    func setupAdditionalConfigurations() {}
+    func setupAdditionalConfigurations() {
+        self.backgroundColor = .clear
+    }
     
 }

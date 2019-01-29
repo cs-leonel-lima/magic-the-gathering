@@ -11,11 +11,7 @@ class CardsCollectionViewDatasourceSpec: QuickSpec {
             
             beforeEach {
                 collectionView = UICollectionView(frame: CGRect(origin: .zero, size: CGSize(width: 300, height: 500)), collectionViewLayout: UICollectionViewLayout())
-                guard let cardData = JSONHelper.getDataFrom(resource: "cards"),
-                    let cards = CardsManager.initializeCardsArray(from: cardData) else {
-                        fail("could not initialize cards from mock")
-                        return
-                }
+                let cards: [Card] = JSONHelper.objectFrom(resource: "cards")!
                 dataSource = CardsCollectionViewDataSource(items: cards, collectionView: collectionView, delegate: CollectionViewDelegateMock())
             }
             

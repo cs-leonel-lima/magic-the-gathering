@@ -3,10 +3,12 @@ import UIKit
 class SetTableViewDatasource: NSObject, ItemTableViewDataSource {
     internal var items: [MTGSet]
     internal var tableView: UITableView
+    internal weak var delegate: UITableViewDelegate?
     
-    required init(items: [MTGSet], tableView: UITableView) {
+    required init(items: [MTGSet], tableView: UITableView, delegate: UITableViewDelegate) {
         self.items = items
         self.tableView = tableView
+        self.delegate = delegate
         super.init()
         setupTableView()
         self.tableView.backgroundView = BackgroundView()

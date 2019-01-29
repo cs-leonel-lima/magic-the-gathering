@@ -4,12 +4,13 @@ import Reusable
 
 class CardCollectionViewCell: UICollectionViewCell, Reusable {
     
-    private let cardImage: UIImageView = {
+    private var cardImage: UIImageView = {
         let view = UIImageView()
         view.translatesAutoresizingMaskIntoConstraints = false
         view.contentMode = .scaleAspectFit
         view.layer.masksToBounds = true
-        view.layer.cornerRadius = UIScreen.main.bounds.height / 25
+        view.backgroundColor = .clear
+        view.layer.cornerRadius = 15.0
         return view
     }()
     

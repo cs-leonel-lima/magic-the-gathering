@@ -1,7 +1,7 @@
 import UIKit
 
 class BackgroundView: UIView {
-    let backgroundImage: UIImageView = {
+    private let backgroundImage: UIImageView = {
         let imageView = UIImageView()
         imageView.contentMode = .scaleToFill
         imageView.image = R.image.background()

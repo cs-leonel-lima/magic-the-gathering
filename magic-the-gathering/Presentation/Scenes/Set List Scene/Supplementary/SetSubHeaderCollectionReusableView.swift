@@ -5,8 +5,8 @@ class SetSubHeaderCollectionReusableView: UICollectionReusableView, Reusable {
     private let categoryTitleLabel: UILabel = {
         let label = UILabel()
         label.textAlignment = .left
-        label.textColor = .darkGray
-        label.font = UIFont.systemFont(ofSize: 14, weight: .bold)
+        label.textColor = .white
+        label.font = UIFont.systemFont(ofSize: 15, weight: .bold)
         return label
     }()
     

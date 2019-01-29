@@ -25,7 +25,7 @@ class SetTableViewDatasource: NSObject, ItemTableViewDataSource {
         case .local:
             self.service = LocalMagicService()
         case .remote:
-            self.service = RemoteMagicService()
+            self.service = MagicAPIService()
         }
     }
     
@@ -33,7 +33,9 @@ class SetTableViewDatasource: NSObject, ItemTableViewDataSource {
         service?.getSet { result in
             switch result {
             case .success(let set):
-                self.append(set)
+                DispatchQueue.main.async {
+                    self.append(set)
+                }
             case .error(let error):
                 print(error.localizedDescription)
             }

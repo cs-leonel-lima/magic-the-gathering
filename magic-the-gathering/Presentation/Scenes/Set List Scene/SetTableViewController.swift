@@ -13,7 +13,7 @@ class SetTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.setTableViewDatasource = SetTableViewDatasource(items: MTGSet.mock(), tableView: self.tableView, delegate: self.setTableViewDelegate)
+        self.setTableViewDatasource = SetTableViewDatasource(items: [], tableView: self.tableView, delegate: self.setTableViewDelegate)
         self.setTableViewDelegate.setupDelegate(delegate: self.setTableViewDatasource)
         self.setTableViewDatasource?.setupContext(self.context)
         self.setTableViewDatasource?.setupData()

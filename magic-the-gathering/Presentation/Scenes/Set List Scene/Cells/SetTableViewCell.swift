@@ -23,8 +23,10 @@ class SetTableViewCell: UITableViewCell, Reusable {
         service?.getCards { result in
             switch result {
             case .success(let cards):
-                self.mtgSetCollectionView.updateItems(cards: cards)
-                self.setupLayout()
+                DispatchQueue.main.async {
+                    self.mtgSetCollectionView.updateItems(cards: cards)
+                    self.setupLayout()
+                }
             case .error(let error):
                 print(error.localizedDescription)
             }

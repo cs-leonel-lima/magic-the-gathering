@@ -10,7 +10,6 @@
 		161A79FB220094EE00781589 /* String+LocalizedError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161A79FA220094EE00781589 /* String+LocalizedError.swift */; };
 		161A79FE2200955200781589 /* MagicAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161A79FD2200955200781589 /* MagicAPI.swift */; };
 		161A7A002200956D00781589 /* URLGetSessionOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161A79FF2200956D00781589 /* URLGetSessionOperation.swift */; };
-		161A7A022200959400781589 /* MagicService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161A7A012200959400781589 /* MagicService.swift */; };
 		161A7A04220095E200781589 /* MagicAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161A7A03220095E200781589 /* MagicAPIService.swift */; };
 		161A7A09220096AE00781589 /* MagicAPISpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161A7A08220096AE00781589 /* MagicAPISpec.swift */; };
 		161A7A0C2200991900781589 /* URLGetSessionOperationSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161A7A0B2200991900781589 /* URLGetSessionOperationSpec.swift */; };
@@ -102,7 +101,6 @@
 		161A79FA220094EE00781589 /* String+LocalizedError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+LocalizedError.swift"; sourceTree = "<group>"; };
 		161A79FD2200955200781589 /* MagicAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicAPI.swift; sourceTree = "<group>"; };
 		161A79FF2200956D00781589 /* URLGetSessionOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLGetSessionOperation.swift; sourceTree = "<group>"; };
-		161A7A012200959400781589 /* MagicService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicService.swift; sourceTree = "<group>"; };
 		161A7A03220095E200781589 /* MagicAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicAPIService.swift; sourceTree = "<group>"; };
 		161A7A08220096AE00781589 /* MagicAPISpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicAPISpec.swift; sourceTree = "<group>"; };
 		161A7A0B2200991900781589 /* URLGetSessionOperationSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLGetSessionOperationSpec.swift; sourceTree = "<group>"; };
@@ -211,7 +209,6 @@
 			children = (
 				161A79FD2200955200781589 /* MagicAPI.swift */,
 				161A79FF2200956D00781589 /* URLGetSessionOperation.swift */,
-				161A7A012200959400781589 /* MagicService.swift */,
 				161A7A03220095E200781589 /* MagicAPIService.swift */,
 			);
 			path = Network;
@@ -981,7 +978,6 @@
 				2B2643FA21F62B06005192E2 /* CardsCollectionView.swift in Sources */,
 				2B09CADA21F22A72006F52FF /* CodeView.swift in Sources */,
 				8FA62F3921F9FC8900661DAB /* R.generated.swift in Sources */,
-				161A7A022200959400781589 /* MagicService.swift in Sources */,
 				EF2DE91F21F2278D00A0D25D /* MTGSet.swift in Sources */,
 				2B7876C421F5FB6E0014B180 /* SetTableViewCell.swift in Sources */,
 				2BF91E562200767800F16577 /* SetTableViewDelegate.swift in Sources */,

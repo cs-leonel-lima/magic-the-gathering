@@ -9,7 +9,7 @@ class MagicServiceSpec: QuickSpec {
         describe("Magic service") {
             
             let serviceMock = MagicServiceMock()
-            let remoteMock = RemoteMagicServiceMock()
+//            let remoteMock = RemoteMagicServiceMock()
             
             context("Cards and Set Service") {
                 it("Has to execute getCards") {

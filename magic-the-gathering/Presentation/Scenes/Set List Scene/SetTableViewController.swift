@@ -9,14 +9,23 @@ class SetTableViewController: UITableViewController {
         super.init(style: style)
     }
     
+    internal let setTableViewDelegate: SetTableViewDelegate = SetTableViewDelegate()
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.setTableViewDatasource = SetTableViewDatasource(items: [], tableView: self.tableView)
+        self.setTableViewDatasource = SetTableViewDatasource(items: MTGSet.mock(), tableView: self.tableView, delegate: self.setTableViewDelegate)
+        self.setTableViewDelegate.setupDelegate(delegate: self.setTableViewDatasource)
         self.setTableViewDatasource?.setupContext(self.context)
         self.setTableViewDatasource?.setupData()
+        tableViewPropertySetup()
     }
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    private func tableViewPropertySetup() {
+        self.tableView.backgroundView = BackgroundView()
+        self.tableView.separatorStyle = .none
     }
 }

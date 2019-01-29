@@ -7,7 +7,6 @@ class SetTableViewCell: UITableViewCell, Reusable {
         let collectionView = CardsCollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout())
         collectionView.translatesAutoresizingMaskIntoConstraints = false
         collectionView.isScrollEnabled = false
-        collectionView.backgroundColor = .black
         return collectionView
     }()
     
@@ -46,6 +45,7 @@ extension SetTableViewCell: CodeView {
     }
     
     func setupAdditionalConfigurations() {
+        self.backgroundColor = .clear
     }
     
     func setupLayout() {

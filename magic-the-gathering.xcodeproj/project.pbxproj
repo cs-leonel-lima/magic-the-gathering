@@ -52,6 +52,16 @@
 		EF2DE93521F2423100A0D25D /* MTGSetSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2DE93421F2423100A0D25D /* MTGSetSpec.swift */; };
 		EFD0290321FF97400089FDDB /* CardService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD0290221FF97400089FDDB /* CardService.swift */; };
 		EFD0290521FF9F9C0089FDDB /* MTGSetService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD0290421FF9F9C0089FDDB /* MTGSetService.swift */; };
+		EFC0C1A221FF69360003F004 /* CarouselCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC0C1A021FF69350003F004 /* CarouselCollectionViewLayout.swift */; };
+		EFC0C1A321FF69360003F004 /* CategoryCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC0C1A121FF69360003F004 /* CategoryCollectionViewDataSource.swift */; };
+		EFC0C1A621FF69990003F004 /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC0C1A421FF69990003F004 /* CategoryView.swift */; };
+		EFC0C1A721FF69990003F004 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC0C1A521FF69990003F004 /* CategoryViewController.swift */; };
+		EFC0C1A921FF69B50003F004 /* CategoryCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC0C1A821FF69B50003F004 /* CategoryCollectionView.swift */; };
+		EFC0C1AD21FF6A0E0003F004 /* CategoryCollectionViewDataSourceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC0C1AC21FF6A0E0003F004 /* CategoryCollectionViewDataSourceSpec.swift */; };
+		EFC0C1AF21FF6A180003F004 /* CarouselCollectionViewLayoutSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC0C1AE21FF6A180003F004 /* CarouselCollectionViewLayoutSpec.swift */; };
+		EFC0C1B221FF6A2D0003F004 /* CategoryCollectionViewSnapshotSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC0C1B121FF6A2D0003F004 /* CategoryCollectionViewSnapshotSpec.swift */; };
+		EFC0C1B421FF6A980003F004 /* JSONHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC0C1B321FF6A980003F004 /* JSONHelper.swift */; };
+		EFC0C1B621FF6C690003F004 /* CategoryViewSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC0C1B521FF6C690003F004 /* CategoryViewSpec.swift */; };
 		FDB04A0826B683BD5D5CD95D /* Pods_magic_the_gatheringTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E500CB7AFD10B11E601D63B /* Pods_magic_the_gatheringTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -126,6 +136,16 @@
 		EF4BCBA721F5FC1C007280F2 /* CardsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsManager.swift; sourceTree = "<group>"; };
 		EFD0290221FF97400089FDDB /* CardService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardService.swift; sourceTree = "<group>"; };
 		EFD0290421FF9F9C0089FDDB /* MTGSetService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTGSetService.swift; sourceTree = "<group>"; };
+		EFC0C1A021FF69350003F004 /* CarouselCollectionViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarouselCollectionViewLayout.swift; sourceTree = "<group>"; };
+		EFC0C1A121FF69360003F004 /* CategoryCollectionViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewDataSource.swift; sourceTree = "<group>"; };
+		EFC0C1A421FF69990003F004 /* CategoryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
+		EFC0C1A521FF69990003F004 /* CategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		EFC0C1A821FF69B50003F004 /* CategoryCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryCollectionView.swift; sourceTree = "<group>"; };
+		EFC0C1AC21FF6A0E0003F004 /* CategoryCollectionViewDataSourceSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewDataSourceSpec.swift; sourceTree = "<group>"; };
+		EFC0C1AE21FF6A180003F004 /* CarouselCollectionViewLayoutSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarouselCollectionViewLayoutSpec.swift; sourceTree = "<group>"; };
+		EFC0C1B121FF6A2D0003F004 /* CategoryCollectionViewSnapshotSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewSnapshotSpec.swift; sourceTree = "<group>"; };
+		EFC0C1B321FF6A980003F004 /* JSONHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONHelper.swift; sourceTree = "<group>"; };
+		EFC0C1B521FF6C690003F004 /* CategoryViewSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewSpec.swift; sourceTree = "<group>"; };
 		FB14EFA640FA67CF17951232 /* Pods-magic-the-gatheringTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-magic-the-gatheringTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-magic-the-gatheringTests/Pods-magic-the-gatheringTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -254,6 +274,7 @@
 		2B4B52E821F7A82800204039 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				EFC0C1AA21FF69D10003F004 /* Category Scene */,
 				2B4B52EA21F7A84400204039 /* Set List Scene */,
 			);
 			path = Scenes;
@@ -280,6 +301,7 @@
 		2B7876C021F5FAFF0014B180 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				EFC0C19D21FF68AB0003F004 /* Category Scene */,
 				2B7876C121F5FB290014B180 /* Set List Scene */,
 			);
 			path = Scenes;
@@ -404,6 +426,7 @@
 		8F77209C21F8EC5E0098C104 /* Mock & Stubbing */ = {
 			isa = PBXGroup;
 			children = (
+				EFC0C1B321FF6A980003F004 /* JSONHelper.swift */,
 				8F77209D21F8EC7C0098C104 /* CollectionViewDelegateMock.swift */,
 			);
 			path = "Mock & Stubbing";
@@ -455,6 +478,53 @@
 				EF2DE93421F2423100A0D25D /* MTGSetSpec.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		EFC0C19D21FF68AB0003F004 /* Category Scene */ = {
+			isa = PBXGroup;
+			children = (
+				EFC0C1A421FF69990003F004 /* CategoryView.swift */,
+				EFC0C1A821FF69B50003F004 /* CategoryCollectionView.swift */,
+				EFC0C1A521FF69990003F004 /* CategoryViewController.swift */,
+				EFC0C19E21FF68D10003F004 /* Datasources and Delegates */,
+			);
+			path = "Category Scene";
+			sourceTree = "<group>";
+		};
+		EFC0C19E21FF68D10003F004 /* Datasources and Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				EFC0C1A021FF69350003F004 /* CarouselCollectionViewLayout.swift */,
+				EFC0C1A121FF69360003F004 /* CategoryCollectionViewDataSource.swift */,
+			);
+			path = "Datasources and Delegates";
+			sourceTree = "<group>";
+		};
+		EFC0C1AA21FF69D10003F004 /* Category Scene */ = {
+			isa = PBXGroup;
+			children = (
+				EFC0C1B021FF6A200003F004 /* Snapshots */,
+				EFC0C1AB21FF69E00003F004 /* Datasources and Delegates */,
+				EFC0C1B521FF6C690003F004 /* CategoryViewSpec.swift */,
+			);
+			path = "Category Scene";
+			sourceTree = "<group>";
+		};
+		EFC0C1AB21FF69E00003F004 /* Datasources and Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				EFC0C1AE21FF6A180003F004 /* CarouselCollectionViewLayoutSpec.swift */,
+				EFC0C1AC21FF6A0E0003F004 /* CategoryCollectionViewDataSourceSpec.swift */,
+			);
+			path = "Datasources and Delegates";
+			sourceTree = "<group>";
+		};
+		EFC0C1B021FF6A200003F004 /* Snapshots */ = {
+			isa = PBXGroup;
+			children = (
+				EFC0C1B121FF6A2D0003F004 /* CategoryCollectionViewSnapshotSpec.swift */,
+			);
+			path = Snapshots;
 			sourceTree = "<group>";
 		};
 		EFD0290121FF97240089FDDB /* Dependencies */ = {
@@ -797,8 +867,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				EFD0290321FF97400089FDDB /* CardService.swift in Sources */,
+				8FE35AF321F8A22700B727B8 /* JSONHelper.swift in Sources */,
+				EFC0C1A321FF69360003F004 /* CategoryCollectionViewDataSource.swift in Sources */,
 				2B2643EB21F61942005192E2 /* CardsSelectionDelegate.swift in Sources */,
 				2B4B52E021F7A5BF00204039 /* CardsManager.swift in Sources */,
+				EFC0C1A721FF69990003F004 /* CategoryViewController.swift in Sources */,
 				2B4B52F121F7A8FC00204039 /* SetHeaderCollectionReusableView.swift in Sources */,
 				8FCECF4821F72D7D005C654B /* SetTableViewDataSource.swift in Sources */,
 				2B2643FA21F62B06005192E2 /* CardsCollectionView.swift in Sources */,
@@ -814,6 +887,9 @@
 				2B2643EF21F61C87005192E2 /* CardsCollectionViewDataSource.swift in Sources */,
 				2B2643ED21F61A3B005192E2 /* CardsCollectionViewDelegate.swift in Sources */,
 				2B2643F221F61D41005192E2 /* ItemTableViewDataSource.swift in Sources */,
+				EFC0C1A621FF69990003F004 /* CategoryView.swift in Sources */,
+				EFC0C1A921FF69B50003F004 /* CategoryCollectionView.swift in Sources */,
+				EFC0C1A221FF69360003F004 /* CarouselCollectionViewLayout.swift in Sources */,
 				2B2643F621F62393005192E2 /* CardCollectionViewCell.swift in Sources */,
 				EF2DE92221F22ADE00A0D25D /* DateFormatter.swift in Sources */,
 				2B2643FD21F76F18005192E2 /* UIImageView+Nuke.swift in Sources */,
@@ -825,14 +901,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				2BE94EB421F8B0AC00E42F38 /* SetTableViewCellQS.swift in Sources */,
+				EFC0C1AF21FF6A180003F004 /* CarouselCollectionViewLayoutSpec.swift in Sources */,
 				2B4B52EE21F7A86E00204039 /* CardsCollectionViewDatasourceSpec.swift in Sources */,
 				2B4B52E321F7A64E00204039 /* CardsManagerSpec.swift in Sources */,
 				8F77209B21F8EA9B0098C104 /* CardsCollectionViewSnapShotSpec.swift in Sources */,
 				EF2DE93521F2423100A0D25D /* MTGSetSpec.swift in Sources */,
 				2B36B2AE21F89D1B004DD6CD /* CardCollectionViewCellQS.swift in Sources */,
+				EFC0C1AD21FF6A0E0003F004 /* CategoryCollectionViewDataSourceSpec.swift in Sources */,
+				EFC0C1B621FF6C690003F004 /* CategoryViewSpec.swift in Sources */,
+				EFC0C1B421FF6A980003F004 /* JSONHelper.swift in Sources */,
 				8F77209E21F8EC7C0098C104 /* CollectionViewDelegateMock.swift in Sources */,
 				2B4B52EF21F7A86E00204039 /* SetTableViewDataSourceSpec.swift in Sources */,
 				EF2DE93321F2422100A0D25D /* CardSpec.swift in Sources */,
+				EFC0C1B221FF6A2D0003F004 /* CategoryCollectionViewSnapshotSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

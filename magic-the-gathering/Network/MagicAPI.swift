@@ -8,7 +8,7 @@
 
 import Foundation
 
-typealias MagicAPIResult = MagicAPI.Result
+typealias MagicAPIResult = URLSessionResult
 
 enum MagicAPI {
     
@@ -30,10 +30,5 @@ enum MagicAPI {
         }
         
         return finalDomain
-    }
-    
-    enum Result<T> {
-        case success(T)
-        case error(Error)
     }
 }

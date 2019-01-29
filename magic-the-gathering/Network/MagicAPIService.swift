@@ -27,9 +27,9 @@ class MagicAPIService {
 
 extension MagicAPIService: MagicService {
     
-    func getSet(_ completion: @escaping (MagicAPI.Result<MTGSet>) -> Void) {
+    func getSet(_ completion: @escaping (MagicAPIResult<MTGSet>) -> Void) {
         if needsSetRequest {
-            requestCardSets() { result in
+            requestMTGSets() { result in
                 switch result {
                 case .success(let sets):
                     self.setsCache.append(contentsOf: sets)
@@ -67,7 +67,7 @@ extension MagicAPIService: MagicService {
 
 extension MagicAPIService {
     
-    private func requestCardSets(_ completion: @escaping (MagicAPIResult<[MTGSet]>) -> Void) {
+    private func requestMTGSets(_ completion: @escaping (MagicAPIResult<[MTGSet]>) -> Void) {
         
         let route = MagicAPI.setsDomain()
         
@@ -91,6 +91,7 @@ extension MagicAPIService {
         var resultsUntilNow = previousResult
         
         let route = MagicAPI.cardsDomain(withParams: "set=\(set.code)&page=\(page)&pageSize=100")
+        
         let operation = URLSessionGetOperation<[String: [Card]]>(route: route)
         operation.execute { result in
             switch result {

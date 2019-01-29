@@ -8,6 +8,11 @@
 
 import Foundation
 
+enum URLSessionResult<T> {
+    case success(T)
+    case error(Error)
+}
+
 class URLSessionGetOperation<T: Decodable> {
     
     let route: String
@@ -16,7 +21,7 @@ class URLSessionGetOperation<T: Decodable> {
         self.route = route
     }
     
-    func execute(_ completion: @escaping (MagicAPIResult<T>) -> Void) {
+    func execute(_ completion: @escaping (URLSessionResult<T>) -> Void) {
         
         do {
             let url = try URLSessionGetOperation.createURL(fromRoute: route)
@@ -43,7 +48,7 @@ class URLSessionGetOperation<T: Decodable> {
                         completion(.error(error))
                     }
                 }
-                }.resume()
+            }.resume()
             
         } catch {
             completion(.error(error))

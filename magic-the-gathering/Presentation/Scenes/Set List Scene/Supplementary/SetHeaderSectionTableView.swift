@@ -6,13 +6,13 @@ class SetHeaderSectionTableView: UIView {
         label.textColor = .white
         label.font = UIFont.systemFont(ofSize: 36, weight: .bold)
         label.numberOfLines = 0
-        label.text = "Esse é um nome grande para um set"
         return label
     }()
     
-    override init(frame: CGRect = .zero) {
+    init(frame: CGRect = .zero, titleForHeader: String?) {
         super.init(frame: frame)
         self.setupView()
+        self.titleLabel.text = titleForHeader
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -33,5 +33,7 @@ extension SetHeaderSectionTableView: CodeView {
         }
     }
     
-    func setupAdditionalConfigurations() {}
+    func setupAdditionalConfigurations() {
+        self.backgroundColor = .clear
+    }
 }

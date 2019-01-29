@@ -11,7 +11,6 @@ class SetTableViewDatasource: NSObject, ItemTableViewDataSource {
         self.delegate = delegate
         super.init()
         setupTableView()
-        self.tableView.backgroundView = BackgroundView()
         self.tableView.register(cellType: SetTableViewCell.self)
     }
     
@@ -27,5 +26,4 @@ class SetTableViewDatasource: NSObject, ItemTableViewDataSource {
         let cell = tableView.dequeueReusableCell(for: indexPath, cellType: SetTableViewCell.self)
         return cell
     }
-    
 }

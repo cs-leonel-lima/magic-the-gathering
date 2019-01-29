@@ -4,7 +4,7 @@ import Reusable
 
 class CardCollectionViewCell: UICollectionViewCell, Reusable {
     
-    private var cardImage: UIImageView = {
+    private let cardImage: UIImageView = {
         let view = UIImageView()
         view.translatesAutoresizingMaskIntoConstraints = false
         view.contentMode = .scaleAspectFit

@@ -26,20 +26,6 @@ extension MTGSet {
     }
 }
 
-extension MTGSet {
-    static func initializeSetsArray(from data: Data) -> [MTGSet]? {
-        do {
-            let setsDictionary = try JSONDecoder().decode([String: [MTGSet]].self, from: data)
-            if let sets = setsDictionary["sets"] {
-                return sets
-            }
-        } catch {
-            print(error.localizedDescription)
-        }
-        return nil
-    }
-}
-
 extension MTGSet: Equatable {
     static func == (lhs: MTGSet, rhs: MTGSet) -> Bool {
         return lhs.code == rhs.code

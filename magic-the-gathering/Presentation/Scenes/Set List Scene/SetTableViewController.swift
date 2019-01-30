@@ -1,10 +1,22 @@
 import UIKit
 
 class SetTableViewController: UITableViewController {
-    
-    let searchController: UISearchController = {
+
+    lazy var searchController: UISearchController = {
         let controller = UISearchController(searchResultsController: nil)
         controller.definesPresentationContext = false
+        controller.searchBar.sizeToFit()
+        controller.searchResultsUpdater = self
+        controller.obscuresBackgroundDuringPresentation = false
+        controller.searchBar.placeholder = "search for cards"
+        controller.searchBar.tintColor = .white
+        if let textfield = controller.searchBar.value(forKey: "searchField") as? UITextField {
+            if let backgroundView = textfield.subviews.first {
+                backgroundView.backgroundColor = .white
+                backgroundView.layer.cornerRadius = 3
+                backgroundView.clipsToBounds = true
+            }
+        }
         return controller
     }()
     
@@ -25,6 +37,7 @@ class SetTableViewController: UITableViewController {
         self.setTableViewDatasource?.setupContext(self.context)
         self.setTableViewDatasource?.setupData()
         tableViewPropertySetup()
+        navigationItem.searchController = searchController
     }
     
     required init?(coder aDecoder: NSCoder) {

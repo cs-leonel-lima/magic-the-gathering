@@ -4,9 +4,10 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+//        (UITextField.appearance(whenContainedInInstancesOf: [UISearchBar.self])).defaultTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
         setupWindow()
         return true
     }
@@ -18,6 +19,16 @@ extension AppDelegate {
         self.window?.makeKeyAndVisible()
         let mainView = SetTableViewController(style: .grouped, context: .local)
         let navigationController = UINavigationController(rootViewController: mainView)
+        setupNavbar(navigationBar: navigationController.navigationBar)
         self.window?.rootViewController = navigationController
+    }
+    
+    func setupNavbar(navigationBar: UINavigationBar) {
+        navigationBar.backgroundColor = .clear
+        navigationBar.barTintColor = .clear
+        navigationBar.isTranslucent = true
+        navigationBar.shadowImage = UIImage()
+        navigationBar.setValue(true, forKey: "hidesShadow")
+        navigationBar.setBackgroundImage(UIImage(), for: .default)
     }
 }

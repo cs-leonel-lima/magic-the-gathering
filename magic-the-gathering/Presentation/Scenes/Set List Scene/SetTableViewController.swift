@@ -2,22 +2,30 @@ import UIKit
 
 class SetTableViewController: UITableViewController {
     private var setTableViewDatasource: SetTableViewDatasource?
-    private let context: EnviromentContext
+    private let presentationComposer: PresentationComposer
     
-    init(style: UITableView.Style, context: EnviromentContext) {
-        self.context = context
+    weak var headerTitleDelegate: SetViewForHeaderDelegate?
+    
+    init(style: UITableView.Style, presentationComposer: PresentationComposer) {
+        self.presentationComposer = presentationComposer
         super.init(style: style)
     }
-    
-    internal let setTableViewDelegate: SetTableViewDelegate = SetTableViewDelegate()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.setTableViewDatasource = SetTableViewDatasource(items: [], tableView: self.tableView, delegate: self.setTableViewDelegate)
-        self.setTableViewDelegate.setupDelegate(delegate: self.setTableViewDatasource)
-        self.setTableViewDatasource?.setupContext(self.context)
-        self.setTableViewDatasource?.setupData()
+        self.setTableViewDatasource = SetTableViewDatasource(items: [], tableView: self.tableView, delegate: self)
+        setupDelegate(delegate: self.setTableViewDatasource)
         tableViewPropertySetup()
+        presentationComposer.getSetPresentation { [weak self] (result) in
+            switch result {
+            case .success(let setPresentation):
+                DispatchQueue.main.async {
+                    self?.setTableViewDatasource?.append(setPresentation)
+                }
+            case .error(let error):
+                print(error.localizedDescription)
+            }
+        }
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -27,5 +35,18 @@ class SetTableViewController: UITableViewController {
     private func tableViewPropertySetup() {
         self.tableView.backgroundView = BackgroundView()
         self.tableView.separatorStyle = .none
+    }
+}
+
+extension SetTableViewController {
+    
+    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let titleHeader = self.headerTitleDelegate?.titleForHeader(in: section)
+        let headerView = SetHeaderSectionTableView(titleForHeader: titleHeader)
+        return headerView
+    }
+    
+    func setupDelegate(delegate: SetViewForHeaderDelegate?) {
+        self.headerTitleDelegate = delegate
     }
 }

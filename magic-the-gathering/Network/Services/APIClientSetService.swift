@@ -2,7 +2,11 @@ import Foundation
 
 class APIClientSetService: MTGSetService {
     
-    private static var setsStack: [MTGSet] = []
+    private static var setsStack: [MTGSet] = [] {
+        didSet {
+            setsStack = setsStack.sorted().reversed()
+        }
+    }
     
     private static var needsSetRequest: Bool {
         return setsStack.count == 0

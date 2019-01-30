@@ -10,6 +10,7 @@ target 'magic-the-gathering' do
   pod 'Reusable', '~> 4.0.5'
   pod 'R.swift', '~> 5.0.2'
   pod 'SwiftFormat/CLI', '~> 0.37.4'
+  pod 'RealmSwift', '3.13.1'
   
   # Pods for magic-the-gathering
 

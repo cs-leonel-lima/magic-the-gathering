@@ -4,7 +4,6 @@ struct MTGSet: Decodable {
     let name: String
     let code: String
     var releaseDate: Date?
-    var cards: [Card]?
     
     private enum CodingKeys: CodingKey {
         case name, code, releaseDate
@@ -23,7 +22,7 @@ extension MTGSet {
         } else {
             releaseDate = nil
         }
-        self.init(name: name, code: code, releaseDate: releaseDate, cards: [])
+        self.init(name: name, code: code, releaseDate: releaseDate)
     }
 }
 

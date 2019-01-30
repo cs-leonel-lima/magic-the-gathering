@@ -12,6 +12,8 @@ class NetworkOperationMock: NetworkOperation {
     
     var succeed: Bool = false
     
+    private(set) var alreadyRequestedCards = false
+    
     func request<T>(at route: String, decodingType: T.Type, _ completion: @escaping (NetworkOperationResult<T>) -> Void) where T : Decodable {
         
         if succeed {
@@ -19,16 +21,19 @@ class NetworkOperationMock: NetworkOperation {
             case .sets:
                 completion(.success(MTGSet.response() as! T))
             case .cards:
-                completion(.success(Card.response() as! T))
+                var response: APIClientCardService.Response
+                
+                if alreadyRequestedCards {
+                    response = APIClientCardService.Response(cards: [])
+                } else {
+                    response = Card.response()
+                    alreadyRequestedCards = true
+                }
+                
+                completion(.success( response as! T))
             }
         } else {
             completion(.error("error"))
         }
-    }
-    
-    enum ErrorType {
-        case none
-        case changedReponse
-        case network
     }
 }

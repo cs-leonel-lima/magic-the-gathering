@@ -38,7 +38,7 @@ class APIClientCardService: CardService {
     struct Response: Decodable {
         let cards: [Card]
         var shouldLoadMore: Bool {
-            return cards.count % 100 == 0
+            return cards.count % 100 == 0 && cards.count != 0
         }
     }
 }

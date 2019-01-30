@@ -38,6 +38,17 @@ class SetTableViewController: UITableViewController {
         self.setTableViewDatasource?.setupData()
         tableViewPropertySetup()
         navigationItem.searchController = searchController
+
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationItem.hidesSearchBarWhenScrolling = false
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        navigationItem.hidesSearchBarWhenScrolling = true
     }
     
     required init?(coder aDecoder: NSCoder) {

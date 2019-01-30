@@ -11,7 +11,6 @@
 		161A79FE2200955200781589 /* MagicAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161A79FD2200955200781589 /* MagicAPI.swift */; };
 		161A7A002200956D00781589 /* URLGetSessionOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161A79FF2200956D00781589 /* URLGetSessionOperation.swift */; };
 		161A7A09220096AE00781589 /* MagicAPISpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161A7A08220096AE00781589 /* MagicAPISpec.swift */; };
-		161A7A0C2200991900781589 /* URLGetSessionOperationSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161A7A0B2200991900781589 /* URLGetSessionOperationSpec.swift */; };
 		1627C2482201E0D100097B0F /* NetworkOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1627C2472201E0D100097B0F /* NetworkOperation.swift */; };
 		1627C24A2201E3A300097B0F /* ModelMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1627C2492201E3A300097B0F /* ModelMock.swift */; };
 		1627C24C2201EAE500097B0F /* NetworkOperationMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1627C24B2201EAE500097B0F /* NetworkOperationMock.swift */; };
@@ -19,6 +18,8 @@
 		1627C2502202073700097B0F /* APIClientSetService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1627C24F2202073700097B0F /* APIClientSetService.swift */; };
 		1627C25222020B6F00097B0F /* PresentationComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1627C25122020B6F00097B0F /* PresentationComposer.swift */; };
 		1627C25622020C0300097B0F /* APIClientPresentationComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1627C25522020C0300097B0F /* APIClientPresentationComposer.swift */; };
+		1627C2582202233F00097B0F /* PresentationComposerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1627C2572202233F00097B0F /* PresentationComposerSpec.swift */; };
+		1627C25A2202234B00097B0F /* APIClientPresentationComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1627C2592202234B00097B0F /* APIClientPresentationComposer.swift */; };
 		2B09CADA21F22A72006F52FF /* CodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B09CAD921F22A72006F52FF /* CodeView.swift */; };
 		2B1179CA22021076006F3228 /* APIClientSetServiceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1179C922021076006F3228 /* APIClientSetServiceSpec.swift */; };
 		2B1179CC22022A01006F3228 /* APIClientCardServiceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1179CB22022A01006F3228 /* APIClientCardServiceSpec.swift */; };
@@ -107,7 +108,6 @@
 		161A79FD2200955200781589 /* MagicAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicAPI.swift; sourceTree = "<group>"; };
 		161A79FF2200956D00781589 /* URLGetSessionOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLGetSessionOperation.swift; sourceTree = "<group>"; };
 		161A7A08220096AE00781589 /* MagicAPISpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicAPISpec.swift; sourceTree = "<group>"; };
-		161A7A0B2200991900781589 /* URLGetSessionOperationSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLGetSessionOperationSpec.swift; sourceTree = "<group>"; };
 		1627C2472201E0D100097B0F /* NetworkOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkOperation.swift; sourceTree = "<group>"; };
 		1627C2492201E3A300097B0F /* ModelMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelMock.swift; sourceTree = "<group>"; };
 		1627C24B2201EAE500097B0F /* NetworkOperationMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkOperationMock.swift; sourceTree = "<group>"; };
@@ -115,6 +115,8 @@
 		1627C24F2202073700097B0F /* APIClientSetService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClientSetService.swift; sourceTree = "<group>"; };
 		1627C25122020B6F00097B0F /* PresentationComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationComposer.swift; sourceTree = "<group>"; };
 		1627C25522020C0300097B0F /* APIClientPresentationComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClientPresentationComposer.swift; sourceTree = "<group>"; };
+		1627C2572202233F00097B0F /* PresentationComposerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationComposerSpec.swift; sourceTree = "<group>"; };
+		1627C2592202234B00097B0F /* APIClientPresentationComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClientPresentationComposer.swift; sourceTree = "<group>"; };
 		17B4C79DFB871A010BCC1031 /* Pods-magic-the-gatheringTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-magic-the-gatheringTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-magic-the-gatheringTests/Pods-magic-the-gatheringTests.debug.xcconfig"; sourceTree = "<group>"; };
 		2B09CAD921F22A72006F52FF /* CodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeView.swift; sourceTree = "<group>"; };
 		2B1179C922021076006F3228 /* APIClientSetServiceSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClientSetServiceSpec.swift; sourceTree = "<group>"; };
@@ -227,7 +229,6 @@
 			isa = PBXGroup;
 			children = (
 				161A7A08220096AE00781589 /* MagicAPISpec.swift */,
-				161A7A0B2200991900781589 /* URLGetSessionOperationSpec.swift */,
 				2B1179C922021076006F3228 /* APIClientSetServiceSpec.swift */,
 				2B1179CB22022A01006F3228 /* APIClientCardServiceSpec.swift */,
 			);
@@ -643,6 +644,8 @@
 		EFD9ACB52200BC8300314189 /* Dependencies */ = {
 			isa = PBXGroup;
 			children = (
+				1627C2572202233F00097B0F /* PresentationComposerSpec.swift */,
+				1627C2592202234B00097B0F /* APIClientPresentationComposer.swift */,
 			);
 			path = Dependencies;
 			sourceTree = "<group>";
@@ -1050,18 +1053,19 @@
 				2B1179CA22021076006F3228 /* APIClientSetServiceSpec.swift in Sources */,
 				EF2DE93521F2423100A0D25D /* MTGSetSpec.swift in Sources */,
 				2B36B2AE21F89D1B004DD6CD /* CardCollectionViewCellQS.swift in Sources */,
+				1627C2582202233F00097B0F /* PresentationComposerSpec.swift in Sources */,
 				161A7A09220096AE00781589 /* MagicAPISpec.swift in Sources */,
 				EFC0C1AD21FF6A0E0003F004 /* CategoryCollectionViewDataSourceSpec.swift in Sources */,
 				EFC0C1B621FF6C690003F004 /* CategoryViewSpec.swift in Sources */,
 				EFC0C1B421FF6A980003F004 /* JSONHelper.swift in Sources */,
 				2B1179CC22022A01006F3228 /* APIClientCardServiceSpec.swift in Sources */,
 				8F77209E21F8EC7C0098C104 /* CollectionViewDelegateMock.swift in Sources */,
-				161A7A0C2200991900781589 /* URLGetSessionOperationSpec.swift in Sources */,
 				2B4B52EF21F7A86E00204039 /* SetTableViewDataSourceSpec.swift in Sources */,
 				EF2DE93321F2422100A0D25D /* CardSpec.swift in Sources */,
 				1627C24A2201E3A300097B0F /* ModelMock.swift in Sources */,
 				1627C24C2201EAE500097B0F /* NetworkOperationMock.swift in Sources */,
 				EFC0C1B221FF6A2D0003F004 /* CategoryCollectionViewSnapshotSpec.swift in Sources */,
+				1627C25A2202234B00097B0F /* APIClientPresentationComposer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

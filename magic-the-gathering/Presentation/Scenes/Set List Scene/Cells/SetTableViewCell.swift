@@ -20,17 +20,17 @@ class SetTableViewCell: UITableViewCell, Reusable {
     }
     
     func setupData(service: CardService?) {
-        service?.getCards { result in
-            switch result {
-            case .success(let cards):
-                DispatchQueue.main.async {
-                    self.mtgSetCollectionView.updateItems(cards: cards)
-                    self.setupLayout()
-                }
-            case .error(let error):
-                print(error.localizedDescription)
-            }
-        }
+//        service?.getCards { result in
+//            switch result {
+//            case .success(let cards):
+//                DispatchQueue.main.async {
+//                    self.mtgSetCollectionView.updateItems(cards: cards)
+//                    self.setupLayout()
+//                }
+//            case .error(let error):
+//                print(error.localizedDescription)
+//            }
+//        }
     }
 }
 

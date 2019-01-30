@@ -8,8 +8,6 @@
 
 import Foundation
 
-typealias MagicAPIResult = NetworkOperationResult
-
 enum MagicAPI {
     
     static let domain: String = "https://api.magicthegathering.io/v1"

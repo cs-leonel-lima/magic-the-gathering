@@ -40,7 +40,7 @@ class APIClientSetService: MTGSetService {
         }
     }
     
-    private struct Response: Decodable {
+    struct Response: Decodable {
         let sets: [MTGSet]
     }
 }

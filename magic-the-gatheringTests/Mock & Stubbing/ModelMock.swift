@@ -13,8 +13,8 @@ extension MTGSet {
     static func responseData() -> Data {
         return "{\"sets\":[]}".data(using: .utf8)!
     }
-    static func response() -> [String: [MTGSet]] {
-        return JSONHelper.dictionaryFrom(resource: "sets")
+    static func response() -> APIClientSetService.Response {
+        return APIClientSetService.Response(sets: mock())
     }
     static func mock() -> [MTGSet] {
         return JSONHelper.objectFrom(resource: "sets")!

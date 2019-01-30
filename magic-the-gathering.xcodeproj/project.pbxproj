@@ -18,7 +18,6 @@
 		1627C2502202073700097B0F /* APIClientSetService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1627C24F2202073700097B0F /* APIClientSetService.swift */; };
 		1627C25222020B6F00097B0F /* PresentationComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1627C25122020B6F00097B0F /* PresentationComposer.swift */; };
 		1627C25622020C0300097B0F /* APIClientPresentationComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1627C25522020C0300097B0F /* APIClientPresentationComposer.swift */; };
-		1627C2582202233F00097B0F /* PresentationComposerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1627C2572202233F00097B0F /* PresentationComposerSpec.swift */; };
 		1627C25A2202234B00097B0F /* APIClientPresentationComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1627C2592202234B00097B0F /* APIClientPresentationComposer.swift */; };
 		2B09CADA21F22A72006F52FF /* CodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B09CAD921F22A72006F52FF /* CodeView.swift */; };
 		2B1179CA22021076006F3228 /* APIClientSetServiceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1179C922021076006F3228 /* APIClientSetServiceSpec.swift */; };
@@ -113,7 +112,6 @@
 		1627C24F2202073700097B0F /* APIClientSetService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClientSetService.swift; sourceTree = "<group>"; };
 		1627C25122020B6F00097B0F /* PresentationComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationComposer.swift; sourceTree = "<group>"; };
 		1627C25522020C0300097B0F /* APIClientPresentationComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClientPresentationComposer.swift; sourceTree = "<group>"; };
-		1627C2572202233F00097B0F /* PresentationComposerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationComposerSpec.swift; sourceTree = "<group>"; };
 		1627C2592202234B00097B0F /* APIClientPresentationComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClientPresentationComposer.swift; sourceTree = "<group>"; };
 		17B4C79DFB871A010BCC1031 /* Pods-magic-the-gatheringTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-magic-the-gatheringTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-magic-the-gatheringTests/Pods-magic-the-gatheringTests.debug.xcconfig"; sourceTree = "<group>"; };
 		2B09CAD921F22A72006F52FF /* CodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeView.swift; sourceTree = "<group>"; };
@@ -640,7 +638,6 @@
 		EFD9ACB52200BC8300314189 /* Dependencies */ = {
 			isa = PBXGroup;
 			children = (
-				1627C2572202233F00097B0F /* PresentationComposerSpec.swift */,
 				1627C2592202234B00097B0F /* APIClientPresentationComposer.swift */,
 			);
 			path = Dependencies;
@@ -1047,7 +1044,6 @@
 				2B1179CA22021076006F3228 /* APIClientSetServiceSpec.swift in Sources */,
 				EF2DE93521F2423100A0D25D /* MTGSetSpec.swift in Sources */,
 				2B36B2AE21F89D1B004DD6CD /* CardCollectionViewCellQS.swift in Sources */,
-				1627C2582202233F00097B0F /* PresentationComposerSpec.swift in Sources */,
 				161A7A09220096AE00781589 /* MagicAPISpec.swift in Sources */,
 				EFC0C1AD21FF6A0E0003F004 /* CategoryCollectionViewDataSourceSpec.swift in Sources */,
 				EFC0C1B621FF6C690003F004 /* CategoryViewSpec.swift in Sources */,

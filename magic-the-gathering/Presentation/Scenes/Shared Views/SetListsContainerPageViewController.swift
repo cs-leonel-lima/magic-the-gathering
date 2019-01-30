@@ -2,6 +2,8 @@ import UIKit
 
 class SetListsContainerPageViewController: UIPageViewController, UIPageViewControllerDataSource {
     
+    let tabBar = CustomTabBar()
+    
     lazy var viewControllerList: [UIViewController] = {
         let vc1 = SetTableViewController(style: .grouped, magicService: RemoteMagicService())
         let vc2 = SetTableViewController(style: .grouped, magicService: LocalMagicService())
@@ -40,6 +42,26 @@ class SetListsContainerPageViewController: UIPageViewController, UIPageViewContr
         guard viewControllerList.count > nextIndex else { return nil }
         
         return viewControllerList[nextIndex]
+        
+    }
+    
+}
+
+extension SetListsContainerPageViewController: CodeView {
+    func buildViewHierarchy() {
+        view.addSubview(tabBar)
+    }
+    
+    func setupConstraints() {
+        tabBar.snp.makeConstraints { make in
+            make.height.equalTo(41)
+            make.bottom.equalTo(view.safeAreaLayoutGuide.snp.bottom)
+            make.width.equalToSuperview()
+            make.left.right.equalToSuperview()
+        }
+    }
+    
+    func setupAdditionalConfigurations() {
         
     }
     

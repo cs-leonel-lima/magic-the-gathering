@@ -23,7 +23,7 @@ target 'magic-the-gathering' do
     target 'magic-the-gatheringKIFTests' do
       inherit! :search_paths
       # Pods for testing
-      pod 'KIF', '~> 3.7.4', :configurations => ['Debug']
+      pod 'KIF-Quick'
     end
  
   end

@@ -33,16 +33,6 @@ class SetTableViewCell: UITableViewCell, Reusable {
             }
         }
     }
-    
-    func searchWithText(_ searchText: String) {
-        /* Search Step #3
-           1. search on card manager,
-           2. get searchResult and use it to update the CollectionView
-         
-         I think it needs a enum with 2 cases, searching or notSearching */
-        guard let searchResult = cardsManager?.searchCards(with: searchText) else { return }
-        self.mtgSetCollectionView.updateItems(cards: searchResult)
-    }
 }
 
 extension SetTableViewCell: CodeView {

@@ -6,7 +6,8 @@ class SetTableViewController: UITableViewController {
         let controller = UISearchController(searchResultsController: nil)
         controller.definesPresentationContext = false
         controller.searchBar.sizeToFit()
-        controller.searchResultsUpdater = self
+        controller.searchBar.accessibilityLabel = "searchBar"
+        controller.searchBar.accessibilityIdentifier = "searchBar"
         controller.obscuresBackgroundDuringPresentation = false
         controller.searchBar.placeholder = "search for cards"
         controller.searchBar.tintColor = .white
@@ -60,15 +61,4 @@ class SetTableViewController: UITableViewController {
         self.tableView.separatorStyle = .none
     }
 
-}
-
-extension SetTableViewController: UISearchResultsUpdating {
-    
-    // Search Step #1
-    /* 1. chamar o método do dataSource da tableView com o searchText */
-    func updateSearchResults(for searchController: UISearchController) {
-        guard let searchText = searchController.searchBar.text else { return }
-        setTableViewDatasource?.search(with: searchText)
-    }
-    
 }

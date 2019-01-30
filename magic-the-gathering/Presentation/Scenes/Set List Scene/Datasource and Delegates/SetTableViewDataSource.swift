@@ -29,22 +29,6 @@ class SetTableViewDatasource: NSObject, ItemTableViewDataSource {
         }
     }
     
-    func generateIndexPaths() -> [IndexPath] {
-        let numberOfItems = tableView.numberOfRows(inSection: 0)
-        return []
-    }
-    
-    func search(with searchText: String) {
-        
-        /* Search Step #2
-           1. calls generateIndexPaths
-           2.  get tableviewCell for each IndexPath
-           3.  search on each cell */
-        
-//        tableView.cellForRow(at: )
-//        cell.searchWithText(searchText)
-    }
-    
     func setupData() {
         service?.getSet { result in
             switch result {

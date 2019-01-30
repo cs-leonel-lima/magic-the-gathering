@@ -65,6 +65,7 @@
 		EFC0C1B421FF6A980003F004 /* JSONHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC0C1B321FF6A980003F004 /* JSONHelper.swift */; };
 		EFC0C1B621FF6C690003F004 /* CategoryViewSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC0C1B521FF6C690003F004 /* CategoryViewSpec.swift */; };
 		EFD0290321FF97400089FDDB /* MagicService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD0290221FF97400089FDDB /* MagicService.swift */; };
+		EFD4D67B220212390017A618 /* SetTableViewSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD4D67922020CF30017A618 /* SetTableViewSpec.swift */; };
 		EFD9ACB022007EE500314189 /* JSONHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC0C1B321FF6A980003F004 /* JSONHelper.swift */; };
 		EFD9ACB32200934800314189 /* MTGEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD9ACB22200934800314189 /* MTGEnums.swift */; };
 		EFD9ACB72200BC9700314189 /* MagicServiceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD9ACB62200BC9700314189 /* MagicServiceSpec.swift */; };
@@ -156,6 +157,7 @@
 		EFC0C1B321FF6A980003F004 /* JSONHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONHelper.swift; sourceTree = "<group>"; };
 		EFC0C1B521FF6C690003F004 /* CategoryViewSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewSpec.swift; sourceTree = "<group>"; };
 		EFD0290221FF97400089FDDB /* MagicService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicService.swift; sourceTree = "<group>"; };
+		EFD4D67922020CF30017A618 /* SetTableViewSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetTableViewSpec.swift; sourceTree = "<group>"; };
 		EFD9ACB22200934800314189 /* MTGEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTGEnums.swift; sourceTree = "<group>"; };
 		EFD9ACB62200BC9700314189 /* MagicServiceSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicServiceSpec.swift; sourceTree = "<group>"; };
 		EFD9ACB82200BDB300314189 /* MagicServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicServiceMock.swift; sourceTree = "<group>"; };
@@ -534,6 +536,7 @@
 				EFC0C1B021FF6A200003F004 /* Snapshots */,
 				EFC0C1AB21FF69E00003F004 /* Datasources and Delegates */,
 				EFC0C1B521FF6C690003F004 /* CategoryViewSpec.swift */,
+				EFD4D67922020CF30017A618 /* SetTableViewSpec.swift */,
 			);
 			path = "Category Scene";
 			sourceTree = "<group>";
@@ -754,13 +757,17 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-magic-the-gatheringKIFTests/Pods-magic-the-gatheringKIFTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
 				"${BUILT_PRODUCTS_DIR}/KIF/KIF.framework",
+				"${BUILT_PRODUCTS_DIR}/KIF-Quick/KIF_Quick.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KIF.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KIF_Quick.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -980,6 +987,7 @@
 				8F77209E21F8EC7C0098C104 /* CollectionViewDelegateMock.swift in Sources */,
 				2B4B52EF21F7A86E00204039 /* SetTableViewDataSourceSpec.swift in Sources */,
 				EFD9ACB92200BDB300314189 /* MagicServiceMock.swift in Sources */,
+				EFD4D67B220212390017A618 /* SetTableViewSpec.swift in Sources */,
 				EF2DE93321F2422100A0D25D /* CardSpec.swift in Sources */,
 				EFC0C1B221FF6A2D0003F004 /* CategoryCollectionViewSnapshotSpec.swift in Sources */,
 			);

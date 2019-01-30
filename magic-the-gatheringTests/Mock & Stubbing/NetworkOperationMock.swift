@@ -12,50 +12,25 @@ import Foundation
 class NetworkOperationMock: NetworkOperation {
     
     var returnType: ReturnType = .sets
-    var errorType: ErrorType = .none
+    
+    var succeed: Bool = false
     
     func request<T>(at route: String, decodingType: T.Type, _ completion: @escaping (NetworkOperationResult<T>) -> Void) where T : Decodable {
         
-        var response: NetworkOperationResult<T>
-        
-        switch returnType {
-        case .sets:
-            
-            switch errorType {
-                
-            case .none:
-                response = .success(MTGSet.response() as! T)
-            case .changedReponse:
-                response = .success(["badKey":[MTGSet]()] as! T)
-            case .network:
-                response = .error("Network error!")
+        if succeed {
+            switch returnType {
+            case .sets:
+                completion(.success(MTGSet.response() as! T))
+            case .cards:
+                completion(.success(Card.response() as! T))
             }
-            
-        case .cards:
-            
-            switch errorType {
-                
-            case .none:
-                response = .success(Card.response() as! T)
-            case .changedReponse:
-                response = .success(["badKey":[Card]()] as! T)
-            case .network:
-                response = .error("Network error!")
-            }
-            
+        } else {
+            completion(.error("error"))
         }
-        
-        completion(response)
     }
     
     enum ReturnType {
         case sets
         case cards
-    }
-    
-    enum ErrorType {
-        case none
-        case changedReponse
-        case network
     }
 }

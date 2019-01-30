@@ -9,8 +9,8 @@
 @testable import magic_the_gathering
 
 extension MTGSet {
-    static func response() -> [String: [MTGSet]] {
-        return JSONHelper.dictionaryFrom(resource: "sets")
+    static func response() -> APIClientSetService.Response {
+        return APIClientSetService.Response(sets: mock())
     }
     static func mock() -> [MTGSet] {
         return JSONHelper.objectFrom(resource: "sets")!

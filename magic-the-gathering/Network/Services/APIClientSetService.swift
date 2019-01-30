@@ -48,8 +48,7 @@ class APIClientSetService: MTGSetService {
         }
     }
     
-    private struct Response: Decodable {
-        let key: String
+    struct Response: Decodable {
         let sets: [MTGSet]
     }
 }

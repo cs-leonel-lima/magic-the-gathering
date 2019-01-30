@@ -30,6 +30,7 @@
 		3E7CF50D50D0599DD8B2A7B1 /* Pods_magic_the_gathering.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C73BD1011B0E6B65D6E0C9E1 /* Pods_magic_the_gathering.framework */; };
 		8F187CCC2200CF6600537852 /* SetHeaderSectionTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F187CCA2200CF6600537852 /* SetHeaderSectionTableView.swift */; };
 		8F187CCD2200CF6600537852 /* SetSubHeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F187CCB2200CF6600537852 /* SetSubHeaderCollectionReusableView.swift */; };
+		8F187CD022022B7F00537852 /* SetListsContainerPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F187CCF22022B7F00537852 /* SetListsContainerPageViewController.swift */; };
 		8F1C144F21F10A450077279C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1C144E21F10A450077279C /* AppDelegate.swift */; };
 		8F1C145621F10A470077279C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F1C145521F10A470077279C /* Assets.xcassets */; };
 		8F1C145921F10A470077279C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F1C145721F10A470077279C /* LaunchScreen.storyboard */; };
@@ -118,6 +119,7 @@
 		6E500CB7AFD10B11E601D63B /* Pods_magic_the_gatheringTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_magic_the_gatheringTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F187CCA2200CF6600537852 /* SetHeaderSectionTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetHeaderSectionTableView.swift; sourceTree = "<group>"; };
 		8F187CCB2200CF6600537852 /* SetSubHeaderCollectionReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetSubHeaderCollectionReusableView.swift; sourceTree = "<group>"; };
+		8F187CCF22022B7F00537852 /* SetListsContainerPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetListsContainerPageViewController.swift; sourceTree = "<group>"; };
 		8F1C144B21F10A450077279C /* magic-the-gathering.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "magic-the-gathering.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F1C144E21F10A450077279C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8F1C145521F10A470077279C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -345,6 +347,7 @@
 			children = (
 				2B699B0322006B13005C5397 /* BackgroundView.swift */,
 				EFD4D67D220227330017A618 /* CustomTabBar.swift */,
+				8F187CCF22022B7F00537852 /* SetListsContainerPageViewController.swift */,
 			);
 			path = "Shared Views";
 			sourceTree = "<group>";
@@ -932,6 +935,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EFD0290321FF97400089FDDB /* MagicService.swift in Sources */,
+				8F187CD022022B7F00537852 /* SetListsContainerPageViewController.swift in Sources */,
 				EFD9ACB32200934800314189 /* MTGEnums.swift in Sources */,
 				EFC0C1A321FF69360003F004 /* CategoryCollectionViewDataSource.swift in Sources */,
 				2B2643EB21F61942005192E2 /* CardsSelectionDelegate.swift in Sources */,

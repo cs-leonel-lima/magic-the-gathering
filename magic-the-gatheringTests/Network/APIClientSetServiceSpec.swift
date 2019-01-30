@@ -16,17 +16,19 @@ class APIClientSetServiceSpec: QuickSpec {
                 it("has to get the set") {
                     operation.returnType = .sets
                     operation.succeed = true
-                    apiClientService.getSet({ (operation) in
-                        var didFail: Bool = true
-                        
-                        switch operation {
-                        case .error(let error):
-                            didFail = true
-                        case .success(let set):
-                           didFail = false
+                    
+                    var succeded: Bool = false
+                    
+                    apiClientService.getSet { result in
+                        switch result {
+                        case .success(_):
+                            succeded = true
+                        case .error(_):
+                            succeded = false
                         }
-                        
-                    })
+                    }
+                    
+                    expect(succeded).toEventually(beTrue())
                 }
                 
             }

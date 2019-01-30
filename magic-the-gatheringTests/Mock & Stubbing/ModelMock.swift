@@ -25,8 +25,8 @@ extension Card {
     static func responseData() -> Data {
         return "{\"cards\":[]}".data(using: .utf8)!
     }
-    static func response() -> [String: [Card]] {
-        return JSONHelper.dictionaryFrom(resource: "cards")
+    static func response() -> APIClientCardService.Response {
+        return APIClientCardService.Response(cards: Card.mock())
     }
     static func mock() -> [Card] {
         return JSONHelper.objectFrom(resource: "cards")!

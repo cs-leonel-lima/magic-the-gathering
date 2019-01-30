@@ -17,6 +17,7 @@ extension AppDelegate {
         self.window = UIWindow()
         self.window?.makeKeyAndVisible()
         let mainView = SetTableViewController(style: .grouped, context: .local)
-        self.window?.rootViewController = mainView
+        let navigationController = UINavigationController(rootViewController: mainView)
+        self.window?.rootViewController = navigationController
     }
 }

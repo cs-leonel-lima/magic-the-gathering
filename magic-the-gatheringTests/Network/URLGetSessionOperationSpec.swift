@@ -17,15 +17,10 @@ class URLGetSessionOperationSpec: QuickSpec {
         
         describe("URL get operation") {
             
-            it("has to keep the route received") {
-                let operation = URLSessionGetOperation<String>(route: "luta armada")
-                expect(operation.route).to(equal("luta armada"))
-            }
-            
             it("has to fail with unsuported url error") {
-                let operation = URLSessionGetOperation<String>(route: "anarquia")
+                let operation = URLSessionGetOperation()
                 waitUntil { done in
-                    operation.execute { result in
+                    operation.request(at: "anarquia", decodingType: String.self) { result in
                         switch result {
                         case .error(let error):
                             expect(error.localizedDescription).to(equal("unsupported URL"))
@@ -38,9 +33,9 @@ class URLGetSessionOperationSpec: QuickSpec {
             }
             
             it("has to fail with bad url format error") {
-                let operation = URLSessionGetOperation<String>(route: "anarquia total")
+                let operation = URLSessionGetOperation()
                 waitUntil { done in
-                    operation.execute { result in
+                    operation.request(at: "anarquia total", decodingType: String.self) { result in
                         switch result {
                         case .error(let error):
                             expect(error.localizedDescription).to(equal("Bad formated url!"))

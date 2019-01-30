@@ -15,7 +15,3 @@ class MagicServiceMock: MagicService {
         isGetSetCalled = true
     }
 }
-
-class RemoteMagicServiceMock: RemoteMagicService {
-
-}

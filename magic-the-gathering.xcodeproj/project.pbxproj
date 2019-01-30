@@ -15,6 +15,7 @@
 		161A7A0C2200991900781589 /* URLGetSessionOperationSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161A7A0B2200991900781589 /* URLGetSessionOperationSpec.swift */; };
 		161A7A0E22009CC600781589 /* MagicAPIServiceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161A7A0D22009CC600781589 /* MagicAPIServiceSpec.swift */; };
 		1627C2482201E0D100097B0F /* NetworkOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1627C2472201E0D100097B0F /* NetworkOperation.swift */; };
+		1627C24A2201E3A300097B0F /* ModelMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1627C2492201E3A300097B0F /* ModelMock.swift */; };
 		2B09CADA21F22A72006F52FF /* CodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B09CAD921F22A72006F52FF /* CodeView.swift */; };
 		2B2643EB21F61942005192E2 /* CardsSelectionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2643EA21F61942005192E2 /* CardsSelectionDelegate.swift */; };
 		2B2643ED21F61A3B005192E2 /* CardsCollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2643EC21F61A3B005192E2 /* CardsCollectionViewDelegate.swift */; };
@@ -107,6 +108,7 @@
 		161A7A0B2200991900781589 /* URLGetSessionOperationSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLGetSessionOperationSpec.swift; sourceTree = "<group>"; };
 		161A7A0D22009CC600781589 /* MagicAPIServiceSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicAPIServiceSpec.swift; sourceTree = "<group>"; };
 		1627C2472201E0D100097B0F /* NetworkOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkOperation.swift; sourceTree = "<group>"; };
+		1627C2492201E3A300097B0F /* ModelMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelMock.swift; sourceTree = "<group>"; };
 		17B4C79DFB871A010BCC1031 /* Pods-magic-the-gatheringTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-magic-the-gatheringTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-magic-the-gatheringTests/Pods-magic-the-gatheringTests.debug.xcconfig"; sourceTree = "<group>"; };
 		2B09CAD921F22A72006F52FF /* CodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeView.swift; sourceTree = "<group>"; };
 		2B2643EA21F61942005192E2 /* CardsSelectionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsSelectionDelegate.swift; sourceTree = "<group>"; };
@@ -496,6 +498,7 @@
 				EFC0C1B321FF6A980003F004 /* JSONHelper.swift */,
 				8F77209D21F8EC7C0098C104 /* CollectionViewDelegateMock.swift */,
 				EFD9ACB82200BDB300314189 /* MagicServiceMock.swift */,
+				1627C2492201E3A300097B0F /* ModelMock.swift */,
 			);
 			path = "Mock & Stubbing";
 			sourceTree = "<group>";
@@ -1029,6 +1032,7 @@
 				2B4B52EF21F7A86E00204039 /* SetTableViewDataSourceSpec.swift in Sources */,
 				EFD9ACB92200BDB300314189 /* MagicServiceMock.swift in Sources */,
 				EF2DE93321F2422100A0D25D /* CardSpec.swift in Sources */,
+				1627C24A2201E3A300097B0F /* ModelMock.swift in Sources */,
 				EFC0C1B221FF6A2D0003F004 /* CategoryCollectionViewSnapshotSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

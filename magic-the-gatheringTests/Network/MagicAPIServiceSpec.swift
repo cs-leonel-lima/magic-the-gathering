@@ -11,11 +11,34 @@ import Nimble
 
 @testable import magic_the_gathering
 
+class NetworkOperationMock: NetworkOperation {
+    
+    var succed: Bool = false
+    var returnType: ReturnType = .sets
+    
+    private var responseSets: [MTGSet] {
+        return MTGSet.mock()
+    }
+    
+    private var responseCards: [Card] {
+        return Card.mock()
+    }
+    
+    func request<T>(at route: String, decodingType: T.Type, _ completion: @escaping (NetworkOperationResult<T>) -> Void) where T : Decodable {
+        
+    }
+    
+    enum ReturnType {
+        case sets
+        case cards
+    }
+}
+
 class MagicAPIServiceSpec: QuickSpec {
     
     override func spec() {
         
-        let service = MagicAPIService()
+        let service = MagicAPIService(operation: NetworkOperationMock())
         
         describe("Magic API service") {
             

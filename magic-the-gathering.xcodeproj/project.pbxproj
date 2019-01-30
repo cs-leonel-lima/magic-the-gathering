@@ -14,6 +14,7 @@
 		161A7A09220096AE00781589 /* MagicAPISpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161A7A08220096AE00781589 /* MagicAPISpec.swift */; };
 		161A7A0C2200991900781589 /* URLGetSessionOperationSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161A7A0B2200991900781589 /* URLGetSessionOperationSpec.swift */; };
 		161A7A0E22009CC600781589 /* MagicAPIServiceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161A7A0D22009CC600781589 /* MagicAPIServiceSpec.swift */; };
+		1627C2482201E0D100097B0F /* NetworkOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1627C2472201E0D100097B0F /* NetworkOperation.swift */; };
 		2B09CADA21F22A72006F52FF /* CodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B09CAD921F22A72006F52FF /* CodeView.swift */; };
 		2B2643EB21F61942005192E2 /* CardsSelectionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2643EA21F61942005192E2 /* CardsSelectionDelegate.swift */; };
 		2B2643ED21F61A3B005192E2 /* CardsCollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2643EC21F61A3B005192E2 /* CardsCollectionViewDelegate.swift */; };
@@ -105,6 +106,7 @@
 		161A7A08220096AE00781589 /* MagicAPISpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicAPISpec.swift; sourceTree = "<group>"; };
 		161A7A0B2200991900781589 /* URLGetSessionOperationSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLGetSessionOperationSpec.swift; sourceTree = "<group>"; };
 		161A7A0D22009CC600781589 /* MagicAPIServiceSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicAPIServiceSpec.swift; sourceTree = "<group>"; };
+		1627C2472201E0D100097B0F /* NetworkOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkOperation.swift; sourceTree = "<group>"; };
 		17B4C79DFB871A010BCC1031 /* Pods-magic-the-gatheringTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-magic-the-gatheringTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-magic-the-gatheringTests/Pods-magic-the-gatheringTests.debug.xcconfig"; sourceTree = "<group>"; };
 		2B09CAD921F22A72006F52FF /* CodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeView.swift; sourceTree = "<group>"; };
 		2B2643EA21F61942005192E2 /* CardsSelectionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsSelectionDelegate.swift; sourceTree = "<group>"; };
@@ -208,6 +210,7 @@
 			isa = PBXGroup;
 			children = (
 				161A79FD2200955200781589 /* MagicAPI.swift */,
+				1627C2472201E0D100097B0F /* NetworkOperation.swift */,
 				161A79FF2200956D00781589 /* URLGetSessionOperation.swift */,
 				161A7A03220095E200781589 /* MagicAPIService.swift */,
 			);
@@ -981,6 +984,7 @@
 				EF2DE91F21F2278D00A0D25D /* MTGSet.swift in Sources */,
 				2B7876C421F5FB6E0014B180 /* SetTableViewCell.swift in Sources */,
 				2BF91E562200767800F16577 /* SetTableViewDelegate.swift in Sources */,
+				1627C2482201E0D100097B0F /* NetworkOperation.swift in Sources */,
 				EF2DE91D21F2278600A0D25D /* Card.swift in Sources */,
 				2B2643F421F61EB1005192E2 /* ItemCollectionViewDataSource.swift in Sources */,
 				8F1C144F21F10A450077279C /* AppDelegate.swift in Sources */,

@@ -25,7 +25,7 @@ class SetTableViewDatasource: NSObject, ItemTableViewDataSource {
         case .local:
             self.service = LocalMagicService()
         case .remote:
-            self.service = MagicAPIService()
+            self.service = MagicAPIService(operation: URLSessionGetOperation())
         }
     }
     

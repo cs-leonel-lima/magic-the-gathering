@@ -23,6 +23,12 @@ class MagicAPIService {
     private var nextSet: MTGSet {
         return setsCache[0]
     }
+    
+    private let operation: NetworkOperation
+    
+    init(operation: NetworkOperation) {
+        self.operation = operation
+    }
 }
 
 extension MagicAPIService: MagicService {
@@ -52,7 +58,7 @@ extension MagicAPIService: MagicService {
             
             let requestingSet = setsCache.removeFirst()
             
-            MagicAPIService.requestCards(of: requestingSet) { result in
+            requestCards(of: requestingSet) { result in
                 switch result {
                 case .success(let cards):
                     completion(.success(cards))
@@ -71,8 +77,7 @@ extension MagicAPIService {
         
         let route = MagicAPI.setsDomain()
         
-        let operation = URLSessionGetOperation<[String: [MTGSet]]>(route: route)
-        operation.execute { result in
+        operation.request(at: route, decodingType: [String: [MTGSet]].self) { result in
             switch result {
             case .success(let dictionary):
                 guard let sets = dictionary["sets"] else {
@@ -86,14 +91,13 @@ extension MagicAPIService {
         }
     }
     
-    private static func requestCards(of set: MTGSet, atPage page: Int = 1, previousResult: [Card] = [], _ completion: @escaping (MagicAPIResult<[Card]>) -> Void) {
+    private func requestCards(of set: MTGSet, atPage page: Int = 1, previousResult: [Card] = [], _ completion: @escaping (MagicAPIResult<[Card]>) -> Void) {
         
         var resultsUntilNow = previousResult
         
         let route = MagicAPI.cardsDomain(withParams: "set=\(set.code)&page=\(page)&pageSize=100")
         
-        let operation = URLSessionGetOperation<[String: [Card]]>(route: route)
-        operation.execute { result in
+        operation.request(at: route, decodingType: [String:[Card]].self) { result in
             switch result {
             case .success(let dictionary):
                 guard let cards = dictionary["cards"] else {

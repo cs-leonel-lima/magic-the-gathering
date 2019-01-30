@@ -8,20 +8,9 @@
 
 import Foundation
 
-enum URLSessionResult<T> {
-    case success(T)
-    case error(Error)
-}
-
-class URLSessionGetOperation<T: Decodable> {
+class URLSessionGetOperation: NetworkOperation {
     
-    let route: String
-    
-    init(route: String) {
-        self.route = route
-    }
-    
-    func execute(_ completion: @escaping (URLSessionResult<T>) -> Void) {
+    func request<T>(at route: String, decodingType: T.Type, _ completion: @escaping (NetworkOperationResult<T>) -> Void) where T : Decodable {
         
         do {
             let url = try URLSessionGetOperation.createURL(fromRoute: route)
@@ -42,13 +31,13 @@ class URLSessionGetOperation<T: Decodable> {
                     }
                     
                     do {
-                        let result = try JSONDecoder().decode(T.self, from: data)
+                        let result = try JSONDecoder().decode(decodingType, from: data)
                         completion(.success(result))
                     } catch {
                         completion(.error(error))
                     }
                 }
-            }.resume()
+                }.resume()
             
         } catch {
             completion(.error(error))

@@ -8,7 +8,7 @@
 
 import Foundation
 
-typealias MagicAPIResult = URLSessionResult
+typealias MagicAPIResult = NetworkOperationResult
 
 enum MagicAPI {
     

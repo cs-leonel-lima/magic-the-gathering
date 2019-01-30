@@ -1,14 +1,12 @@
-//
-//  URLGetSessionOperation.swift
-//  magic-the-gathering
-//
-//  Created by gabriel.n.reynoso on 29/01/19.
-//  Copyright © 2019 leonel.menezes.lima. All rights reserved.
-//
-
 import Foundation
 
 class URLSessionGetOperation: NetworkOperation {
+    
+    let session: URLSession
+    
+    init(session: URLSession = .shared) {
+        self.session = session
+    }
     
     func request<T>(at route: String, decodingType: T.Type, _ completion: @escaping (NetworkOperationResult<T>) -> Void) where T : Decodable {
         
@@ -17,8 +15,6 @@ class URLSessionGetOperation: NetworkOperation {
             
             var request = URLRequest(url: url)
             request.httpMethod = "GET"
-            
-            let session = URLSession(configuration: .default)
             
             session.dataTask(with: request) { data, response, error in
                 
@@ -37,7 +33,7 @@ class URLSessionGetOperation: NetworkOperation {
                         completion(.error(error))
                     }
                 }
-                }.resume()
+            }.resume()
             
         } catch {
             completion(.error(error))

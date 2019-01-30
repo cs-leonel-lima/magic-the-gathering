@@ -9,6 +9,11 @@
 import Foundation
 @testable import magic_the_gathering
 
+enum ReturnType {
+    case sets
+    case cards
+}
+
 class NetworkOperationMock: NetworkOperation {
     
     var returnType: ReturnType = .sets
@@ -46,11 +51,6 @@ class NetworkOperationMock: NetworkOperation {
         }
         
         completion(response)
-    }
-    
-    enum ReturnType {
-        case sets
-        case cards
     }
     
     enum ErrorType {

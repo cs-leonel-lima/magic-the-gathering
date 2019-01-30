@@ -1,11 +1,3 @@
-//
-//  APIClientCardService.swift
-//  magic-the-gathering
-//
-//  Created by gabriel.n.reynoso on 30/01/19.
-//  Copyright © 2019 leonel.menezes.lima. All rights reserved.
-//
-
 import Foundation
 
 class APIClientCardService: CardService {
@@ -26,24 +18,27 @@ class APIClientCardService: CardService {
         
         let route = MagicAPI.cardsDomain(withParams: "set=\(set.code)&page=\(page)&pageSize=100")
         
-        operation.request(at: route, decodingType: [String: [Card]].self) { result in
+        operation.request(at: route, decodingType: Response.self) { result in
             switch result {
-            case .success(let dictionary):
-                guard let cards = dictionary["cards"] else {
-                    completion(.error("Magic API may have changed the Cards JSON response format!"))
-                    return
-                }
+            case .success(let response):
                 
-                resultsUntilNow += cards
+                resultsUntilNow += response.cards
                 
-                if cards.count % 100 != 0 {
-                    completion(.success(resultsUntilNow))
-                } else {
+                if response.shouldLoadMore {
                     self.requestCardsRecursively(of: set, atPage: page + 1, previousResult: resultsUntilNow, completion)
+                } else {
+                    completion(.success(resultsUntilNow))
                 }
             case .error(let error):
                 completion(.error(error))
             }
+        }
+    }
+    
+    struct Response: Decodable {
+        let cards: [Card]
+        var shouldLoadMore: Bool {
+            return cards.count % 100 == 0
         }
     }
 }

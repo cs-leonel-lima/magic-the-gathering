@@ -81,7 +81,7 @@ extension MagicAPIService {
             switch result {
             case .success(let dictionary):
                 guard let sets = dictionary["sets"] else {
-                    completion(.error("Magic API may have changed the Cards JSON response format!"))
+                    completion(.error("Magic API may have changed the Sets JSON response format!"))
                     return
                 }
                 completion(.success(sets))
@@ -97,7 +97,7 @@ extension MagicAPIService {
         
         let route = MagicAPI.cardsDomain(withParams: "set=\(set.code)&page=\(page)&pageSize=100")
         
-        operation.request(at: route, decodingType: [String:[Card]].self) { result in
+        operation.request(at: route, decodingType: [String: [Card]].self) { result in
             switch result {
             case .success(let dictionary):
                 guard let cards = dictionary["cards"] else {

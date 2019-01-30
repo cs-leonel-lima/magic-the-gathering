@@ -3,7 +3,6 @@ import UIKit
 class SetTableViewDatasource: NSObject, ItemTableViewDataSource {
     internal var items: [MTGSet]
     internal var tableView: UITableView
-    var service: PopulateCardsProtocol?
     internal weak var delegate: UITableViewDelegate?
     
     required init(items: [MTGSet], tableView: UITableView, delegate: UITableViewDelegate) {
@@ -30,9 +29,7 @@ class SetTableViewDatasource: NSObject, ItemTableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(for: indexPath, cellType: SetTableViewCell.self)
-        service?.getCardsFromPool(handler: { (cards) in
-            cell.setupData(cards: cards)
-        })
+    
         return cell
     }
 

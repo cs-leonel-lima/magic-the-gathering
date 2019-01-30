@@ -15,9 +15,9 @@ class SetTableViewDataSourceSpec: QuickSpec {
             var delegate: UITableViewDelegate!
             
             beforeEach {
-                set = MTGSet.mock()[0]
+                set = JSONHelper.objectFrom(resource: "sets")!.first
                 tableView = UITableView(frame: CGRect(origin: .zero, size: CGSize(width: 300, height: 500)), style: .grouped)
-                delegate = SetTableViewDelegate()
+                delegate = MTGSetTableViewDelegateMock()
                 dataSource = SetTableViewDatasource(items: [set], tableView: tableView, delegate: delegate)
             }
             

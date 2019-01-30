@@ -21,16 +21,16 @@ class CardSpec: QuickSpec {
             }
             
             context("Comparing cards") {
-                it("Should match two cards based on their names") {
+                it("Should not match two cards based on their names") {
                     let card1 = Card(id: "0", name: "Card", types: [], imageURL: "", mtgCodeSet: "")
                     let card2 = Card(id: "1", name: "Card", types: ["creature"], imageURL: "", mtgCodeSet: "")
-                    expect(card1).to(equal(card2))
+                    expect(card1).toNot(equal(card2))
                 }
                 
-                it("Shouldn't match cards with different names") {
-                    let card1 = Card(id: "0", name: "Card", types: [], imageURL: "", mtgCodeSet: "")
+                it("Should match two cards based on their id") {
+                    let card1 = Card(id: "1", name: "Card", types: [], imageURL: "", mtgCodeSet: "")
                     let card2 = Card(id: "1", name: "Cord", types: ["creature"], imageURL: "", mtgCodeSet: "")
-                    expect(card1).toNot(equal(card2))
+                    expect(card1).to(equal(card2))
                 }
             }
             

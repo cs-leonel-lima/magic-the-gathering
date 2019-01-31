@@ -30,6 +30,11 @@ class CardCollectionViewCell: UICollectionViewCell, Reusable {
             self.cardImage.image = R.image.placeholder()
         }
     }
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        self.cardImage.image = nil
+    }
 }
 
 extension CardCollectionViewCell: CodeView {

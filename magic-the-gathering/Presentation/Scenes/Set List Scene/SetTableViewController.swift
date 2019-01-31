@@ -80,6 +80,10 @@ extension SetTableViewController {
         return indexPath.section == items.count  - 1
     }
     
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UIScreen.main.bounds.height/2
+    }
+    
     func setupDelegate(delegate: SetViewForHeaderDelegate?) {
         self.headerTitleDelegate = delegate
     }

@@ -11,8 +11,8 @@ class SetTableViewController: UITableViewController {
     lazy var searchController: UISearchController = {
         let controller = UISearchController(searchResultsController: nil)
         controller.searchResultsUpdater = self
-        controller.definesPresentationContext = false
-        
+        controller.definesPresentationContext = true
+
         searchBarPropertySetup(searchBar: controller.searchBar)
         
         guard let textField = controller.searchBar.value(forKey: "searchField") as? UITextField else { return controller}
@@ -60,6 +60,7 @@ class SetTableViewController: UITableViewController {
         setupDelegate(delegate: self.setTableViewDatasource)
         tableViewPropertySetup()
         self.listStatus = .loading
+        navigationItem.searchController = searchController
     }
     
     private func getNextBatch() {
@@ -142,7 +143,12 @@ extension SetTableViewController {
     }
 }
 
-extension SetTableViewController: UISearchResultsUpdating {
+extension SetTableViewController: UISearchResultsUpdating, UISearchBarDelegate {
+
+    func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
+        searchController.searchBar.text = searchBar.text
+    }
+    
     func updateSearchResults(for searchController: UISearchController) {
         filterContentForSearchText(searchController.searchBar.text!)
     }

@@ -12,10 +12,21 @@ class SetListsContainerPageViewController: UIPageViewController, PagingProtocol 
     private lazy var viewControllerList: [UIViewController] = {
         let vc1 = SetTableViewController(style: .grouped, presentationComposer: APIClientPresentationComposer())
         let vc2 = SetTableViewController(style: .grouped, presentationComposer: APIClientPresentationComposer())
-        
-        return [vc1, vc2]
+        let nav1 = UINavigationController(rootViewController: vc1)
+        let nav2 = UINavigationController(rootViewController: vc2)
+        setupNavbar(navigationBar: nav1.navigationBar)
+        setupNavbar(navigationBar: nav2.navigationBar)
+        return [nav1, nav2]
     }()
-
+    
+    private func setupNavbar(navigationBar: UINavigationBar) {
+        navigationBar.setValue(true, forKey: "hidesShadow")
+        navigationBar.setBackgroundImage(UIImage(), for: .default)
+    }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
     override func viewDidLoad() {
 
         if let firstViewController = self.viewControllerList.first {

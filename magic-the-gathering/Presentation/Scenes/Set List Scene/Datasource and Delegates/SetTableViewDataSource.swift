@@ -35,8 +35,8 @@ class SetTableViewDatasource: NSObject, ItemTableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(for: indexPath, cellType: SetTableViewCell.self)
-        let setPresentationCards = filteredItems.isEmpty ? items[indexPath.row].cards
-            : filteredItems[indexPath.row].cards
+        let setPresentationCards = filteredItems.isEmpty ? items[indexPath.section].cards
+            : filteredItems[indexPath.section].cards
         cell.setupData(cards: setPresentationCards)
         return cell
     }

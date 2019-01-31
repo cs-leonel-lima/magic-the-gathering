@@ -14,7 +14,7 @@ class NetworkOperationMock: NetworkOperation {
     
     private(set) var alreadyRequestedCards = false
     
-    func request<T>(at route: String, decodingType: T.Type, _ completion: @escaping (NetworkOperationResult<T>) -> Void) where T : Decodable {
+    func request<T>(at route: String, decodingType: T.Type, _ completion: @escaping (DataResult<T>) -> Void) where T : Decodable {
         
         if succeed {
             switch returnType {

@@ -10,32 +10,32 @@ import Foundation
 
 class DatabaseSetService: MTGSetService {
     
-    private var setsStack: [MTGSet] = [] {
+    private static var setsStack: [MTGSet] = [] {
         didSet {
             setsStack = setsStack.sorted().reversed()
         }
     }
     
-    private var needsSetsLoad: Bool {
+    private static var needsSetsLoad: Bool {
         return setsStack.count == 0
     }
     
-    private var nextSet: MTGSet {
+    private static var nextSet: MTGSet {
         return setsStack.removeFirst()
     }
     
-    func getSet(_ completion: @escaping (NetworkOperationResult<MTGSet>) -> Void) {
+    func getSet(_ completion: @escaping (DataResult<MTGSet>) -> Void) {
         
-        if needsSetsLoad {
+        if DatabaseSetService.needsSetsLoad {
             do {
                 let sets = try DataAccessObject<MTGSet>().getAll()
-                setsStack.append(contentsOf: sets)
-                completion(.success(nextSet))
+                DatabaseSetService.setsStack.append(contentsOf: sets)
+                completion(.success(DatabaseSetService.nextSet))
             } catch {
                 completion(.error(error))
             }
         } else {
-            completion(.success(nextSet))
+            completion(.success(DatabaseSetService.nextSet))
         }
     }
 }

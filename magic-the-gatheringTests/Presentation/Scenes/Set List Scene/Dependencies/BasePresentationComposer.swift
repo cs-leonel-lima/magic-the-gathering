@@ -6,7 +6,7 @@ import Nimble
 class MTGSetServiceMock: MTGSetService {
     var didCall: Bool = false
     var succed: Bool = true
-    func getSet(_ completion: @escaping (NetworkOperationResult<MTGSet>) -> Void) {
+    func getSet(_ completion: @escaping (DataResult<MTGSet>) -> Void) {
         didCall = true
         if succed {
             completion(.success(MTGSet.mock().first!))
@@ -19,7 +19,7 @@ class MTGSetServiceMock: MTGSetService {
 class CardServiceMock: CardService {
     var didCall: Bool = false
     var succed: Bool = true
-    func getCards(of set: MTGSet, _ completion: @escaping (NetworkOperationResult<[Card]>) -> Void) {
+    func getCards(of set: MTGSet, _ completion: @escaping (DataResult<[Card]>) -> Void) {
         didCall = true
         if succed {
             completion(.success(Card.mock()))

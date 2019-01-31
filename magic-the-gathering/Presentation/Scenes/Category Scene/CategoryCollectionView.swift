@@ -5,6 +5,7 @@ class CategoryCollectionView: UICollectionView {
     override init(frame: CGRect, collectionViewLayout layout: UICollectionViewLayout) {
         super.init(frame: frame, collectionViewLayout: layout)
         commonInit()
+        register(cellType: CardCollectionViewCell.self)
     }
     
     required init?(coder aDecoder: NSCoder) {

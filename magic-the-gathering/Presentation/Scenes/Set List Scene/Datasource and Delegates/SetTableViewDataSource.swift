@@ -4,6 +4,7 @@ class SetTableViewDatasource: NSObject, ItemTableViewDataSource {
     internal var items: [SetPresentation]
     internal var tableView: UITableView
     internal weak var delegate: UITableViewDelegate?
+    internal var present: ((UIViewController) -> Void)?
     
     required init(items: [SetPresentation], tableView: UITableView, delegate: UITableViewDelegate) {
         self.items = items
@@ -29,7 +30,13 @@ class SetTableViewDatasource: NSObject, ItemTableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(for: indexPath, cellType: SetTableViewCell.self)
-        cell.setupData(cards: self.items[indexPath.section].cards)
+        let cards = self.items[indexPath.section].cards
+        cell.setupData(cards: cards)
+        cell.didSelectCard = { ip in
+            let cards = CardsManager.categorize(cards)[ip.section]
+            let nextVC = CategoryViewController(cards: cards.1)
+            self.present?(nextVC)
+        }
         return cell
     }
 

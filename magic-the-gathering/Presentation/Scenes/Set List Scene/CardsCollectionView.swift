@@ -2,7 +2,7 @@ import UIKit
 
 class CardsCollectionView: UICollectionView {
     
-    internal var didSelectCard: ((Int) -> Void)?
+    internal var didSelectCard: ((IndexPath) -> Void)?
     
     private var collectionHeightContraint: NSLayoutConstraint?
     
@@ -27,6 +27,6 @@ class CardsCollectionView: UICollectionView {
 extension CardsCollectionView: CardsSelectionDelegate {
     func didSelect(indexPath: IndexPath) {
         guard let selectionHandler = self.didSelectCard else { return }
-        selectionHandler(indexPath.item)
+        selectionHandler(indexPath)
     }
 }

@@ -18,7 +18,7 @@ class SetTableViewController: UITableViewController {
             case .filtering:
                 break
             case .loading:
-                break
+                getNextBatch()
             case .idle:
                 break
             }
@@ -35,11 +35,16 @@ class SetTableViewController: UITableViewController {
         self.setTableViewDatasource = SetTableViewDatasource(items: [], tableView: self.tableView, delegate: self)
         setupDelegate(delegate: self.setTableViewDatasource)
         tableViewPropertySetup()
+        self.listStatus = .loading
+    }
+    
+    private func getNextBatch() {
         presentationComposer.getSetPresentation { [weak self] (result) in
             switch result {
             case .success(let setPresentation):
                 DispatchQueue.main.async {
                     self?.setTableViewDatasource?.append(setPresentation)
+                    self?.listStatus = .idle
                 }
             case .error(let error):
                 print(error.localizedDescription)
@@ -63,6 +68,16 @@ extension SetTableViewController {
         let titleHeader = self.headerTitleDelegate?.titleForHeader(in: section)
         let headerView = SetHeaderSectionTableView(titleForHeader: titleHeader)
         return headerView
+    }
+    
+    override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        guard isPageAtTheEnd(indexPath) && listStatus != .loading else { return }
+        self.listStatus = .loading
+    }
+    
+    private func isPageAtTheEnd(_ indexPath: IndexPath) -> Bool {
+        guard let items = self.setTableViewDatasource?.items else { return false }
+        return indexPath.section == items.count  - 1
     }
     
     func setupDelegate(delegate: SetViewForHeaderDelegate?) {

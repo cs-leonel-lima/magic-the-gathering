@@ -52,6 +52,7 @@ extension CustomTabBar: CodeView {
     func buildViewHierarchy() {
         horizontalStack.addArrangedSubview(sets)
         horizontalStack.addArrangedSubview(middleSeparator)
+        horizontalStack.addArrangedSubview(favs)
         addSubview(middleSeparator)
         addSubview(horizontalStack)
         addSubview(topSeparator)

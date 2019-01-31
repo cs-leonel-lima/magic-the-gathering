@@ -10,16 +10,18 @@ class SetListsContainerPageViewController: UIPageViewController, UIPageViewContr
         
         return [vc1, vc2]
     }()
-    
+//
     override func viewDidLoad() {
         self.dataSource = self
-        
+
         if let firstViewController = self.viewControllerList.first {
             self.setViewControllers([firstViewController], direction: .forward, animated: false, completion: nil)
         }
         
+        setupView()
+        
     }
-    
+
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
         guard let vcIndex = viewControllerList.index(of: viewController) else { return nil }
         
@@ -49,20 +51,21 @@ class SetListsContainerPageViewController: UIPageViewController, UIPageViewContr
 
 extension SetListsContainerPageViewController: CodeView {
     func buildViewHierarchy() {
-        view.addSubview(tabBar)
+        self.view.addSubview(tabBar)
     }
     
     func setupConstraints() {
         tabBar.snp.makeConstraints { make in
             make.height.equalTo(41)
             make.bottom.equalTo(view.safeAreaLayoutGuide.snp.bottom)
-            make.width.equalToSuperview()
-            make.left.right.equalToSuperview()
+            make.leading.equalToSuperview()
+            make.trailing.equalToSuperview()
         }
+
     }
     
     func setupAdditionalConfigurations() {
-        
+
     }
     
 }

@@ -7,21 +7,11 @@ class SetTableViewController: UITableViewController {
         controller.searchResultsUpdater = self
         controller.definesPresentationContext = false
         
-        controller.searchBar.accessibilityLabel = "searchBar"
-        controller.searchBar.accessibilityIdentifier = "searchBar"
-
-        controller.searchBar.sizeToFit()
-        controller.searchBar.placeholder = "search for cards"
-        controller.searchBar.tintColor = .white
-        controller.searchBar.barStyle = .blackTranslucent
-        controller.searchBar.searchBarStyle = .minimal
-        controller.searchBar.backgroundColor = .clear
-
-        if let textField = controller.searchBar.value(forKey: "searchField") as? UITextField {
-            textField.layer.cornerRadius = 6
-            textField.layer.borderWidth = 1
-            textField.layer.borderColor = UIColor.white.cgColor
-        }
+        searchBarPropertySetup(searchBar: controller.searchBar)
+        
+        guard let textField = controller.searchBar.value(forKey: "searchField") as? UITextField else { return controller}
+        textFieldPropertySetup(textField: textField)
+        
         return controller
     }()
     
@@ -71,11 +61,28 @@ class SetTableViewController: UITableViewController {
         self.tableView.backgroundView = BackgroundView()
         self.tableView.separatorStyle = .none
     }
+    
+    private func searchBarPropertySetup(searchBar: UISearchBar) {
+        searchBar.accessibilityLabel = "searchBar"
+        searchBar.accessibilityIdentifier = "searchBar"
+        
+        searchBar.sizeToFit()
+        searchBar.placeholder = "search for cards"
+        searchBar.tintColor = .white
+        searchBar.barStyle = .blackTranslucent
+        searchBar.searchBarStyle = .minimal
+        searchBar.backgroundColor = .clear
+    }
+    
+    private func textFieldPropertySetup(textField: UITextField) {
+        textField.layer.cornerRadius = 6
+        textField.layer.borderWidth = 1
+        textField.layer.borderColor = UIColor.white.cgColor
+    }
 
 }
 
 extension SetTableViewController {
-    
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let titleHeader = self.headerTitleDelegate?.titleForHeader(in: section)
         let headerView = SetHeaderSectionTableView(titleForHeader: titleHeader)
@@ -89,7 +96,8 @@ extension SetTableViewController {
 
 extension SetTableViewController: UISearchResultsUpdating {
     func updateSearchResults(for searchController: UISearchController) {
-        
+        guard let inputedText = searchController.searchBar.text else { return }
+        filterContentForSearchText(inputedText)
     }
     
     private func searchBarIsEmpty() -> Bool {
@@ -98,5 +106,9 @@ extension SetTableViewController: UISearchResultsUpdating {
     
     private func isFiltering() -> Bool {
         return searchController.isActive && !searchBarIsEmpty()
+    }
+    
+    private func filterContentForSearchText(_ searchText: String) {
+        // code here
     }
 }

@@ -33,6 +33,10 @@ class SetTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setTableViewDatasource = SetTableViewDatasource(items: [], tableView: self.tableView, delegate: self)
+        self.setTableViewDatasource?.present = { vc in
+            vc.modalPresentationStyle = .overCurrentContext
+            self.present(vc, animated: true, completion: nil)
+        }
         setupDelegate(delegate: self.setTableViewDatasource)
         tableViewPropertySetup()
         self.listStatus = .loading

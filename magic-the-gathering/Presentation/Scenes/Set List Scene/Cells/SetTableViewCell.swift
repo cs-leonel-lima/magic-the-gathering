@@ -3,6 +3,12 @@ import Reusable
 
 class SetTableViewCell: UITableViewCell, Reusable {
     
+    internal var didSelectCard: ((IndexPath) -> Void)? {
+        didSet {
+            mtgSetCollectionView.didSelectCard = didSelectCard
+        }
+    }
+    
     private var mtgSetCollectionView: CardsCollectionView = {
         let collectionView = CardsCollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout())
         collectionView.translatesAutoresizingMaskIntoConstraints = false

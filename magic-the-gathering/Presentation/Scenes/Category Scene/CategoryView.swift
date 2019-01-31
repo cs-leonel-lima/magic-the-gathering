@@ -51,7 +51,9 @@ class CategoryView: UIView {
 }
 
 extension CategoryView: CodeView {
-    func setupAdditionalConfigurations() {}
+    func setupAdditionalConfigurations() {
+        backgroundColor = .black
+    }
     
     func buildViewHierarchy() {
         addSubview(categoryCollectionView)
@@ -86,7 +88,7 @@ extension CategoryView: CodeView {
 
 extension CategoryView: UICollectionViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        var closestCell: UICollectionViewCell = categoryCollectionView.visibleCells[0]
+        guard var closestCell: UICollectionViewCell = categoryCollectionView.visibleCells.first else { return }
         for cell in categoryCollectionView.visibleCells as [UICollectionViewCell] {
             let closestCellDelta = abs(closestCell.center.x - categoryCollectionView.bounds.size.width/2.0 - categoryCollectionView.contentOffset.x)
             let cellDelta = abs(cell.center.x - categoryCollectionView.bounds.size.width/2.0 - categoryCollectionView.contentOffset.x)

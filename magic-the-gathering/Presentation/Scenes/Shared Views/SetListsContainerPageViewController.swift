@@ -5,7 +5,7 @@ protocol PagingProtocol {
     func goToPreviousPage()
 }
 
-class SetListsContainerPageViewController: UIPageViewController, UIPageViewControllerDataSource, PagingProtocol {
+class SetListsContainerPageViewController: UIPageViewController, PagingProtocol {
     
     let tabBar = CustomTabBar()
     
@@ -17,7 +17,6 @@ class SetListsContainerPageViewController: UIPageViewController, UIPageViewContr
     }()
 
     override func viewDidLoad() {
-        self.dataSource = self
 
         if let firstViewController = self.viewControllerList.first {
             self.setViewControllers([firstViewController], direction: .forward, animated: false, completion: nil)
@@ -26,31 +25,6 @@ class SetListsContainerPageViewController: UIPageViewController, UIPageViewContr
         setupView()
         tabBar.delegate = self
         tabBar.layer.zPosition = 9999
-        
-    }
-
-    func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
-        guard let vcIndex = viewControllerList.index(of: viewController) else { return nil }
-        
-        let previousIndex = vcIndex - 1
-        
-        guard previousIndex >= 0 else { return nil }
-        
-        guard viewControllerList.count > previousIndex else { return nil }
-        
-        return viewControllerList[previousIndex]
-    }
-    
-    func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
-        guard let vcIndex = viewControllerList.index(of: viewController) else { return nil }
-        
-        let nextIndex = vcIndex + 1
-        
-        guard viewControllerList.count != nextIndex else { return nil }
-        
-        guard viewControllerList.count > nextIndex else { return nil }
-        
-        return viewControllerList[nextIndex]
         
     }
     

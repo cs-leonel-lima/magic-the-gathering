@@ -1,10 +1,29 @@
 import UIKit
 
+enum ListStatus {
+    case filtering
+    case loading
+    case idle
+}
+
 class SetTableViewController: UITableViewController {
     private var setTableViewDatasource: SetTableViewDatasource?
     private let presentationComposer: PresentationComposer
     
     weak var headerTitleDelegate: SetViewForHeaderDelegate?
+    
+    private var listStatus: ListStatus = .idle {
+        didSet {
+            switch listStatus {
+            case .filtering:
+                break
+            case .loading:
+                break
+            case .idle:
+                break
+            }
+        }
+    }
     
     init(style: UITableView.Style, presentationComposer: PresentationComposer) {
         self.presentationComposer = presentationComposer

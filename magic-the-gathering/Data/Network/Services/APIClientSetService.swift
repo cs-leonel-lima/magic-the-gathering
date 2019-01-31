@@ -22,7 +22,7 @@ class APIClientSetService: MTGSetService {
         self.operation = operation
     }
     
-    func getSet(_ completion: @escaping (NetworkOperationResult<MTGSet>) -> Void) {
+    func getSet(_ completion: @escaping (DataResult<MTGSet>) -> Void) {
         
         if APIClientSetService.needsSetRequest {
             

@@ -5,6 +5,12 @@ struct MTGSet: Decodable {
     let code: String
     var releaseDate: Date?
     
+    init(name: String, code: String, releaseDate: Date?) {
+        self.name = name
+        self.code = code
+        self.releaseDate = releaseDate
+    }
+    
     private enum CodingKeys: CodingKey {
         case name, code, releaseDate
     }

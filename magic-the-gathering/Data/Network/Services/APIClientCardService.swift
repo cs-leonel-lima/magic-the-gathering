@@ -8,11 +8,11 @@ class APIClientCardService: CardService {
         self.operation = operation
     }
     
-    func getCards(of set: MTGSet, _ completion: @escaping (NetworkOperationResult<[Card]>) -> Void) {
+    func getCards(of set: MTGSet, _ completion: @escaping (DataResult<[Card]>) -> Void) {
         requestCardsRecursively(of: set, completion)
     }
     
-    private func requestCardsRecursively(of set: MTGSet, atPage page: Int = 1, previousResult: [Card] = [], _ completion: @escaping (NetworkOperationResult<[Card]>) -> Void) {
+    private func requestCardsRecursively(of set: MTGSet, atPage page: Int = 1, previousResult: [Card] = [], _ completion: @escaping (DataResult<[Card]>) -> Void) {
         
         var resultsUntilNow = previousResult
         

@@ -7,6 +7,14 @@ struct Card {
     var imageURL: String?
     let mtgCodeSet: String
     
+    init(id: String, name: String, types: [String], imageURL: String?, mtgCodeSet: String) {
+        self.id = id
+        self.name = name
+        self.types = types
+        self.imageURL = imageURL
+        self.mtgCodeSet = mtgCodeSet
+    }
+    
     private enum CodingKeys: String, CodingKey {
         case id
         case name

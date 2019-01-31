@@ -55,7 +55,6 @@ class SetListsContainerPageViewController: UIPageViewController, UIPageViewContr
     }
     
     func goToNextPage() {
-        
         guard let currentViewController = self.viewControllers?.first else { return }
         
         guard let nextViewController = dataSource?.pageViewController( self, viewControllerAfter: currentViewController ) else { return }
@@ -65,7 +64,6 @@ class SetListsContainerPageViewController: UIPageViewController, UIPageViewContr
     }
     
     func goToPreviousPage() {
-        
         guard let currentViewController = self.viewControllers?.first else { return }
         
         guard let previousViewController = dataSource?.pageViewController( self, viewControllerBefore: currentViewController ) else { return }

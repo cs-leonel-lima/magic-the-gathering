@@ -10,8 +10,8 @@ class SetListsContainerPageViewController: UIPageViewController, PagingProtocol 
     private let tabBar = CustomTabBar()
     
     private lazy var viewControllerList: [UIViewController] = {
-        let vc1 = SetTableViewController(style: .grouped, magicService: RemoteMagicService())
-        let vc2 = SetTableViewController(style: .grouped, magicService: LocalMagicService())
+        let vc1 = SetTableViewController(style: .grouped, presentationComposer: APIClientPresentationComposer())
+        let vc2 = SetTableViewController(style: .grouped, presentationComposer: APIClientPresentationComposer())
         
         return [vc1, vc2]
     }()

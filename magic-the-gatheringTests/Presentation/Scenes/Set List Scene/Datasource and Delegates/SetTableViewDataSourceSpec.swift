@@ -15,10 +15,11 @@ class SetTableViewDataSourceSpec: QuickSpec {
             var delegate: UITableViewDelegate!
             
             beforeEach {
-                set = MTGSet.mock()[0]
+                set = JSONHelper.objectFrom(resource: "sets")!.first
+                let setPresentation = SetPresentation(set: set, cards: [])
                 tableView = UITableView(frame: CGRect(origin: .zero, size: CGSize(width: 300, height: 500)), style: .grouped)
-                delegate = SetTableViewDelegate()
-                dataSource = SetTableViewDatasource(items: [set], tableView: tableView, delegate: delegate)
+                delegate = MTGSetTableViewDelegateMock()
+                dataSource = SetTableViewDatasource(items: [setPresentation], tableView: tableView, delegate: delegate)
             }
             
             it("does have a valid datasource", closure: {

@@ -1,12 +1,11 @@
 import UIKit
 
 class SetTableViewDatasource: NSObject, ItemTableViewDataSource {
-    internal var items: [MTGSet]
+    internal var items: [SetPresentation]
     internal var tableView: UITableView
-    var service: PopulateCardsProtocol?
     internal weak var delegate: UITableViewDelegate?
     
-    required init(items: [MTGSet], tableView: UITableView, delegate: UITableViewDelegate) {
+    required init(items: [SetPresentation], tableView: UITableView, delegate: UITableViewDelegate) {
         self.items = items
         self.tableView = tableView
         self.delegate = delegate
@@ -15,7 +14,7 @@ class SetTableViewDatasource: NSObject, ItemTableViewDataSource {
         self.tableView.register(cellType: SetTableViewCell.self)
     }
     
-    func append(_ set: MTGSet) {
+    func append(_ set: SetPresentation) {
         self.items.append(set)
         self.tableView.reloadData()
     }
@@ -30,9 +29,7 @@ class SetTableViewDatasource: NSObject, ItemTableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(for: indexPath, cellType: SetTableViewCell.self)
-        service?.getCardsFromPool(handler: { (cards) in
-            cell.setupData(cards: cards)
-        })
+        cell.setupData(cards: self.items[indexPath.row].cards)
         return cell
     }
 
@@ -40,6 +37,6 @@ class SetTableViewDatasource: NSObject, ItemTableViewDataSource {
 
 extension SetTableViewDatasource: SetViewForHeaderDelegate {
     func titleForHeader(in section: Int) -> String {
-        return self.items[section].name
+        return self.items[section].set.name
     }
 }

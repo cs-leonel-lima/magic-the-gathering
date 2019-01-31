@@ -1,6 +1,7 @@
 import Foundation
 
 class JSONHelper {
+    
     static func objectFrom<T: Decodable>(resource name: String) -> [T]? {
         if let path = Bundle.main.path(forResource: name, ofType: "json") {
             do {

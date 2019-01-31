@@ -1,6 +1,11 @@
 import UIKit
 
-class SetListsContainerPageViewController: UIPageViewController, UIPageViewControllerDataSource, UIPageViewControllerDelegate {
+protocol PagingProtocol {
+    func goToNextPage()
+    func goToPreviousPage()
+}
+
+class SetListsContainerPageViewController: UIPageViewController, UIPageViewControllerDataSource, PagingProtocol {
     
     let tabBar = CustomTabBar()
     

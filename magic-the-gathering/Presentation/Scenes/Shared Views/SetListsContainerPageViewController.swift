@@ -54,7 +54,7 @@ class SetListsContainerPageViewController: UIPageViewController, UIPageViewContr
         
     }
     
-    func goToNextPage(){
+    func goToNextPage() {
         
         guard let currentViewController = self.viewControllers?.first else { return }
         
@@ -64,8 +64,7 @@ class SetListsContainerPageViewController: UIPageViewController, UIPageViewContr
         
     }
     
-    
-    func goToPreviousPage(){
+    func goToPreviousPage() {
         
         guard let currentViewController = self.viewControllers?.first else { return }
         
@@ -84,7 +83,7 @@ extension SetListsContainerPageViewController: CodeView {
     
     func setupConstraints() {
         tabBar.snp.makeConstraints { make in
-            make.height.equalTo(41)
+            make.height.equalTo(54)
             make.bottom.equalTo(view.safeAreaLayoutGuide.snp.bottom)
             make.leading.equalToSuperview()
             make.trailing.equalToSuperview()
@@ -92,8 +91,6 @@ extension SetListsContainerPageViewController: CodeView {
 
     }
     
-    func setupAdditionalConfigurations() {
-
-    }
+    func setupAdditionalConfigurations() {}
     
 }

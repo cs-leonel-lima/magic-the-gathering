@@ -7,7 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		161A79FB220094EE00781589 /* String+LocalizedError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161A79FA220094EE00781589 /* String+LocalizedError.swift */; };
+		161A79FE2200955200781589 /* MagicAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161A79FD2200955200781589 /* MagicAPI.swift */; };
+		161A7A002200956D00781589 /* URLGetSessionOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161A79FF2200956D00781589 /* URLGetSessionOperation.swift */; };
+		161A7A09220096AE00781589 /* MagicAPISpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161A7A08220096AE00781589 /* MagicAPISpec.swift */; };
+		1627C2482201E0D100097B0F /* NetworkOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1627C2472201E0D100097B0F /* NetworkOperation.swift */; };
+		1627C24A2201E3A300097B0F /* ModelMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1627C2492201E3A300097B0F /* ModelMock.swift */; };
+		1627C24C2201EAE500097B0F /* NetworkOperationMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1627C24B2201EAE500097B0F /* NetworkOperationMock.swift */; };
+		1627C24E2202072F00097B0F /* APIClientCardService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1627C24D2202072F00097B0F /* APIClientCardService.swift */; };
+		1627C2502202073700097B0F /* APIClientSetService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1627C24F2202073700097B0F /* APIClientSetService.swift */; };
+		1627C25222020B6F00097B0F /* PresentationComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1627C25122020B6F00097B0F /* PresentationComposer.swift */; };
+		1627C25622020C0300097B0F /* APIClientPresentationComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1627C25522020C0300097B0F /* APIClientPresentationComposer.swift */; };
+		1627C25A2202234B00097B0F /* APIClientPresentationComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1627C2592202234B00097B0F /* APIClientPresentationComposer.swift */; };
 		2B09CADA21F22A72006F52FF /* CodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B09CAD921F22A72006F52FF /* CodeView.swift */; };
+		2B1179CA22021076006F3228 /* APIClientSetServiceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1179C922021076006F3228 /* APIClientSetServiceSpec.swift */; };
+		2B1179CC22022A01006F3228 /* APIClientCardServiceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1179CB22022A01006F3228 /* APIClientCardServiceSpec.swift */; };
 		2B2643EB21F61942005192E2 /* CardsSelectionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2643EA21F61942005192E2 /* CardsSelectionDelegate.swift */; };
 		2B2643ED21F61A3B005192E2 /* CardsCollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2643EC21F61A3B005192E2 /* CardsCollectionViewDelegate.swift */; };
 		2B2643EF21F61C87005192E2 /* CardsCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2643EE21F61C87005192E2 /* CardsCollectionViewDataSource.swift */; };
@@ -24,7 +38,6 @@
 		2B699B0422006B13005C5397 /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B699B0322006B13005C5397 /* BackgroundView.swift */; };
 		2B7876C421F5FB6E0014B180 /* SetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7876C321F5FB6E0014B180 /* SetTableViewCell.swift */; };
 		2BE94EB421F8B0AC00E42F38 /* SetTableViewCellQS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE94EB321F8B0AC00E42F38 /* SetTableViewCellQS.swift */; };
-		2BF91E562200767800F16577 /* SetTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF91E552200767800F16577 /* SetTableViewDelegate.swift */; };
 		2BF91E5B22008EDB00F16577 /* SetViewForHeaderDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF91E5A22008EDB00F16577 /* SetViewForHeaderDelegate.swift */; };
 		3AA0BFE9190134895A6E78EE /* Pods_magic_the_gatheringKIFTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ED610329B0D5699F191C1F9 /* Pods_magic_the_gatheringKIFTests.framework */; };
 		3E7CF50D50D0599DD8B2A7B1 /* Pods_magic_the_gathering.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C73BD1011B0E6B65D6E0C9E1 /* Pods_magic_the_gathering.framework */; };
@@ -64,12 +77,9 @@
 		EFC0C1B221FF6A2D0003F004 /* CategoryCollectionViewSnapshotSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC0C1B121FF6A2D0003F004 /* CategoryCollectionViewSnapshotSpec.swift */; };
 		EFC0C1B421FF6A980003F004 /* JSONHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC0C1B321FF6A980003F004 /* JSONHelper.swift */; };
 		EFC0C1B621FF6C690003F004 /* CategoryViewSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC0C1B521FF6C690003F004 /* CategoryViewSpec.swift */; };
-		EFD0290321FF97400089FDDB /* MagicService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD0290221FF97400089FDDB /* MagicService.swift */; };
+		EFD0290321FF97400089FDDB /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD0290221FF97400089FDDB /* Services.swift */; };
 		EFD4D67B220212390017A618 /* SetTableViewSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD4D67922020CF30017A618 /* SetTableViewSpec.swift */; };
-		EFD9ACB022007EE500314189 /* JSONHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC0C1B321FF6A980003F004 /* JSONHelper.swift */; };
 		EFD9ACB32200934800314189 /* MTGEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD9ACB22200934800314189 /* MTGEnums.swift */; };
-		EFD9ACB72200BC9700314189 /* MagicServiceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD9ACB62200BC9700314189 /* MagicServiceSpec.swift */; };
-		EFD9ACB92200BDB300314189 /* MagicServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD9ACB82200BDB300314189 /* MagicServiceMock.swift */; };
 		FDB04A0826B683BD5D5CD95D /* Pods_magic_the_gatheringTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E500CB7AFD10B11E601D63B /* Pods_magic_the_gatheringTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -92,8 +102,22 @@
 
 /* Begin PBXFileReference section */
 		0ED610329B0D5699F191C1F9 /* Pods_magic_the_gatheringKIFTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_magic_the_gatheringKIFTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		161A79FA220094EE00781589 /* String+LocalizedError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+LocalizedError.swift"; sourceTree = "<group>"; };
+		161A79FD2200955200781589 /* MagicAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicAPI.swift; sourceTree = "<group>"; };
+		161A79FF2200956D00781589 /* URLGetSessionOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLGetSessionOperation.swift; sourceTree = "<group>"; };
+		161A7A08220096AE00781589 /* MagicAPISpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicAPISpec.swift; sourceTree = "<group>"; };
+		1627C2472201E0D100097B0F /* NetworkOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkOperation.swift; sourceTree = "<group>"; };
+		1627C2492201E3A300097B0F /* ModelMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelMock.swift; sourceTree = "<group>"; };
+		1627C24B2201EAE500097B0F /* NetworkOperationMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkOperationMock.swift; sourceTree = "<group>"; };
+		1627C24D2202072F00097B0F /* APIClientCardService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClientCardService.swift; sourceTree = "<group>"; };
+		1627C24F2202073700097B0F /* APIClientSetService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClientSetService.swift; sourceTree = "<group>"; };
+		1627C25122020B6F00097B0F /* PresentationComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationComposer.swift; sourceTree = "<group>"; };
+		1627C25522020C0300097B0F /* APIClientPresentationComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClientPresentationComposer.swift; sourceTree = "<group>"; };
+		1627C2592202234B00097B0F /* APIClientPresentationComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClientPresentationComposer.swift; sourceTree = "<group>"; };
 		17B4C79DFB871A010BCC1031 /* Pods-magic-the-gatheringTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-magic-the-gatheringTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-magic-the-gatheringTests/Pods-magic-the-gatheringTests.debug.xcconfig"; sourceTree = "<group>"; };
 		2B09CAD921F22A72006F52FF /* CodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeView.swift; sourceTree = "<group>"; };
+		2B1179C922021076006F3228 /* APIClientSetServiceSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClientSetServiceSpec.swift; sourceTree = "<group>"; };
+		2B1179CB22022A01006F3228 /* APIClientCardServiceSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClientCardServiceSpec.swift; sourceTree = "<group>"; };
 		2B2643EA21F61942005192E2 /* CardsSelectionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsSelectionDelegate.swift; sourceTree = "<group>"; };
 		2B2643EC21F61A3B005192E2 /* CardsCollectionViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsCollectionViewDelegate.swift; sourceTree = "<group>"; };
 		2B2643EE21F61C87005192E2 /* CardsCollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsCollectionViewDataSource.swift; sourceTree = "<group>"; };
@@ -110,7 +134,6 @@
 		2B699B0322006B13005C5397 /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
 		2B7876C321F5FB6E0014B180 /* SetTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetTableViewCell.swift; sourceTree = "<group>"; };
 		2BE94EB321F8B0AC00E42F38 /* SetTableViewCellQS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetTableViewCellQS.swift; sourceTree = "<group>"; };
-		2BF91E552200767800F16577 /* SetTableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetTableViewDelegate.swift; sourceTree = "<group>"; };
 		2BF91E5A22008EDB00F16577 /* SetViewForHeaderDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetViewForHeaderDelegate.swift; sourceTree = "<group>"; };
 		3866305A5ABCBA3168D826FB /* Pods-magic-the-gatheringKIFTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-magic-the-gatheringKIFTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-magic-the-gatheringKIFTests/Pods-magic-the-gatheringKIFTests.release.xcconfig"; sourceTree = "<group>"; };
 		5B893359ABA28B1EC432E364 /* Pods-magic-the-gatheringKIFTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-magic-the-gatheringKIFTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-magic-the-gatheringKIFTests/Pods-magic-the-gatheringKIFTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -156,11 +179,9 @@
 		EFC0C1B121FF6A2D0003F004 /* CategoryCollectionViewSnapshotSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewSnapshotSpec.swift; sourceTree = "<group>"; };
 		EFC0C1B321FF6A980003F004 /* JSONHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONHelper.swift; sourceTree = "<group>"; };
 		EFC0C1B521FF6C690003F004 /* CategoryViewSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewSpec.swift; sourceTree = "<group>"; };
-		EFD0290221FF97400089FDDB /* MagicService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicService.swift; sourceTree = "<group>"; };
+		EFD0290221FF97400089FDDB /* Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
 		EFD4D67922020CF30017A618 /* SetTableViewSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetTableViewSpec.swift; sourceTree = "<group>"; };
 		EFD9ACB22200934800314189 /* MTGEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTGEnums.swift; sourceTree = "<group>"; };
-		EFD9ACB62200BC9700314189 /* MagicServiceSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicServiceSpec.swift; sourceTree = "<group>"; };
-		EFD9ACB82200BDB300314189 /* MagicServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicServiceMock.swift; sourceTree = "<group>"; };
 		FB14EFA640FA67CF17951232 /* Pods-magic-the-gatheringTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-magic-the-gatheringTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-magic-the-gatheringTests/Pods-magic-the-gatheringTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -192,6 +213,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		161A79FC2200953D00781589 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				1627C25422020BAD00097B0F /* Base */,
+				1627C25322020B9800097B0F /* Services */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		161A7A072200969E00781589 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				161A7A08220096AE00781589 /* MagicAPISpec.swift */,
+				2B1179C922021076006F3228 /* APIClientSetServiceSpec.swift */,
+				2B1179CB22022A01006F3228 /* APIClientCardServiceSpec.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		1627C25322020B9800097B0F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				EFD0290221FF97400089FDDB /* Services.swift */,
+				1627C24F2202073700097B0F /* APIClientSetService.swift */,
+				1627C24D2202072F00097B0F /* APIClientCardService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		1627C25422020BAD00097B0F /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				161A79FD2200955200781589 /* MagicAPI.swift */,
+				1627C2472201E0D100097B0F /* NetworkOperation.swift */,
+				161A79FF2200956D00781589 /* URLGetSessionOperation.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
 		2B09CAD721F22A4F006F52FF /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
@@ -216,7 +276,6 @@
 				2B2643EC21F61A3B005192E2 /* CardsCollectionViewDelegate.swift */,
 				2B2643EE21F61C87005192E2 /* CardsCollectionViewDataSource.swift */,
 				2BF91E5A22008EDB00F16577 /* SetViewForHeaderDelegate.swift */,
-				2BF91E552200767800F16577 /* SetTableViewDelegate.swift */,
 				8FCECF4721F72D7D005C654B /* SetTableViewDataSource.swift */,
 			);
 			path = "Datasource and Delegates";
@@ -235,6 +294,7 @@
 			isa = PBXGroup;
 			children = (
 				2B2643FC21F76F18005192E2 /* UIImageView+Nuke.swift */,
+				161A79FA220094EE00781589 /* String+LocalizedError.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -415,6 +475,7 @@
 		8F1C144D21F10A450077279C /* magic-the-gathering */ = {
 			isa = PBXGroup;
 			children = (
+				161A79FC2200953D00781589 /* Network */,
 				EFD9ACB12200933600314189 /* Enums */,
 				8F187CC821FF656200537852 /* Model */,
 				8FA62F3821F9FC8900661DAB /* R.generated.swift */,
@@ -434,6 +495,7 @@
 		8F1C146221F10A470077279C /* magic-the-gatheringTests */ = {
 			isa = PBXGroup;
 			children = (
+				161A7A072200969E00781589 /* Network */,
 				8F77209C21F8EC5E0098C104 /* Mock & Stubbing */,
 				2B4B52E721F7A82000204039 /* Presentation */,
 				2B4B52E121F7A63100204039 /* Managers */,
@@ -455,9 +517,10 @@
 		8F77209C21F8EC5E0098C104 /* Mock & Stubbing */ = {
 			isa = PBXGroup;
 			children = (
+				1627C24B2201EAE500097B0F /* NetworkOperationMock.swift */,
 				EFC0C1B321FF6A980003F004 /* JSONHelper.swift */,
 				8F77209D21F8EC7C0098C104 /* CollectionViewDelegateMock.swift */,
-				EFD9ACB82200BDB300314189 /* MagicServiceMock.swift */,
+				1627C2492201E3A300097B0F /* ModelMock.swift */,
 			);
 			path = "Mock & Stubbing";
 			sourceTree = "<group>";
@@ -561,7 +624,8 @@
 		EFD0290121FF97240089FDDB /* Dependencies */ = {
 			isa = PBXGroup;
 			children = (
-				EFD0290221FF97400089FDDB /* MagicService.swift */,
+				1627C25122020B6F00097B0F /* PresentationComposer.swift */,
+				1627C25522020C0300097B0F /* APIClientPresentationComposer.swift */,
 			);
 			path = Dependencies;
 			sourceTree = "<group>";
@@ -577,7 +641,7 @@
 		EFD9ACB52200BC8300314189 /* Dependencies */ = {
 			isa = PBXGroup;
 			children = (
-				EFD9ACB62200BC9700314189 /* MagicServiceSpec.swift */,
+				1627C2592202234B00097B0F /* APIClientPresentationComposer.swift */,
 			);
 			path = Dependencies;
 			sourceTree = "<group>";
@@ -809,7 +873,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
 		};
 		34A4558A50C576B29376128C /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -935,7 +999,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EFD0290321FF97400089FDDB /* MagicService.swift in Sources */,
+				EFD0290321FF97400089FDDB /* Services.swift in Sources */,
 				EFD9ACB32200934800314189 /* MTGEnums.swift in Sources */,
 				EFC0C1A321FF69360003F004 /* CategoryCollectionViewDataSource.swift in Sources */,
 				2B2643EB21F61942005192E2 /* CardsSelectionDelegate.swift in Sources */,
@@ -943,6 +1007,7 @@
 				2BF91E5B22008EDB00F16577 /* SetViewForHeaderDelegate.swift in Sources */,
 				2B699B0422006B13005C5397 /* BackgroundView.swift in Sources */,
 				EFC0C1A721FF69990003F004 /* CategoryViewController.swift in Sources */,
+				1627C25622020C0300097B0F /* APIClientPresentationComposer.swift in Sources */,
 				8FCECF4821F72D7D005C654B /* SetTableViewDataSource.swift in Sources */,
 				8F187CCC2200CF6600537852 /* SetHeaderSectionTableView.swift in Sources */,
 				2B2643FA21F62B06005192E2 /* CardsCollectionView.swift in Sources */,
@@ -950,20 +1015,25 @@
 				8FA62F3921F9FC8900661DAB /* R.generated.swift in Sources */,
 				EF2DE91F21F2278D00A0D25D /* MTGSet.swift in Sources */,
 				2B7876C421F5FB6E0014B180 /* SetTableViewCell.swift in Sources */,
-				2BF91E562200767800F16577 /* SetTableViewDelegate.swift in Sources */,
+				1627C2482201E0D100097B0F /* NetworkOperation.swift in Sources */,
 				EF2DE91D21F2278600A0D25D /* Card.swift in Sources */,
 				2B2643F421F61EB1005192E2 /* ItemCollectionViewDataSource.swift in Sources */,
 				8F1C144F21F10A450077279C /* AppDelegate.swift in Sources */,
 				8FCECF4C21F73118005C654B /* SetTableViewController.swift in Sources */,
 				2B2643EF21F61C87005192E2 /* CardsCollectionViewDataSource.swift in Sources */,
+				1627C24E2202072F00097B0F /* APIClientCardService.swift in Sources */,
+				161A79FB220094EE00781589 /* String+LocalizedError.swift in Sources */,
 				2B2643ED21F61A3B005192E2 /* CardsCollectionViewDelegate.swift in Sources */,
 				2B2643F221F61D41005192E2 /* ItemTableViewDataSource.swift in Sources */,
 				EFC0C1A621FF69990003F004 /* CategoryView.swift in Sources */,
-				EFD9ACB022007EE500314189 /* JSONHelper.swift in Sources */,
+				161A79FE2200955200781589 /* MagicAPI.swift in Sources */,
 				EFC0C1A921FF69B50003F004 /* CategoryCollectionView.swift in Sources */,
+				1627C25222020B6F00097B0F /* PresentationComposer.swift in Sources */,
+				161A7A002200956D00781589 /* URLGetSessionOperation.swift in Sources */,
 				EFC0C1A221FF69360003F004 /* CarouselCollectionViewLayout.swift in Sources */,
 				2B2643F621F62393005192E2 /* CardCollectionViewCell.swift in Sources */,
 				EF2DE92221F22ADE00A0D25D /* DateFormatter.swift in Sources */,
+				1627C2502202073700097B0F /* APIClientSetService.swift in Sources */,
 				2B2643FD21F76F18005192E2 /* UIImageView+Nuke.swift in Sources */,
 				8F187CCD2200CF6600537852 /* SetSubHeaderCollectionReusableView.swift in Sources */,
 			);
@@ -977,19 +1047,23 @@
 				EFC0C1AF21FF6A180003F004 /* CarouselCollectionViewLayoutSpec.swift in Sources */,
 				2B4B52EE21F7A86E00204039 /* CardsCollectionViewDatasourceSpec.swift in Sources */,
 				2B4B52E321F7A64E00204039 /* CardsManagerSpec.swift in Sources */,
-				EFD9ACB72200BC9700314189 /* MagicServiceSpec.swift in Sources */,
 				8F77209B21F8EA9B0098C104 /* CardsCollectionViewSnapShotSpec.swift in Sources */,
+				2B1179CA22021076006F3228 /* APIClientSetServiceSpec.swift in Sources */,
 				EF2DE93521F2423100A0D25D /* MTGSetSpec.swift in Sources */,
 				2B36B2AE21F89D1B004DD6CD /* CardCollectionViewCellQS.swift in Sources */,
+				161A7A09220096AE00781589 /* MagicAPISpec.swift in Sources */,
 				EFC0C1AD21FF6A0E0003F004 /* CategoryCollectionViewDataSourceSpec.swift in Sources */,
 				EFC0C1B621FF6C690003F004 /* CategoryViewSpec.swift in Sources */,
 				EFC0C1B421FF6A980003F004 /* JSONHelper.swift in Sources */,
+				2B1179CC22022A01006F3228 /* APIClientCardServiceSpec.swift in Sources */,
 				8F77209E21F8EC7C0098C104 /* CollectionViewDelegateMock.swift in Sources */,
 				2B4B52EF21F7A86E00204039 /* SetTableViewDataSourceSpec.swift in Sources */,
-				EFD9ACB92200BDB300314189 /* MagicServiceMock.swift in Sources */,
 				EFD4D67B220212390017A618 /* SetTableViewSpec.swift in Sources */,
 				EF2DE93321F2422100A0D25D /* CardSpec.swift in Sources */,
+				1627C24A2201E3A300097B0F /* ModelMock.swift in Sources */,
+				1627C24C2201EAE500097B0F /* NetworkOperationMock.swift in Sources */,
 				EFC0C1B221FF6A2D0003F004 /* CategoryCollectionViewSnapshotSpec.swift in Sources */,
+				1627C25A2202234B00097B0F /* APIClientPresentationComposer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,7 +10,7 @@ class SetTableViewControllerSpec: QuickSpec {
     override func spec() {
         
         describe("SetTableViewController") {
-            let mainView = SetTableViewController(style: .grouped, context: .local)
+            let mainView = SetTableViewController(style: .grouped, presentationComposer: APIClientPresentationComposer())
             let navigationController = UINavigationController(rootViewController: mainView)
             
             var window: UIWindow!

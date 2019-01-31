@@ -21,17 +21,9 @@ class SetTableViewCell: UITableViewCell, Reusable {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func setupData(service: CardService?) {
-        service?.getCards { result in
-            switch result {
-            case .success(let cards):
-                self.mtgSetCollectionView.updateItems(cards: cards)
-                self.cardsManager = CardsManager(cards: cards)
-                self.setupLayout()
-            case .error(let error):
-                print(error.localizedDescription)
-            }
-        }
+    func setupData(cards: [Card]) {
+        self.mtgSetCollectionView.updateItems(cards: cards)
+        self.setupLayout()
     }
 }
 

@@ -10,9 +10,11 @@ class CustomTabBarSnapshot: QuickSpec {
         beforeEach {
             tabBar = CustomTabBar(frame: CGRect(x: 0, y: 0, width: 375, height: 55))
         }
-        
-        it("has the expected look and feel") {
-            expect(tabBar) == snapshot("TabBar")
+        context("UI") {
+            it("has the expected look and feel") {
+                expect(tabBar) == snapshot("TabBar")
+            }
         }
+
     }
 }

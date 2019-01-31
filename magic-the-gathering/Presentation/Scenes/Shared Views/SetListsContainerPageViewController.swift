@@ -7,9 +7,9 @@ protocol PagingProtocol {
 
 class SetListsContainerPageViewController: UIPageViewController, PagingProtocol {
     
-    let tabBar = CustomTabBar()
+    private let tabBar = CustomTabBar()
     
-    lazy var viewControllerList: [UIViewController] = {
+    private lazy var viewControllerList: [UIViewController] = {
         let vc1 = SetTableViewController(style: .grouped, magicService: RemoteMagicService())
         let vc2 = SetTableViewController(style: .grouped, magicService: LocalMagicService())
         

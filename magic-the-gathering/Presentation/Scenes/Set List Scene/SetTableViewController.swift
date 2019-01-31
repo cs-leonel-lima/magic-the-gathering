@@ -8,15 +8,17 @@ class SetTableViewController: UITableViewController {
         controller.searchBar.sizeToFit()
         controller.searchBar.accessibilityLabel = "searchBar"
         controller.searchBar.accessibilityIdentifier = "searchBar"
-        controller.obscuresBackgroundDuringPresentation = false
+
         controller.searchBar.placeholder = "search for cards"
         controller.searchBar.tintColor = .white
-        if let textfield = controller.searchBar.value(forKey: "searchField") as? UITextField {
-            if let backgroundView = textfield.subviews.first {
-                backgroundView.backgroundColor = .white
-                backgroundView.layer.cornerRadius = 3
-                backgroundView.clipsToBounds = true
-            }
+        controller.searchBar.barStyle = .blackTranslucent
+        controller.searchBar.searchBarStyle = .minimal
+        controller.searchBar.backgroundColor = .clear
+
+        if let textField = controller.searchBar.value(forKey: "searchField") as? UITextField {
+            textField.layer.cornerRadius = 6
+            textField.layer.borderWidth = 1
+            textField.layer.borderColor = UIColor.white.cgColor
         }
         return controller
     }()

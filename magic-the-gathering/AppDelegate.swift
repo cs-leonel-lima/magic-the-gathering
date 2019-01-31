@@ -8,6 +8,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         setupWindow()
+        
         return true
     }
 }
@@ -23,10 +24,10 @@ extension AppDelegate {
     }
     
     func setupNavbar(navigationBar: UINavigationBar) {
-        navigationBar.backgroundColor = .clear
-        navigationBar.barTintColor = .clear
-        navigationBar.isTranslucent = true
-        navigationBar.shadowImage = UIImage()
+        //navigationBar.backgroundColor = .clear
+        //navigationBar.barTintColor = .clear
+        //navigationBar.isTranslucent = true
+        //navigationBar.shadowImage = UIImage()
         navigationBar.setValue(true, forKey: "hidesShadow")
         navigationBar.setBackgroundImage(UIImage(), for: .default)
     }

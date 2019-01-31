@@ -2,10 +2,12 @@ import Foundation
 
 class CardsManager {
     
+    private let dao: CardDataAccessObject
     private var cards: [Card]
     
-    init(cards: [Card]) {
+    init(cards: [Card]) throws {
         self.cards = cards
+        dao = try CardDataAccessObject()
     }
     
     static func categorize(_ cards: [Card]) -> [(String, [Card])] {
@@ -25,6 +27,18 @@ class CardsManager {
         }
         
         return cardsCategorized.sorted(by: { return $0.0 < $1.0 })
+    }
+    
+    func favorite(card: Card) throws {
+        try dao.create(object: card)
+    }
+    
+    func unfavorite(card: Card) throws {
+        try dao.delete(object: card)
+    }
+    
+    func isFavorite(card: Card) throws -> Bool {
+        return try dao.contains(object: card)
     }
 
     func searchCards(with text: String) -> [Card] {

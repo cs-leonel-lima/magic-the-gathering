@@ -8,7 +8,7 @@ class URLSessionGetOperation: NetworkOperation {
         self.session = session
     }
     
-    func request<T>(at route: String, decodingType: T.Type, _ completion: @escaping (NetworkOperationResult<T>) -> Void) where T: Decodable {
+    func request<T>(at route: String, decodingType: T.Type, _ completion: @escaping (DataResult<T>) -> Void) where T: Decodable {
         
         do {
             let url = try URLSessionGetOperation.createURL(fromRoute: route)

@@ -23,12 +23,22 @@ class CategoryView: UIView {
         return button
     }()
     
+    private var currentIndex: Int = 0
     private var categoryCollectionViewDataSource: CategoryCollectionViewDataSource?
     
     func setupCategoryCollection(with cards: [Card]) {
         setupView()
         categoryCollectionViewDataSource = CategoryCollectionViewDataSource(cards: cards)
         categoryCollectionView.dataSource = categoryCollectionViewDataSource
+        categoryCollectionView.delegate = self
+    }
+    
+    func presentFavoriteCardState() {
+        toggleFavoriteButton.setTitle("remove card from deck", for: .normal)
+    }
+    
+    func presentNonFavoriteCardState() {
+        toggleFavoriteButton.setTitle("add card to deck", for: .normal)
     }
     
     @objc private func dismissSelf() {
@@ -36,7 +46,7 @@ class CategoryView: UIView {
     }
     
     @objc private func toggleFavorite() {
-        
+        self.interactionDelegate?.toggleFavourite(at: currentIndex)
     }
 }
 
@@ -71,5 +81,21 @@ extension CategoryView: CodeView {
             make.trailing.equalToSuperview().inset(16)
             make.height.equalTo(48)
         }
+    }
+}
+
+extension CategoryView: UICollectionViewDelegate {
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        var closestCell: UICollectionViewCell = categoryCollectionView.visibleCells[0]
+        for cell in categoryCollectionView.visibleCells as [UICollectionViewCell] {
+            let closestCellDelta = abs(closestCell.center.x - categoryCollectionView.bounds.size.width/2.0 - categoryCollectionView.contentOffset.x)
+            let cellDelta = abs(cell.center.x - categoryCollectionView.bounds.size.width/2.0 - categoryCollectionView.contentOffset.x)
+            if cellDelta < closestCellDelta {
+                closestCell = cell
+            }
+        }
+        guard let indexPath = categoryCollectionView.indexPath(for: closestCell) else { return }
+        currentIndex = indexPath.item
+        interactionDelegate?.checkFavourite(at: indexPath.item)
     }
 }

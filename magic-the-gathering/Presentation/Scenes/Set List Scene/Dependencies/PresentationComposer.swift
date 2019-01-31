@@ -13,7 +13,7 @@ struct SetPresentation {
     let cards: [Card]
 }
 
-typealias ComposerResult = NetworkOperationResult
+typealias ComposerResult = DataResult
 
 protocol PresentationComposer {
     func getSetPresentation(_ completion: @escaping (_ result: ComposerResult<SetPresentation>) -> Void)

@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		16082F6B220321D8001A7F03 /* FavoriteCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16082F6A220321D8001A7F03 /* FavoriteCard.swift */; };
+		16082F6D220323B2001A7F03 /* FavoriteSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16082F6C220323B2001A7F03 /* FavoriteSet.swift */; };
+		16082F6F2203246F001A7F03 /* DataAccessObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16082F6E2203246F001A7F03 /* DataAccessObject.swift */; };
+		16082F712203264B001A7F03 /* Model+Realmeable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16082F702203264B001A7F03 /* Model+Realmeable.swift */; };
+		16082F7322032672001A7F03 /* Realmeable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16082F7222032672001A7F03 /* Realmeable.swift */; };
+		16082F7522032C64001A7F03 /* DatabaseSetService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16082F7422032C64001A7F03 /* DatabaseSetService.swift */; };
+		16082F7722032F3D001A7F03 /* DatabaseCardService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16082F7622032F3D001A7F03 /* DatabaseCardService.swift */; };
 		161A79FB220094EE00781589 /* String+LocalizedError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161A79FA220094EE00781589 /* String+LocalizedError.swift */; };
 		161A79FE2200955200781589 /* MagicAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161A79FD2200955200781589 /* MagicAPI.swift */; };
 		161A7A002200956D00781589 /* URLGetSessionOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161A79FF2200956D00781589 /* URLGetSessionOperation.swift */; };
@@ -17,8 +24,8 @@
 		1627C24E2202072F00097B0F /* APIClientCardService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1627C24D2202072F00097B0F /* APIClientCardService.swift */; };
 		1627C2502202073700097B0F /* APIClientSetService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1627C24F2202073700097B0F /* APIClientSetService.swift */; };
 		1627C25222020B6F00097B0F /* PresentationComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1627C25122020B6F00097B0F /* PresentationComposer.swift */; };
-		1627C25622020C0300097B0F /* APIClientPresentationComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1627C25522020C0300097B0F /* APIClientPresentationComposer.swift */; };
-		1627C25A2202234B00097B0F /* APIClientPresentationComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1627C2592202234B00097B0F /* APIClientPresentationComposer.swift */; };
+		1627C25622020C0300097B0F /* BasePresentationComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1627C25522020C0300097B0F /* BasePresentationComposer.swift */; };
+		1627C25A2202234B00097B0F /* BasePresentationComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1627C2592202234B00097B0F /* BasePresentationComposer.swift */; };
 		2B09CADA21F22A72006F52FF /* CodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B09CAD921F22A72006F52FF /* CodeView.swift */; };
 		2B1179CA22021076006F3228 /* APIClientSetServiceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1179C922021076006F3228 /* APIClientSetServiceSpec.swift */; };
 		2B1179CC22022A01006F3228 /* APIClientCardServiceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1179CB22022A01006F3228 /* APIClientCardServiceSpec.swift */; };
@@ -105,6 +112,13 @@
 
 /* Begin PBXFileReference section */
 		0ED610329B0D5699F191C1F9 /* Pods_magic_the_gatheringKIFTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_magic_the_gatheringKIFTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		16082F6A220321D8001A7F03 /* FavoriteCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteCard.swift; sourceTree = "<group>"; };
+		16082F6C220323B2001A7F03 /* FavoriteSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteSet.swift; sourceTree = "<group>"; };
+		16082F6E2203246F001A7F03 /* DataAccessObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataAccessObject.swift; sourceTree = "<group>"; };
+		16082F702203264B001A7F03 /* Model+Realmeable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Model+Realmeable.swift"; sourceTree = "<group>"; };
+		16082F7222032672001A7F03 /* Realmeable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Realmeable.swift; sourceTree = "<group>"; };
+		16082F7422032C64001A7F03 /* DatabaseSetService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseSetService.swift; sourceTree = "<group>"; };
+		16082F7622032F3D001A7F03 /* DatabaseCardService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseCardService.swift; sourceTree = "<group>"; };
 		161A79FA220094EE00781589 /* String+LocalizedError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+LocalizedError.swift"; sourceTree = "<group>"; };
 		161A79FD2200955200781589 /* MagicAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicAPI.swift; sourceTree = "<group>"; };
 		161A79FF2200956D00781589 /* URLGetSessionOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLGetSessionOperation.swift; sourceTree = "<group>"; };
@@ -115,8 +129,8 @@
 		1627C24D2202072F00097B0F /* APIClientCardService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClientCardService.swift; sourceTree = "<group>"; };
 		1627C24F2202073700097B0F /* APIClientSetService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClientSetService.swift; sourceTree = "<group>"; };
 		1627C25122020B6F00097B0F /* PresentationComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationComposer.swift; sourceTree = "<group>"; };
-		1627C25522020C0300097B0F /* APIClientPresentationComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClientPresentationComposer.swift; sourceTree = "<group>"; };
-		1627C2592202234B00097B0F /* APIClientPresentationComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClientPresentationComposer.swift; sourceTree = "<group>"; };
+		1627C25522020C0300097B0F /* BasePresentationComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePresentationComposer.swift; sourceTree = "<group>"; };
+		1627C2592202234B00097B0F /* BasePresentationComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePresentationComposer.swift; sourceTree = "<group>"; };
 		17B4C79DFB871A010BCC1031 /* Pods-magic-the-gatheringTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-magic-the-gatheringTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-magic-the-gatheringTests/Pods-magic-the-gatheringTests.debug.xcconfig"; sourceTree = "<group>"; };
 		2B09CAD921F22A72006F52FF /* CodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeView.swift; sourceTree = "<group>"; };
 		2B1179C922021076006F3228 /* APIClientSetServiceSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClientSetServiceSpec.swift; sourceTree = "<group>"; };
@@ -219,6 +233,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		16082F65220320B8001A7F03 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				16082F68220321AC001A7F03 /* Base */,
+				16082F69220321B5001A7F03 /* Services */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		16082F67220320E3001A7F03 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				EFD0290221FF97400089FDDB /* Services.swift */,
+				161A79FC2200953D00781589 /* Network */,
+				16082F65220320B8001A7F03 /* Database */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		16082F68220321AC001A7F03 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				16082F6A220321D8001A7F03 /* FavoriteCard.swift */,
+				16082F6C220323B2001A7F03 /* FavoriteSet.swift */,
+				16082F6E2203246F001A7F03 /* DataAccessObject.swift */,
+				16082F7222032672001A7F03 /* Realmeable.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		16082F69220321B5001A7F03 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				16082F7422032C64001A7F03 /* DatabaseSetService.swift */,
+				16082F7622032F3D001A7F03 /* DatabaseCardService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		161A79FC2200953D00781589 /* Network */ = {
 			isa = PBXGroup;
 			children = (
@@ -241,7 +294,6 @@
 		1627C25322020B9800097B0F /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				EFD0290221FF97400089FDDB /* Services.swift */,
 				1627C24F2202073700097B0F /* APIClientSetService.swift */,
 				1627C24D2202072F00097B0F /* APIClientCardService.swift */,
 			);
@@ -301,6 +353,7 @@
 			children = (
 				2B2643FC21F76F18005192E2 /* UIImageView+Nuke.swift */,
 				161A79FA220094EE00781589 /* String+LocalizedError.swift */,
+				16082F702203264B001A7F03 /* Model+Realmeable.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -485,7 +538,7 @@
 		8F1C144D21F10A450077279C /* magic-the-gathering */ = {
 			isa = PBXGroup;
 			children = (
-				161A79FC2200953D00781589 /* Network */,
+				16082F67220320E3001A7F03 /* Data */,
 				EFD9ACB12200933600314189 /* Enums */,
 				8F187CC821FF656200537852 /* Model */,
 				8FA62F3821F9FC8900661DAB /* R.generated.swift */,
@@ -642,7 +695,7 @@
 			isa = PBXGroup;
 			children = (
 				1627C25122020B6F00097B0F /* PresentationComposer.swift */,
-				1627C25522020C0300097B0F /* APIClientPresentationComposer.swift */,
+				1627C25522020C0300097B0F /* BasePresentationComposer.swift */,
 			);
 			path = Dependencies;
 			sourceTree = "<group>";
@@ -658,7 +711,7 @@
 		EFD9ACB52200BC8300314189 /* Dependencies */ = {
 			isa = PBXGroup;
 			children = (
-				1627C2592202234B00097B0F /* APIClientPresentationComposer.swift */,
+				1627C2592202234B00097B0F /* BasePresentationComposer.swift */,
 			);
 			path = Dependencies;
 			sourceTree = "<group>";
@@ -1018,14 +1071,16 @@
 			files = (
 				EFD0290321FF97400089FDDB /* Services.swift in Sources */,
 				8F187CD022022B7F00537852 /* SetListsContainerPageViewController.swift in Sources */,
+				16082F7322032672001A7F03 /* Realmeable.swift in Sources */,
 				EFD9ACB32200934800314189 /* MTGEnums.swift in Sources */,
 				EFC0C1A321FF69360003F004 /* CategoryCollectionViewDataSource.swift in Sources */,
 				2B2643EB21F61942005192E2 /* CardsSelectionDelegate.swift in Sources */,
+				16082F6F2203246F001A7F03 /* DataAccessObject.swift in Sources */,
 				2B4B52E021F7A5BF00204039 /* CardsManager.swift in Sources */,
 				2BF91E5B22008EDB00F16577 /* SetViewForHeaderDelegate.swift in Sources */,
 				2B699B0422006B13005C5397 /* BackgroundView.swift in Sources */,
 				EFC0C1A721FF69990003F004 /* CategoryViewController.swift in Sources */,
-				1627C25622020C0300097B0F /* APIClientPresentationComposer.swift in Sources */,
+				1627C25622020C0300097B0F /* BasePresentationComposer.swift in Sources */,
 				8FCECF4821F72D7D005C654B /* SetTableViewDataSource.swift in Sources */,
 				8F187CCC2200CF6600537852 /* SetHeaderSectionTableView.swift in Sources */,
 				2B2643FA21F62B06005192E2 /* CardsCollectionView.swift in Sources */,
@@ -1033,9 +1088,12 @@
 				8FA62F3921F9FC8900661DAB /* R.generated.swift in Sources */,
 				EF2DE91F21F2278D00A0D25D /* MTGSet.swift in Sources */,
 				2B7876C421F5FB6E0014B180 /* SetTableViewCell.swift in Sources */,
+				16082F6D220323B2001A7F03 /* FavoriteSet.swift in Sources */,
 				1627C2482201E0D100097B0F /* NetworkOperation.swift in Sources */,
+				16082F7722032F3D001A7F03 /* DatabaseCardService.swift in Sources */,
 				EF2DE91D21F2278600A0D25D /* Card.swift in Sources */,
 				2B2643F421F61EB1005192E2 /* ItemCollectionViewDataSource.swift in Sources */,
+				16082F6B220321D8001A7F03 /* FavoriteCard.swift in Sources */,
 				8F1C144F21F10A450077279C /* AppDelegate.swift in Sources */,
 				8FCECF4C21F73118005C654B /* SetTableViewController.swift in Sources */,
 				EFD4D67E220227330017A618 /* CustomTabBar.swift in Sources */,
@@ -1043,12 +1101,14 @@
 				1627C24E2202072F00097B0F /* APIClientCardService.swift in Sources */,
 				161A79FB220094EE00781589 /* String+LocalizedError.swift in Sources */,
 				2B2643ED21F61A3B005192E2 /* CardsCollectionViewDelegate.swift in Sources */,
+				16082F712203264B001A7F03 /* Model+Realmeable.swift in Sources */,
 				2B2643F221F61D41005192E2 /* ItemTableViewDataSource.swift in Sources */,
 				EFC0C1A621FF69990003F004 /* CategoryView.swift in Sources */,
 				161A79FE2200955200781589 /* MagicAPI.swift in Sources */,
 				EFC0C1A921FF69B50003F004 /* CategoryCollectionView.swift in Sources */,
 				1627C25222020B6F00097B0F /* PresentationComposer.swift in Sources */,
 				161A7A002200956D00781589 /* URLGetSessionOperation.swift in Sources */,
+				16082F7522032C64001A7F03 /* DatabaseSetService.swift in Sources */,
 				EFC0C1A221FF69360003F004 /* CarouselCollectionViewLayout.swift in Sources */,
 				2B2643F621F62393005192E2 /* CardCollectionViewCell.swift in Sources */,
 				EF2DE92221F22ADE00A0D25D /* DateFormatter.swift in Sources */,
@@ -1083,7 +1143,7 @@
 				1627C24A2201E3A300097B0F /* ModelMock.swift in Sources */,
 				1627C24C2201EAE500097B0F /* NetworkOperationMock.swift in Sources */,
 				EFC0C1B221FF6A2D0003F004 /* CategoryCollectionViewSnapshotSpec.swift in Sources */,
-				1627C25A2202234B00097B0F /* APIClientPresentationComposer.swift in Sources */,
+				1627C25A2202234B00097B0F /* BasePresentationComposer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

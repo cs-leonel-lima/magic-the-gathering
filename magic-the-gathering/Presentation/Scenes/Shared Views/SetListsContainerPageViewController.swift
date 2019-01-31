@@ -13,7 +13,7 @@ class SetListsContainerPageViewController: UIPageViewController, PagingProtocol 
         let apiComposer = BasePresentationComposer(setService: APIClientSetService(), cardService: APIClientCardService())
         let dbComposer = BasePresentationComposer(setService: DatabaseSetService(), cardService: DatabaseCardService())
         let vc2 = SetTableViewController(style: .grouped, presentationComposer: dbComposer)
-        let vc1 = SetTableViewController(style: .grouped, presentationComposer: APIClientPresentationComposer())
+        let vc1 = SetTableViewController(style: .grouped, presentationComposer: apiComposer)
         let nav1 = UINavigationController(rootViewController: vc1)
         let nav2 = UINavigationController(rootViewController: vc2)
         setupNavbar(navigationBar: nav1.navigationBar)

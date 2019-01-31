@@ -12,6 +12,8 @@
 		16082F6F2203246F001A7F03 /* DataAccessObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16082F6E2203246F001A7F03 /* DataAccessObject.swift */; };
 		16082F712203264B001A7F03 /* Model+Realmeable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16082F702203264B001A7F03 /* Model+Realmeable.swift */; };
 		16082F7322032672001A7F03 /* Realmeable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16082F7222032672001A7F03 /* Realmeable.swift */; };
+		16082F7522032C64001A7F03 /* DatabaseSetService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16082F7422032C64001A7F03 /* DatabaseSetService.swift */; };
+		16082F7722032F3D001A7F03 /* DatabaseCardService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16082F7622032F3D001A7F03 /* DatabaseCardService.swift */; };
 		161A79FB220094EE00781589 /* String+LocalizedError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161A79FA220094EE00781589 /* String+LocalizedError.swift */; };
 		161A79FE2200955200781589 /* MagicAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161A79FD2200955200781589 /* MagicAPI.swift */; };
 		161A7A002200956D00781589 /* URLGetSessionOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161A79FF2200956D00781589 /* URLGetSessionOperation.swift */; };
@@ -111,6 +113,8 @@
 		16082F6E2203246F001A7F03 /* DataAccessObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataAccessObject.swift; sourceTree = "<group>"; };
 		16082F702203264B001A7F03 /* Model+Realmeable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Model+Realmeable.swift"; sourceTree = "<group>"; };
 		16082F7222032672001A7F03 /* Realmeable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Realmeable.swift; sourceTree = "<group>"; };
+		16082F7422032C64001A7F03 /* DatabaseSetService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseSetService.swift; sourceTree = "<group>"; };
+		16082F7622032F3D001A7F03 /* DatabaseCardService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseCardService.swift; sourceTree = "<group>"; };
 		161A79FA220094EE00781589 /* String+LocalizedError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+LocalizedError.swift"; sourceTree = "<group>"; };
 		161A79FD2200955200781589 /* MagicAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicAPI.swift; sourceTree = "<group>"; };
 		161A79FF2200956D00781589 /* URLGetSessionOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLGetSessionOperation.swift; sourceTree = "<group>"; };
@@ -254,6 +258,8 @@
 		16082F69220321B5001A7F03 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				16082F7422032C64001A7F03 /* DatabaseSetService.swift */,
+				16082F7622032F3D001A7F03 /* DatabaseCardService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -1063,6 +1069,7 @@
 				2B7876C421F5FB6E0014B180 /* SetTableViewCell.swift in Sources */,
 				16082F6D220323B2001A7F03 /* FavoriteSet.swift in Sources */,
 				1627C2482201E0D100097B0F /* NetworkOperation.swift in Sources */,
+				16082F7722032F3D001A7F03 /* DatabaseCardService.swift in Sources */,
 				EF2DE91D21F2278600A0D25D /* Card.swift in Sources */,
 				2B2643F421F61EB1005192E2 /* ItemCollectionViewDataSource.swift in Sources */,
 				16082F6B220321D8001A7F03 /* FavoriteCard.swift in Sources */,
@@ -1079,6 +1086,7 @@
 				EFC0C1A921FF69B50003F004 /* CategoryCollectionView.swift in Sources */,
 				1627C25222020B6F00097B0F /* PresentationComposer.swift in Sources */,
 				161A7A002200956D00781589 /* URLGetSessionOperation.swift in Sources */,
+				16082F7522032C64001A7F03 /* DatabaseSetService.swift in Sources */,
 				EFC0C1A221FF69360003F004 /* CarouselCollectionViewLayout.swift in Sources */,
 				2B2643F621F62393005192E2 /* CardCollectionViewCell.swift in Sources */,
 				EF2DE92221F22ADE00A0D25D /* DateFormatter.swift in Sources */,

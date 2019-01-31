@@ -26,7 +26,7 @@ class SetTableViewDatasource: NSObject, ItemTableViewDataSource {
     }
 
     func numberOfSections(in tableView: UITableView) -> Int {
-        return filteredItems.count == 0 ? items.count : filteredItems.count
+        return filteredItems.isEmpty ? items.count : filteredItems.count
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -35,7 +35,7 @@ class SetTableViewDatasource: NSObject, ItemTableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(for: indexPath, cellType: SetTableViewCell.self)
-        let setPresentationCards = filteredItems.count == 0 ? items[indexPath.row].cards
+        let setPresentationCards = filteredItems.isEmpty ? items[indexPath.row].cards
             : filteredItems[indexPath.row].cards
         cell.setupData(cards: setPresentationCards)
         return cell
@@ -45,7 +45,7 @@ class SetTableViewDatasource: NSObject, ItemTableViewDataSource {
 
 extension SetTableViewDatasource: SetViewForHeaderDelegate {
     func titleForHeader(in section: Int) -> String {
-        let setPresentationName = filteredItems.count == 0 ? items[section].set.name
+        let setPresentationName = filteredItems.isEmpty ? items[section].set.name
             : filteredItems[section].set.name
         return setPresentationName
     }

@@ -125,11 +125,7 @@ extension SetTableViewController {
 
 extension SetTableViewController: UISearchResultsUpdating {
     func updateSearchResults(for searchController: UISearchController) {
-        guard let inputedText = searchController.searchBar.text, !inputedText.isEmpty else {
-            setTableViewDatasource?.updateItems([])
-            return
-        }
-        filterContentForSearchText(inputedText)
+        filterContentForSearchText(searchController.searchBar.text!)
     }
     
     private func searchBarIsEmpty() -> Bool {
@@ -142,15 +138,19 @@ extension SetTableViewController: UISearchResultsUpdating {
     
     private func filterContentForSearchText(_ searchText: String) {
         filteredSetPresentation.removeAll()
-        setTableViewDatasource?.items.forEach { setPresetantion in
-            let cards = setPresetantion.cards
-            let filteredCards = CardsManager.searchCards(with: searchText, on: cards)
-            
-            guard filteredCards != [] else { return }
-            filteredSetPresentation.append(SetPresentation(set: setPresetantion.set, cards: filteredCards))
-            
+        if isFiltering() {
+            setTableViewDatasource?.items.forEach { setPresetantion in
+                let cards = setPresetantion.cards
+                let filteredCards = CardsManager.searchCards(with: searchText, on: cards)
+                
+                guard filteredCards != [] else { return }
+                filteredSetPresentation.append(SetPresentation(set: setPresetantion.set, cards: filteredCards))
+                
+                setTableViewDatasource?.updateItems(filteredSetPresentation)
+                
+            }
+        } else {
             setTableViewDatasource?.updateItems(filteredSetPresentation)
-            
         }
     }
 }

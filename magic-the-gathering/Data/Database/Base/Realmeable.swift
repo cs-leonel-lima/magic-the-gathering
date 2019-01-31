@@ -13,4 +13,5 @@ protocol Realmeable: Equatable {
     var realmObject: Object { get }
     
     static func convert(from object: Object) -> Self
+    func equals(object: Object) -> Bool
 }

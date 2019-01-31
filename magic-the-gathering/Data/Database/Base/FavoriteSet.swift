@@ -29,10 +29,16 @@ class FavoriteSet: Object {
     }
     
     required init(realm: RLMRealm, schema: RLMObjectSchema) {
-        fatalError("init(realm:schema:) has not been implemented")
+        name = ""
+        code = ""
+        releaseDate = nil
+        super.init(realm: realm, schema: schema)
     }
     
     required init(value: Any, schema: RLMSchema) {
-        fatalError("init(value:schema:) has not been implemented")
+        name = ""
+        code = ""
+        releaseDate = nil
+        super.init(value: value, schema: schema)
     }
 }

@@ -39,10 +39,20 @@ class FavoriteCard: Object {
     }
     
     required init(realm: RLMRealm, schema: RLMObjectSchema) {
-        fatalError("init(realm:schema:) has not been implemented")
+        id = ""
+        name = ""
+        imageURL = nil
+        mtgCodeSet = ""
+        types = List<String>()
+        super.init(realm: realm, schema: schema)
     }
     
     required init(value: Any, schema: RLMSchema) {
-        fatalError("init(value:schema:) has not been implemented")
+        id = ""
+        name = ""
+        imageURL = nil
+        mtgCodeSet = ""
+        types = List<String>()
+        super.init(value: value, schema: schema)
     }
 }

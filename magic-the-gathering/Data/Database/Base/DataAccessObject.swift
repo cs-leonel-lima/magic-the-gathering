@@ -13,15 +13,20 @@ class DataAccessObject<T> where T: Realmeable {
     private let realm: Realm
     
     init() throws {
-        realm = try Realm(configuration: .defaultConfiguration)
+        realm = try Realm()
     }
     
-    func create(object: T) {
-        realm.add(object.realmObject)
+    func create(object: T) throws {
+        try realm.write {
+            realm.add(object.realmObject)
+        }
     }
     
-    func delete(object: T) {
-        realm.delete(object.realmObject)
+    func delete(object: T) throws {
+        guard let obj = realm.objects(T.realmType).first(where: { object.equals(object: $0) }) else { return }
+        try realm.write {
+            realm.delete(obj)
+        }
     }
     
     func getAll() -> [T] {

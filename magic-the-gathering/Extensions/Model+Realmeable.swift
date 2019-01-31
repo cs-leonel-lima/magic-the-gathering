@@ -23,6 +23,12 @@ extension MTGSet: Realmeable {
                       code: typedObject.code,
                       releaseDate: typedObject.releaseDate)
     }
+    func equals(object: Object) -> Bool {
+        guard let typedObject = object as? FavoriteSet else {
+            fatalError()
+        }
+        return typedObject.code == code
+    }
 }
 
 extension Card: Realmeable {
@@ -43,5 +49,11 @@ extension Card: Realmeable {
                     types: types,
                     imageURL: typedObject.imageURL,
                     mtgCodeSet: typedObject.mtgCodeSet)
+    }
+    func equals(object: Object) -> Bool {
+        guard let typedObject = object as? FavoriteCard else {
+            fatalError()
+        }
+        return typedObject.id == id
     }
 }

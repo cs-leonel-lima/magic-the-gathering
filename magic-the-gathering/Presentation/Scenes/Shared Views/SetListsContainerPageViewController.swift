@@ -1,6 +1,6 @@
 import UIKit
 
-class SetListsContainerPageViewController: UIPageViewController, UIPageViewControllerDataSource {
+class SetListsContainerPageViewController: UIPageViewController, UIPageViewControllerDataSource, UIPageViewControllerDelegate {
     
     let tabBar = CustomTabBar()
     
@@ -10,7 +10,7 @@ class SetListsContainerPageViewController: UIPageViewController, UIPageViewContr
         
         return [vc1, vc2]
     }()
-//
+
     override func viewDidLoad() {
         self.dataSource = self
 
@@ -44,6 +44,27 @@ class SetListsContainerPageViewController: UIPageViewController, UIPageViewContr
         guard viewControllerList.count > nextIndex else { return nil }
         
         return viewControllerList[nextIndex]
+        
+    }
+    
+    func goToNextPage(){
+        
+        guard let currentViewController = self.viewControllers?.first else { return }
+        
+        guard let nextViewController = dataSource?.pageViewController( self, viewControllerAfter: currentViewController ) else { return }
+        
+        setViewControllers([nextViewController], direction: .forward, animated: false, completion: nil)
+        
+    }
+    
+    
+    func goToPreviousPage(){
+        
+        guard let currentViewController = self.viewControllers?.first else { return }
+        
+        guard let previousViewController = dataSource?.pageViewController( self, viewControllerBefore: currentViewController ) else { return }
+        
+        setViewControllers([previousViewController], direction: .reverse, animated: false, completion: nil)
         
     }
     

@@ -2,7 +2,9 @@ import UIKit
 
 class CustomTabBar: UIView {
     
-    let horizontalStack: UIStackView = {
+    var delegate: PagingProtocol?
+    
+    private let horizontalStack: UIStackView = {
         let stack = UIStackView(frame: .zero)
         stack.axis = .horizontal
         stack.distribution = .fillEqually
@@ -10,7 +12,7 @@ class CustomTabBar: UIView {
         return stack
     }()
     
-    lazy var sets: UIButton = {
+    private lazy var sets: UIButton = {
         let button = UIButton(type: .custom)
         button.setTitle("Sets", for: .normal)
         button.titleLabel?.textColor = .white
@@ -19,7 +21,7 @@ class CustomTabBar: UIView {
         return button
     }()
     
-    lazy var favs: UIButton = {
+    private lazy var favs: UIButton = {
         let button = UIButton(type: .custom)
         button.setTitle("Favorites", for: .normal)
         button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 18)
@@ -28,13 +30,13 @@ class CustomTabBar: UIView {
         return button
     }()
     
-    let middleSeparator: UIView = {
+    private let middleSeparator: UIView = {
         let view = UIView(frame: .zero)
         view.backgroundColor = .white
         return view
     }()
     
-    let topSeparator: UIView = {
+    private let topSeparator: UIView = {
         let view = UIView(frame: .zero)
         view.backgroundColor = .white
         return view
@@ -49,12 +51,13 @@ class CustomTabBar: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    @objc func goToSets() {
-        print("goToSets")
+    @objc private func goToSets() {
+        delegate?.goToPreviousPage()
     }
     
-    @objc func goToFavorites() {
-        print("goToFavorites")
+    @objc private func goToFavorites() {
+        delegate?.goToNextPage()
+        
     }
     
 }

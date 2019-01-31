@@ -24,6 +24,8 @@ class SetListsContainerPageViewController: UIPageViewController, UIPageViewContr
         }
         
         setupView()
+        tabBar.delegate = self
+        tabBar.layer.zPosition = 9999
         
     }
 

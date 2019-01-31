@@ -18,7 +18,7 @@ class CardDataAccessObject: DataAccessObject<Card> {
 
 class DatabaseCardService: CardService {
     
-    func getCards(of set: MTGSet, _ completion: @escaping (NetworkOperationResult<[Card]>) -> Void) {
+    func getCards(of set: MTGSet, _ completion: @escaping (DataResult<[Card]>) -> Void) {
         do {
             let cards = try CardDataAccessObject().getAll(belongingTo: set)
             completion(.success(cards))

@@ -13,12 +13,12 @@ class BasePresentationComposer: PresentationComposer {
     private let setService: MTGSetService
     private let cardService: CardService
     
-    init(setService: MTGSetService = APIClientSetService(), cardService: CardService = APIClientCardService()) {
+    init(setService: MTGSetService, cardService: CardService) {
         self.setService = setService
         self.cardService = cardService
     }
     
-    func getSetPresentation(_ completion: @escaping (NetworkOperationResult<SetPresentation>) -> Void) {
+    func getSetPresentation(_ completion: @escaping (DataResult<SetPresentation>) -> Void) {
         
         setService.getSet { result in
             

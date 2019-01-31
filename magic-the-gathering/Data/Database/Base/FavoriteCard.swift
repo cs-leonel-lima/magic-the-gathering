@@ -12,21 +12,30 @@ import RealmSwift
 class FavoriteCard: Object {
     @objc dynamic var id: String
     @objc dynamic var name: String
-    @objc dynamic var types: [String]
     @objc dynamic var imageURL: String?
     @objc dynamic var mtgCodeSet: String
+    
+    let types: List<String>
     
     init(card: Card) {
         id = card.id
         name = card.name
-        types = card.types
         imageURL = card.imageURL
         mtgCodeSet = card.mtgCodeSet
+        types = List<String>()
+        
         super.init()
+        
+        card.types.forEach { self.types.append($0) }
     }
     
     required init() {
-        fatalError("init() has not been implemented")
+        id = ""
+        name = ""
+        imageURL = nil
+        mtgCodeSet = ""
+        types = List<String>()
+        super.init()
     }
     
     required init(realm: RLMRealm, schema: RLMObjectSchema) {

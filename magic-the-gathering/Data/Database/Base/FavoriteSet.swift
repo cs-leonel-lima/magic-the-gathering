@@ -22,7 +22,10 @@ class FavoriteSet: Object {
     }
     
     required init() {
-        fatalError("init() has not been implemented")
+        name = ""
+        code = ""
+        releaseDate = nil
+        super.init()
     }
     
     required init(realm: RLMRealm, schema: RLMObjectSchema) {

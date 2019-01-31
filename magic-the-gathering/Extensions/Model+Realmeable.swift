@@ -36,9 +36,11 @@ extension Card: Realmeable {
         guard let typedObject = object as? FavoriteCard else {
             fatalError()
         }
+        var types = [String]()
+        typedObject.types.forEach { types.append($0) }
         return Card(id: typedObject.id,
                     name: typedObject.name,
-                    types: typedObject.types,
+                    types: types,
                     imageURL: typedObject.imageURL,
                     mtgCodeSet: typedObject.mtgCodeSet)
     }

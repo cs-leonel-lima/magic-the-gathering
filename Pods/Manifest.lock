@@ -6,9 +6,6 @@ PODS:
     - iOSSnapshotTestCase/Core
   - KIF (3.7.4):
     - KIF/Core (= 3.7.4)
-  - KIF-Quick (1.1.0):
-    - KIF (~> 3.0)
-    - Quick (~> 1.0)
   - KIF/Core (3.7.4)
   - Nimble (7.3.2)
   - Nimble-Snapshots (6.9.0):
@@ -31,7 +28,7 @@ PODS:
   - SwiftLint (0.30.1)
 
 DEPENDENCIES:
-  - KIF-Quick
+  - KIF (~> 3.7.4)
   - Nimble (~> 7.3.2)
   - Nimble-Snapshots (~> 6.9.0)
   - Nuke (~> 7.5.2)
@@ -46,7 +43,6 @@ SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - iOSSnapshotTestCase
     - KIF
-    - KIF-Quick
     - Nimble
     - Nimble-Snapshots
     - Nuke
@@ -61,7 +57,6 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   iOSSnapshotTestCase: f3b2b7e606fe03fdbe49af84316bd235df32dc44
   KIF: f3d01c109ee9d1cfe6b0f2bb2aa278e807e971e2
-  KIF-Quick: da968bbfad615fd96c0d5eb4d8fd484ecdc26814
   Nimble: 5e94a8cacb355943c6c87198035dc4adbb0f10e4
   Nimble-Snapshots: 79394f8d0aea3df54bd5ff78ee9dff05a523a09c
   Nuke: 0350d346a688426e8f2331253ef28dc2fc4f6178
@@ -73,6 +68,6 @@ SPEC CHECKSUMS:
   SwiftFormat: 458892a21f033568b66abe2148fb93a2561e55bd
   SwiftLint: a54bf1fe12b55c68560eb2a7689dfc81458508f7
 
-PODFILE CHECKSUM: 65e7622a53d54c6fcd063f82132692df1961e9bf
+PODFILE CHECKSUM: 67772d3447d4d64140d752a57eb032a3bc4cc4d7
 
 COCOAPODS: 1.5.3

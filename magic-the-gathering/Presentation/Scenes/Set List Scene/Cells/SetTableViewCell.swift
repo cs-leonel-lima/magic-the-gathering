@@ -3,10 +3,10 @@ import Reusable
 
 class SetTableViewCell: UITableViewCell, Reusable {
     
-    private let mtgSetCollectionView: CardsCollectionView = {
+    private var mtgSetCollectionView: CardsCollectionView = {
         let collectionView = CardsCollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout())
         collectionView.translatesAutoresizingMaskIntoConstraints = false
-        collectionView.isScrollEnabled = false
+        collectionView.isScrollEnabled = true
         return collectionView
     }()
     
@@ -22,6 +22,10 @@ class SetTableViewCell: UITableViewCell, Reusable {
     func setupData(cards: [Card]) {
         self.mtgSetCollectionView.updateItems(cards: cards)
         self.setupLayout()
+    }
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
     }
 }
 

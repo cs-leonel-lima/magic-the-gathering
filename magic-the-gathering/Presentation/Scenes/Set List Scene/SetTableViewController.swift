@@ -4,11 +4,13 @@ class SetTableViewController: UITableViewController {
 
     lazy var searchController: UISearchController = {
         let controller = UISearchController(searchResultsController: nil)
+        controller.searchResultsUpdater = self
         controller.definesPresentationContext = false
-        controller.searchBar.sizeToFit()
+        
         controller.searchBar.accessibilityLabel = "searchBar"
         controller.searchBar.accessibilityIdentifier = "searchBar"
 
+        controller.searchBar.sizeToFit()
         controller.searchBar.placeholder = "search for cards"
         controller.searchBar.tintColor = .white
         controller.searchBar.barStyle = .blackTranslucent
@@ -82,5 +84,19 @@ extension SetTableViewController {
     
     func setupDelegate(delegate: SetViewForHeaderDelegate?) {
         self.headerTitleDelegate = delegate
+    }
+}
+
+extension SetTableViewController: UISearchResultsUpdating {
+    func updateSearchResults(for searchController: UISearchController) {
+        
+    }
+    
+    private func searchBarIsEmpty() -> Bool {
+        return searchController.searchBar.text?.isEmpty ?? true
+    }
+    
+    private func isFiltering() -> Bool {
+        return searchController.isActive && !searchBarIsEmpty()
     }
 }

@@ -23,11 +23,7 @@ extension AppDelegate {
         self.window?.rootViewController = navigationController
     }
     
-    func setupNavbar(navigationBar: UINavigationBar) {
-        //navigationBar.backgroundColor = .clear
-        //navigationBar.barTintColor = .clear
-        //navigationBar.isTranslucent = true
-        //navigationBar.shadowImage = UIImage()
+    private func setupNavbar(navigationBar: UINavigationBar) {
         navigationBar.setValue(true, forKey: "hidesShadow")
         navigationBar.setBackgroundImage(UIImage(), for: .default)
     }

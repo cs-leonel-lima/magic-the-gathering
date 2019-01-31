@@ -2,6 +2,7 @@ import UIKit
 
 class SetTableViewDatasource: NSObject, ItemTableViewDataSource {
     internal var items: [SetPresentation]
+    internal var filteredItems: [SetPresentation] = []
     internal var tableView: UITableView
     internal weak var delegate: UITableViewDelegate?
     
@@ -18,9 +19,14 @@ class SetTableViewDatasource: NSObject, ItemTableViewDataSource {
         self.items.append(set)
         self.tableView.reloadData()
     }
+    
+    func updateItems(_ setFiltered: [SetPresentation]) {
+        filteredItems = setFiltered
+        self.tableView.reloadData()
+    }
 
     func numberOfSections(in tableView: UITableView) -> Int {
-        return items.count
+        return filteredItems.count == 0 ? items.count : filteredItems.count
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -29,7 +35,9 @@ class SetTableViewDatasource: NSObject, ItemTableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(for: indexPath, cellType: SetTableViewCell.self)
-        cell.setupData(cards: self.items[indexPath.row].cards)
+        let setPresentationCards = filteredItems.count == 0 ? items[indexPath.row].cards
+            : filteredItems[indexPath.row].cards
+        cell.setupData(cards: setPresentationCards)
         return cell
     }
 
@@ -37,6 +45,8 @@ class SetTableViewDatasource: NSObject, ItemTableViewDataSource {
 
 extension SetTableViewDatasource: SetViewForHeaderDelegate {
     func titleForHeader(in section: Int) -> String {
-        return self.items[section].set.name
+        let setPresentationName = filteredItems.count == 0 ? items[section].set.name
+            : filteredItems[section].set.name
+        return setPresentationName
     }
 }

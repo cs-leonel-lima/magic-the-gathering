@@ -55,6 +55,7 @@
 		EF2DE92E21F240C700A0D25D /* cards-set-OVNT.json in Resources */ = {isa = PBXBuildFile; fileRef = EF2DE92521F240C700A0D25D /* cards-set-OVNT.json */; };
 		EF2DE93321F2422100A0D25D /* CardSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2DE93021F241CF00A0D25D /* CardSpec.swift */; };
 		EF2DE93521F2423100A0D25D /* MTGSetSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2DE93421F2423100A0D25D /* MTGSetSpec.swift */; };
+		EF4CA07A220314AB00C410CE /* CustomTabBarSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4CA079220314AB00C410CE /* CustomTabBarSnapshot.swift */; };
 		EFC0C1A221FF69360003F004 /* CarouselCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC0C1A021FF69350003F004 /* CarouselCollectionViewLayout.swift */; };
 		EFC0C1A321FF69360003F004 /* CategoryCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC0C1A121FF69360003F004 /* CategoryCollectionViewDataSource.swift */; };
 		EFC0C1A621FF69990003F004 /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC0C1A421FF69990003F004 /* CategoryView.swift */; };
@@ -148,6 +149,7 @@
 		EF2DE93021F241CF00A0D25D /* CardSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSpec.swift; sourceTree = "<group>"; };
 		EF2DE93421F2423100A0D25D /* MTGSetSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTGSetSpec.swift; sourceTree = "<group>"; };
 		EF4BCBA721F5FC1C007280F2 /* CardsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsManager.swift; sourceTree = "<group>"; };
+		EF4CA079220314AB00C410CE /* CustomTabBarSnapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarSnapshot.swift; sourceTree = "<group>"; };
 		EFC0C1A021FF69350003F004 /* CarouselCollectionViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarouselCollectionViewLayout.swift; sourceTree = "<group>"; };
 		EFC0C1A121FF69360003F004 /* CategoryCollectionViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewDataSource.swift; sourceTree = "<group>"; };
 		EFC0C1A421FF69990003F004 /* CategoryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
@@ -285,6 +287,7 @@
 		2B4B52E821F7A82800204039 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				EF4CA0782203149900C410CE /* Shared Views */,
 				EFC0C1AA21FF69D10003F004 /* Category Scene */,
 				2B4B52EA21F7A84400204039 /* Set List Scene */,
 			);
@@ -512,6 +515,14 @@
 				EF2DE93421F2423100A0D25D /* MTGSetSpec.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		EF4CA0782203149900C410CE /* Shared Views */ = {
+			isa = PBXGroup;
+			children = (
+				EF4CA079220314AB00C410CE /* CustomTabBarSnapshot.swift */,
+			);
+			path = "Shared Views";
 			sourceTree = "<group>";
 		};
 		EFC0C19D21FF68AB0003F004 /* Category Scene */ = {
@@ -974,6 +985,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF4CA07A220314AB00C410CE /* CustomTabBarSnapshot.swift in Sources */,
 				2BE94EB421F8B0AC00E42F38 /* SetTableViewCellQS.swift in Sources */,
 				EFC0C1AF21FF6A180003F004 /* CarouselCollectionViewLayoutSpec.swift in Sources */,
 				2B4B52EE21F7A86E00204039 /* CardsCollectionViewDatasourceSpec.swift in Sources */,

@@ -16,7 +16,7 @@ extension AppDelegate {
     private func setupWindow() {
         self.window = UIWindow()
         self.window?.makeKeyAndVisible()
-        let mainView = SetTableViewController(style: .grouped, presentationComposer: APIClientPresentationComposer())
+        let mainView = SetTableViewController(style: .grouped, presentationComposer: BasePresentationComposer())
         self.window?.rootViewController = mainView
     }
 }

@@ -18,3 +18,9 @@ typealias ComposerResult = NetworkOperationResult
 protocol PresentationComposer {
     func getSetPresentation(_ completion: @escaping (_ result: ComposerResult<SetPresentation>) -> Void)
 }
+
+extension SetPresentation: Equatable {
+    static func == (lhs: SetPresentation, rhs: SetPresentation) -> Bool {
+        return lhs.set.code == rhs.set.code
+    }
+}

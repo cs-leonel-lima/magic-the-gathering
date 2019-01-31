@@ -23,7 +23,16 @@ class SetTableViewController: UITableViewController {
     
     private var setTableViewDatasource: SetTableViewDatasource?
     private let presentationComposer: PresentationComposer
-    private var filteredSetPresentation: [SetPresentation] = []
+    private var filteredSetPresentation: [SetPresentation] = [] {
+        didSet {
+            switch isFiltering() {
+            case true:
+                listStatus = .filtering
+            case false:
+                listStatus = .idle
+            }
+        }
+    }
     
     weak var headerTitleDelegate: SetViewForHeaderDelegate?
     
@@ -116,7 +125,10 @@ extension SetTableViewController {
 
 extension SetTableViewController: UISearchResultsUpdating {
     func updateSearchResults(for searchController: UISearchController) {
-        guard let inputedText = searchController.searchBar.text else { return }
+        guard let inputedText = searchController.searchBar.text, !inputedText.isEmpty else {
+            setTableViewDatasource?.updateItems([])
+            return
+        }
         filterContentForSearchText(inputedText)
     }
     
@@ -129,12 +141,16 @@ extension SetTableViewController: UISearchResultsUpdating {
     }
     
     private func filterContentForSearchText(_ searchText: String) {
+        filteredSetPresentation.removeAll()
         setTableViewDatasource?.items.forEach { setPresetantion in
             let cards = setPresetantion.cards
             let filteredCards = CardsManager.searchCards(with: searchText, on: cards)
             
+            guard filteredCards != [] else { return }
             filteredSetPresentation.append(SetPresentation(set: setPresetantion.set, cards: filteredCards))
+            
             setTableViewDatasource?.updateItems(filteredSetPresentation)
+            
         }
     }
 }

@@ -29,7 +29,7 @@ class SetTableViewDatasource: NSObject, ItemTableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(for: indexPath, cellType: SetTableViewCell.self)
-        cell.setupData(cards: self.items[indexPath.row].cards)
+        cell.setupData(cards: self.items[indexPath.section].cards)
         return cell
     }
 
